@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Login</title>
+    <link
+      href="../css/style.css"
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+    />
+  </head>
+
+  <body style="height: 442px">
+    <div id="header">
+      <h1><a href="../../index.html">SHOPPER</h1>
+    </div>
+    <div class="buttons">
+      <button type="button" style="height:100%;width:100px; float: right; text-align: center;margin: 5px; border-radius: 10%;" onclick="location.href='pages/register.html'" class="signupbtn">Sign Up</button>
+    </div>
+    <div id="sidebar" value="edit">
+
+      <div id="section">
+        <p><a href= "../index.html">Weekly Shopping</a></p>
+        <p><a href="lists/monthly_shopping.html">Monthly Shopping</a></p>
+        <p><a href="lists/occassion.html">Occassion</a></p>
+        <p><a href="lists/recipes.html">Recipes</a></p>
+      </div>
+  
+       <div id="section"> 
+        <p><a href="list_maker.html">Make a List</a></p>
+        <p><a href="deliverymaker.html">Make a Delivery</a></p>
+       </div>
+       
+       <div id="section">
+        <p>Profile</p>
+      </div>
+    </div>
+  </div>
+    
+    <div id="content">
+    <div id="form">
+      <form action="../action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="../images/avatar.jpg" alt="Avatar" class="avatar" />
+        </div>
+
+        <div class="container">
+          <label for="uname"><p>Username</p></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+
+          <label for="psw"><p>Password</p></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <button type="submit">
+            <div>Login</div>
+          </button>
+
+          <button type="button" onclick="location.href='../index.html'" class="cancelbtn">Cancel</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+          <span class="psw"><a href="#">Forgot Password?</a></span>
+        </div>
+      </form>
+    </div>
+    </div>
+  </body>
+</html>

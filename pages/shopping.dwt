@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<!-- #BeginEditable "doctitle" -->
+<title>Monthly SHopping</title>
+<!-- #EndEditable -->
+<link href="../css/style.css" rel ="stylesheet" type="text/css" media="screen"/>
+
+<style type="text/css">
+.auto-style1 {
+	text-align: left;
+}
+.auto-style2 {
+	text-align: center;
+}
+</style>
+
+</head>
+
+<body>
+<div id="header">
+<p>&nbsp;</p>
+<h1 class="auto-style2">MONTHLY SHOPPING</h1>
+</div>
+
+<p class="auto-style1">&nbsp;</p>
+
+<div id="content">
+<!-- #BeginEditable "content" -->
+<div id="panel1">
+<h2 class="auto-style1"><a href="delivery.html">Bargain Hunter</a></h2>
+
+	<p class="auto-style1">
+	&nbsp;</p>
+	<ul>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Batteries</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Cleaning supplies</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Laundry detergent</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Lightbulbs</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Office and school supplies</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Paper towels</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Tissues</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Toilet paper</li>
+	</ul>
+</div>
+<div id="panel2">
+<h2 class="auto-style1"><a href="delivery.html">Inspired</a></h2>
+
+	<p class="auto-style1">
+	&nbsp;</p>
+	<ul>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Bandages</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Face masks</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Floss</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Hairstyling products</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Hand sanitizer</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Moisturizers</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Mouthwash</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Ointments</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Pain relievers</li>
+	</ul>
+	
+</div>
+	
+	
+<div id="panel3">
+<h2 class="auto-style1"><a href="delivery.html">Latest Products</a></h2>
+	
+	<ul>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Razors</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Shampoo and conditioner</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Shaving cream</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Shower gel</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Soap</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Toothbrushes</li>
+	<li class="auto-style1">
+	<input checked="checked" name="checklist[]1" style=" margin-right: 8px;" type="checkbox" value="ON" />
+	Toothpaste</li>
+	</ul>
+</div>
+<!-- #EndEditable -->
+</div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Make a List</title>
+    <link
+      href="../css/style.css"
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+    />
+    
+  </head>
+
+  <body>
+    
+      <div id="masthead" class="style">
+        <div id="header">
+          <h1><a href="../../index.html" >SHOPPER</a></h1>
+        </div>
+        <div class="buttons">
+          <button type="button" style="height: 100%;;width:100px; float: right; text-align: center; margin: 5px;border-radius: 10%" onclick="location.href='login.html'" class="loginbtn">Login</button>
+          <button type="button" style="height:100%;width:100px; float: right; text-align: center;margin: 5px; border-radius: 10%;" onclick="location.href='register.html'" class="signupbtn">Sign Up</button>
+        </div>
+  </div>
+  <div id="sidebar" value="edit">
+
+    <div id="section">
+      <p><a href="../index.html">Weekly Shopping</a></p>
+      <p><a href="lists/monthly_shopping.html">Monthly Shopping</a></p>
+      <p><a href="lists/occassion.html">Occassion</a></p>
+      <p><a href="lists/recipes.html">Recipes</a></p>
+    </div>
+
+     <div id="section"> 
+      <p>Make a List</p>
+      <p><a href="deliverymaker.html">Make a Delivery</a></p>
+     </div>
+     
+     <div id="section">
+      <p><a href="login.html">Profile</a></p>
+    </div>
+  </div>
+
+  
+    <div id="content" style="top:50px;">
+      <div id="panel" style="width: 500px;">  
+      <div id="myDIV" class="header">
+        <h2>Make a List</h2>
+        <input type="text" id="myInput" placeholder="Add List Item">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      </div>
+      <div id="panel">
+      <ul id="myUL">
+        <li>Hit the gym</li>
+        <li>Pay bills</li>
+        <li>Meet George</li>
+        <li>Buy eggs</li>
+        <li>Read a book</li>
+        <li>Organize office</li>
+      </ul>
+      </div>
+      </div>
+  </div>
+
+  <script src="js/index.js"></script>
+  </body>
+</html>
