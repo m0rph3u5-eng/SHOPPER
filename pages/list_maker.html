@@ -10,7 +10,7 @@
       type="text/css"
       media="screen"
     />
-    
+
   </head>
 
   <body>
@@ -20,8 +20,8 @@
           <h1><a href="../../index.html" >SHOPPER</a></h1>
         </div>
         <div class="buttons">
-          <button type="button" style="height: 100%;;width:100px; float: right; text-align: center; margin: 5px;border-radius: 10%" onclick="location.href='login.html'" class="loginbtn">Login</button>
-          <button type="button" style="height:100%;width:100px; float: right; text-align: center;margin: 5px; border-radius: 10%;" onclick="location.href='register.html'" class="signupbtn">Sign Up</button>
+          <button type="button" style="height:100%;width:100px; float: right; text-align: center; margin: 5px; border-radius: 10%;" onclick="location.href='login.html'" class="loginbtn">Login</button>
+          <button type="button" style="height:100%;width:100px; float: right; text-align: center; margin: 5px; border-radius: 10%;" onclick="location.href='register.html'" class="signupbtn">Sign Up</button>
         </div>
   </div>
   <div id="sidebar" value="edit">
@@ -48,23 +48,48 @@
       <div id="panel" style="width: 500px;">  
       <div id="myDIV" class="header">
         <h2>Make a List</h2>
-        <input type="text" id="myInput" placeholder="Add List Item">
-        <span onclick="newElement()" class="addBtn">Add</span>
+        <form>
+        <input type="text" id="txtVal" placeholder="Add List Item">
+        <span class="addBtn" onclick="addLi()">Add</span>
+        <span class="saveBtn" onclick="clearLi()">Clear List</span>
+        <span class="saveBtn" onclick="saveLi()">Save List</span>
+      </form>
       </div>
       </div>
       <div id="panel">
-      <ul id="myUL">
-        <li>Hit the gym</li>
-        <li>Pay bills</li>
-        <li>Meet George</li>
-        <li>Buy eggs</li>
-        <li>Read a book</li>
-        <li>Organize office</li>
+      <ul id="ul">
+        <li > Beverages</li>
+        <li> Canned goods</li>
+        <li>Dairy</li>
+        <li>Grains</li>
+        <li>Meat</li>
+        <li id="list1">Pet</li>
       </ul>
       </div>
       </div>
   </div>
+  <script>
+       function addLi()
+            {
 
-  <script src="js/index.js"></script>
+                var txtVal = document.getElementById('txtVal').value,
+                    listNode = document.getElementById('list1'),
+                    liNode = document.createElement("li"),
+                    txtNode = document.createTextNode(txtVal);
+            
+                 liNode.appendChild(txtNode);
+                 listNode.appendChild(liNode);
+            
+            }
+            function clearLi()
+            {
+
+              document.getElementById("list1").innerHTML = "";
+              
+            }
+
+
+</script> 
+  
   </body>
 </html>

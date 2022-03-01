@@ -341,9 +341,7 @@ position: fixed;
   float: right;
   width: fit-content;
 }
-#total p{
- 
-}
+
 /* Bordered form */
 form {
   margin-top: 5px;
@@ -452,6 +450,23 @@ span.psw a{
   cursor: pointer;
   transition: 0.3s;
   border-radius: 0;
+
+}
+
+/* Style the "Save List" button */
+.saveBtn {
+  padding: 10px;
+  height: 20px;
+  width: 20%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+ float: right;
 }
 
 .addBtn:hover {
