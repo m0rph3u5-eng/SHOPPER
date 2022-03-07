@@ -130,7 +130,7 @@ table {
 
 #masthead{
   height: 15px;
- 
+  
 }
 
 #header {
@@ -138,6 +138,7 @@ height: 50px;
 top: 0;
 width: 100%;
 position: fixed;
+overflow: hidden;
 }
 
 #header a{
@@ -207,6 +208,7 @@ position: fixed;
 #section1{
 	padding-bottom:30px;
 }
+
 
 #sidebar a:link {
   color: #000000;
@@ -309,9 +311,10 @@ position: fixed;
 
 
 #list{
-  border-bottom:3px; 
+  border-bottom:1px; 
   border-style:ridge; 
-  padding-bottom: 50px;
+ 
+  display:block;
 }
 
 #listHeader{
@@ -467,8 +470,13 @@ span.psw a{
   transition: 0.3s;
   border-radius: 0;
  float: right;
+ margin-left:5px;
 }
 
 .addBtn:hover {
+  background-color: #bbb;
+}
+
+.saveBtn:hover {
   background-color: #bbb;
 }

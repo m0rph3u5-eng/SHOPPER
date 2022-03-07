@@ -45,11 +45,11 @@
 
   
     <div id="content" style="top:50px;">
-      <div id="panel" style="width: 500px;">  
+      <div id="panel" style="width: 420px;">  
       <div id="myDIV" class="header">
         <h2>Make a List</h2>
         <form>
-        <input type="text" id="txtVal" placeholder="Add List Item">
+        <input type="text" id="txtVal" onchange="clearInput()" placeholder="Add List Item">
         <span class="addBtn" onclick="addLi()">Add</span>
         <span class="saveBtn" onclick="clearLi()">Clear List</span>
         <span class="saveBtn" onclick="saveLi()">Save List</span>
@@ -57,13 +57,10 @@
       </div>
       </div>
       <div id="panel">
+        <h2>New List</h2>
       <ul id="ul">
-        <li > Beverages</li>
-        <li> Canned goods</li>
-        <li>Dairy</li>
-        <li>Grains</li>
-        <li>Meat</li>
-        <li id="list1">Pet</li>
+        <li id="list1"></li>
+        
       </ul>
       </div>
       </div>
@@ -85,6 +82,12 @@
             {
 
               document.getElementById("list1").innerHTML = "";
+              
+            }
+            function clearInput()
+            {
+
+              document.getElementById("txtVal").innerHTML = "";
               
             }
 

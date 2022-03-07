@@ -1,0 +1,167 @@
+[
+    {
+        "id": "1",
+        "item": "Bacon",
+        "type":"Inspired",
+        "cost": "99",
+        "location":"Kileleshwa"
+    },
+    {
+        "id": "2",
+        "item": "Baking goods",
+         "type":"Inspired",
+        "cost": "87",
+        "location":"Lavington"
+    },
+    
+    
+    {
+        "id": "3",
+        "item": "Beverages",
+        "type":"Latest Products",
+        "cost": "88",
+        "location":"Westlands"
+    },
+    {
+        "id": "4",
+        "item": "Canned goods",
+        "type":"Inspired",
+        "cost": "99",
+        "location":"Kileleshwa"
+    },
+    {
+        "id": "5",
+        "item": "",
+         "type":"Inspired",
+        "cost": "87",
+        "location":"Lavington"
+    },
+    {
+        "id": "6",
+        "item": "Dairy",
+        "type":"Inspired",
+        "cost": "99",
+        "location":"Kileleshwa"
+    },
+    {
+        "id": "7",
+        "item": "Fish",
+         "type":"Inspired",
+        "cost": "87",
+        "location":"Lavington"
+    },
+    {
+        "id": "7",
+        "item": "",
+        "type":"Inspired",
+        "cost": "99",
+        "location":"Kileleshwa"
+    },
+    {
+        "id": "8",
+        "item": "Grains",
+         "type":"Inspired",
+        "cost": "87",
+        "location":"Lavington"
+    },
+    {
+        "id": "9",
+        "item": "Meat",
+        "type":"Inspired",
+        "cost": "99",
+        "location":"Kileleshwa"
+    },
+    {
+        "id": "10",
+        "item": "Spices",
+         "type":"Inspired",
+        "cost": "87",
+        "location":"Lavington"
+    },
+    {
+        "id": "11",
+        "item": "Bread",
+        "type":"Inspired",
+        "cost": "99",
+        "location":"Kileleshwa"
+    },
+    {
+        "id": "12",
+        "item": "Fruits",
+         "type":"Inspired",
+        "cost": "87",
+        "location":"Lavington"
+    },
+    {
+        "id": "13",
+        "item": "Vegetables",
+        "type":"Inspired",
+        "cost": "99",
+        "location":"Kileleshwa"
+    },
+    {
+        "id": "14",
+        "item": "Personal Care",
+         "type":"Inspired",
+        "cost": "87",
+        "location":"Lavington"
+    },
+    {
+        "id": "15",
+        "item": "Cleaning supplies",
+        "type":"Inspired",
+        "cost": "99",
+        "location":"Kileleshwa"
+    },
+    {
+        "id": "16",
+        "item": "Lightbulbs",
+         "type":"Inspired",
+        "cost": "87",
+        "location":"Lavington"
+    },
+    {
+        "id": "17",
+        "item": "Office and school supplies",
+        "type":"Inspired",
+        "cost": "99",
+        "location":"Kileleshwa"
+    },
+    {
+        "id": "18",
+        "item": "Tissues",
+         "type":"Inspired",
+        "cost": "87",
+        "location":"Lavington"
+    },
+    {
+        "id": "19",
+        "item": "Floss",
+        "type":"Inspired",
+        "cost": "99",
+        "location":"Kileleshwa"
+    },
+    {
+        "id": "20",
+        "item": "Hand sanitizer",
+         "type":"Inspired",
+        "cost": "87",
+        "location":"Lavington"
+    },
+    {
+        "id": "21",
+        "item": "Mouthwash",
+        "type":"Inspired",
+        "cost": "99",
+        "location":"Kileleshwa"
+    },
+    {
+        "id": "22",
+        "item": "Pain relievers",
+         "type":"Inspired",
+        "cost": "87",
+        "location":"Lavington"
+    }
+    
+
+]
