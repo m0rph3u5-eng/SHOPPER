@@ -340,9 +340,10 @@ overflow: hidden;
   font-size: 15px;
   font-weight: bold;
   position:absolute;
+  background-color: #ffffff;
   bottom: 10%;
   float: right;
-  width: fit-content;
+  width:fit-content;
 }
 
 /* Bordered form */

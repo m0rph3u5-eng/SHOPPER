@@ -1,179 +1,188 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta content="en-us" http-equiv="Content-Language" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <title>Recipes</title>
-    <link
-      href="../../css/style.css"
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-    />
-  </head>
 
-  <body>
-    <div id="masthead" class="style">
-      <div id="header">
-        <h1><a href="../../index.html">SHOPPER</h1>
+<head>
+  <meta content="en-us" http-equiv="Content-Language" />
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>Recipes</title>
+  <link href="../../css/style.css" rel="stylesheet" type="text/css" media="screen" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+</head>
+
+<body>
+  <div id="masthead" class="style">
+    <div id="header">
+      <h1><a href="../../index.html">SHOPPER</h1>
+    </div>
+    <div class="buttons">
+      <button type="button"
+        style="height: 100%;;width:100px; float: right; text-align: center; margin: 5px;border-radius: 10%"
+        onclick="location.href='pages/login.html'" class="loginbtn">Login</button>
+      <button type="button"
+        style="height:100%;width:100px; float: right; text-align: center;margin: 5px; border-radius: 10%;"
+        onclick="location.href='pages/register.html'" class="signupbtn">Sign Up</button>
+    </div>
+    <div class="search" style="width: 35%; margin-right: 200px;height: 2px;float:right">
+      <input type="text" style="font-size: large;" placeholder="Search..">
+    </div>
+  </div>
+  <div id="sidebar" value="edit">
+
+    <div id="section">
+      <div id="mShop">
+        <p><a href="../../index.html">Weekly Shopping</a></p>
       </div>
-      <div class="buttons">
-        <button type="button" style="height: 100%;;width:100px; float: right; text-align: center; margin: 5px;border-radius: 10%" onclick="location.href='pages/login.html'" class="loginbtn">Login</button>
-        <button type="button" style="height:100%;width:100px; float: right; text-align: center;margin: 5px; border-radius: 10%;" onclick="location.href='pages/register.html'" class="signupbtn">Sign Up</button>
+      <div id="mShop">
+        <p><a href="monthly_shopping.html">Monthly Shopping</a></p>
       </div>
-      <div class="search" style="width: 35%; margin-right: 200px;height: 2px;float:right">
-        <input type="text" style="font-size: large;" placeholder="Search..">
-        </div>
-</div>
-<div id="sidebar" value="edit">
-
-  <div id="section">
-    <div id="mShop">
-    <p><a href="../../index.html" >Weekly Shopping</a></p>
-  </div>
-    <div id="mShop">
-    <p><a href="monthly_shopping.html">Monthly Shopping</a></p>
-    </div>
-    <div id="mShop">
-    <p><a href="occassion.html">Occassion</a></p>
-    </div>
-    <div id="mShop">    
-      <p>Recipes</p>
-    </div>
+      <div id="mShop">
+        <p><a href="occassion.html">Occassion</a></p>
+      </div>
+      <div id="mShop">
+        <p>Recipes</p>
+      </div>
     </div>
 
-   <div id="section">
-    <div id="mShop">
-    <p><a href="../list_maker.html">Make a List</a></p>
+    <div id="section">
+      <div id="mShop">
+        <p><a href="../list_maker.html">Make a List</a></p>
+      </div>
+      <div id="mShop">
+        <p><a href="../deliverymaker.html">Make a Delivery</a></p>
+      </div>
     </div>
-    <div id="mShop">
-    <p><a href="../deliverymaker.html">Make a Delivery</a></p>
-  </div> 
-  </div>
-   
-   <div id="section">
-    <div id="mShop">
-    <p><a href="../profile.html">Profile</a></p>
+
+    <div id="section">
+      <div id="mShop">
+        <p><a href="../profile.html">Profile</a></p>
+      </div>
+    </div>
   </div>
   </div>
-</div>
-</div>
-    <div id="content">
-      <div id="panel">
-        <div id="listHeader">
+
+
+  <div id="content">
+    <div id="panel">
+      <div id="listHeader">
         <h2><a href="../delivery.html">Breakfast</a></h2>
-        </div>
-        <table>
-          <tr>
-            <td style="width: 90%;"><p><input
-              
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="OFF"
-            />Chocolate Banana Bread</p></td>
-            <td>799</td>
-          </tr>
-          <tr>
-            <td style="width: 90%;"><p><input
-              
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="OFF"
-            />Apple Coffee Cake</p></td>
-            <td>799</td>
-          </tr>
-        
-        </table>
       </div>
+      <table>
+        <tr>
+          <td style="width: 90%;"> <p id="recipe">
+            <input name="c" style="margin: 0px" type="checkbox" value="OFF" />
+         
+           </p>
 
-      <div id="panel">
-        <div id="listHeader">
+          </td>
+          <td style="width: 10%;">
+            <p id="price"></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input name="checklist[]1" style="margin-right: 8px" type="checkbox" value="OFF" />Apple Coffee Cake</p>
+          </td>
+          <td>799</td>
+        </tr>
+
+      </table>
+    </div>
+
+    <div id="panel">
+      <div id="listHeader">
         <h2><a href="../delivery.html">Lunch</a></h2>
       </div>
       <table>
         <tr>
-          <td style="width: 90%;"><p><input
-      
-            name="checklist[]1"
-            style="margin-right: 8px"
-            type="checkbox"
-            value="OFF"
-          />Chicken Salad Sandwich</p></td>
+          <td style="width: 90%;">
+            <p><input name="checklist[]1" style="margin-right: 8px" type="checkbox" value="OFF" />Chicken Salad Sandwich
+            </p>
+          </td>
           <td>799</td>
         </tr>
         <tr>
-          <td style="width: 90%;"><p><input
-      
-            name="checklist[]1"
-            style="margin-right: 8px"
-            type="checkbox"
-            value="ON"
-          /> Ham Sandwich</p></td>
+          <td style="width: 90%;">
+            <p><input name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" /> Ham Sandwich</p>
+          </td>
           <td>799</td>
         </tr>
-      
+
       </table>
-      </div>
-
-      <div id="panel">
-        <div id="listHeader">
-        <h2><a href="../delivery.html">Dinner</a></h2>
-</div>
-<table>
-  <tr>
-    <td style="width: 90%;"><p><input
-      
-      name="checklist[]1"
-      style="margin-right: 8px"
-      type="checkbox"
-      value="OFF"
-    />Mango Chicken Curry</p></td>
-    <td>799</td>
-  </tr>
-  <tr>
-    <td style="width: 90%;"><p><input
-      
-      name="checklist[]1"
-      style="margin-right: 8px"
-      type="checkbox"
-      value="ON"
-    />Liver and Onions</p></td>
-    <td>799</td>
-  </tr>
-
-</table>
-       </div>
-
-      <div id="panel">
-        <div id="listHeader">
-        <h2><a href="../delivery.html">Snack</a></h2>
-        </div>
-        <table>
-          <tr>
-            <td style="width: 90%;"><p><input
-              
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="OFF"
-            />Fruit Smoothie</p></td>
-            <td>799</td>
-          </tr>
-          <tr>
-            <td style="width: 90%;"><p><input
-              
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="OFF"
-            /> Potato Chips</p></td>
-            <td>799</td>
-          </tr>
-        
-        </table>
-              </div>
     </div>
-  </body>
+
+    <div id="panel">
+      <div id="listHeader">
+        <h2><a href="../delivery.html">Dinner</a></h2>
+      </div>
+      <table>
+        <tr>
+          <td style="width: 90%;">
+            <p><input name="checklist[]1" style="margin-right: 8px" type="checkbox" value="OFF" />Mango Chicken Curry
+            </p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />Liver and Onions</p>
+          </td>
+          <td>799</td>
+        </tr>
+
+      </table>
+    </div>
+
+    <div id="panel">
+      <div id="listHeader">
+        <h2><a href="../delivery.html">Snack</a></h2>
+      </div>
+      <table>
+        <tr>
+          <td style="width: 90%;">
+            <p><input name="checklist[]1" style="margin-right: 8px" type="checkbox" value="OFF" />Fruit Smoothie</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input name="checklist[]1" style="margin-right: 8px" type="checkbox" value="OFF" /> Potato Chips</p>
+          </td>
+          <td>799</td>
+        </tr>
+
+      </table>
+    </div>
+  </div>
+  <script>
+    fetch('recipe.json')
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        appendData(data);
+      })
+      .catch(function (err) {
+        console.log(err);
+      });
+
+    function appendData(data) {
+      var rec0 = document.getElementById("recipe");
+      var price0 = document.getElementById("price");
+
+
+      var rec = document.createElement("p");
+      var price = document.createElement("p");
+      rec.innerHTML = data[0].item;
+      price.innerHTML = data[0].cost;
+      rec0.appendChild(rec);
+      price0.appendChild(price);
+
+
+    }
+
+  </script>
+</body>
+
 </html>

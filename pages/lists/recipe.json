@@ -1,0 +1,66 @@
+[
+    {
+        "id": "1",
+        "item": "Chocolate Banana Bread",
+        "type":"Breakfast",
+        "cost": "99",
+        "location":"Kileleshwa",
+        "ingredients":""
+    },
+    {
+        "id": "2",
+        "item": "Apple Coffee Cake",
+        "type":"Breakfast",
+        "cost": "99",
+        "location":"Kileleshwa",
+        "ingredients":""
+    },
+    {
+        "id": "3",
+        "item": "Chicken Salad Sandwich",
+        "type":"Lunch",
+        "cost": "99",
+        "location":"Kileleshwa",
+        "ingredients":""
+    },
+    {
+        "id": "4",
+        "item": "Ham Sandwich",
+        "type":"Lunch",
+        "cost": "99",
+        "location":"Kileleshwa",
+        "ingredients":""
+    },
+    {
+        "id": "5",
+        "item": "Mango Chicken Curry",
+        "type":"Dinner",
+        "cost": "99",
+        "location":"Kileleshwa",
+        "ingredients":""
+    },
+    {
+        "id": "6",
+        "item": "Liver and Onions",
+        "type":"Dinner",
+        "cost": "99",
+        "location":"Kileleshwa",
+        "ingredients":""
+    },
+    {
+        "id": "7",
+        "item": "Fruit Smoothie",
+        "type":"Snack",
+        "cost": "99",
+        "location":"Kileleshwa",
+        "ingredients":""
+    },
+    {
+        "id": "8",
+        "item": "Potato Chips",
+        "type":"Snack",
+        "cost": "99",
+        "location":"Kileleshwa",
+        "ingredients":""
+    }
+]

@@ -78,8 +78,8 @@
 
       <table>
         <tr>
-          <td class="radio" onclick="check()">
-            <input type="radio" id="opt_1" name="dest_1" value="Kileleshwa" checked="false">
+          <td class="radio" >
+            <input type="radio" id="opt_1" name="dest_1" value="Kileleshwa" onclick="opt_1()">
             <label for="dest_1" >
           </td>
           <td class="dest">
@@ -95,7 +95,7 @@
         </tr>
         <tr>
           <td class="radio">
-            <input type="radio" id="opt_2" name="dest_1" value="Lavington">
+            <input type="radio" id="opt_2" name="dest_1" value="Lavington"onclick="opt_2()">
 
             <label for="dest_2">
           </td>
@@ -113,7 +113,7 @@
         </tr>
         <tr>
           <td class="radio">
-            <input type="radio" id="opt_3" name="dest_1" value="Westlands">
+            <input type="radio" id="opt_3" name="dest_1" value="Westlands"onclick="opt_3()">
             <label for="dest_3">
           </td>
           <td class="dest">
@@ -128,6 +128,7 @@
           </td>
         </tr>
       </table>
+    
     </div>
 
     <div id="panel">
@@ -137,10 +138,11 @@
         onclick="location.href='payment.html'" class="delverbtn">Deliver</button>
         <div id="result"></div>
     </div>
-    
-
   </div>
 
+<script>
+ 
+</script>
 </body>
 
 </html>

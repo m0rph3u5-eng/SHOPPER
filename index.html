@@ -1,933 +1,463 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <title>SHOPPER</title>
-    <meta content="en-us" http-equiv="Content-Language" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 
-  
-    <link
-      href="css/style.css"
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-    />
-   
-  </head>
+<head>
+  <title>SHOPPER</title>
+  <meta content="en-us" http-equiv="Content-Language" />
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 
-  <body>
-    <div id="masthead" class="style">
-        <div id="header">
-          <h1>SHOPPER</h1>
-        </div>
-        <div class="buttons" style="float:right">
-          <button type="button" style="height: 100%;;width:100px; float: right; text-align: center; margin: 5px;border-radius: 10%" onclick="location.href='pages/login.html'" class="loginbtn">Login</button>
-          <button type="button" style="height:100%;width:100px; float: right; text-align: center;margin: 5px; border-radius: 10%;" onclick="location.href='pages/register.html'" class="signupbtn">Sign Up</button>
-        </div>
-        <div class="search" style="width: 35%; margin-right: 200px;height: 2px;float:right">
-        <input type="text" style="font-size: large;" placeholder="Search..">
-        </div>
-        
-      </div>
+
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+
+</head>
+
+<body>
+  <div id="masthead" class="style">
+    <div id="header">
+      <h1>SHOPPER</h1>
+    </div>
+    <div class="buttons" style="float:right">
+      <button type="button"
+        style="height: 100%;;width:100px; float: right; text-align: center; margin: 5px;border-radius: 10%"
+        onclick="location.href='pages/login.html'" class="loginbtn">Login</button>
+      <button type="button"
+        style="height:100%;width:100px; float: right; text-align: center;margin: 5px; border-radius: 10%;"
+        onclick="location.href='pages/register.html'" class="signupbtn">Sign Up</button>
+    </div>
+    <div class="search" style="width: 35%; margin-right: 200px;height: 2px;float:right">
+      <input type="text" style="font-size: large;" placeholder="Search..">
+    </div>
+
+  </div>
   <div id="sidebar" value="edit">
 
     <div id="section">
       <p>Weekly Shopping</p>
       <div id="mShop">
-      <p><a href="pages/lists/monthly_shopping.html">Monthly Shopping</a></p>
+        <p><a href="pages/lists/monthly_shopping.html">Monthly Shopping</a></p>
       </div>
       <div id="mShop">
-      <p><a href="pages/lists/occassion.html">Occassion</a></p>
+        <p><a href="pages/lists/occassion.html">Occassion</a></p>
       </div>
-      <div id="mShop">    
+      <div id="mShop">
         <p><a href="pages/lists/recipes.html">Recipes</a></p>
       </div>
-      </div>
+    </div>
 
-     <div id="section">
+    <div id="section">
       <div id="mShop">
-      <p><a href="pages/list_maker.html">Make a List</a></p>
+        <p><a href="pages/list_maker.html">Make a List</a></p>
       </div>
       <div id="mShop">
-      <p><a href="pages/deliverymaker.html">Make a Delivery</a></p>
-    </div> 
+        <p><a href="pages/deliverymaker.html">Make a Delivery</a></p>
+      </div>
     </div>
-     
-     <div id="section">
+
+    <div id="section">
       <div id="mShop">
-      <p><a href="pages/profile.html">Profile</a></p>
-    </div>
+        <p><a href="pages/profile.html">Profile</a></p>
+      </div>
     </div>
   </div>
-</div>
-    <div id="content">
-      <div id="panel">
-        <div id="listHeader">
+  </div>
+  <div id="content">
+    <div id="panel">
+      <div id="listHeader">
         <h2><a href="pages/delivery.html">Bargain Hunter</a></h2>
-        </div>
+      </div>
+
+      <table id="table" style="display:none;">
+        <tr id="row">
+          <td id="datainput" style="width: 10%;"><input checked="checked" name="checklist[]1" style="margin-right: 8px"
+              type="checkbox" value="ON" id="check" /></td>
+          <td id="dataItem" style="width: 70%;">Ham</td>
+          <td id="dataPrice" style="width: 20%;">799</td>
+        </tr>
+      </table>
+
+      <script>
+
+        var x = document.getElementById("table");
+        x.style.display = "block";
+        let items = ["fruits", "vegetables", "meat"]
+        for (let i = 0; i < items.length; i++) {
+          var newCheckBox = document.createElement('input');
+          newCheckBox.type = 'checkbox';
+          newCheckBox.id = items[i];
+          newCheckBox.value = items[i];
+          newCheckBox.labels = "items[i]";
+          document.getElementById("panel").appendChild(newCheckBox);
+
+          const table = document.createElement("table");
+          table.innerHTML = items[i];
+          document.getElementById("panel").appendChild(table);
+        }
+      
+      </script>
+      <table>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+            Bacon</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" /> Baking goods
+            </p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />Beverages
+            </p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />Canned goods
+            </p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />Dairy
+            </p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Fish</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Grains</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Meat</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Snacks</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Spices</p>
+          </td>
+          <td>799</td>
+        </tr>
+      </table>
+
+      
+      <div id="total">
         <table>
-          <tr>
-            <td style="width: 90%;"><p><input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />Bacon</p></td>
-            <td>799</td>
-          </tr>
+        <tr>
+          <td style="width: 20%;">
+          <p>Total</p>
+      </td>
+      <td>1000</td>
+        </tr>
         </table>
-        
-        <ul>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />  Baking goods
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-            </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Beverages
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Canned goods
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Dairy
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Fish
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Frozen
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Grains
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Meat
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Pet
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Produce
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Snacks
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Spices
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-        </ul>
-        <div id="total">
-         <p>Total-------------------1000</p>  
-        </div>
-      </div>
-
-      <div id="panel">
-        <div id="listHeader" style="text-align:center;">
-        <h2 class="auto-style1"><a href="pages/delivery.html">Inspired</a></h2>
-</div>
-        <ul>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Beverages
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Bread/Bakery
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Canned/Jarred Goods
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Dairy
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Dry/Baking Goods
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Frozen Foods
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Meat
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Produce, fruits, vegetables
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Cleaners
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Paper Goods
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Personal Care
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-        </ul>
-        <div id="total">
-          <p>Total-------------------1000</p>  
-         </div>
-      </div>
-
-      <div id="panel">
-        <div id="listHeader" style="text-align:center;">
-        <h2><a href="pages/delivery.html">Latest Products</a></h2>
-</div>
-        <ul>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Beverages
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Bread/Bakery
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Canned/Jarred Goods
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-              <div id="dItem">
-               
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Dairy
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-              <div id="dItem">
-               
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Dry/Baking Goods
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-              <div id="dItem">
-               
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Frozen Foods
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-              <div id="dItem">
-               
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Meat
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-              <div id="dItem">
-               
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Produce, fruits, vegetables
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-              <div id="dItem">
-               
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Cleaners
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-              <div id="dItem">
-               
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Paper Goods
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-              <div id="dItem">
-               
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Personal Care
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-        </ul>
-        <div id="total">
-          <p>Total-------------------1000</p>  
-         </div>
-      </div>
-
-      <div id="panel">
-        
-          <div id="listHeader" style="text-align:center;">
-            <h2> <a href="pages/delivery.html">Researched</a>
-        </h2>
-</div>
-
-        <ul>
-          <li>
-            <div id="list">
-              <div id="dItem">
-               
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Beverages
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>         
-          </li>
-          <li>
-            <div id="list">
-              <div id="dItem">
-               
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Bread/Bakery
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-              <div id="dItem">
-               
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Canned/Jarred Goods
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-              <div id="dItem">
-               
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Dairy
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-              <div id="dItem">
-               
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Dry/Baking Goods
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-              <div id="dItem">
-               
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Frozen Foods
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-              <div id="dItem">
-               
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Meat
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-              <div id="dItem">
-               
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Produce, fruits, vegetables
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-              <div id="dItem">
-               
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Cleaners
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-              <div id="dItem">
-            <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Paper Goods
-            </div>
-            <div id="dPrice">
-              <p id="price">90</p>
-            </div>
-          </div>
-          </li>
-          <li>
-            <div id="list">
-            <div id="dItem">
-             
-              <input
-              checked="checked"
-              name="checklist[]1"
-              style="margin-right: 8px"
-              type="checkbox"
-              value="ON"
-            />
-            Personal Care
-            </div>
-            <div id="dPrice">
-            <p id="price">900000</p>
-          </div>
-            </div>
-          </li>
-        </ul>
-        <div id="total">
-          <p>Total-------------------1000</p>  
-         </div>
       </div>
     </div>
 
-    <script src="js/index.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    
-  </body>
+    <div id="panel">
+      <div id="listHeader" style="text-align:center;">
+        <h2 class="auto-style1"><a href="pages/delivery.html">Inspired</a></h2>
+      </div>
+      <table>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+            Bacon</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" /> Baking goods
+            </p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />Beverages
+            </p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />Canned goods
+            </p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />Dairy
+            </p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Fish</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Grains</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Meat</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Snacks</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Spices</p>
+          </td>
+          <td>799</td>
+        </tr>
+      </table>
+
+      
+      <div id="total">
+        <table>
+        <tr>
+          <td style="width: 20%;">
+          <p>Total</p>
+      </td>
+      <td>1000</td>
+        </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="panel">
+      <div id="listHeader" style="text-align:center;">
+        <h2><a href="pages/delivery.html">Latest Products</a></h2>
+      </div>
+      <table>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+            Bacon</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" /> Baking goods
+            </p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />Beverages
+            </p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />Canned goods
+            </p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />Dairy
+            </p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Fish</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Grains</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Meat</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Snacks</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Spices</p>
+          </td>
+          <td>799</td>
+        </tr>
+      </table>
+
+      
+      <div id="total">
+        <table>
+        <tr>
+          <td style="width: 20%;">
+          <p>Total</p>
+      </td>
+      <td>1000</td>
+        </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="panel">
+
+      <div id="listHeader" style="text-align:center;">
+        <h2> <a href="pages/delivery.html">Researched</a>
+        </h2>
+      </div>
+
+      <table>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+            Bacon</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" /> Baking goods
+            </p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />Beverages
+            </p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />Canned goods
+            </p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />Dairy
+            </p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Fish</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Grains</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Meat</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Snacks</p>
+          </td>
+          <td>799</td>
+        </tr>
+        <tr>
+          <td style="width: 90%;">
+            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
+              Spices</p>
+          </td>
+          <td>799</td>
+        </tr>
+      </table>
+
+      
+      <div id="total">
+        <table>
+        <tr>
+          <td style="width: 20%;">
+          <p>Total</p>
+      </td>
+      <td>1000</td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+
+</body>
+
 </html>

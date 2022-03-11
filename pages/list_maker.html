@@ -1,28 +1,29 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta content="en-us" http-equiv="Content-Language" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <title>Make a List</title>
-    <link
-      href="../css/style.css"
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-    />
 
-  </head>
+<head>
+  <meta content="en-us" http-equiv="Content-Language" />
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>Make a List</title>
+  <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
 
-  <body>
-    
-      <div id="masthead" class="style">
-        <div id="header">
-          <h1><a href="../../index.html" >SHOPPER</a></h1>
-        </div>
-        <div class="buttons">
-          <button type="button" style="height:100%;width:100px; float: right; text-align: center; margin: 5px; border-radius: 10%;" onclick="location.href='login.html'" class="loginbtn">Login</button>
-          <button type="button" style="height:100%;width:100px; float: right; text-align: center; margin: 5px; border-radius: 10%;" onclick="location.href='register.html'" class="signupbtn">Sign Up</button>
-        </div>
+</head>
+
+<body>
+
+  <div id="masthead" class="style">
+    <div id="header">
+      <h1><a href="../../index.html">SHOPPER</a></h1>
+    </div>
+    <div class="buttons">
+      <button type="button"
+        style="height:100%;width:100px; float: right; text-align: center; margin: 5px; border-radius: 10%;"
+        onclick="location.href='login.html'" class="loginbtn">Login</button>
+      <button type="button"
+        style="height:100%;width:100px; float: right; text-align: center; margin: 5px; border-radius: 10%;"
+        onclick="location.href='register.html'" class="signupbtn">Sign Up</button>
+    </div>
   </div>
   <div id="sidebar" value="edit">
 
@@ -33,66 +34,67 @@
       <p><a href="lists/recipes.html">Recipes</a></p>
     </div>
 
-     <div id="section"> 
+    <div id="section">
       <p>Make a List</p>
       <p><a href="deliverymaker.html">Make a Delivery</a></p>
-     </div>
-     
-     <div id="section">
+    </div>
+
+    <div id="section">
       <p><a href="login.html">Profile</a></p>
     </div>
   </div>
 
-  
-    <div id="content" style="top:50px;">
-      <div id="panel" style="width: 420px;">  
+
+  <div id="content" style="top:50px;">
+    <div id="panel" style="width: 420px;">
       <div id="myDIV" class="header">
         <h2>Make a List</h2>
         <form>
-        <input type="text" id="txtVal" onchange="clearInput()" placeholder="Add List Item">
-        <span class="addBtn" onclick="addLi()">Add</span>
-        <span class="saveBtn" onclick="clearLi()">Clear List</span>
-        <span class="saveBtn" onclick="saveLi()">Save List</span>
-      </form>
+          <input type="text" id="txtVal"  placeholder="Add List Item">
+          <span class="addBtn" onclick="addLi()">Add</span>
+          <span class="saveBtn" onclick="clearLi()">Clear List</span>
+          <span class="saveBtn" onclick="saveLi()">Save List</span>
+        </form>
       </div>
-      </div>
-      <div id="panel">
-        <h2>New List</h2>
+    </div>
+    <div id="panel">
+      <h2>New List</h2>
       <ul id="ul">
         <li id="list1"></li>
-        
+
       </ul>
-      </div>
-      </div>
+    </div>
+  </div>
   </div>
   <script>
-       function addLi()
-            {
+    function addLi() {
+      const list2 = [];
+      var txtVal = document.getElementById('txtVal').value,
+        listNode = document.getElementById('list1'),
+        liNode = document.createElement("li"),
+        txtNode = document.createTextNode(txtVal);
 
-                var txtVal = document.getElementById('txtVal').value,
-                    listNode = document.getElementById('list1'),
-                    liNode = document.createElement("li"),
-                    txtNode = document.createTextNode(txtVal);
-            
-                 liNode.appendChild(txtNode);
-                 listNode.appendChild(liNode);
-            
-            }
-            function clearLi()
-            {
+      liNode.appendChild(txtNode);
+      listNode.appendChild(liNode);
+      list2.push(txtVal);
+      console.log(list2);
 
-              document.getElementById("list1").innerHTML = "";
-              
-            }
-            function clearInput()
-            {
+    }
+    function clearLi() {
 
-              document.getElementById("txtVal").innerHTML = "";
-              
-            }
+      document.getElementById("list1").innerHTML = "";
+
+    }
+    function saveLi() {
+      
+     
+      
+console.log(list2);
+    }
 
 
-</script> 
-  
-  </body>
+  </script>
+
+</body>
+
 </html>
