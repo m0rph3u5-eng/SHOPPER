@@ -6,66 +6,168 @@
   <meta content="en-us" http-equiv="Content-Language" />
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
   <title>Make a List</title>
-  <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
-
-</head>
-
-<body>
-
-  <div id="masthead" class="style">
-    <div id="header">
-      <h1><a href="../../index.html">SHOPPER</a></h1>
-    </div>
-    <div class="buttons">
-      <button type="button"
-        style="height:100%;width:100px; float: right; text-align: center; margin: 5px; border-radius: 10%;"
-        onclick="location.href='login.html'" class="loginbtn">Login</button>
-      <button type="button"
-        style="height:100%;width:100px; float: right; text-align: center; margin: 5px; border-radius: 10%;"
-        onclick="location.href='register.html'" class="signupbtn">Sign Up</button>
-    </div>
-  </div>
-  <div id="sidebar" value="edit">
-
-    <div id="section">
-      <p><a href="../index.html">Weekly Shopping</a></p>
-      <p><a href="lists/monthly_shopping.html">Monthly Shopping</a></p>
-      <p><a href="lists/occassion.html">Occassion</a></p>
-      <p><a href="lists/recipes.html">Recipes</a></p>
-    </div>
-
-    <div id="section">
-      <p>Make a List</p>
-      <p><a href="deliverymaker.html">Make a Delivery</a></p>
-    </div>
-
-    <div id="section">
-      <p><a href="login.html">Profile</a></p>
-    </div>
-  </div>
-
-
-  <div id="content" style="top:50px;">
-    <div id="panel" style="width: 420px;">
-      <div id="myDIV" class="header">
-        <h2>Make a List</h2>
-        <form>
-          <input type="text" id="txtVal"  placeholder="Add List Item">
-          <span class="addBtn" onclick="addLi()">Add</span>
-          <span class="saveBtn" onclick="clearLi()">Clear List</span>
-          <span class="saveBtn" onclick="saveLi()">Save List</span>
-        </form>
+  <link href="../css/navbar.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+  
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 254, 254);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+    </style>
+    <link href="../css/sidebars.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../css/list-groups.css" rel="stylesheet" type="text/css" media="screen" />
+  
+    <script src="../js/sidebars.js"></script>
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="height: 50px;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="font-size: 40px;">SHOPPER</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="register.html">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Edit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Order</a>
+            </li>
+       <!--     <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>-->
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" style="width: fit-content;" type="submit">Search</button>
+          </form>
+        </div>
       </div>
-    </div>
-    <div id="panel">
-      <h2>New List</h2>
-      <ul id="ul">
-        <li id="list1"></li>
+    </nav>
+  
+    <main style="position: absolute; top: 50px;">
+      <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="../../index.html" class="nav-link link-dark" aria-current="page">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+              Weekly Shopping
+            </a>
+          </li>
+          <li>
+            <a href="lists/monthly_shopping.html" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href=""></use></svg>
+              Monthly Shopping
+            </a>
+          </li>
+          <li>
+            <a href="lists/occassion.html" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href=""></use></svg>
+              Occassion
+            </a>
+          </li>
+          <li>
+            <a href="lists/recipes.html" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href=""></use></svg>
+              Recipes
+            </a>
+          </li>
+          <hr>
+          <li>
+            <a href="#" class="nav-link active">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href=""></use></svg>
+              Make a List
+            </a>
+          </li>
+          <li>
+            <a href="deliverymaker.html" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href=""></use></svg>
+              Make a Delivery
+            </a>
+          </li>
+          <hr>
+          <li>
+            <a href="profile.html" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href=""></use></svg>
+              Profile
+            </a>
+          </li>
+        </ul>
+       
+      </div>
+  </main>
+  <div class="col-4 themed-grid-col" style="top: 0px; position: absolute; left: 300px; height: 100%;overflow: scroll;">
+    <div class="list-group" style="top:0px; left: 300px;">
+       
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h2>Make a List</h2>
+            <form>
+              <input type="text" id="txtVal" class="form-control me-2" placeholder="Add List Item">
+              <span class="btn btn-outline-success" style="float: left; width: fit-content" onclick="addLi()">Add</span>
+              <span class="btn btn-outline-success" style="float: right; width: fit-content" onclick="clearLi()">Clear List</span>
+              <span class="btn btn-outline-success" style="float: right; width: fit-content" onclick="saveLi()">Save List</span>
+            </form>
 
-      </ul>
-    </div>
-  </div>
-  </div>
+            
+        </div>
+   
+    
+    <div class="col-4 themed-grid-col" style="top: 0px; position: fixed; left: 770px; height: 100%; overflow: scroll; ">
+      <div class="list-group" >
+        
+       
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div >
+              <h2>New List</h2>
+              <ul id="ul">
+                <li id="list1"></li>
+        
+              </ul>
+            </div>
+           
+          </div>
+      
+        
+      </div>
+      </div>
+    
   <script>
     function addLi() {
       const list2 = [];

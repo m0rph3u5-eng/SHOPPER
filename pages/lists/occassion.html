@@ -6,458 +6,225 @@
   <meta content="en-us" http-equiv="Content-Language" />
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
   <title>Occasion</title>
-  <link href="../../css/style.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="../../css/navbar.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+    /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 254, 254);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+  </style>
+  <link href="../../css/sidebars.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="../../css/list-groups.css" rel="stylesheet" type="text/css" media="screen" />
+
+  <script src="../../js/sidebars.js"></script>
 </head>
 
 <body>
-  <div id="masthead" class="style">
-    <div id="header">
-      <h1><a href="../../index.html">SHOPPER</h1>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="height: 50px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: 40px;">SHOPPER</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../register.html">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../login.html">Edit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../login.html">Order</a>
+          </li>
+     <!--     <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>-->
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" style="width: fit-content;" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-    <div class="buttons" style="float:right">
-      <button type="button"
-        style="height: 100%;;width:100px; float: right; text-align: center; margin: 5px;border-radius: 10%"
-        onclick="location.href='pages/login.html'" class="loginbtn">Login</button>
-      <button type="button"
-        style="height:100%;width:100px; float: right; text-align: center;margin: 5px; border-radius: 10%;"
-        onclick="location.href='pages/register.html'" class="signupbtn">Sign Up</button>
+  </nav>
+
+  <main style="position: absolute; top: 50px;">
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="../../../index.html" class="nav-link link-dark" aria-current="page">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+            Weekly Shopping
+          </a>
+        </li>
+        <li>
+          <a href="monthly_shopping.html" class="nav-link link-dark">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href=""></use></svg>
+            Monthly Shopping
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link active">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href=""></use></svg>
+            Occassion
+          </a>
+        </li>
+        <li>
+          <a href="recipes.html" class="nav-link link-dark">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href=""></use></svg>
+            Recipes
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="../list_maker.html" class="nav-link link-dark">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href=""></use></svg>
+            Make a List
+          </a>
+        </li>
+        <li>
+          <a href="../deliverymaker.html" class="nav-link link-dark">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href=""></use></svg>
+            Make a Delivery
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="../profile.html" class="nav-link link-dark">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href=""></use></svg>
+            Profile
+          </a>
+        </li>
+      </ul>
+     
     </div>
-    <div class="search" style="width: 35%; margin-right: 200px;height: 2px;float:right">
-      <input type="text" style="font-size: large;" placeholder="Search..">
-    </div>
+</main>
+
+<div class="col-4 themed-grid-col" style="top: 0px; position: absolute; left: 300px; height: 100%;overflow: scroll;">
+  <div class="list-group" style="top:0px; left: 300px;">
+    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+     
+      <div class="d-flex gap-2 w-100 justify-content-between">
+        <div>
+          <h6 class="mb-0">Party</h6>
+          <p class="mb-0 opacity-75">Party invitations</p>
+          <p class="mb-0 opacity-75">Tables (for guests & buffet)</p>
+          <p class="mb-0 opacity-75">Chairs</p>
+          <p class="mb-0 opacity-75">Napkins</p>
+          <p class="mb-0 opacity-75">...</p>
+        </div>
+        <small class="opacity-50 text-nowrap">980</small>
+      </div>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+      
+      <div class="d-flex gap-2 w-100 justify-content-between">
+        <div>
+          <h6 class="mb-0">Vacation</h6>
+          <p class="mb-0 opacity-75">One casual outfit</p>
+          <p class="mb-0 opacity-75">One dressy outfit</p>
+          <p class="mb-0 opacity-75">One sweater or jacket</p>
+          <p class="mb-0 opacity-75">Underwear, delicates</p>
+          <p class="mb-0 opacity-75">...</p>
+        </div>
+        <small class="opacity-50 text-nowrap">780</small>
+      </div>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+      
+      <div class="d-flex gap-2 w-100 justify-content-between">
+        <div>
+          <h6 class="mb-0">Wardrobe</h6>
+          <p class="mb-0 opacity-75">sneakers</p>
+          <p class="mb-0 opacity-75">striped tee</p>
+          <p class="mb-0 opacity-75">leather jacket</p>
+          <p class="mb-0 opacity-75">tailored coat</p>
+          <p class="mb-0 opacity-75">...</p>
+        </div>
+        <small class="opacity-50 text-nowrap">1120</small>
+      </div>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        
+      <div class="d-flex gap-2 w-100 justify-content-between">
+        <div>
+          <h6 class="mb-0">Moving Out</h6>
+          <p class="mb-0 opacity-75">First aid kit</p>
+        <p class="mb-0 opacity-75">Batteries</p>
+        <p class="mb-0 opacity-75">Extension cord</p>
+        <p class="mb-0 opacity-75">Flashlight</p>
+        <p class="mb-0 opacity-75">...</p>
+        </div>
+        <small class="opacity-50 text-nowrap">540</small>
+      </div>
+    </a>
   </div>
-  <div id="sidebar">
-
-    <div id="section">
-      <div id="mShop">
-        <p><a href="../../index.html">Weekly Shopping</a></p>
-      </div>
-      <div id="mShop">
-        <p><a href="monthly_shopping.html">Monthly Shopping</a></p>
-      </div>
-      <div id="mShop">
-        <p>Occassion</p>
-      </div>
-      <div id="mShop">
-        <p><a href="recipes.html">Recipes</a></p>
-      </div>
-    </div>
-
-    <div id="section">
-      <div id="mShop">
-        <p><a href="../list_maker.html">Make a List</a></p>
-      </div>
-      <div id="mShop">
-        <p><a href="../deliverymaker.html">Make a Delivery</a></p>
-      </div>
-    </div>
-    <div id="section">
-      <div id="mShop">
-        <p><a href="../profile.html">Profile</a></p>
-      </div>
-    </div>
   </div>
-  <div id="content">
-    <div id="panel">
-      <div id="listHeader">
-        <h2><a href="../delivery.html">Party</a></h2>
-      </div>
+  <div class="col-4 themed-grid-col" style="top: 0px; position: absolute; left: 770px; height: 100%; overflow: scroll;">
+    <div class="list-group" style="top:0px; left: 600px;">
+      
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+       
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div style="height: 100%;">
+            <h6 class="mb-0">Party</h6>
+            <p class="mb-0 opacity-75">Party invitations</p>
+            <p class="mb-0 opacity-75">Tables (for guests & buffet)</p>
+            <p class="mb-0 opacity-75">Chairs</p>
+            <p class="mb-0 opacity-75">Napkins</p>
+            <p class="mb-0 opacity-75">Place cards</p>
+            <p class="mb-0 opacity-75">Drinkware</p>
+            <p class="mb-0 opacity-75">Plates</p>
+            <p class="mb-0 opacity-75">Flatware, forks, spoons, knives</p>
+            <p class="mb-0 opacity-75">Serving utensils</p>
+            <p class="mb-0 opacity-75">Centerpieces</p>
+            <p class="mb-0 opacity-75">Party favors, treat bags/boxes</p>
+            <p class="mb-0 opacity-75">Balloons, helium, ribbons</p>
 
-      <table>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Party invitations</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Tables (for guests & buffet)
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox"
-                value="ON" />Chairs
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox"
-                value="ON" />Napkins
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />Place
-              cards
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Drinkware</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Plates</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Flatware, forks, spoons, knives</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Serving utensils</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Serving platters, trays, bowls</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Centerpieces</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Party favors, treat bags/boxes</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Balloons, helium, ribbons
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-      </table>
-
-
-      <div id="total">
-        <table>
-          <tr>
-            <td style="width: 20%;">
-              <p>Total</p>
-            </td>
-            <td>1000</td>
-          </tr>
-        </table>
-      </div>
-
+            
+          </div>
+          <small class="opacity-50 text-nowrap">980</small>
+        </div>
+      </a>
+      
     </div>
-
-    <div id="panel">
-      <div id="listHeader">
-        <h2><a href="../delivery.html">Vacation</a></h2>
-      </div>
-
-      <table>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              One casual outfit</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" /> One
-              dressy outfit
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />One
-              sweater or jacket
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox"
-                value="ON" />Underwear, delicates
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />Socks
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Pajamas</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Swimwear</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Belt</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Coat / Hat / Gloves / Scarf</p>
-          </td>
-          <td>799</td>
-        </tr>
-
-      </table>
-
-
-      <div id="total">
-        <table>
-          <tr>
-            <td style="width: 20%;">
-              <p>Total</p>
-            </td>
-            <td>1000</td>
-          </tr>
-        </table>
-      </div>
-
     </div>
+  
 
-    <div id="panel">
-      <div id="listHeader">
-        <h2><a href="../delivery.html">Wardrobe</a></h2>
-      </div>
-
-      <table>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              sneakers</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              striped tee
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox"
-                value="ON" />leather jacket
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox"
-                value="ON" />tailored coat
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              sunglasses
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              blazer</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              silk scarf</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              knit vest</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              ankle boots</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              pajamas</p>
-          </td>
-          <td>799</td>
-        </tr>
-      </table>
-
-
-      <div id="total">
-        <table>
-          <tr>
-            <td style="width: 20%;">
-              <p>Total</p>
-            </td>
-            <td>1000</td>
-          </tr>
-        </table>
-      </div>
-
-    </div>
-
-    <div id="panel">
-      <div id="listHeader">
-        <h2><a href="../delivery.html">Moving Out</a></h2>
-      </div>
-
-      <table>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              First aid kit</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Batteries
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox"
-                value="ON" />Extension cord
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox"
-                value="ON" />Flashlight
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />Dairy
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Light bulbs</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Paper towels</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Aspirin</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Bottled water</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input checked="checked" name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />
-              Plunger</p>
-          </td>
-          <td>799</td>
-        </tr>
-      </table>
-
-
-      <div id="total">
-        <table>
-          <tr>
-            <td style="width: 20%;">
-              <p>Total</p>
-            </td>
-            <td>1000</td>
-          </tr>
-        </table>
-      </div>
-
-    </div>
-
-
-  </div>
+ 
 </body>
 
 </html>
