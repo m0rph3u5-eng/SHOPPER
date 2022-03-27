@@ -5,7 +5,7 @@
 <head>
   <meta content="en-us" http-equiv="Content-Language" />
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-  <title>Make a Delivery</title>
+  <title>Make a Delivery | SHOPPER</title>
  
   <script src="../js/index.js"></script>
   <style>
@@ -90,7 +90,7 @@
              <a class="nav-link active" aria-current="page" href="register.html">Register</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="login.html">Login</a>
+             <a class="nav-link active" aria-current="page" href="login.html">Login</a>
            </li>
            <li class="nav-item">
              <a class="nav-link" href="login.html">Edit</a>
@@ -172,7 +172,31 @@
           <table>
             <tr>
               <td class="radio" >
-                <input type="radio" id="opt_1" name="dest_1" value="Kileleshwa" onclick="opt_1()">
+                <input type="radio" id="opt_1" name="dest_1" value="Kileleshwa" onclick="kile()">
+                <script>
+                  function kile() {
+                    console.log("bargain");
+        
+                    let items = [
+                      'Baking goods',
+                      'Beverages',
+                      'Canned goods',
+                      'Dairy',
+                      'Grains',
+                      'Meat'
+                    ],
+                      ul = document.createElement('ul');
+        
+                    document.getElementById('result').appendChild(ul);
+                    result.innerHTML = "";
+                    document.getElementById('result').appendChild(ul);
+                    items.forEach(function (item) {
+                      let li = document.createElement('li');
+                      ul.appendChild(li);
+                      li.innerHTML += item;
+                    });
+                  }
+                </script>
                 <label for="dest_1" >
               </td>
               <td class="dest">
@@ -188,7 +212,32 @@
             </tr>
             <tr>
               <td class="radio">
-                <input type="radio" id="opt_2" name="dest_1" value="Lavington"onclick="opt_2()">
+                <input type="radio" id="opt_2" name="dest_1" value="Lavington" onclick="lavi()">
+                <script>
+                  function lavi() {
+                    console.log("bargain");
+        
+                    let items = [
+                    'Razors',
+              'Shampoo and conditioner',
+              'Shaving cream',
+              'Shower gel',
+              'Soap',
+              'Toothbrushes',
+              'Toothpaste'
+                    ],
+                      ul = document.createElement('ul');
+        
+                    document.getElementById('result').appendChild(ul);
+                    result.innerHTML = "";
+                    document.getElementById('result').appendChild(ul);
+                    items.forEach(function (item) {
+                      let li = document.createElement('li');
+                      ul.appendChild(li);
+                      li.innerHTML += item;
+                    });
+                  }
+                </script>
     
                 <label for="dest_2">
               </td>
@@ -206,7 +255,34 @@
             </tr>
             <tr>
               <td class="radio">
-                <input type="radio" id="opt_3" name="dest_1" value="Westlands"onclick="opt_3()">
+                <input type="radio" id="opt_3" name="dest_1" value="Westlands" onclick="west()">
+                <script>
+                  function west() {
+                    console.log("bargain");
+        
+                    let items = [
+                    'Bandages',
+              'Face masks',
+              'Floss',
+              'Hairstyling products',
+              'Hand sanitizer',
+              'Moisturizers',
+              'Mouthwash',
+              'Ointments',
+              'Pain relievers'
+                    ],
+                      ul = document.createElement('ul');
+        
+                    document.getElementById('result').appendChild(ul);
+                    result.innerHTML = "";
+                    document.getElementById('result').appendChild(ul);
+                    items.forEach(function (item) {
+                      let li = document.createElement('li');
+                      ul.appendChild(li);
+                      li.innerHTML += item;
+                    });
+                  }
+                </script>
                 <label for="dest_3">
               </td>
               <td class="dest">

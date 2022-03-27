@@ -5,7 +5,7 @@
 <head>
   <meta content="en-us" http-equiv="Content-Language" />
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-  <title>Recipes</title>
+  <title>Recipes | SHOPPER</title>
   <link href="../../css/navbar.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
   <style>
@@ -61,7 +61,7 @@
             <a class="nav-link active" aria-current="page" href="../register.html">Register</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../login.html">Login</a>
+            <a class="nav-link active" aria-current="page" href="../login.html">Login</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../login.html">Edit</a>
@@ -134,7 +134,24 @@
 </main>
 <div class="col-4 themed-grid-col" style="top: 0px; position: absolute; left: 300px; height: 100%;overflow: scroll;">
   <div class="list-group" style="top:0px; left: 300px;">
-    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" onclick="chocolate()">
+      <script>
+        function chocolate() {
+
+          document.getElementById('heading').innerHTML="Chocolate Banana Bread";
+              document.getElementById('item0').innerHTML="ripe bananas";
+              document.getElementById('item1').innerHTML="butter";
+              document.getElementById('item2').innerHTML="brown sugar";
+              document.getElementById('item3').innerHTML="salt";
+              document.getElementById('item4').innerHTML="eggs";
+              document.getElementById('item5').innerHTML="vanilla extract";
+              document.getElementById('item6').innerHTML="all-purpose flour";
+              document.getElementById('item7').innerHTML="cocoa powder";
+              document.getElementById('item8').innerHTML="baking soda";
+              document.getElementById('item9').innerHTML="chocolate chips";
+              document.getElementById('price0').innerHTML="980";
+        }
+      </script>
      
       <div class="d-flex gap-2 w-100 justify-content-between">
         <div>
@@ -145,7 +162,24 @@
         <small class="opacity-50 text-nowrap">980</small>
       </div>
     </a>
-    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" onclick="apple()">
+      <script>
+        function apple() {
+          document.getElementById('heading').innerHTML="Apple Coffee Cake";
+              document.getElementById('item0').innerHTML="butter";
+              document.getElementById('item1').innerHTML="brown sugar";
+              document.getElementById('item2').innerHTML="salt";
+              document.getElementById('item3').innerHTML="eggs";
+              document.getElementById('item4').innerHTML="vanilla extract";
+              document.getElementById('item5').innerHTML="all-purpose flour";
+              document.getElementById('item6').innerHTML="ground cinnamon";
+              document.getElementById('item7').innerHTML="baking soda";
+              document.getElementById('item8').innerHTML="allspice";
+              document.getElementById('item9').innerHTML="sour cream";
+              document.getElementById('price0').innerHTML="580";
+         
+        }
+      </script>
       
       <div class="d-flex gap-2 w-100 justify-content-between">
         <div>
@@ -153,10 +187,27 @@
           <p class="mb-0 opacity-75">Apple Coffee Cake</p>
          
         </div>
-        <small class="opacity-50 text-nowrap">780</small>
+        <small class="opacity-50 text-nowrap">580</small>
       </div>
     </a>
-    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" onclick="chicken()">
+      <script>
+        function chicken() {
+          document.getElementById('heading').innerHTML="Chicken Salad Sandwich";
+              document.getElementById('item0').innerHTML="chicken";
+              document.getElementById('item1').innerHTML="Celery";
+              document.getElementById('item2').innerHTML="green onions";
+              document.getElementById('item3').innerHTML="avocado";
+              document.getElementById('item4').innerHTML="Mayonnaise";
+              document.getElementById('item5').innerHTML="bread";
+              document.getElementById('item6').innerHTML="";
+              document.getElementById('item7').innerHTML="";
+              document.getElementById('item8').innerHTML="";
+              document.getElementById('item9').innerHTML="";
+              document.getElementById('price0').innerHTML="300";
+          
+        }
+      </script>
       
       <div class="d-flex gap-2 w-100 justify-content-between">
         <div>
@@ -164,10 +215,26 @@
           <p class="mb-0 opacity-75">Chicken Salad Sandwich</p>
          
         </div>
-        <small class="opacity-50 text-nowrap">1120</small>
+        <small class="opacity-50 text-nowrap">300</small>
       </div>
     </a>
-    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" onclick="ham()">
+      <script>
+        function ham() {
+          document.getElementById('heading').innerHTML="Ham Sandwich";
+              document.getElementById('item0').innerHTML="mayonnaise";
+              document.getElementById('item1').innerHTML="parsley";
+              document.getElementById('item2').innerHTML="thyme";
+              document.getElementById('item3').innerHTML="extra-virgin olive oil";
+              document.getElementById('item4').innerHTML="garlic";
+              document.getElementById('item5').innerHTML="crusty bread";
+              document.getElementById('item6').innerHTML="mustard";
+              document.getElementById('item7').innerHTML="ham";
+              document.getElementById('item8').innerHTML="tomato";
+              document.getElementById('item9').innerHTML="onion";
+              document.getElementById('price0').innerHTML="540";
+        }
+      </script>
         
       <div class="d-flex gap-2 w-100 justify-content-between">
         <div>
@@ -177,17 +244,50 @@
         <small class="opacity-50 text-nowrap">540</small>
       </div>
     </a>
-    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" onclick="mango()">
+      <script>
+        function mango() {
+          document.getElementById('heading').innerHTML="Mango Chicken Curry";
+              document.getElementById('item0').innerHTML="vegetable oil";
+              document.getElementById('item1').innerHTML="onion";
+              document.getElementById('item2').innerHTML="red bell pepper";
+              document.getElementById('item3').innerHTML="garlic cloves";
+              document.getElementById('item4').innerHTML="curry powder";
+              document.getElementById('item5').innerHTML="ground cumin";
+              document.getElementById('item6').innerHTML="Meat";
+              document.getElementById('item7').innerHTML="mangos";
+              document.getElementById('item8').innerHTML="boneless chicken thighs";
+              document.getElementById('item9').innerHTML="rice";
+              document.getElementById('price0').innerHTML="240";        
+        }
+      </script>
         
       <div class="d-flex gap-2 w-100 justify-content-between">
         <div>
           <h6 class="mb-0">Dinner</h6>
           <p class="mb-0 opacity-75">Mango Chicken Curry</p>
         </div>
-        <small class="opacity-50 text-nowrap">540</small>
+        <small class="opacity-50 text-nowrap">240</small>
       </div>
     </a>
-    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" onclick="liver()">
+      <script>
+        function liver() {
+          document.getElementById('heading').innerHTML="Liver and Onions";
+              document.getElementById('item0').innerHTML="beef liver";
+              document.getElementById('item1').innerHTML="milk";
+              document.getElementById('item2').innerHTML="butter";
+              document.getElementById('item3').innerHTML="onions";
+              document.getElementById('item4').innerHTML="all-purpose flour";
+              document.getElementById('item5').innerHTML="salt and pepper";
+              document.getElementById('item6').innerHTML="";
+              document.getElementById('item7').innerHTML="";
+              document.getElementById('item8').innerHTML="";
+              document.getElementById('item9').innerHTML="";
+              document.getElementById('price0').innerHTML="540";
+         
+        }
+      </script>
         
       <div class="d-flex gap-2 w-100 justify-content-between">
         <div>
@@ -197,24 +297,57 @@
         <small class="opacity-50 text-nowrap">540</small>
       </div>
     </a>
-    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" onclick="fruit()">
+      <script>
+        function fruit() {
+          document.getElementById('heading').innerHTML="Fruit Smoothie";
+              document.getElementById('item0').innerHTML="banana";
+              document.getElementById('item1').innerHTML="strawberries";
+              document.getElementById('item2').innerHTML="milk";
+              document.getElementById('item3').innerHTML="vanilla yogurt";
+              document.getElementById('item4').innerHTML="orange juice";
+              document.getElementById('item5').innerHTML="honey";
+              document.getElementById('item6').innerHTML="";
+              document.getElementById('item7').innerHTML="";
+              document.getElementById('item8').innerHTML="";
+              document.getElementById('item9').innerHTML="";
+              document.getElementById('price0').innerHTML="300";       
+        }
+      </script>
         
       <div class="d-flex gap-2 w-100 justify-content-between">
         <div>
           <h6 class="mb-0">Snack</h6>
           <p class="mb-0 opacity-75">Fruit Smoothie</p>
         </div>
-        <small class="opacity-50 text-nowrap">540</small>
+        <small class="opacity-50 text-nowrap">300</small>
       </div>
     </a>
-    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" onclick="chips()">
+      <script>
+        function chips() {
+          document.getElementById('heading').innerHTML="Potato Chips";
+              document.getElementById('item0').innerHTML="potatoes";
+              document.getElementById('item1').innerHTML="salt";
+              document.getElementById('item2').innerHTML="oil";
+              document.getElementById('item3').innerHTML="";
+              document.getElementById('item4').innerHTML="";
+              document.getElementById('item5').innerHTML="";
+              document.getElementById('item6').innerHTML="";
+              document.getElementById('item7').innerHTML="";
+              document.getElementById('item8').innerHTML="";
+              document.getElementById('item9').innerHTML="";
+              document.getElementById('price0').innerHTML="230";
+         
+        }
+      </script>
         
       <div class="d-flex gap-2 w-100 justify-content-between">
         <div>
           <h6 class="mb-0">Snack</h6>
           <p class="mb-0 opacity-75">Potato Chips</p>
         </div>
-        <small class="opacity-50 text-nowrap">540</small>
+        <small class="opacity-50 text-nowrap">230</small>
       </div>
     </a>
    
@@ -226,23 +359,20 @@
       <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
        
         <div class="d-flex gap-2 w-100 justify-content-between">
-          <div style="height: 100%;">
-            <h6 class="mb-0">Chocolate Banana Bread</h6>
-            <p class="mb-0 opacity-75">ripe bananas</p>
-            <p class="mb-0 opacity-75">butter</p>
-            <p class="mb-0 opacity-75">brown sugar</p>
-            <p class="mb-0 opacity-75">salt</p>
-            <p class="mb-0 opacity-75">eggs</p>
-            <p class="mb-0 opacity-75">vanilla extract</p>
-            <p class="mb-0 opacity-75">all-purpose flour</p>
-            <p class="mb-0 opacity-75">cocoa powder</p>
-            <p class="mb-0 opacity-75">baking soda</p>
-            <p class="mb-0 opacity-75">allspice</p>
-            <p class="mb-0 opacity-75">chocolate chips</p>
-
-            
+          <div id="main_list" style="height: 100%;">
+            <h6 id="heading" class="mb-0">Chocolate Banana Bread</h6>
+            <p id="item0" class="mb-0 opacity-75">ripe bananas</p>
+            <p id="item1" class="mb-0 opacity-75">butter</p>
+            <p id="item2" class="mb-0 opacity-75">brown sugar</p>
+            <p id="item3" class="mb-0 opacity-75">salt</p>
+            <p id="item4" class="mb-0 opacity-75">eggs</p>
+            <p id="item5" class="mb-0 opacity-75">vanilla extract</p>
+            <p id="item6" class="mb-0 opacity-75">all-purpose flour</p>
+            <p id="item7" class="mb-0 opacity-75">cocoa powder</p>
+            <p id="item8" class="mb-0 opacity-75">baking soda</p>
+            <p id="item9" class="mb-0 opacity-75">chocolate chips</p>
           </div>
-          <small class="opacity-50 text-nowrap">980</small>
+          <small id="price0" class="opacity-50 text-nowrap">980</small>
         </div>
       </a>
       
@@ -251,126 +381,7 @@
   
 
 
-  <div id="content">
-    <div id="panel">
-      <div id="listHeader">
-        <h2><a href="../delivery.html">Breakfast</a></h2>
-      </div>
-      <table>
-        <tr>
-          <td style="width: 90%;"> <p id="recipe">
-            <input name="c" style="margin: 0px" type="checkbox" value="OFF" />
-         
-           </p>
-
-          </td>
-          <td style="width: 10%;">
-            <p id="price"></p>
-          </td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input name="checklist[]1" style="margin-right: 8px" type="checkbox" value="OFF" />Apple Coffee Cake</p>
-          </td>
-          <td>799</td>
-        </tr>
-
-      </table>
-    </div>
-
-    <div id="panel">
-      <div id="listHeader">
-        <h2><a href="../delivery.html">Lunch</a></h2>
-      </div>
-      <table>
-        <tr>
-          <td style="width: 90%;">
-            <p><input name="checklist[]1" style="margin-right: 8px" type="checkbox" value="OFF" />Chicken Salad Sandwich
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" /> Ham Sandwich</p>
-          </td>
-          <td>799</td>
-        </tr>
-
-      </table>
-    </div>
-
-    <div id="panel">
-      <div id="listHeader">
-        <h2><a href="../delivery.html">Dinner</a></h2>
-      </div>
-      <table>
-        <tr>
-          <td style="width: 90%;">
-            <p><input name="checklist[]1" style="margin-right: 8px" type="checkbox" value="OFF" />Mango Chicken Curry
-            </p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input name="checklist[]1" style="margin-right: 8px" type="checkbox" value="ON" />Liver and Onions</p>
-          </td>
-          <td>799</td>
-        </tr>
-
-      </table>
-    </div>
-
-    <div id="panel">
-      <div id="listHeader">
-        <h2><a href="../delivery.html">Snack</a></h2>
-      </div>
-      <table>
-        <tr>
-          <td style="width: 90%;">
-            <p><input name="checklist[]1" style="margin-right: 8px" type="checkbox" value="OFF" />Fruit Smoothie</p>
-          </td>
-          <td>799</td>
-        </tr>
-        <tr>
-          <td style="width: 90%;">
-            <p><input name="checklist[]1" style="margin-right: 8px" type="checkbox" value="OFF" /> Potato Chips</p>
-          </td>
-          <td>799</td>
-        </tr>
-
-      </table>
-    </div>
-  </div>
-  <script>
-    fetch('recipe.json')
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        appendData(data);
-      })
-      .catch(function (err) {
-        console.log(err);
-      });
-
-    function appendData(data) {
-      var rec0 = document.getElementById("recipe");
-      var price0 = document.getElementById("price");
-
-
-      var rec = document.createElement("p");
-      var price = document.createElement("p");
-      rec.innerHTML = data[0].item;
-      price.innerHTML = data[0].cost;
-      rec0.appendChild(rec);
-      price0.appendChild(price);
-
-
-    }
-
-  </script>
+ 
 </body>
 
 </html>

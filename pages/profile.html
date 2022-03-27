@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>SHOPPER</title>
+    <title>Profile | SHOPPER</title>
     <meta content="en-us" http-equiv="Content-Language" />
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 
@@ -61,7 +61,7 @@
               <a class="nav-link active" aria-current="page" href="register.html">Register</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.html">Login</a>
+              <a class="nav-link active" aria-current="page" href="login.html">Login</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="login.html">Edit</a>
@@ -73,10 +73,7 @@
               <a class="nav-link disabled">Disabled</a>
             </li>-->
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" style="width: fit-content;" type="submit">Search</button>
-          </form>
+     
         </div>
       </div>
     </nav>
@@ -133,21 +130,21 @@
       </div>
   </main>
  
-    <div id="content" style="position: fixed; left: 300px; width:600px;">
-      <div id="panel" style="">
-        
-       
-        <div style="float: right;">
-          <h2>Account Balance</h2>
-          <h1 style="font-size: 50px;">Ksh.10,000.</h1>
-        </div>
+    <div id="content" style="display: grid; position:  fixed; grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: auto; left: 300px;">
+  
+        <div style="grid-column-start: 1;
+        grid-column-end: 5;">
         <h2>Username</h2>
-
         <p>user@host.com</p>
         <p>Location</p>
-        <p><a href="">History</a></p>  
+        <p><a href="#">History</a></p>  
       </div>  
-    
+      <div style="grid-column-start: 100;
+      grid-column-end:200;">
+        <h2>Account Balance</h2>
+        <h1 style="font-size: 50px;">Ksh.10,000.</h1>
+      </div>
     </div>>
 
 </body>
