@@ -4,8 +4,6 @@
     <meta content="en-us" http-equiv="Content-Language" />
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>Login | SHOPPER</title>
-    <link href="../css/navbar.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -175,17 +173,28 @@ span.psw a{
   background-color: #bbb;
 }
     </style>
-    <link href="../css/sidebars.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="../css/list-groups.css" rel="stylesheet" type="text/css" media="screen" />
-  
-    <script src="../js/sidebars.js"></script>
+   <meta content="en-us" http-equiv="Content-Language" />
+   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+   <link href="../css/navbar.css" rel="stylesheet" type="text/css" media="screen" />
+   <link href="../css/sidebars.css" rel="stylesheet" type="text/css" media="screen" />
+ 
+   <link href="../css/list-groups.css" rel="stylesheet" type="text/css" media="screen" />
+   <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+   <!--     
+              
+           -->
+   <script src="../js/jquery-3.6.0.js"></script>
+   <script src="../js/bootstrap.bundle.min.js"></script>
+ 
+   <script src="../js/sidebars.js"></script>
   </head>
   
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="height: 50px;">
+  <body class="container">
+    <nav class=" row navbar fixed-top navbar-expand-lg navbar-light bg-light" style="padding-left: 135px;">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#" style="font-size: 40px;">SHOPPER</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="../index.html">SHOPPER</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -194,77 +203,73 @@ span.psw a{
               <a class="nav-link active" aria-current="page" href="register.html">Register</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.html">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Edit</a>
+              <a class="nav-link active" aria-current="page" href="login.html">Login</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="login.html">Order</a>
             </li>
-       <!--     <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>-->
+            <!--     <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>-->
           </ul>
-        
+     
         </div>
       </div>
     </nav>
   
-    <main style="position: absolute; top: 50px;">
-      <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+    <div class="row">
+      <div class="col-2" style="padding-top: 30px;">
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
-            <a href="../../index.html" class="nav-link link-dark" aria-current="page">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+            <a href="../index.html" class="nav-link link-dark" aria-current="page">
+  
               Weekly Shopping
             </a>
           </li>
           <li>
-            <a href="lists/monthly_shopping.html" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href=""></use></svg>
+            <a href="../pages/lists/monthly_shopping.html" class="nav-link link-dark">
+  
               Monthly Shopping
             </a>
           </li>
           <li>
-            <a href="lists/occassion.html" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href=""></use></svg>
+            <a href="../lists/occassion.html" class="nav-link link-dark">
+  
               Occassion
             </a>
           </li>
           <li>
-            <a href="lists/recipes.html" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href=""></use></svg>
+            <a href="../pages/lists/recipes.html" class="nav-link link-dark">
+  
               Recipes
             </a>
           </li>
           <hr>
           <li>
             <a href="list_maker.html" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href=""></use></svg>
+  
               Make a List
             </a>
           </li>
           <li>
             <a href="deliverymaker.html" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href=""></use></svg>
+  
               Make a Delivery
             </a>
           </li>
           <hr>
           <li>
             <a href="profile.html" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href=""></use></svg>
+  
               Profile
             </a>
           </li>
         </ul>
-       
+  
       </div>
-  </main>
- 
+  
     
-    <div id="content" style="position: fixed; left: 300px;">
+    <div id="content" style="position: absolute; left: 300px;">
     <div id="form">
       <form action="../action_page.php" method="post">
        

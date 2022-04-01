@@ -6,54 +6,24 @@
   <title>Weekly Shopping | SHOPPER</title>
   <meta content="en-us" http-equiv="Content-Language" />
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-
   <link href="css/navbar.css" rel="stylesheet" type="text/css" media="screen" />
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-
-    /* width */
-    ::-webkit-scrollbar {
-      width: 5px;
-    }
-
-    /* Track */
-    ::-webkit-scrollbar-track {
-      background: #f1f1f1;
-    }
-
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-      background: rgb(255, 254, 254);
-    }
-
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-      background: #555;
-    }
-  </style>
   <link href="css/sidebars.css" rel="stylesheet" type="text/css" media="screen" />
+
   <link href="css/list-groups.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+  <!--     
+             
+          -->
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 
   <script src="js/sidebars.js"></script>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="height: 50px;">
+<body class="container">
+  <nav class=" row navbar fixed-top navbar-expand-lg navbar-light bg-light" style="padding-left: 135px;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#" style="font-size: 40px;">SHOPPER</a>
+      <a class="navbar-brand" href="#">SHOPPER</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -67,14 +37,11 @@
             <a class="nav-link active" aria-current="page" href="pages\login.html">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages\login.html">Edit</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="pages\login.html">Order</a>
           </li>
           <!--     <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>-->
+              <a class="nav-link disabled">Disabled</a>
+            </li>-->
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -84,226 +51,215 @@
     </div>
   </nav>
 
-  <main style="position: absolute; top: 50px;">
-    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+  <div class="row">
+    <div class="col-2" style="padding-top: 50px;">
       <ul class="nav nav-pills flex-column mb-auto">
         <li class="nav-item">
           <a href="#" class="nav-link active" aria-current="page">
-            <svg class="bi me-2" width="16" height="16">
-              <use xlink:href="#home"></use>
-            </svg>
+
             Weekly Shopping
           </a>
         </li>
         <li>
           <a href="pages/lists/monthly_shopping.html" class="nav-link link-dark">
-            <svg class="bi me-2" width="16" height="16">
-              <use xlink:href=""></use>
-            </svg>
+
             Monthly Shopping
           </a>
         </li>
         <li>
           <a href="pages/lists/occassion.html" class="nav-link link-dark">
-            <svg class="bi me-2" width="16" height="16">
-              <use xlink:href=""></use>
-            </svg>
+
             Occassion
           </a>
         </li>
         <li>
           <a href="pages/lists/recipes.html" class="nav-link link-dark">
-            <svg class="bi me-2" width="16" height="16">
-              <use xlink:href=""></use>
-            </svg>
+
             Recipes
           </a>
         </li>
         <hr>
         <li>
           <a href="pages/list_maker.html" class="nav-link link-dark">
-            <svg class="bi me-2" width="16" height="16">
-              <use xlink:href=""></use>
-            </svg>
+
             Make a List
           </a>
         </li>
         <li>
           <a href="pages/deliverymaker.html" class="nav-link link-dark">
-            <svg class="bi me-2" width="16" height="16">
-              <use xlink:href=""></use>
-            </svg>
+
             Make a Delivery
           </a>
         </li>
         <hr>
         <li>
           <a href="pages/profile.html" class="nav-link link-dark">
-            <svg class="bi me-2" width="16" height="16">
-              <use xlink:href=""></use>
-            </svg>
+
             Profile
           </a>
         </li>
       </ul>
 
     </div>
-  </main>
-  <div class="col-4 themed-grid-col" style="top: 0px; position: absolute; left: 300px; height: 100%;overflow: scroll;">
-    <div class="list-group" style="top:0px; left: 300px;">
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" onclick="bargain()">
-        <script>
-          function bargain() {
-              document.getElementById('heading').innerHTML="Bargain Hunter";
-              document.getElementById('item0').innerHTML="Bacon";
-              document.getElementById('item1').innerHTML="Baking goods";
-              document.getElementById('item2').innerHTML="Beverages";
-              document.getElementById('item3').innerHTML="Canned goods";
-              document.getElementById('item4').innerHTML="Fish";
-              document.getElementById('item5').innerHTML="Grains";
-              document.getElementById('item6').innerHTML="Meat";
-              document.getElementById('item7').innerHTML="Snacks";
-              document.getElementById('item8').innerHTML="Spices";
-              document.getElementById('item9').innerHTML="";
-              document.getElementById('price0').innerHTML="980";
-          }
-        </script>
-       
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <h6 class="mb-0">Bargain Hunter</h6>
-            <p class="mb-0 opacity-75">Bacon</p>
-            <p class="mb-0 opacity-75">Baking goods</p>
-            <p class="mb-0 opacity-75">Beverages</p>
-            <p class="mb-0 opacity-75">Canned goods</p>
-            <p class="mb-0 opacity-75">...</p>
-          </div>
-          <small class="opacity-50 text-nowrap">980</small>
-        </div>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" onclick="inspired()">
-        <script>
-          function inspired() {
-              document.getElementById('heading').innerHTML="Inspired";
-              document.getElementById('item0').innerHTML="Baking goods";
-              document.getElementById('item1').innerHTML="Beverages";
-              document.getElementById('item2').innerHTML="Canned goods";
-              document.getElementById('item3').innerHTML="Dairy";
-              document.getElementById('item4').innerHTML="Fish";
-              document.getElementById('item5').innerHTML="Grains";
-              document.getElementById('item6').innerHTML="Meat";
-              document.getElementById('item7').innerHTML="Snacks";
-              document.getElementById('item8').innerHTML="Spices";
-              document.getElementById('item9').innerHTML="";
-              document.getElementById('price0').innerHTML="780";
-          }
-        </script>
 
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <h6 class="mb-0">Inspired</h6>
-            <p class="mb-0 opacity-75">Baking goods</p>
-            <p class="mb-0 opacity-75">Beverages</p>
-            <p class="mb-0 opacity-75">Canned goods</p>
-            <p class="mb-0 opacity-75">Dairy</p>
-            <p class="mb-0 opacity-75">...</p>
-          </div>
-          <small class="opacity-50 text-nowrap">780</small>
-        </div>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" onclick="latest()">
-        <script>
-          function latest() {
-              document.getElementById('heading').innerHTML="Latest Products";
-              document.getElementById('item0').innerHTML="Bacon";
-              document.getElementById('item1').innerHTML="Baking goods";
-              document.getElementById('item2').innerHTML="Beverages";
-              document.getElementById('item3').innerHTML="Canned goods";
-              document.getElementById('item4').innerHTML="Fish";
-              document.getElementById('item5').innerHTML="Grains";
-              document.getElementById('item6').innerHTML="Meat";
-              document.getElementById('item7').innerHTML="Snacks";
-              document.getElementById('item8').innerHTML="Spices";
-              document.getElementById('item9').innerHTML="Cleaners";
-              document.getElementById('price0').innerHTML="1120";
-          }
-        </script>
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <h6 class="mb-0">Latest Products</h6>
-            <p class="mb-0 opacity-75">Bacon</p>
-            <p class="mb-0 opacity-75">Baking goods</p>
-            <p class="mb-0 opacity-75">Beverages</p>
-            <p class="mb-0 opacity-75">Canned goods</p>
-            <p class="mb-0 opacity-75">...</p>
-          </div>
-          <small class="opacity-50 text-nowrap">1120</small>
-        </div>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"onclick="researched()">
-        <script>
-          function researched() {
-              document.getElementById('heading').innerHTML="Researched";
-              document.getElementById('item0').innerHTML="Bacon";
-              document.getElementById('item1').innerHTML="Baking goods";
-              document.getElementById('item2').innerHTML="Beverages";
-              document.getElementById('item3').innerHTML="Canned goods";
-              document.getElementById('item4').innerHTML="Fish";
-              document.getElementById('item5').innerHTML="Grains";
-              document.getElementById('item6').innerHTML="Meat";
-              document.getElementById('item7').innerHTML="";
-              document.getElementById('item8').innerHTML="";
-              document.getElementById('item9').innerHTML="";
-              document.getElementById('price0').innerHTML="540";
-          }
-        </script>
 
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <h6 class="mb-0">Researched</h6>
-            <p class="mb-0 opacity-75">Bacon</p>
-            <p class="mb-0 opacity-75">Baking goods</p>
-            <p class="mb-0 opacity-75">Beverages</p>
-            <p class="mb-0 opacity-75">Canned goods</p>
-            <p class="mb-0 opacity-75">...</p>
+    <div class="col-4 themed-grid-col" style="top: 0px; position: absolute; left: 300px; height: 100%;overflow: scroll;">
+      <div class="list-group" style="top:0px; left: 300px;">
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+          onclick="bargain()">
+          <script>
+            function bargain() {
+              document.getElementById('heading').innerHTML = "Bargain Hunter";
+              document.getElementById('item0').innerHTML = "Bacon";
+              document.getElementById('item1').innerHTML = "Baking goods";
+              document.getElementById('item2').innerHTML = "Beverages";
+              document.getElementById('item3').innerHTML = "Canned goods";
+              document.getElementById('item4').innerHTML = "Fish";
+              document.getElementById('item5').innerHTML = "Grains";
+              document.getElementById('item6').innerHTML = "Meat";
+              document.getElementById('item7').innerHTML = "Snacks";
+              document.getElementById('item8').innerHTML = "Spices";
+              document.getElementById('item9').innerHTML = "";
+              document.getElementById('price0').innerHTML = "980";
+            }
+          </script>
+
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Bargain Hunter</h6>
+              <p class="mb-0 opacity-75">Bacon</p>
+              <p class="mb-0 opacity-75">Baking goods</p>
+              <p class="mb-0 opacity-75">Beverages</p>
+              <p class="mb-0 opacity-75">Canned goods</p>
+              <p class="mb-0 opacity-75">...</p>
+            </div>
+            <small class="opacity-50 text-nowrap">980</small>
           </div>
-          <small class="opacity-50 text-nowrap">540</small>
-        </div>
-      </a>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+          onclick="inspired()">
+          <script>
+            function inspired() {
+              document.getElementById('heading').innerHTML = "Inspired";
+              document.getElementById('item0').innerHTML = "Baking goods";
+              document.getElementById('item1').innerHTML = "Beverages";
+              document.getElementById('item2').innerHTML = "Canned goods";
+              document.getElementById('item3').innerHTML = "Dairy";
+              document.getElementById('item4').innerHTML = "Fish";
+              document.getElementById('item5').innerHTML = "Grains";
+              document.getElementById('item6').innerHTML = "Meat";
+              document.getElementById('item7').innerHTML = "Snacks";
+              document.getElementById('item8').innerHTML = "Spices";
+              document.getElementById('item9').innerHTML = "";
+              document.getElementById('price0').innerHTML = "780";
+            }
+          </script>
+
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Inspired</h6>
+              <p class="mb-0 opacity-75">Baking goods</p>
+              <p class="mb-0 opacity-75">Beverages</p>
+              <p class="mb-0 opacity-75">Canned goods</p>
+              <p class="mb-0 opacity-75">Dairy</p>
+              <p class="mb-0 opacity-75">...</p>
+            </div>
+            <small class="opacity-50 text-nowrap">780</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+          onclick="latest()">
+          <script>
+            function latest() {
+              document.getElementById('heading').innerHTML = "Latest Products";
+              document.getElementById('item0').innerHTML = "Bacon";
+              document.getElementById('item1').innerHTML = "Baking goods";
+              document.getElementById('item2').innerHTML = "Beverages";
+              document.getElementById('item3').innerHTML = "Canned goods";
+              document.getElementById('item4').innerHTML = "Fish";
+              document.getElementById('item5').innerHTML = "Grains";
+              document.getElementById('item6').innerHTML = "Meat";
+              document.getElementById('item7').innerHTML = "Snacks";
+              document.getElementById('item8').innerHTML = "Spices";
+              document.getElementById('item9').innerHTML = "Cleaners";
+              document.getElementById('price0').innerHTML = "1120";
+            }
+          </script>
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Latest Products</h6>
+              <p class="mb-0 opacity-75">Bacon</p>
+              <p class="mb-0 opacity-75">Baking goods</p>
+              <p class="mb-0 opacity-75">Beverages</p>
+              <p class="mb-0 opacity-75">Canned goods</p>
+              <p class="mb-0 opacity-75">...</p>
+            </div>
+            <small class="opacity-50 text-nowrap">1120</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+          onclick="researched()">
+          <script>
+            function researched() {
+              document.getElementById('heading').innerHTML = "Researched";
+              document.getElementById('item0').innerHTML = "Bacon";
+              document.getElementById('item1').innerHTML = "Baking goods";
+              document.getElementById('item2').innerHTML = "Beverages";
+              document.getElementById('item3').innerHTML = "Canned goods";
+              document.getElementById('item4').innerHTML = "Fish";
+              document.getElementById('item5').innerHTML = "Grains";
+              document.getElementById('item6').innerHTML = "Meat";
+              document.getElementById('item7').innerHTML = "";
+              document.getElementById('item8').innerHTML = "";
+              document.getElementById('item9').innerHTML = "";
+              document.getElementById('price0').innerHTML = "540";
+            }
+          </script>
+
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Researched</h6>
+              <p class="mb-0 opacity-75">Bacon</p>
+              <p class="mb-0 opacity-75">Baking goods</p>
+              <p class="mb-0 opacity-75">Beverages</p>
+              <p class="mb-0 opacity-75">Canned goods</p>
+              <p class="mb-0 opacity-75">...</p>
+            </div>
+            <small class="opacity-50 text-nowrap">540</small>
+          </div>
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="col-4 themed-grid-col" style="top: 0px; position: absolute; left: 770px; height: 100%; overflow: scroll;">
-    <div class="list-group" style="top:0px; left: 600px;">
-
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div id="main_list" style="height: 100%;">
-            <h6 id="heading" class="mb-0">Bargain Hunter</h6>
-            <p id="item0" class="mb-0 opacity-75">Bacon</p>
-            <p id="item1" class="mb-0 opacity-75">Baking goods</p>
-            <p id="item2" class="mb-0 opacity-75">Beverages</p>
-            <p id="item3" class="mb-0 opacity-75">Canned goods</p>
-            <p id="item4" class="mb-0 opacity-75">Dairy</p>
-            <p id="item5" class="mb-0 opacity-75">Fish</p>
-            <p id="item6" class="mb-0 opacity-75">Grains</p>
-            <p id="item7" class="mb-0 opacity-75">Meat</p>
-            <p id="item8" class="mb-0 opacity-75">Snacks</p>
-            <p id="item9" class="mb-0 opacity-75">Spices</p>
 
 
+    <div class="col-4 themed-grid-col" style="top: 0px; position: absolute; left: 770px; height: 100%; overflow: scroll;">
+      <div class="list-group" style="top:0px; left: 600px;">
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div id="main_list" style="height: 100%;">
+              <h6 id="heading" class="mb-0">Bargain Hunter</h6>
+              <p id="item0" class="mb-0 opacity-75">Bacon</p>
+              <p id="item1" class="mb-0 opacity-75">Baking goods</p>
+              <p id="item2" class="mb-0 opacity-75">Beverages</p>
+              <p id="item3" class="mb-0 opacity-75">Canned goods</p>
+              <p id="item4" class="mb-0 opacity-75">Dairy</p>
+              <p id="item5" class="mb-0 opacity-75">Fish</p>
+              <p id="item6" class="mb-0 opacity-75">Grains</p>
+              <p id="item7" class="mb-0 opacity-75">Meat</p>
+              <p id="item8" class="mb-0 opacity-75">Snacks</p>
+              <p id="item9" class="mb-0 opacity-75">Spices</p>
+
+
+            </div>
+            <small id="price0" class="opacity-50 text-nowrap">980</small>
           </div>
-          <small id="price0" class="opacity-50 text-nowrap">980</small>
-        </div>
-      </a>
+        </a>
 
+      </div>
     </div>
+
   </div>
-
-
-
-  <script src="js/index.js"></script>
-
 
 </body>
 
