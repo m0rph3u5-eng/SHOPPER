@@ -4,7 +4,7 @@ This is a website that generates your shopping list.
 It also allows users to make and request deliveries.
 
 ![shopper_list_maker_ss](https://user-images.githubusercontent.com/63499020/162430939-3866d2aa-834b-444c-84e7-84eddbc8fa41.png)
-,br.
+<br>
 List Maker
 <br>
 
