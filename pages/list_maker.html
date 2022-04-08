@@ -69,7 +69,7 @@
           </a>
         </li>
         <li>
-          <a href="../lists/occassion.html" class="nav-link link-dark">
+          <a href="../pages/lists/occassion.html" class="nav-link link-dark">
 
             Occassion
           </a>
@@ -111,7 +111,15 @@
           <div>
             <h2>Make a List</h2>
             <form>
-              <input type="text" id="txtVal" class="form-control me-2" placeholder="Add List Item">
+              <label style="margin-top: 5px;">Title</label>
+              <input type="text" id="title" class="form-control me-2" placeholder="List Title" >
+              
+              <label style="margin-top: 5px;">Description</label>
+              <textarea rows = "6" cols = "40" class="form-control me-2" name = "description">
+              
+             </textarea>
+             <label style="margin-top: 5px;">Items</label>
+              <input type="text" id="txtVal"  class="form-control me-2" placeholder="Add List Item" style="margin-top: 5px; margin-bottom: 5px;">
               <span class="btn btn-outline-success" style="float: left; width: fit-content" onclick="addLi()">Add</span>
               <span class="btn btn-outline-success" style="float: right; width: fit-content" onclick="clearLi()">Clear List</span>
               <span class="btn btn-outline-success" style="float: right; width: fit-content" onclick="saveLi()">Save List</span>
@@ -127,7 +135,7 @@
        
           <div class="d-flex gap-2 w-100 justify-content-between">
             <div >
-              <h2>New List</h2>
+              <h2 id="newHeader">New List</h2>
               <ul id="ul">
                 <li id="list1"></li>
         
@@ -143,15 +151,20 @@
   <script>
     function addLi() {
       const list2 = [];
+      const title1 = [];
       var txtVal = document.getElementById('txtVal').value,
+      
         listNode = document.getElementById('list1'),
         liNode = document.createElement("li"),
-        txtNode = document.createTextNode(txtVal);
+        txtNode = document.createTextNode(txtVal),
+        title = document.getElementById('title').value;
+
 
       liNode.appendChild(txtNode);
       listNode.appendChild(liNode);
       list2.push(txtVal);
       console.log(list2);
+      document.getElementById('newHeader').innerHTML = title;
 
     }
     function clearLi() {
@@ -166,7 +179,13 @@
 console.log(list2);
     }
 
-
+   
+                function header(){
+                  console.log("llll");
+                  document.getElementById('newHeader').innerHTML = "Bargain Hunter";
+                }
+            
+             
   </script>
 
 </body>
