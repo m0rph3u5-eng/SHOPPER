@@ -1,8 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <title>Profile | SHOPPER</title>
-    <meta content="en-us" http-equiv="Content-Language" />
+
+<head>
+  <title>Profile | SHOPPER</title>
+  <meta content="en-us" http-equiv="Content-Language" />
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
   <link href="../css/navbar.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="../css/sidebars.css" rel="stylesheet" type="text/css" media="screen" />
@@ -100,23 +102,175 @@
 
     </div>
 
- 
+
     <div id="content" style="display: grid; position:  fixed; grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: auto; left: 300px; padding-top: 50px;">
-  
-        <div style="grid-column-start: 1;
-        grid-column-end: 5;">
+    grid-template-rows: auto; left: 300px; padding-top: 50px; overflow: scroll; height:100% ;">
+
+      <div style="grid-column-start: 1;
+        grid-column-end: 5; overflow: scroll; height: 100%;">
         <h2>Username</h2>
         <p>user@host.com</p>
         <p>Location</p>
-        <p><a href="#">History</a></p> 
-        <p><a href="contactus.html">Contact Us</a></p>  
-      </div>  
+        
+        <p>Who lives in your house?</p>
+        <input type="checkbox" id="age0to2check" name="age0to2" value="age0to2" onclick="age0to2()">
+        <label for="age0to2">Ages 0 to 2 </label>
+        <select name="listType" id="age0to2list" class="form-control me-2"  style="display: none;">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <script>
+          function age0to2() {      
+            // Get the checkbox
+            var checkBox = document.getElementById("age0to2check");
+            // Get the output text
+            var text = document.getElementById("age0to2list");
+            // If the checkbox is checked, display the output text
+            if (checkBox.checked == true) {
+              text.style.display = "block";
+            } else {
+              text.style.display = "none";
+            }
+          }
+        </script>
+        <br>
+        <input type="checkbox" id="age3to12check" name="age3to12" value="age3to12" onclick="age3to12()">
+        <label for="age0to2">Ages 3 to 12 </label>
+        <select name="age3to12list" id="age3to12list" class="form-control me-2" style="display: none;">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <script>
+          function age3to12() {      
+            // Get the checkbox
+            var checkBox = document.getElementById("age3to12check");
+            // Get the output text
+            var text = document.getElementById("age3to12list");
+            // If the checkbox is checked, display the output text
+            if (checkBox.checked == true) {
+              text.style.display = "block";
+            } else {
+              text.style.display = "none";
+            }
+          }
+        </script>
+        <br>
+        <input type="checkbox" id="age13to18check" name="age13to18" value="age13to18" onclick="age13to18()">
+        <label for="age13to18">Ages 13 to 18 </label>
+        <select name="age13to18list" id="age13to18list" class="form-control me-2" style="display: none;">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <script>
+          function age13to18() {      
+            // Get the checkbox
+            var checkBox = document.getElementById("age13to18check");
+            // Get the output text
+            var text = document.getElementById("age13to18list");
+            // If the checkbox is checked, display the output text
+            if (checkBox.checked == true) {
+              text.style.display = "block";
+            } else {
+              text.style.display = "none";
+            }
+          }
+        </script>
+        <br>
+        <input type="checkbox" id="age19to35check" name="age19to35" value="age19to35" onclick="age19to35()">
+        <label for="age19to35">Ages 19 to 35 </label>
+        <select name="age13to18list" id="age19to35list" class="form-control me-2" style="display: none;">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <script>
+          function age19to35() {      
+            // Get the checkbox
+            var checkBox = document.getElementById("age19to35check");
+            // Get the output text
+            var text = document.getElementById("age19to35list");
+            // If the checkbox is checked, display the output text
+            if (checkBox.checked == true) {
+              text.style.display = "block";
+            } else {
+              text.style.display = "none";
+            }
+          }
+        </script>
+        <br>
+        <input type="checkbox" id="age36to64check" name="age36to64" value="age36to64" onclick="age36to64()">
+        <label for="age36to64">Ages 36 to 64 </label>
+        <select name="age36to64list" id="age36to64list" class="form-control me-2" style="display: none;">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <script>
+          function age36to64() {      
+            // Get the checkbox
+            var checkBox = document.getElementById("age36to64check");
+            // Get the output text
+            var text = document.getElementById("age36to64list");
+            // If the checkbox is checked, display the output text
+            if (checkBox.checked == true) {
+              text.style.display = "block";
+            } else {
+              text.style.display = "none";
+            }
+          }
+        </script>
+        <br>
+        <input type="checkbox" id="age65check" name="age65" value="age65" onclick="age65()">
+        <label for="age65">Ages 65+ </label>
+        <select name="age65list" id="age65list" class="form-control me-2" style="display: none;">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <script>
+          function age65() {      
+            // Get the checkbox
+            var checkBox = document.getElementById("age65check");
+            // Get the output text
+            var text = document.getElementById("age65list");
+            // If the checkbox is checked, display the output text
+            if (checkBox.checked == true) {
+              text.style.display = "block";
+            } else {
+              text.style.display = "none";
+            }
+          }
+        </script>
+        <br>
+       
+      </div>
       <div style="grid-column-start: 20;
       grid-column-end:100;">
         <h2>Account Balance</h2>
         <h1 style="font-size: 50px;">Ksh.10,000.</h1>
+        <div style="grid-column-start: 50;
+        grid-column-end:100; float: inline-end;">
+        <p><a href="#">History</a></p>
+       <p><a href="contactus.html">Contact Us</a></p>
+        </div>
       </div>
-    </div>>
+     
+    </div>
 
 </body>
+</html>

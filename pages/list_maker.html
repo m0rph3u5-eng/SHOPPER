@@ -20,6 +20,7 @@
   <script src="../js/bootstrap.bundle.min.js"></script>
 
   <script src="../js/sidebars.js"></script>
+  </body>
 </head>
 
 <body class="container">
@@ -104,90 +105,114 @@
 
     </div>
 
-  <div class="col-4 themed-grid-col" style="top: 0px; position: absolute; left: 300px; height: 100%;overflow: scroll;">
-    <div class="list-group" style="top:0px; left: 300px;">
-       
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <h2>Make a List</h2>
-            <form>
-              <label style="margin-top: 5px;">Title</label>
-              <input type="text" id="title" class="form-control me-2" placeholder="List Title" >
-              
-              <label style="margin-top: 5px;">Description</label>
-              <textarea rows = "6" cols = "40" class="form-control me-2" name = "description">
-              
-             </textarea>
-             <label style="margin-top: 5px;">Items</label>
-              <input type="text" id="txtVal"  class="form-control me-2" placeholder="Add List Item" style="margin-top: 5px; margin-bottom: 5px;">
-              <span class="btn btn-outline-success" style="float: left; width: fit-content" onclick="addLi()">Add</span>
-              <span class="btn btn-outline-success" style="float: right; width: fit-content" onclick="clearLi()">Clear List</span>
-              <span class="btn btn-outline-success" style="float: right; width: fit-content" onclick="saveLi()">Save List</span>
-            </form>
-
-            
-        </div>
-   
-    
-    <div class="col-4 themed-grid-col" style="top: 0px; position: fixed; left: 770px; height: 100%; overflow: scroll; ">
-      <div class="list-group" >
-        
-       
+    <div class="col-4 themed-grid-col"
+      style="top: 0px; position: absolute; left: 300px; height: 100%;overflow: scroll;">
+      <div class="list-group" style="top:0px; left: 300px;">
+        <form>
           <div class="d-flex gap-2 w-100 justify-content-between">
-            <div >
-              <h2 id="newHeader">New List</h2>
-              <ul id="ul">
-                <li id="list1"></li>
-        
-              </ul>
-            </div>
-           
-          </div>
-      
-        
-      </div>
-      </div>
-    
-  <script>
-    function addLi() {
-      const list2 = [];
-      const title1 = [];
-      var txtVal = document.getElementById('txtVal').value,
-      
-        listNode = document.getElementById('list1'),
-        liNode = document.createElement("li"),
-        txtNode = document.createTextNode(txtVal),
-        title = document.getElementById('title').value;
+            <div>
+              <h2>Make a List</h2>
 
+              <label for="list" style="margin-top: 5px;">Type of List</label>
 
-      liNode.appendChild(txtNode);
-      listNode.appendChild(liNode);
-      list2.push(txtVal);
-      console.log(list2);
-      document.getElementById('newHeader').innerHTML = title;
+              <select name="listType" id="listType" class="form-control me-2" onchange="changeFunc()">
+                <option value="week">Weekly List</option>
+                <option value="month">Monthly List</option>
+                <option value="occassion">Occassion</option>
+                <option value="recipe">Recipe</option>
+              </select>
+              <script>
+                function changeFunc() {
+                  var selectBox = document.getElementById("listType");
+                  var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+                  var x = document.getElementById("directions");
+                  //alert(selectedValue);
+                  if (selectedValue === "recipe") {
+                    console.log("recipe");
+                    x.style.display = "block";
+                  } else {
+                    console.log("no");
+                    x.style.display = "none";
+                  }
 
-    }
-    function clearLi() {
-
-      document.getElementById("list1").innerHTML = "";
-
-    }
-    function saveLi() {
-      
-     
-      
-console.log(list2);
-    }
-
-   
-                function header(){
-                  console.log("llll");
-                  document.getElementById('newHeader').innerHTML = "Bargain Hunter";
                 }
-            
-             
-  </script>
+              </script>
+              <label style="margin-top: 5px;">Title</label>
+              <input type="text" id="title" class="form-control me-2" placeholder="List Title">
 
+              <label style="margin-top: 5px;">Description</label>
+              <textarea rows="6" cols="40" class="form-control me-2" name="description">
+
+             </textarea>
+
+              <span class="btn btn-outline-success" style="float: right; width: fit-content" onclick="saveLi()">Save
+                List</span>
+
+              <script>
+
+                function saveLi() {
+                  console.log("Saved");
+                  alert("saved");
+                }
+              </script>
+
+            </div>
+
+
+            <div class="col-4 themed-grid-col"
+              style="top: 0px; position: fixed; left: 770px; height: 100%; overflow: scroll; ">
+              <div class="list-group">
+
+
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                  <div>
+                    <h2 id="newHeader" class="mb-0">New List</h2>
+                    <ul id="ul" class="mb-0 opacity-75">
+                      <li id="list1" class="mb-0 opacity-75" style="list-style: none;"></li>
+
+                    </ul>
+                    <input type="text" id="txtVal" class="form-control me-2" placeholder="Add List Item"
+                      style="margin-top: 5px; margin-bottom: 5px;">
+                    <span class="btn btn-outline-success" style="float: left; width: fit-content"
+                      onclick="addLi()">Add</span>
+                    <script>
+                      function addLi() {
+                        const list2 = [];
+                        const title1 = [];
+                        var txtVal = document.getElementById('txtVal').value,
+
+                          listNode = document.getElementById('list1'),
+                          liNode = document.createElement("li"),
+                          txtNode = document.createTextNode(txtVal),
+                          title = document.getElementById('title').value;
+
+
+                        liNode.appendChild(txtNode);
+                        listNode.appendChild(liNode);
+                        list2.push(txtVal);
+                        console.log(list2);
+                        document.getElementById('newHeader').innerHTML = title;
+                      }
+                    </script>
+                    <span class="btn btn-outline-success" style="float: right; width: fit-content"
+                      onclick="clearLi()">Clear List</span>
+                    <script>
+                      function clearLi() {
+                        document.getElementById("list1").innerHTML = "";
+                      }
+                    </script>
+                  </div>
+                 
+                </div>
+                <div id="directions" style="display: none;">
+                  <label style="margin-top: 5px;"><h2>Directions</h2>></label>
+                  <textarea rows="6" cols="40" class="form-control me-2" name="description">
+                </div>
+        </form>
+
+      </div>
+    </div>
+</div>
 </body>
 
 </html>
