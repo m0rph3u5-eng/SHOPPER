@@ -1,0 +1,42 @@
+.cont1 {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1.5fr;
+    grid-template-rows: 0.1fr 1.9fr;
+    gap: 3px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . ."
+      ". . . .";
+  }
+
+  .item0 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+  }
+
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  .item2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  .item3 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .item4 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }

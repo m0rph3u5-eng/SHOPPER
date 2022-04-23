@@ -1,228 +1,643 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta content="en-us" http-equiv="Content-Language" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <title>Monthly Shopping | SHOPPER</title>
-    <meta content="en-us" http-equiv="Content-Language" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <link href="../../css/navbar.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="../../css/sidebars.css" rel="stylesheet" type="text/css" media="screen" />
-  
-    <link href="../../css/list-groups.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
-    <!--     
+
+<head>
+  <meta content="en-us" http-equiv="Content-Language" />
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>Monthly Shopping | SHOPPER</title>
+  <meta content="en-us" http-equiv="Content-Language" />
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="../../css/navbar.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="../../css/sidebars.css" rel="stylesheet" type="text/css" media="screen" />
+
+  <link href="../../css/list-groups.css" rel="stylesheet" type="text/css" media="screen" />
+
+  <link href="../../css/grid.css" rel="stylesheet" type="text/css" media="screen" />
+  <!--     
                
             -->
-    <script src="../../js/jquery-3.6.0.js"></script>
-    <script src="../../js/bootstrap.bundle.min.js"></script>
-  
-    <script src="../../js/sidebars.js"></script>
-  </head>
-  
-  <body class="container">
-    <nav class=" row navbar fixed-top navbar-expand-lg navbar-light bg-light" style="padding-left: 135px;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../../index.html">SHOPPER</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="..\register.html">Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="..\login.html">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="..\login.html">Order</a>
-            </li>
-            <!--     <li class="nav-item">
+  <script src="../../js/jquery-3.6.0.js"></script>
+  <script src="../../js/bootstrap.bundle.min.js"></script>
+
+  <script src="../../js/sidebars.js"></script>
+  <script>
+    var order = ["Bargain Hunter"];
+    var cost = [];
+    var mail = [];
+    var user = ["Tracy"];
+    mail.push('mailto:tracy@example.com?subject=shoppinglist&body=bargain');
+  </script>
+</head>
+
+<body>
+  <div class="cont1">
+    <div class="item0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html">SHOPPER</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="..\register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="..\login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" onclick="orderf()">Order</a>
+              </li>
+              <script>
+                function orderf(){
+                  console.log(order);
+                  console.log(cost);
+                  console.log(mail);
+
+                  if (confirm("Do you want to place an order to " + user + " for " + order[0] +"?" )) {
+                    window.open(mail);
+                  } else {
+
+                  }
+                }
+              </script>
+              <!--     <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
               </li>-->
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" style="width: fit-content;" type="submit">Search</button>
-          </form>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" style="width: fit-content;" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
-  
-    <div class="row">
-      <div class="col-2" style="padding-top: 50px;">
+      </nav>
+    </div>
+
+    <div class="item1">
+      <div>
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
             <a href="../../index.html" class="nav-link link-dark" aria-current="page">
-  
+
               Weekly Shopping
             </a>
           </li>
           <li>
             <a href="#" class="nav-link active">
-  
+
               Monthly Shopping
             </a>
           </li>
           <li>
             <a href="occassion.html" class="nav-link link-dark">
-  
+
               Occassion
             </a>
           </li>
           <li>
             <a href="recipes.html" class="nav-link link-dark">
-  
+
               Recipes
             </a>
           </li>
           <hr>
           <li>
             <a href="../list_maker.html" class="nav-link link-dark">
-  
+
               Make a List
             </a>
           </li>
           <li>
             <a href="../deliverymaker.html" class="nav-link link-dark">
-  
+
               Make a Delivery
             </a>
           </li>
           <hr>
           <li>
             <a href="../profile.html" class="nav-link link-dark">
-  
+
               Profile
             </a>
           </li>
         </ul>
-  
+
       </div>
-  
+    </div>
 
-  <div class="col-4 themed-grid-col" style="top: 0px; position: absolute; left: 300px; height: 100%;overflow: scroll;">
-    <div class="list-group" style="top:0px; left: 300px;">
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" onclick="bargain()">
-        <script>
-          function bargain() {
-              document.getElementById('heading').innerHTML="Bargain Hunter";
+    <div class="item2">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+          onclick="bargain()">
+          <script>
+            function bargain() {
+              document.getElementById('heading').innerHTML = "Bargain Hunter";
               document.getElementById('handle').innerHTML = "@Tracy";
-              document.getElementById('item0').innerHTML="Batteries";
-              document.getElementById('item1').innerHTML="Cleaning supplies";
-              document.getElementById('item2').innerHTML="Laundry detergent";
-              document.getElementById('item3').innerHTML="Lightbulbs";
-              document.getElementById('item4').innerHTML="Office and school supplies";
-              document.getElementById('item5').innerHTML="Paper towels";
-              document.getElementById('item6').innerHTML="";
-              document.getElementById('item7').innerHTML="";
-              document.getElementById('item8').innerHTML="";
-              document.getElementById('item9').innerHTML="";
-              document.getElementById('price0').innerHTML="780";
-          }
-        </script>
-       
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <h6 class="mb-0">Bargain Hunter<p class="mb-0 opacity-75">@Tracy</p></h6>
-            <p class="mb-0 opacity-75">Products at a discounted price. Good deals.</p>
-          
-          </div>
-          <small class="opacity-50 text-nowrap">780</small>
-        </div>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" onclick="inspired()">
-        <script>
-          function inspired() {
-              document.getElementById('heading').innerHTML="Inspired";
-              document.getElementById('handle').innerHTML = "@Joan";
-              document.getElementById('item0').innerHTML="Bandages";
-              document.getElementById('item1').innerHTML="Hairstyling products";
-              document.getElementById('item2').innerHTML="Hand sanitizer";
-              document.getElementById('item3').innerHTML="Moisturizers";
-              document.getElementById('item4').innerHTML="Mouthwash";
-              document.getElementById('item5').innerHTML="Ointments";
-              document.getElementById('item6').innerHTML="Pain relievers";
-              document.getElementById('item7').innerHTML="";
-              document.getElementById('item8').innerHTML="";
-              document.getElementById('item9').innerHTML="";
-              document.getElementById('price0').innerHTML="970";
-          }
-        </script>
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <h6 class="mb-0">Inspired<p class="mb-0 opacity-75">@Joan</p></h6>
-            <p class="mb-0 opacity-75">Curated items for the household.</p>
-        
-          </div>
-          <small class="opacity-50 text-nowrap">970</small>
-        </div>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" onclick="latest()">
-        <script>
-          function latest() {
-              document.getElementById('heading').innerHTML="Latest Products";
-              document.getElementById('handle').innerHTML = "@Martin";
-              document.getElementById('item0').innerHTML="Razors";
-              document.getElementById('item1').innerHTML="Shampoo and conditioner";
-              document.getElementById('item2').innerHTML="Shaving cream";
-              document.getElementById('item3').innerHTML="Shower gel";
-              document.getElementById('item4').innerHTML="Soap";
-              document.getElementById('item5').innerHTML="Toothbrushes";
-              document.getElementById('item6').innerHTML="Toothpaste";
-              document.getElementById('item7').innerHTML="";
-              document.getElementById('item8').innerHTML="";
-              document.getElementById('item9').innerHTML="";
-              document.getElementById('price0').innerHTML="2200";
-          }
-        </script>
-        
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <h6 class="mb-0">Latest Products<p class="mb-0 opacity-75">@Martin</p></h6>
-            <p class="mb-0 opacity-75">The latest products in the market.</p>
-   
-          </div>
-          <small class="opacity-50 text-nowrap">2200</small>
-        </div>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" onclick="researched()">
-        <script>
-          function researched() {
-              document.getElementById('heading').innerHTML="Researched";
-              document.getElementById('handle').innerHTML = "@Job";
-              document.getElementById('item0').innerHTML="Bacon";
-              document.getElementById('item1').innerHTML="Baking goods";
-              document.getElementById('item2').innerHTML="Beverages";
-              document.getElementById('item3').innerHTML="Canned goods";
-              document.getElementById('item4').innerHTML="Dairy";
-              document.getElementById('item5').innerHTML="Meat";
-              document.getElementById('item6').innerHTML="Personal Care";
-              document.getElementById('item7').innerHTML="Produce, fruits, vegetables";
-              document.getElementById('item8').innerHTML="";
-              document.getElementById('item9').innerHTML="";
-              document.getElementById('price0').innerHTML="540";
-          }
-        </script>
-          
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <h6 class="mb-0">Researched<p class="mb-0 opacity-75">@Job</p></h6>
-            <p class="mb-0 opacity-75">Shopping list by the experts.</p>
+              document.getElementById('item0').innerHTML = "Batteries";
+              document.getElementById('item1').innerHTML = "Cleaning supplies";
+              document.getElementById('item2').innerHTML = "Laundry detergent";
+              document.getElementById('item3').innerHTML = "Lightbulbs";
+              document.getElementById('item4').innerHTML = "Office and school supplies";
+              document.getElementById('item5').innerHTML = "Paper towels";
+              document.getElementById('item6').innerHTML = "";
+              document.getElementById('item7').innerHTML = "";
+              document.getElementById('item8').innerHTML = "";
+              document.getElementById('item9').innerHTML = "";
+              document.getElementById('price0').innerHTML = "780";
 
+              user =[];
+              user.push("Tracy");
+              order=[];
+              cost=[];
+              mail =[];
+              order.push("Bargain :","Batteries","Cleaning supplies","Laundry detergent","Lightbulbs","Office and school supplies","Paper towels");
+              cost.push("780");
+             mail.push('mailto:tracy@example.com?subject=shoppinglist&body=bargain');
+            }
+          </script>
+
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Bargain Hunter<p class="mb-0 opacity-75">@Tracy</p>
+              </h6>
+              <p class="mb-0 opacity-75">Products at a discounted price. Good deals.</p>
+
+            </div>
+            <small class="opacity-50 text-nowrap">780</small>
           </div>
-          <small class="opacity-50 text-nowrap">540</small>
-        </div>
-      </a>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+          onclick="inspired()">
+          <script>
+            function inspired() {
+              document.getElementById('heading').innerHTML = "Inspired";
+              document.getElementById('handle').innerHTML = "@Joan";
+              document.getElementById('item0').innerHTML = "Bandages";
+              document.getElementById('item1').innerHTML = "Hairstyling products";
+              document.getElementById('item2').innerHTML = "Hand sanitizer";
+              document.getElementById('item3').innerHTML = "Moisturizers";
+              document.getElementById('item4').innerHTML = "Mouthwash";
+              document.getElementById('item5').innerHTML = "Ointments";
+              document.getElementById('item6').innerHTML = "Pain relievers";
+              document.getElementById('item7').innerHTML = "";
+              document.getElementById('item8').innerHTML = "";
+              document.getElementById('item9').innerHTML = "";
+              document.getElementById('price0').innerHTML = "970";
+
+              user =[];
+              user.push("Joan");
+              order=[];
+              cost=[];
+              mail =[];
+              order.push("Inspired :","Bandages","Hairstyling products","Hand sanitizer","Moisturizers","Mouthwash","Ointments","Pain relievers");
+              cost.push("970");
+             mail.push('mailto:joan@example.com?subject=shoppinglist&body=inspired');
+            }
+          </script>
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Inspired<p class="mb-0 opacity-75">@Joan</p>
+              </h6>
+              <p class="mb-0 opacity-75">Curated items for the household.</p>
+
+            </div>
+            <small class="opacity-50 text-nowrap">970</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+          onclick="sumaprot()">
+          <script>
+            function sumaprot() {
+              document.getElementById('heading').innerHTML = "BF SUMA Protection Combo";
+              document.getElementById('handle').innerHTML = "@Mike";
+              document.getElementById('item0').innerHTML = "Refined Yunzhi Essence";
+              document.getElementById('item1').innerHTML = "Probio 3";
+              document.getElementById('item2').innerHTML = "ZaminoCal Plus Capsules";
+              document.getElementById('item3').innerHTML = "";
+              document.getElementById('item4').innerHTML = "";
+              document.getElementById('item5').innerHTML = "";
+              document.getElementById('item6').innerHTML = "";
+              document.getElementById('item7').innerHTML = "";
+              document.getElementById('item8').innerHTML = "";
+              document.getElementById('item9').innerHTML = "";
+              document.getElementById('price0').innerHTML = "970";
+
+              user =[];
+              user.push("Mike");
+              order=[];
+              cost=[];
+              mail =[];
+              order.push("BF SUMA Protection Combo :","Refined Yunzhi Essence","Probio 3","ZaminoCal Plus Capsules");
+              cost.push("970");
+             mail.push('mailto:iammikeambani@gmail.com?subject=shoppinglist&body=bfsumaprotectioncombo');
+            }
+          </script>
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">BF SUMA Protection Combo<p class="mb-0 opacity-75">@Mike</p>
+              </h6>
+              <p class="mb-0 opacity-75">BF SUMA product offering protection from tissue breakage.</p>
+
+            </div>
+            <small class="opacity-50 text-nowrap">970</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+          onclick="diabetes()">
+          <script>
+            function diabetes() {
+              document.getElementById('heading').innerHTML = "Diabetes Wellness Pack";
+              document.getElementById('handle').innerHTML = "@Mike";
+              document.getElementById('item0').innerHTML = "Ginkgo Plus";
+              document.getElementById('item1').innerHTML = "Immublend";
+              document.getElementById('item2').innerHTML = "Garania Plus";
+              document.getElementById('item3').innerHTML = "Aloe Vera Gel";
+              document.getElementById('item4').innerHTML = "Active Pro 8";
+              document.getElementById('item5').innerHTML = "";
+              document.getElementById('item6').innerHTML = "";
+              document.getElementById('item7').innerHTML = "";
+              document.getElementById('item8').innerHTML = "";
+              document.getElementById('item9').innerHTML = "";
+              document.getElementById('price0').innerHTML = "970";
+
+              user =[];
+              user.push("Mike");
+              order=[];
+              cost=[];
+              mail =[];
+              order.push("Diabetes Wellness Pack :","Ginkgo Plus","Immublend","Garania Plus","Aloe Vera Gel","Active Pro 8");
+              cost.push("970");
+             mail.push('mailto:iammikeambani@gmail.com?subject=shoppinglist&body=diabeteswellnesspack');
+            }
+          </script>
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Diabetes Wellness Pack<p class="mb-0 opacity-75">@Mike</p>
+              </h6>
+              <p class="mb-0 opacity-75">A pack of natural supplements that help to lower the effects of diabetes and
+                also help in resucing blood sugar level.</p>
+
+            </div>
+            <small class="opacity-50 text-nowrap">970</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+          onclick="sumamen()">
+          <script>
+            function sumamen() {
+              document.getElementById('heading').innerHTML = "BF SUMA Men's Combo";
+              document.getElementById('handle').innerHTML = "@Mike";
+              document.getElementById('item0').innerHTML = "Pure 8  Broken Ganoderma Spores";
+              document.getElementById('item1').innerHTML = "X Power Coffee";
+              document.getElementById('item2').innerHTML = "Postal Relax";
+              document.getElementById('item3').innerHTML = "X Power Man Plus";
+              document.getElementById('item4').innerHTML = "";
+              document.getElementById('item5').innerHTML = "";
+              document.getElementById('item6').innerHTML = "";
+              document.getElementById('item7').innerHTML = "";
+              document.getElementById('item8').innerHTML = "";
+              document.getElementById('item9').innerHTML = "";
+              document.getElementById('price0').innerHTML = "970";
+
+              user =[];
+              user.push("Mike");
+              order=[];
+              cost=[];
+              mail =[];
+              order.push("BF SUMA Men's Combo :","Pure 8  Broken Ganoderma Spores","X Power Coffee","Postal Relax","X Power Man Plus");
+              cost.push("970");
+             mail.push('mailto:iammikeambani@gmail.com?subject=shoppinglist&body=bfsumamenscombo');
+            }
+          </script>
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">BF SUMA Men's Combo<p class="mb-0 opacity-75">@Mike</p>
+              </h6>
+              <p class="mb-0 opacity-75">All purpose supplementts for men.</p>
+
+            </div>
+            <small class="opacity-50 text-nowrap">970</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+          onclick="kidney()">
+          <script>
+            function kidney() {
+              document.getElementById('heading').innerHTML = "BF SUMA Combination for Kidney Disease";
+              document.getElementById('handle').innerHTML = "@Mike";
+              document.getElementById('item0').innerHTML = "Elements";
+              document.getElementById('item1').innerHTML = "4 in 1 Cordyceps";
+              document.getElementById('item2').innerHTML = "";
+              document.getElementById('item3').innerHTML = "";
+              document.getElementById('item4').innerHTML = "";
+              document.getElementById('item5').innerHTML = "";
+              document.getElementById('item6').innerHTML = "";
+              document.getElementById('item7').innerHTML = "";
+              document.getElementById('item8').innerHTML = "";
+              document.getElementById('item9').innerHTML = "";
+              document.getElementById('price0').innerHTML = "970";
+
+              user =[];
+              user.push("Mike");
+              order=[];
+              cost=[];
+              mail =[];
+              order.push("BF SUMA Combination for Kidney Disease :","Elements","4 in 1 Cordyceps");
+              cost.push("970");
+             mail.push('mailto:iammikeambani@gmail.com?subject=shoppinglist&body=bfsumakidneydisease');
+            }
+          </script>
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">BF SUMA Combination for Kidney Disease<p class="mb-0 opacity-75">@Mike</p>
+              </h6>
+              <p class="mb-0 opacity-75">Products to help alleviate the symptoms of kidney disease.</p>
+
+            </div>
+            <small class="opacity-50 text-nowrap">970</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+          onclick="sperm()">
+          <script>
+            function sperm() {
+              document.getElementById('heading').innerHTML = "BF SUMA Combination for Low Sperm Count";
+              document.getElementById('handle').innerHTML = "@Mike";
+              document.getElementById('item0').innerHTML = "X Powerman Plus Capsules";
+              document.getElementById('item1').innerHTML = "Prostat Relax Capsules";
+              document.getElementById('item2').innerHTML = "Zaminocal Plus Capsules";
+              document.getElementById('item3').innerHTML = "";
+              document.getElementById('item4').innerHTML = "";
+              document.getElementById('item5').innerHTML = "";
+              document.getElementById('item6').innerHTML = "";
+              document.getElementById('item7').innerHTML = "";
+              document.getElementById('item8').innerHTML = "";
+              document.getElementById('item9').innerHTML = "";
+              document.getElementById('price0').innerHTML = "970";
+
+              user =[];
+              user.push("Mike");
+              order=[];
+              cost=[];
+              mail =[];
+              order.push("BF SUMA Combination for Low Sperm Count :","X Powerman Plus Capsules","Prostat Relax Capsules","Zaminocal Plus Capsules");
+              cost.push("970");
+             mail.push('mailto:iammikeambani@gmail.com?subject=shoppinglist&body=bfsumalowspermcount');
+            }
+          </script>
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">BF SUMA Combination for Low Sperm Count<p class="mb-0 opacity-75">@Mike</p>
+              </h6>
+              <p class="mb-0 opacity-75">Products to help with low sperm count.</p>
+
+            </div>
+            <small class="opacity-50 text-nowrap">970</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+          onclick="weak()">
+          <script>
+            function weak() {
+              document.getElementById('heading').innerHTML = "BF SUMA Combination for Weak Erection";
+              document.getElementById('handle').innerHTML = "@Mike";
+              document.getElementById('item0').innerHTML = "X Powerman Plus Capsules";
+              document.getElementById('item1').innerHTML = "Micro2 Cycle Tablets";
+              document.getElementById('item2').innerHTML = "4 in 1 Ginseng Coffee";
+              document.getElementById('item3').innerHTML = "";
+              document.getElementById('item4').innerHTML = "";
+              document.getElementById('item5').innerHTML = "";
+              document.getElementById('item6').innerHTML = "";
+              document.getElementById('item7').innerHTML = "";
+              document.getElementById('item8').innerHTML = "";
+              document.getElementById('item9').innerHTML = "";
+              document.getElementById('price0').innerHTML = "970";
+
+              user =[];
+              user.push("Mike");
+              order=[];
+              cost=[];
+              mail =[];
+              order.push("BF SUMA Combination for Weak Erection :","X Powerman Plus Capsules","Micro2 Cycle Tablets","4 in 1 Ginseng Coffee");
+              cost.push("970");
+             mail.push('mailto:iammikeambani@gmail.com?subject=shoppinglist&body=bfsumaweakerection');
+            }
+          </script>
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">BF SUMA Combination for Weak Erection<p class="mb-0 opacity-75">@Mike</p>
+              </h6>
+              <p class="mb-0 opacity-75">Products to help with weak erection.</p>
+
+            </div>
+            <small class="opacity-50 text-nowrap">970</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+          onclick="blood()">
+          <script>
+            function blood() {
+              document.getElementById('heading').innerHTML = "BF SUMA Combination for High Blood Pressure";
+              document.getElementById('handle').innerHTML = "@Mike";
+              document.getElementById('item0').innerHTML = "Micro2 Cycle Tablets";
+              document.getElementById('item1').innerHTML = "Pressure Free Tea";
+              document.getElementById('item2').innerHTML = "Pure and Broken Ganoderma Spores";
+              document.getElementById('item3').innerHTML = "";
+              document.getElementById('item4').innerHTML = "";
+              document.getElementById('item5').innerHTML = "";
+              document.getElementById('item6').innerHTML = "";
+              document.getElementById('item7').innerHTML = "";
+              document.getElementById('item8').innerHTML = "";
+              document.getElementById('item9').innerHTML = "";
+              document.getElementById('price0').innerHTML = "970";
+
+              user =[];
+              user.push("Mike");
+              order=[];
+              cost=[];
+              mail =[];
+              order.push("BF SUMA Combination for High Blood Pressure :","Micro2 Cycle Tablets","Pressure Free Tea","Pure and Broken Ganoderma Spores");
+              cost.push("970");
+             mail.push('mailto:iammikeambani@gmail.com?subject=shoppinglist&body=bfsumahighbloodpressure');
+            }
+          </script>
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">BF SUMA Combination for High Blood Pressure<p class="mb-0 opacity-75">@Mike</p>
+              </h6>
+              <p class="mb-0 opacity-75">Products to help with high blood pressure.</p>
+
+            </div>
+            <small class="opacity-50 text-nowrap">970</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+          onclick="diab1()">
+          <script>
+            function diab1() {
+              document.getElementById('heading').innerHTML = "BF SUMA Combination for Diabetes";
+              document.getElementById('handle').innerHTML = "@Mike";
+              document.getElementById('item0').innerHTML = "Pure and Broken Ganoderma Spores";
+              document.getElementById('item1').innerHTML = "EzXlim Tablets";
+              document.getElementById('item2').innerHTML = "GymEase Tea";
+              document.getElementById('item3').innerHTML = "GlugoGone";
+              document.getElementById('item4').innerHTML = "";
+              document.getElementById('item5').innerHTML = "";
+              document.getElementById('item6').innerHTML = "";
+              document.getElementById('item7').innerHTML = "";
+              document.getElementById('item8').innerHTML = "";
+              document.getElementById('item9').innerHTML = "";
+              document.getElementById('price0').innerHTML = "970";
+
+              user =[];
+              user.push("Mike");
+              order=[];
+              cost=[];
+              mail =[];
+              order.push("BF SUMA Combination for Diabetes :","Pure and Broken Ganoderma Spores","EzXlim Tablets","GymEase Tea","GlugoGone");
+              cost.push("970");
+             mail.push('mailto:iammikeambani@gmail.com?subject=shoppinglist&body=bfsumadiabetes');
+            }
+          </script>
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">BF SUMA Combination for Diabetes<p class="mb-0 opacity-75">@Mike</p>
+              </h6>
+              <p class="mb-0 opacity-75">Products to help with diabetes related symptoms.</p>
+
+            </div>
+            <small class="opacity-50 text-nowrap">970</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+          onclick="arth()">
+          <script>
+            function arth() {
+              document.getElementById('heading').innerHTML = "BF SUMA Combination for Arthritis";
+              document.getElementById('handle').innerHTML = "@Mike";
+              document.getElementById('item0').innerHTML = "ArthroXtra Tablets";
+              document.getElementById('item1').innerHTML = "Gluzojoint Capsules";
+              document.getElementById('item2').innerHTML = "Zaminocal Plus Capsules";
+              document.getElementById('item3').innerHTML = "";
+              document.getElementById('item4').innerHTML = "";
+              document.getElementById('item5').innerHTML = "";
+              document.getElementById('item6').innerHTML = "";
+              document.getElementById('item7').innerHTML = "";
+              document.getElementById('item8').innerHTML = "";
+              document.getElementById('item9').innerHTML = "";
+              document.getElementById('price0').innerHTML = "970";
+
+              user =[];
+              user.push("Mike");
+              order=[];
+              cost=[];
+              mail =[];
+              order.push("BF SUMA Combination for Arthritis :","ArthroXtra Tablets","Gluzojoint Capsules","Zaminocal Plus Capsules");
+              cost.push("970");
+             mail.push('mailto:iammikeambani@gmail.com?subject=shoppinglist&body=bfsumaarthritis');
+            }
+          </script>
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">BF SUMA Combination for Arthritis<p class="mb-0 opacity-75">@Mike</p>
+              </h6>
+              <p class="mb-0 opacity-75">Products to help with arthritis.</p>
+
+            </div>
+            <small class="opacity-50 text-nowrap">970</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+          onclick="latest()">
+          <script>
+            function latest() {
+              document.getElementById('heading').innerHTML = "Latest Products";
+              document.getElementById('handle').innerHTML = "@Martin";
+              document.getElementById('item0').innerHTML = "Razors";
+              document.getElementById('item1').innerHTML = "Shampoo and conditioner";
+              document.getElementById('item2').innerHTML = "Shaving cream";
+              document.getElementById('item3').innerHTML = "Shower gel";
+              document.getElementById('item4').innerHTML = "Soap";
+              document.getElementById('item5').innerHTML = "Toothbrushes";
+              document.getElementById('item6').innerHTML = "Toothpaste";
+              document.getElementById('item7').innerHTML = "";
+              document.getElementById('item8').innerHTML = "";
+              document.getElementById('item9').innerHTML = "";
+              document.getElementById('price0').innerHTML = "2200";
+
+              user =[];
+              user.push("Martin");
+              order=[];
+              cost=[];
+              mail =[];
+              order.push("Latest Products :","Razors","Shampoo and conditioner","Shaving cream","Shower gel","Soap","Toothbrushes","Toothpaste");
+              cost.push("2200");
+             mail.push('mailto:martin@example.com?subject=shoppinglist&body=latestprod');
+            }
+          </script>
+
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Latest Products<p class="mb-0 opacity-75">@Martin</p>
+              </h6>
+              <p class="mb-0 opacity-75">The latest products in the market.</p>
+
+            </div>
+            <small class="opacity-50 text-nowrap">2200</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+          onclick="researched()">
+          <script>
+            function researched() {
+              document.getElementById('heading').innerHTML = "Researched";
+              document.getElementById('handle').innerHTML = "@Job";
+              document.getElementById('item0').innerHTML = "Bacon";
+              document.getElementById('item1').innerHTML = "Baking goods";
+              document.getElementById('item2').innerHTML = "Beverages";
+              document.getElementById('item3').innerHTML = "Canned goods";
+              document.getElementById('item4').innerHTML = "Dairy";
+              document.getElementById('item5').innerHTML = "Meat";
+              document.getElementById('item6').innerHTML = "Personal Care";
+              document.getElementById('item7').innerHTML = "Produce, fruits, vegetables";
+              document.getElementById('item8').innerHTML = "";
+              document.getElementById('item9').innerHTML = "";
+              document.getElementById('price0').innerHTML = "540";
+
+              user =[];
+              user.push("Job");
+              order=[];
+              cost=[];
+              mail =[];
+              order.push("Researched :","Bacon","Baking goods","Beverages","Canned goods","Dairy","Meat","Personal Care","Produce, fruits, vegetables");
+              cost.push("540");
+             mail.push('mailto:martin@example.com?subject=shoppinglist&body=researched');
+            }
+          </script>
+
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Researched<p class="mb-0 opacity-75">@Job</p>
+              </h6>
+              <p class="mb-0 opacity-75">Shopping list by the experts.</p>
+
+            </div>
+            <small class="opacity-50 text-nowrap">540</small>
+          </div>
+        </a>
+      </div>
     </div>
-    </div>
-    <div class="col-4 themed-grid-col" style="top: 0px; position: absolute; left: 770px; height: 100%; overflow: scroll;">
-      <div class="list-group" style="top:0px; left: 600px;">
-        
+
+    <div class="item3">
+      <div class="list-group">
+
         <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-         
+
           <div class="d-flex gap-2 w-100 justify-content-between">
             <div id="main_list" style="height: 100%;">
               <h6 id="heading" class="mb-0">Bargain Hunter</h6>
@@ -237,15 +652,18 @@
               <p id="item7" class="mb-0 opacity-75"></p>
               <p id="item8" class="mb-0 opacity-75"></p>
               <p id="item9" class="mb-0 opacity-75"></p>
-  
-  
+
+
             </div>
             <small id="price0" class="opacity-50 text-nowrap">780</small>
           </div>
         </a>
-        
+
       </div>
-      </div>
-    
-  </body>
+
+    </div>
+
+  </div>
+</body>
+
 </html>

@@ -11,6 +11,7 @@
 
   <link href="../css/list-groups.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="../css/grid.css" rel="stylesheet" type="text/css" media="screen" />
   <!--     
              
           -->
@@ -20,102 +21,100 @@
   <script src="../js/sidebars.js"></script>
 </head>
 
-<body class="container">
-  <nav class=" row navbar fixed-top navbar-expand-lg navbar-light bg-light" style="padding-left: 135px;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">SHOPPER</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="register.html">Register</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Order</a>
-          </li>
-          <!--     <li class="nav-item">
+<body>
+  <div class="cont1">
+    <div class="item0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">SHOPPER</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Order</a>
+              </li>
+              <!--     <li class="nav-item">
               <a class="nav-link disabled">Disabled</a>
             </li>-->
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="item1">
+      <div>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link link-dark" aria-current="page">
+
+              Weekly Shopping
+            </a>
+          </li>
+          <li>
+            <a href="../pages/lists/monthly_shopping.html" class="nav-link link-dark">
+
+              Monthly Shopping
+            </a>
+          </li>
+          <li>
+            <a href="../lists/occassion.html" class="nav-link link-dark">
+
+              Occassion
+            </a>
+          </li>
+          <li>
+            <a href="../pages/lists/recipes.html" class="nav-link link-dark">
+
+              Recipes
+            </a>
+          </li>
+          <hr>
+          <li>
+            <a href="list_maker.html" class="nav-link link-dark">
+
+              Make a List
+            </a>
+          </li>
+          <li>
+            <a href="deliverymaker.html" class="nav-link link-dark">
+
+              Make a Delivery
+            </a>
+          </li>
+          <hr>
+          <li>
+            <a href="#" class="nav-link active">
+
+              Profile
+            </a>
+          </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" style="width: fit-content;" type="submit">Search</button>
-        </form>
+
       </div>
     </div>
-  </nav>
 
-  <div class="row">
-    <div class="col-2" style="padding-top: 50px;">
-      <ul class="nav nav-pills flex-column mb-auto">
-        <li class="nav-item">
-          <a href="../index.html" class="nav-link link-dark" aria-current="page">
+    <div class="item2">
 
-            Weekly Shopping
-          </a>
-        </li>
-        <li>
-          <a href="../pages/lists/monthly_shopping.html" class="nav-link link-dark">
-
-            Monthly Shopping
-          </a>
-        </li>
-        <li>
-          <a href="../lists/occassion.html" class="nav-link link-dark">
-
-            Occassion
-          </a>
-        </li>
-        <li>
-          <a href="../pages/lists/recipes.html" class="nav-link link-dark">
-
-            Recipes
-          </a>
-        </li>
-        <hr>
-        <li>
-          <a href="list_maker.html" class="nav-link link-dark">
-
-            Make a List
-          </a>
-        </li>
-        <li>
-          <a href="deliverymaker.html" class="nav-link link-dark">
-
-            Make a Delivery
-          </a>
-        </li>
-        <hr>
-        <li>
-          <a href="#" class="nav-link active">
-
-            Profile
-          </a>
-        </li>
-      </ul>
-
-    </div>
-
-
-    <div id="content" style="display: grid; position:  fixed; grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: auto; left: 300px; padding-top: 50px; overflow: scroll; height:100% ;">
-
-      <div style="grid-column-start: 1;
-        grid-column-end: 5; overflow: scroll; height: 100%;">
+      <div>
         <h2>Username</h2>
         <p>user@host.com</p>
         <p>Location</p>
-        
+
         <p>Who lives in your house?</p>
         <input type="checkbox" id="age0to2check" name="age0to2" value="age0to2" onclick="age0to2()">
         <label for="age0to2">Ages 0 to 2 </label>
-        <select name="listType" id="age0to2list" class="form-control me-2"  style="display: none;">
+        <select name="listType" id="age0to2list" class="form-control me-2" style="display: none;">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -123,7 +122,7 @@
           <option value="5">5</option>
         </select>
         <script>
-          function age0to2() {      
+          function age0to2() {
             // Get the checkbox
             var checkBox = document.getElementById("age0to2check");
             // Get the output text
@@ -147,7 +146,7 @@
           <option value="5">5</option>
         </select>
         <script>
-          function age3to12() {      
+          function age3to12() {
             // Get the checkbox
             var checkBox = document.getElementById("age3to12check");
             // Get the output text
@@ -171,7 +170,7 @@
           <option value="5">5</option>
         </select>
         <script>
-          function age13to18() {      
+          function age13to18() {
             // Get the checkbox
             var checkBox = document.getElementById("age13to18check");
             // Get the output text
@@ -195,7 +194,7 @@
           <option value="5">5</option>
         </select>
         <script>
-          function age19to35() {      
+          function age19to35() {
             // Get the checkbox
             var checkBox = document.getElementById("age19to35check");
             // Get the output text
@@ -219,7 +218,7 @@
           <option value="5">5</option>
         </select>
         <script>
-          function age36to64() {      
+          function age36to64() {
             // Get the checkbox
             var checkBox = document.getElementById("age36to64check");
             // Get the output text
@@ -243,7 +242,7 @@
           <option value="5">5</option>
         </select>
         <script>
-          function age65() {      
+          function age65() {
             // Get the checkbox
             var checkBox = document.getElementById("age65check");
             // Get the output text
@@ -257,20 +256,21 @@
           }
         </script>
         <br>
-       
       </div>
-      <div style="grid-column-start: 20;
-      grid-column-end:100;">
-        <h2>Account Balance</h2>
-        <h1 style="font-size: 50px;">Ksh.10,000.</h1>
-        <div style="grid-column-start: 50;
-        grid-column-end:100; float: inline-end;">
-        <p><a href="#">History</a></p>
-       <p><a href="contactus.html">Contact Us</a></p>
-        </div>
-      </div>
-     
     </div>
-
+    <div class="item3">
+      <h2>Account Balance</h2>
+      <h1 style="font-size: 50px;">Ksh.10,000.</h1>
+    
+    </div>
+<div class="item4">
+  <div>
+    <p><a href="#">History</a></p>
+    <p><a href="contactus.html">Contact Us</a></p>
+  </div>
+</div>
+  </div>
+  </div>
 </body>
+
 </html>

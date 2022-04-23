@@ -180,6 +180,7 @@ span.psw a{
   
     <link href="../css/list-groups.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../css/grid.css" rel="stylesheet" type="text/css" media="screen" />
     <!--     
                
             -->
@@ -189,8 +190,10 @@ span.psw a{
     <script src="../js/sidebars.js"></script>
   </head>
   
-  <body class="container">
-    <nav class=" row navbar fixed-top navbar-expand-lg navbar-light bg-light" style="padding-left: 135px;">
+  <body>
+    <div class="cont1">
+      <div class="item0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">SHOPPER</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -216,9 +219,10 @@ span.psw a{
         </div>
       </div>
     </nav>
-  
-    <div class="row">
-      <div class="col-2" style="padding-top: 30px;">
+  </div>
+
+    <div class="item1">
+      <div>
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
             <a href="../index.html" class="nav-link link-dark" aria-current="page">
@@ -267,8 +271,9 @@ span.psw a{
         </ul>
   
       </div>
-  
-    <div id="content" style="position: absolute; left: 300px;">
+  </div>
+
+    <div class="item2">
     <div id="form">
       <form action="../action_page.php" method="post">
       
@@ -319,5 +324,6 @@ span.psw a{
       </form>
     </div>
     </div>
+  </div>
   </body>
 </html>

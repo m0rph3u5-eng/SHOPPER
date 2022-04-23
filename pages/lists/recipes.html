@@ -13,6 +13,7 @@
 
   <link href="../../css/list-groups.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="../../css/grid.css" rel="stylesheet" type="text/css" media="screen" />
   <!--     
                
             -->
@@ -22,91 +23,94 @@
   <script src="../../js/sidebars.js"></script>
 </head>
 
-<body class="container">
-  <nav class=" row navbar fixed-top navbar-expand-lg navbar-light bg-light" style="padding-left: 135px;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../../index.html">SHOPPER</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="..\register.html">Register</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="..\login.html">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="..\login.html">Order</a>
-          </li>
-          <!--     <li class="nav-item">
+<body>
+  <div class="cont1">
+    <div class="item0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html">SHOPPER</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="..\register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="..\login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..\login.html">Order</a>
+              </li>
+              <!--     <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
               </li>-->
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" style="width: fit-content;" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="item1">
+      <div>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="../../index.html" class="nav-link link-dark" aria-current="page">
+
+              Weekly Shopping
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+
+              Monthly Shopping
+            </a>
+          </li>
+          <li>
+            <a href="occassion.html" class="nav-link link-dark">
+
+              Occassion
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link active">
+
+              Recipes
+            </a>
+          </li>
+          <hr>
+          <li>
+            <a href="../list_maker.html" class="nav-link link-dark">
+
+              Make a List
+            </a>
+          </li>
+          <li>
+            <a href="../deliverymaker.html" class="nav-link link-dark">
+
+              Make a Delivery
+            </a>
+          </li>
+          <hr>
+          <li>
+            <a href="../profile.html" class="nav-link link-dark">
+
+              Profile
+            </a>
+          </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" style="width: fit-content;" type="submit">Search</button>
-        </form>
+
       </div>
     </div>
-  </nav>
 
-  <div class="row">
-    <div class="col-2" style="padding-top: 50px;">
-      <ul class="nav nav-pills flex-column mb-auto">
-        <li class="nav-item">
-          <a href="../../index.html" class="nav-link link-dark" aria-current="page">
-
-            Weekly Shopping
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link link-dark">
-
-            Monthly Shopping
-          </a>
-        </li>
-        <li>
-          <a href="occassion.html" class="nav-link link-dark">
-
-            Occassion
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link active">
-
-            Recipes
-          </a>
-        </li>
-        <hr>
-        <li>
-          <a href="../list_maker.html" class="nav-link link-dark">
-
-            Make a List
-          </a>
-        </li>
-        <li>
-          <a href="../deliverymaker.html" class="nav-link link-dark">
-
-            Make a Delivery
-          </a>
-        </li>
-        <hr>
-        <li>
-          <a href="../profile.html" class="nav-link link-dark">
-
-            Profile
-          </a>
-        </li>
-      </ul>
-
-    </div>
-
-    <div class="col-4 themed-grid-col"
-      style="top: 0px; position: absolute; left: 300px; height: 100%;overflow: scroll;">
-      <div class="list-group" style="top:0px; left: 300px;">
+    <div class="item2">
+      <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
           onclick="chocolate()">
           <script>
@@ -462,9 +466,9 @@
 
       </div>
     </div>
-    <div class="col-4 themed-grid-col"
-      style="top: 0px; position: absolute; left: 770px; height: 100%; overflow: scroll;">
-      <div class="list-group" style="top:0px; left: 600px; height: 50%;">
+
+    <div class="item3">
+      <div class="list-group">
 
         <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
 
@@ -488,7 +492,9 @@
         </a>
 
       </div>
-      <div class="list-group" style="top:0px; left: 600px; height: 50%;">
+      </div>
+      <div class="item4">
+      <div class="list-group">
 
         <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
 
@@ -531,10 +537,10 @@
             <small id="price0" class="opacity-50 text-nowrap"></small>
           </div>
         </a>
-
+</div>
       </div>
     </div>
-
+  </div>
 
 
 

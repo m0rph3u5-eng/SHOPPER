@@ -13,6 +13,7 @@
 
   <link href="../css/list-groups.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="../css/grid.css" rel="stylesheet" type="text/css" media="screen" />
   <!--     
              
           -->
@@ -23,196 +24,202 @@
   </body>
 </head>
 
-<body class="container">
-  <nav class=" row navbar fixed-top navbar-expand-lg navbar-light bg-light" style="padding-left: 135px;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">SHOPPER</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="register.html">Register</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Order</a>
-          </li>
-          <!--     <li class="nav-item">
+<body>
+  <div class="cont1">
+    <div class="item0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">SHOPPER</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Order</a>
+              </li>
+              <!--     <li class="nav-item">
               <a class="nav-link disabled">Disabled</a>
             </li>-->
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="item1">
+      <div>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link link-dark" aria-current="page">
+
+              Weekly Shopping
+            </a>
+          </li>
+          <li>
+            <a href="../pages/lists/monthly_shopping.html" class="nav-link link-dark">
+
+              Monthly Shopping
+            </a>
+          </li>
+          <li>
+            <a href="../pages/lists/occassion.html" class="nav-link link-dark">
+
+              Occassion
+            </a>
+          </li>
+          <li>
+            <a href="../pages/lists/recipes.html" class="nav-link link-dark">
+
+              Recipes
+            </a>
+          </li>
+          <hr>
+          <li>
+            <a href="#" class="nav-link active">
+
+              Make a List
+            </a>
+          </li>
+          <li>
+            <a href="deliverymaker.html" class="nav-link link-dark">
+
+              Make a Delivery
+            </a>
+          </li>
+          <hr>
+          <li>
+            <a href="profile.html" class="nav-link link-dark">
+
+              Profile
+            </a>
+          </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" style="width: fit-content;" type="submit">Search</button>
-        </form>
+
       </div>
     </div>
-  </nav>
 
-  <div class="row">
-    <div class="col-2" style="padding-top: 50px;">
-      <ul class="nav nav-pills flex-column mb-auto">
-        <li class="nav-item">
-          <a href="../index.html" class="nav-link link-dark" aria-current="page">
+    <div class="item2">
+      <div class="list-group">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h2>Make a List</h2>
 
-            Weekly Shopping
-          </a>
-        </li>
-        <li>
-          <a href="../pages/lists/monthly_shopping.html" class="nav-link link-dark">
+            <label for="list" style="margin-top: 5px;">Type of List</label>
 
-            Monthly Shopping
-          </a>
-        </li>
-        <li>
-          <a href="../pages/lists/occassion.html" class="nav-link link-dark">
-
-            Occassion
-          </a>
-        </li>
-        <li>
-          <a href="../pages/lists/recipes.html" class="nav-link link-dark">
-
-            Recipes
-          </a>
-        </li>
-        <hr>
-        <li>
-          <a href="#" class="nav-link active">
-
-            Make a List
-          </a>
-        </li>
-        <li>
-          <a href="deliverymaker.html" class="nav-link link-dark">
-
-            Make a Delivery
-          </a>
-        </li>
-        <hr>
-        <li>
-          <a href="profile.html" class="nav-link link-dark">
-
-            Profile
-          </a>
-        </li>
-      </ul>
-
-    </div>
-
-    <div class="col-4 themed-grid-col"
-      style="top: 0px; position: absolute; left: 300px; height: 100%;overflow: scroll;">
-      <div class="list-group" style="top:0px; left: 300px;">
-        <form>
-          <div class="d-flex gap-2 w-100 justify-content-between">
-            <div>
-              <h2>Make a List</h2>
-
-              <label for="list" style="margin-top: 5px;">Type of List</label>
-
-              <select name="listType" id="listType" class="form-control me-2" onchange="changeFunc()">
-                <option value="week">Weekly List</option>
-                <option value="month">Monthly List</option>
-                <option value="occassion">Occassion</option>
-                <option value="recipe">Recipe</option>
-              </select>
-              <script>
-                function changeFunc() {
-                  var selectBox = document.getElementById("listType");
-                  var selectedValue = selectBox.options[selectBox.selectedIndex].value;
-                  var x = document.getElementById("directions");
-                  //alert(selectedValue);
-                  if (selectedValue === "recipe") {
-                    console.log("recipe");
-                    x.style.display = "block";
-                  } else {
-                    console.log("no");
-                    x.style.display = "none";
-                  }
-
+            <select name="listType" id="listType" class="form-control me-2" onchange="changeFunc()">
+              <option value="week">Weekly List</option>
+              <option value="month">Monthly List</option>
+              <option value="occassion">Occassion</option>
+              <option value="recipe">Recipe</option>
+            </select>
+            <script>
+              function changeFunc() {
+                var selectBox = document.getElementById("listType");
+                var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+                var x = document.getElementById("directions");
+                //alert(selectedValue);
+                if (selectedValue === "recipe") {
+                  console.log("recipe");
+                  x.style.display = "block";
+                } else {
+                  console.log("no");
+                  x.style.display = "none";
                 }
-              </script>
-              <label style="margin-top: 5px;">Title</label>
-              <input type="text" id="title" class="form-control me-2" placeholder="List Title">
 
-              <label style="margin-top: 5px;">Description</label>
-              <textarea rows="6" cols="40" class="form-control me-2" name="description">
+              }
+            </script>
+            <label style="margin-top: 5px;">Title</label>
+            <input type="text" id="title" class="form-control me-2" placeholder="List Title">
+
+            <label style="margin-top: 5px;">Description</label>
+            <textarea rows="6" cols="40" class="form-control me-2" name="description">
 
              </textarea>
 
-              <span class="btn btn-outline-success" style="float: right; width: fit-content" onclick="saveLi()">Save
-                List</span>
+            <span class="btn btn-outline-success" style="float: right; width: fit-content" onclick="saveLi()">Save
+              List</span>
 
-              <script>
+            <script>
 
-                function saveLi() {
-                  console.log("Saved");
-                  alert("saved");
-                }
-              </script>
+              function saveLi() {
+                console.log("Saved");
+                alert("saved");
+              }
+            </script>
 
-            </div>
-
-
-            <div class="col-4 themed-grid-col"
-              style="top: 0px; position: fixed; left: 770px; height: 100%; overflow: scroll; ">
-              <div class="list-group">
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-                <div class="d-flex gap-2 w-100 justify-content-between">
-                  <div>
-                    <h2 id="newHeader" class="mb-0">New List</h2>
-                    <ul id="ul" class="mb-0 opacity-75">
-                      <li id="list1" class="mb-0 opacity-75" style="list-style: none;"></li>
-
-                    </ul>
-                    <input type="text" id="txtVal" class="form-control me-2" placeholder="Add List Item"
-                      style="margin-top: 5px; margin-bottom: 5px;">
-                    <span class="btn btn-outline-success" style="float: left; width: fit-content"
-                      onclick="addLi()">Add</span>
-                    <script>
-                      function addLi() {
-                        const list2 = [];
-                        const title1 = [];
-                        var txtVal = document.getElementById('txtVal').value,
-
-                          listNode = document.getElementById('list1'),
-                          liNode = document.createElement("li"),
-                          txtNode = document.createTextNode(txtVal),
-                          title = document.getElementById('title').value;
+    <div class="item3">
+      <div class="list-group">
 
 
-                        liNode.appendChild(txtNode);
-                        listNode.appendChild(liNode);
-                        list2.push(txtVal);
-                        console.log(list2);
-                        document.getElementById('newHeader').innerHTML = title;
-                      }
-                    </script>
-                    <span class="btn btn-outline-success" style="float: right; width: fit-content"
-                      onclick="clearLi()">Clear List</span>
-                    <script>
-                      function clearLi() {
-                        document.getElementById("list1").innerHTML = "";
-                      }
-                    </script>
-                  </div>
-                 
-                </div>
-                <div id="directions" style="display: none;">
-                  <label style="margin-top: 5px;"><h2>Directions</h2>></label>
-                  <textarea rows="6" cols="40" class="form-control me-2" name="description">
-                </div>
-        </form>
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h2 id="newHeader" class="mb-0">New List</h2>
+            <ul id="ul" class="mb-0 opacity-75">
+              <li id="list1" class="mb-0 opacity-75" style="list-style: none;"></li>
+
+            </ul>
+            <input type="text" id="txtVal" class="form-control me-2" placeholder="Add List Item"
+              style="margin-top: 5px; margin-bottom: 5px;">
+            <span class="btn btn-outline-success" style="float: left; width: fit-content" onclick="addLi()">Add</span>
+            <script>
+              function addLi() {
+                const list2 = [];
+                const title1 = [];
+                var txtVal = document.getElementById('txtVal').value,
+
+                  listNode = document.getElementById('list1'),
+                  liNode = document.createElement("li"),
+                  txtNode = document.createTextNode(txtVal),
+                  title = document.getElementById('title').value;
+
+
+                liNode.appendChild(txtNode);
+                listNode.appendChild(liNode);
+                list2.push(txtVal);
+                console.log(list2);
+                document.getElementById('newHeader').innerHTML = title;
+              }
+            </script>
+            <span class="btn btn-outline-success" style="float: right; width: fit-content" onclick="clearLi()">Clear
+              List</span>
+            <script>
+              function clearLi() {
+                document.getElementById("list1").innerHTML = "";
+              }
+            </script>
+          </div>
+
+        </div>
+
+
 
       </div>
     </div>
-</div>
+    <div class="item4">
+      <div id="directions" style="display: none;">
+        <label style="margin-top: 5px;">
+          <h2>Directions</h2>>
+        </label>
+        <textarea rows="15" cols="40" class="form-control me-2" name="directions">
+        </div>
+    </div>
+    </div>
+
 </body>
 
 </html>
