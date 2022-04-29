@@ -25,8 +25,32 @@
     var mail = [];
     var user = ["Nancy"];
     mail.push('mailto:nancy@example.com?subject=shoppinglist&body=bargain');
-  </script>
 
+    
+  </script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyB6EPTzr-Ep194qLdz4xplpKvrT6d_qiuc",
+    authDomain: "shopper-5563c.firebaseapp.com",
+    projectId: "shopper-5563c",
+    storageBucket: "shopper-5563c.appspot.com",
+    messagingSenderId: "385268810013",
+    appId: "1:385268810013:web:bae44ea97ba00966abe1f4",
+    measurementId: "G-6F0DLRFD9T"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </head>
 
 <body>
@@ -70,7 +94,7 @@
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" style="width: fit-content;" type="submit">Search</button>
+              <button class="btn btn-outline-dark btn" style="width: fit-content;" type="submit">Search</button>
             </form>
           </div>
         </div>
@@ -149,12 +173,35 @@
               document.getElementById('item9').innerHTML = "";
               document.getElementById('price0').innerHTML = "980";
 
+              document.getElementById('par0').innerHTML = "<b>@Mark</b> : Bought some instant coffee for a quid from One Below and I’m shook that it’s not the worst thing I’ve ever tasted in my life, it actually tastes okay wow bargain hunter";
+              document.getElementById('tim0').innerHTML = "1h";             
+              document.getElementById('par1').innerHTML = "<b>@Tommy</b> : Some of you have 10 Free cards from the $.50 and Dollar Lots. For all you bargain hunters out there, that's how you do it! Not trying to break me down to a dime for 2 of them!";
+              document.getElementById('tim1').innerHTML = "3h";
+              document.getElementById('par2').innerHTML = "<b>@Janet</b> : the most tiring person to shop with? they picked jisung bc he takes a long time to choose. mc then asked if mark takes a while too";
+              document.getElementById('tim2').innerHTML = "6h";
+              document.getElementById('par3').innerHTML = "<b>@June</b> : Is it too much to find a man that is a bargain hunter but appreciates quality and won’t skimp on dinners out or argue I spend too much on personal appearance? Yes someone exactly like myself WHAT";
+              document.getElementById('tim3').innerHTML = "1d"; 
+              document.getElementById('par4').innerHTML = "<b>@Oliver</b> : Can’t believe I’ve managed to secure flights to Varadero for just over £200 😅😅 I am a certified bargain hunter";
+              document.getElementById('tim4').innerHTML = "1d 3h";
+              document.getElementById('par5').innerHTML = "<b>@Margaret</b> : With the weather getting better it’s time to get the garden sorted ☀️🍺 I love the one with the fire pit and they are all MASSIVELY REDUCED! Check out these great deals here ";
+              document.getElementById('tim5').innerHTML = "1d 7h";
+              document.getElementById('par6').innerHTML = "<b>@Abigail</b> : Solution: my wife should be in charge of buying. Absolute deal hunter that woman, like a bargain bloodhound.";
+              document.getElementById('tim6').innerHTML = "2d"; 
+              document.getElementById('par7').innerHTML = "";
+              document.getElementById('tim7').innerHTML = "";
+              document.getElementById('par8').innerHTML = "";
+              document.getElementById('tim8').innerHTML = "";
+              document.getElementById('par9').innerHTML = "";
+              document.getElementById('tim9').innerHTML = "";
+              document.getElementById('par10').innerHTML = "";
+              document.getElementById('tim10').innerHTML = "";
+
               user =[];
               user.push("Nancy");
               order = [];
               cost = [];
               mail = [];
-              order.push("Bargain :", "Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
+              order.push("Bargain", "Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
               cost.push("980");
               mail.push('mailto:nancy@example.com?subject=shoppinglist&body=bargain');
             }
@@ -188,12 +235,35 @@
               document.getElementById('item9').innerHTML = "";
               document.getElementById('price0').innerHTML = "780";
 
+              document.getElementById('par0').innerHTML = "<b>@Andrew</b> : found probably the greatest cryptic shopping list of all time (either that or it’s a piece John Cooper-Clark inspired street poetry) ";
+              document.getElementById('tim0').innerHTML = "3h";             
+              document.getElementById('par1').innerHTML = "<b>@Jones</b> : What Bowie inspired clothing items are at the top of your shopping list?";
+              document.getElementById('tim1').innerHTML = "4h";
+              document.getElementById('par2').innerHTML = "<b>@Debbie</b> : My 8yo *hates* getting up in the morning & *really hates* writing with the burning passion of a 1,000 suns; and yet today he got up at 5am to write me this shopping list from @DrLucyRogers @dkbooks “Inventor Lab” Book #Inspired #STEM";
+              document.getElementById('tim2').innerHTML = "6h";
+              document.getElementById('par3').innerHTML = "<b>@Nicola</b> : Feeling really inspired for today's shopping list.";
+              document.getElementById('tim3').innerHTML = "8h"; 
+              document.getElementById('par4').innerHTML = "<b>@Stephanie</b> : Shopping List to help with Classroom Management. What would you add? ";
+              document.getElementById('tim4').innerHTML = "1d 1h";
+              document.getElementById('par5').innerHTML = "<b>@Ben</b> : All I’m gonna say is 1999 Ben had a very deluded and misguided impression of what the future had in store!!";
+              document.getElementById('tim5').innerHTML = "1d 3h";
+              document.getElementById('par6').innerHTML = "<b>@Paul</b> : Done my shopping list for Brexit. A typical middle class thing to do, inspired by the five mile tail back for the Euro Tunnel test. What about the poor, when the shelves empty what do they do? They can’t afford to stock up. #BrexitReality";
+              document.getElementById('tim6').innerHTML = "2d 3h"; 
+              document.getElementById('par7').innerHTML = "";
+              document.getElementById('tim7').innerHTML = "";
+              document.getElementById('par8').innerHTML = "";
+              document.getElementById('tim8').innerHTML = "";
+              document.getElementById('par9').innerHTML = "";
+              document.getElementById('tim9').innerHTML = "";
+              document.getElementById('par10').innerHTML = "";
+              document.getElementById('tim10').innerHTML = "";
+
               user =[];
               user.push("Lilly");
               order = [];
               cost = [];
               mail = [];
-              order.push("Inspired :", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
+              order.push("Inspired", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
               cost.push("780");
               mail.push('mailto:lilly@example.com?subject=shoppinglist&body=inspired')
             }
@@ -227,12 +297,35 @@
               document.getElementById('item9').innerHTML = "Cleaners";
               document.getElementById('price0').innerHTML = "1120";
 
+              document.getElementById('par0').innerHTML = "<b>@William</b> : Better late than never?";
+              document.getElementById('tim0').innerHTML = "20m";             
+              document.getElementById('par1').innerHTML = "<b>@Joe</b> :  'sure tis grand, we'll just sit here and starve'";
+              document.getElementById('tim1').innerHTML = "2h";
+              document.getElementById('par2').innerHTML = "<b>@Robert</b> : My latest shopping list left in a supermarket trolley for a happy shopper.";
+              document.getElementById('tim2').innerHTML = "5h";
+              document.getElementById('par3').innerHTML = "<b>@Trisha</b> : At the moment our Alexa plays music, cracks jokes and sorts out the shopping list. But could she save my life one day?";
+              document.getElementById('tim3').innerHTML = "11h"; 
+              document.getElementById('par4').innerHTML = "<b>@David</b> : I have just written a shopping list for the next week that has absolutely no meat on it. I am slightly cheating because we're going to my mum's for roast dinner on Sunday. But still!!";
+              document.getElementById('tim4').innerHTML = "1d 2h";
+              document.getElementById('par5').innerHTML = "<b>@Francis</b> : Latest CBC shopping list had me walking the entire shop floor of a prominent supermarket ";
+              document.getElementById('tim5').innerHTML = "1d 8h";
+              document.getElementById('par6').innerHTML = "<b>@Sarah</b> : Take a look at my post-quarantine shopping list in the latest letter to my dad";
+              document.getElementById('tim6').innerHTML = "2d 1h"; 
+              document.getElementById('par7').innerHTML = "";
+              document.getElementById('tim7').innerHTML = "";
+              document.getElementById('par8').innerHTML = "";
+              document.getElementById('tim8').innerHTML = "";
+              document.getElementById('par9').innerHTML = "";
+              document.getElementById('tim9').innerHTML = "";
+              document.getElementById('par10').innerHTML = "";
+              document.getElementById('tim10').innerHTML = "";
+
               user =[];
               user.push("Tom");
               order = [];
               cost = [];
               mail = [];
-              order.push("Latest Products :", "Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
+              order.push("Latest Products", "Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
               cost.push("1120");
               mail.push('mailto:tom@example.com?subject=shoppinglist&body=latest')
             }
@@ -265,12 +358,34 @@
               document.getElementById('item9').innerHTML = "";
               document.getElementById('price0').innerHTML = "540";
 
+              document.getElementById('par0').innerHTML = "<b>@Jessica</b> : We baked with the kids all day today. They researched the ingredients, made a shopping list, went shopping, came home and followed the methods. ";
+              document.getElementById('tim0').innerHTML = "10m";             
+              document.getElementById('par1').innerHTML = "<b>@Willis</b> :  I am very proud of our 5th graders. They set the vision for their hall competition. They researched, sketched, made a shopping list, and learned and shared the skills they needed in order to make what they envisioned on their own 😊. They put in a lot of hard work!";
+              document.getElementById('tim1').innerHTML = "3h";
+              document.getElementById('par2').innerHTML = "<b>@Grace</b> : Last week in the baking station, some of the children decided they would like to add a new recipe. We researched what we could make, made a shopping list with prices and practised making shortbread. We then wrote down the recipe so our friends can try it too.";
+              document.getElementById('tim2').innerHTML = "7h";
+              document.getElementById('par3').innerHTML = "<b>@Berry</b> : Ruan made a 3 course meal for us on Friday night. He researched the menu himself, made a shopping list for me and worked hard on the cooking. Here is his menu";
+              document.getElementById('tim3').innerHTML = "10h"; 
+              document.getElementById('par4').innerHTML = "<b>@Shaheen</b> : Ss had to create an ideal meal plan, evaluate their own, & build a shopping list. Ss researched stores with the best prices, found total costs for plans & analyzed for affordability.";
+              document.getElementById('tim4').innerHTML = "1d 5h";
+              document.getElementById('par5').innerHTML = "<b>@Nicolas</b> : I'm creating my shopping list for my favourite recipe I researched online, soon I will be in the Kitchen cooking.";
+              document.getElementById('tim5').innerHTML = "1d 7h";
+              document.getElementById('par6').innerHTML = "<b>@Jeff</b> : Miss Thomson was delighted as her boys and girls have calculated her Christmas shopping list!  They researched the prices online and totalled the prices of all the gifts!";
+              document.getElementById('tim6').innerHTML = "2d 3h"; 
+              document.getElementById('par7').innerHTML = "";
+              document.getElementById('tim7').innerHTML = "";
+              document.getElementById('par8').innerHTML = "";
+              document.getElementById('tim8').innerHTML = "";
+              document.getElementById('par9').innerHTML = "";
+              document.getElementById('tim9').innerHTML = "";
+              document.getElementById('par10').innerHTML = "";
+              document.getElementById('tim10').innerHTML = "";
               user =[];
               user.push("Mark");
               order = [];
               cost = [];
               mail = [];
-              order.push("Researched :", "Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
+              order.push("Researched", "Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
               cost.push("540");
               mail.push('mailto:mark@example.com?subject=shoppinglist&body=researched')
             }
@@ -317,7 +432,98 @@
 
       </div>
     </div>
+    <div class="item4">
+      <div class="list-group">
+        
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" " aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <label style="margin-top: 5px;">Comments</label>
+            <textarea rows="3" cols="40" id="comments2" class="form-control me-2" name="comments">@Simon </textarea>
+            <button class="btn btn-outline-dark btn-sm" style="width: fit-content;" type="submit" onclick="addcom()">Post</button>
+            </div>
+            <script>
+              function addcom(){
+                comments1 = document.getElementById('comments2').value;
+                console.log(comments1);
+               
+                const usecom = document.createElement("p");
+                usecom.innerHTML = comments1;
+               
+                document.getElementById("newc").appendChild(usecom);
+              }
+            </script>
+            <small class="opacity-50 text-nowrap">Now</small>
+          </div>
+        </a>
+       
+        <div id="newc" class=" gap-2 w-100 justify-content-between"></div>
+     
 
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <p id="par0" class="mb-0 opacity-75">  <b>@Mark</b> : Bought some instant coffee for a quid from One Below and I’m shook that it’s not the worst thing I’ve ever tasted in my life, it actually tastes okay wow bargain hunter</p>
+            </div>
+            <small id="tim0" class="opacity-50 text-nowrap">1h</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <p id="par1" class="mb-0 opacity-75"><b>@Tommy</b> : Some of you have 10 Free cards from the $.50 and Dollar Lots. For all you bargain hunters out there, that's how you do it! Not trying to break me down to a dime for 2 of them!</p>
+            </div>
+            <small id="tim1" class="opacity-50 text-nowrap">3h</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <p id="par2" class="mb-0 opacity-75"><b>@Janet</b> : the most tiring person to shop with? 
+                they picked jisung bc he takes a long time to choose. mc then asked if mark takes a while too</p>
+            </div>
+            <small id="tim2" class="opacity-50 text-nowrap">6h</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <p id="par3" class="mb-0 opacity-75"><b>@June</b> : Is it too much to find a man that is a bargain hunter but appreciates quality and won’t skimp on dinners out or argue I spend too much on personal appearance? Yes someone exactly like myself WHAT</p>
+            </div>
+            <small id="tim3" class="opacity-50 text-nowrap">1d</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <p id="par4" class="mb-0 opacity-75"><b>@Oliver</b> : Can’t believe I’ve managed to secure flights to Varadero for just over £200 😅😅 I am a certified bargain hunter</p>
+            </div>
+            <small id="tim4" class="opacity-50 text-nowrap">1d 3h</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <p id="par5" class="mb-0 opacity-75"><b>@Margaret</b> : With the weather getting better it’s time to get the garden sorted ☀️🍺
+
+                I love the one with the fire pit and they are all MASSIVELY REDUCED! 
+                
+                Check out these great deals here </p>
+            </div>
+            <small id="tim5" class="opacity-50 text-nowrap">1d 7h</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <p id="par6" class="mb-0 opacity-75"><b>@Abigail</b> : Solution: my wife should be in charge of buying. Absolute deal hunter that woman, like a bargain bloodhound.</p>
+            </div>
+            <small id="tim6" class="opacity-50 text-nowrap">2d</small>
+          </div>
+        </a>
+            </div>
+
+    </div>
   </div>
 
 </body>

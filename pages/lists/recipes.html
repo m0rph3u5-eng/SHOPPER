@@ -21,6 +21,15 @@
   <script src="../../js/bootstrap.bundle.min.js"></script>
 
   <script src="../../js/sidebars.js"></script>
+  <script>
+    var order = ["Chocolate Banana Bread"];
+    var cost = [];
+    var mail = [];
+    var user = ["Fiona"];
+    mail.push('mailto:fiona@example.com?subject=shoppinglist&body=chocolate_banana_bread');
+    chocolate();
+  </script>
+
 </head>
 
 <body>
@@ -42,15 +51,48 @@
                 <a class="nav-link active" aria-current="page" href="..\login.html">Login</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="..\login.html">Order</a>
+                <a class="nav-link active" href="#" onclick="orderf()">Order</a>
               </li>
+              <script>
+                function orderf() {
+                  console.log(order);
+                  console.log(cost);
+                  console.log(mail);
+
+                  if (confirm("Do you want to place an order to " + user + " for " + order[0] + "?")) {
+                    window.open(mail);
+                  } else {
+
+                  }
+                }
+              </script>
+                <li class="nav-item">
+                  <a class="nav-link active" id="top_comm" aria-current="page" href="#" onclick="showcomments()">Comments</a>
+                </li>
+                <script>
+                  function showcomments() {
+                    
+                    if (document.getElementById("comments").style.display == "block") {
+                      document.getElementById("comments").style.display = "none";
+                      document.getElementById("directions").style.display = "block";
+                      document.getElementById('top_comm').innerHTML = "Comments";
+                    } else {
+                      document.getElementById("comments").style.display = "block";
+                      document.getElementById("directions").style.display = "none";
+                      document.getElementById('top_comm').innerHTML = "Directions";
+                    }
+                    
+  
+                   
+                  }
+                </script>
               <!--     <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
               </li>-->
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" style="width: fit-content;" type="submit">Search</button>
+              <button class="btn btn-outline-dark btn" style="width: fit-content;" type="submit">Search</button>
             </form>
           </div>
         </div>
@@ -67,7 +109,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link link-dark">
+            <a href="monthly_shopping.html" class="nav-link link-dark">
 
               Monthly Shopping
             </a>
@@ -142,6 +184,37 @@
               document.getElementById('par8').innerHTML = "";
               document.getElementById('par9').innerHTML = "";
               document.getElementById('par10').innerHTML = "";
+
+              document.getElementById('apar0').innerHTML = "<b>@Diana</b> : How does coconut, chocolate chip banana bread sound?";
+              document.getElementById('tim0').innerHTML = "2h";             
+              document.getElementById('apar1').innerHTML = "<b>@Kaye</b> : Sunday mornings are for chocolate banana bread 🍌🍫 😋";
+              document.getElementById('tim1').innerHTML = "2h";
+              document.getElementById('apar2').innerHTML = "<b>@Demi</b> : Today at 11am you can watch the recipe on our youtube channel.";
+              document.getElementById('tim2').innerHTML = "3h";
+              document.getElementById('apar3').innerHTML = "<b>@Matilda</b> : The banana bread, chocolate cake and lavender and lemon macaroons and scones with the rainbow sandwiches are to die for When are you lot coming in";
+              document.getElementById('tim3').innerHTML = "7h"; 
+              document.getElementById('apar4').innerHTML = "<b>@Naomi</b> : my first ever attempt at banana bread with chocolate chips..not the prettiest but the taste is divine 🤤💛 no 🧢";
+              document.getElementById('tim4').innerHTML = "1d 1h";
+              document.getElementById('apar5').innerHTML = "<b>@Lei</b> : When life gives you an abundance of overripe bananas you make banana bread. So I decided I'd make chocolate peanut butter banana bread today. And I still have a ton of bananas. 🍌🍌🍌🍌";
+              document.getElementById('tim5').innerHTML = "1d 3h";
+              document.getElementById('apar6').innerHTML = "<b>@Betty</b> : I cant stop baking chocolate chip banana bread";
+              document.getElementById('tim6').innerHTML = "2d 3h"; 
+              document.getElementById('apar7').innerHTML = "";
+              document.getElementById('tim7').innerHTML = "";
+              document.getElementById('apar8').innerHTML = "";
+              document.getElementById('tim8').innerHTML = "";
+              document.getElementById('apar9').innerHTML = "";
+              document.getElementById('tim9').innerHTML = "";
+              document.getElementById('apar10').innerHTML = "";
+              document.getElementById('tim10').innerHTML = "";
+              user = [];
+              user.push("Fiona");
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Chocolate Banana Bread", "ripe bananas", "butter", "brown sugar", "salt", "eggs", "vanilla extract", "all-purpose flour", "cocoa powder", "baking soda", "chocolate chips");
+              cost.push("980");
+              mail.push('mailto:fiona@example.com?subject=shoppinglist&body=chocolate_banana_bread');
             }
           </script>
 
@@ -185,6 +258,37 @@
               document.getElementById('par8').innerHTML = "";
               document.getElementById('par9').innerHTML = "";
               document.getElementById('par10').innerHTML = "";
+
+              document.getElementById('apar0').innerHTML = "<b>@Cindy</b> : I made a cinnamon apple coffee cake 🎂 🥮 please clap";
+              document.getElementById('tim0').innerHTML = "1h";             
+              document.getElementById('apar1').innerHTML = "<b>@Brandon</b> : I think imma make an apple crumb coffee cake no infusion just reg and send it to my faithfuls";
+              document.getElementById('tim1').innerHTML = "2h";
+              document.getElementById('apar2').innerHTML = "<b>@Hoyt</b> : Is there a better pairing for your morning coffee than this Apple Cinnamon Coffee Cake? I don't think so.";
+              document.getElementById('tim2').innerHTML = "6h";
+              document.getElementById('apar3').innerHTML = "<b>@Earnie</b> : Dad is having coffee & cake in Brum. WITHOUT ME! 😡😡😡";
+              document.getElementById('tim3').innerHTML = "8h"; 
+              document.getElementById('apar4').innerHTML = "<b>@Anne</b> : Friday = treat day😍  Coffee & cake are waiting for you at Country Bake☕";
+              document.getElementById('tim4').innerHTML = "1d 4h";
+              document.getElementById('apar5').innerHTML = "<b>@Lemon</b> : I made this for the final lesson of my breakfast breads class & for #mapleweek2022!  Really happy with how the twisted shape turned out and feel great about my improved baking skills 👩‍🍳";
+              document.getElementById('tim5').innerHTML = "1d 7h";
+              document.getElementById('apar6').innerHTML = "<b>@Monica</b> : super random: in the mid 90s there was an amazing coffee cake in portland. in the 2000’s starbucks carried it for awhile. does anyone know the bakery and if they’re still around?";
+              document.getElementById('tim6').innerHTML = "2d 5h"; 
+              document.getElementById('apar7').innerHTML = "";
+              document.getElementById('tim7').innerHTML = "";
+              document.getElementById('apar8').innerHTML = "";
+              document.getElementById('tim8').innerHTML = "";
+              document.getElementById('apar9').innerHTML = "";
+              document.getElementById('tim9').innerHTML = "";
+              document.getElementById('apar10').innerHTML = "";
+              document.getElementById('tim10').innerHTML = "";
+              user = [];
+              user.push("Emma");
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Apple Coffee Cake", "butter", "brown sugar", "salt", "eggs", "vanilla extract", "all-purpose flour", "ground cinnamon", "baking soda", "allspice", "sour cream");
+              cost.push("580");
+              mail.push('mailto:emma@example.com?subject=shoppinglist&body=apple_coffee_cake');
 
             }
           </script>
@@ -230,6 +334,37 @@
               document.getElementById('par9').innerHTML = "";
               document.getElementById('par10').innerHTML = "";
 
+              document.getElementById('apar0').innerHTML = "<b>@Rose</b> : Best chicken sandwich Ive eaten😂 not really but haven’t eaten since yesterday so I was starving.";
+              document.getElementById('tim0').innerHTML = "30m";             
+              document.getElementById('apar1').innerHTML = "<b>@Abby</b> : who has the best spicy chicken sandwich in the bay??";
+              document.getElementById('tim1').innerHTML = "4h";
+              document.getElementById('apar2').innerHTML = "<b>@Radley</b> : This isn’t hypocritical because opposition to gay marriage is the secret ingredient for a perfect fried chicken sandwich.";
+              document.getElementById('tim2').innerHTML = "5h";
+              document.getElementById('apar3').innerHTML = "<b>@Frankie</b> : One coronation chicken sandwich later and I feel human once again.";
+              document.getElementById('tim3').innerHTML = "9h"; 
+              document.getElementById('apar4').innerHTML = "<b>@Darren</b> : This chicken sandwich I made makes me wanna cry ngl";
+              document.getElementById('tim4').innerHTML = "1d";
+              document.getElementById('apar5').innerHTML = "<b>@John</b> : Just bought a chicken sandwich from a gas station. Now we wait.";
+              document.getElementById('tim5').innerHTML = "1d 2h";
+              document.getElementById('apar6').innerHTML = "<b>@Harris</b> : THERES NO NEED FOR CHEESE ON A CHICKEN SANDWICH Thank you for coming to my Ted Talk!";
+              document.getElementById('tim6').innerHTML = "2d 2h"; 
+              document.getElementById('apar7').innerHTML = "";
+              document.getElementById('tim7').innerHTML = "";
+              document.getElementById('apar8').innerHTML = "";
+              document.getElementById('tim8').innerHTML = "";
+              document.getElementById('apar9').innerHTML = "";
+              document.getElementById('tim9').innerHTML = "";
+              document.getElementById('apar10').innerHTML = "";
+              document.getElementById('tim10').innerHTML = "";
+              user = [];
+              user.push("Brian");
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Chicken Salad Sandwich", "chicken", "Celery", "green onions", "avocado", "Mayonnaise", "bread");
+              cost.push("300");
+              mail.push('mailto:brian@example.com?subject=shoppinglist&body=chicken_salad_sandwich');
+
             }
           </script>
 
@@ -274,6 +409,37 @@
               document.getElementById('par8').innerHTML = "";
               document.getElementById('par9').innerHTML = "";
               document.getElementById('par10').innerHTML = "";
+
+              document.getElementById('apar0').innerHTML = "<b>@Princess</b> : A ham sandwich walks into a bar. The bartender says hey we dont serve food here";
+              document.getElementById('tim0').innerHTML = "45m";             
+              document.getElementById('apar1').innerHTML = "<b>@Alex</b> : I HAD THE CHIPS!!! They were so good  + a ham sandwich";
+              document.getElementById('tim1').innerHTML = "2h";
+              document.getElementById('apar2').innerHTML = "<b>@Molly</b> : everyone can have a little fried ham sandwich";
+              document.getElementById('tim2').innerHTML = "3h";
+              document.getElementById('apar3').innerHTML = "<b>@Jon</b> : a ham sandwich but it's 2 slices of ham and inside that (you guessed it)  another piece of ham";
+              document.getElementById('tim3').innerHTML = "5h"; 
+              document.getElementById('apar4').innerHTML = "<b>@Seanice</b> : eating a ham sandwich on my air mattress in an empty room singing its overrrrrr its overrrr its sooooo fucking overrrr  the echos are mocking me";
+              document.getElementById('tim4').innerHTML = "1d 2h";
+              document.getElementById('apar5').innerHTML = "<b>@Pearl</b> : The Grilled French Ham Sandwich at @rubysoysterbar never disappoints!";
+              document.getElementById('tim5').innerHTML = "1d 2h";
+              document.getElementById('apar6').innerHTML = "<b>@Ed</b> : A bacon sandwich is essentially a warm ham sandwich. Change my mind.";
+              document.getElementById('tim6').innerHTML = "2d 5h"; 
+              document.getElementById('apar7').innerHTML = "";
+              document.getElementById('tim7').innerHTML = "";
+              document.getElementById('apar8').innerHTML = "";
+              document.getElementById('tim8').innerHTML = "";
+              document.getElementById('apar9').innerHTML = "";
+              document.getElementById('tim9').innerHTML = "";
+              document.getElementById('apar10').innerHTML = "";
+              document.getElementById('tim10').innerHTML = "";
+              user = [];
+              user.push("Allan");
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Ham Sandwich", "mayonnaise", "parsley", "thyme", "extra-virgin olive oil", "garlic", "crusty bread", "mustard", "ham", "tomato", "onion");
+              cost.push("540");
+              mail.push('mailto:allan@example.com?subject=shoppinglist&body=ham_sandwich');
             }
           </script>
 
@@ -318,6 +484,37 @@
               document.getElementById('par8').innerHTML = "";
               document.getElementById('par9').innerHTML = "";
               document.getElementById('par10').innerHTML = "";
+
+              document.getElementById('apar0').innerHTML = "<b>@Ash</b> : Sweet Mango Curry😋";
+              document.getElementById('tim0').innerHTML = "1h";             
+              document.getElementById('apar1').innerHTML = "<b>@Sayon</b> : Lunch time! Curry chicken roti with pumpkin, curry mango and peanut punch  abd a doubles to snack on pre-gym 🤩😋";
+              document.getElementById('tim1').innerHTML = "3h";
+              document.getElementById('apar2').innerHTML = "<b>@Gardner</b> : A day of cooking down San Marzano to sauce and sneaking some into the shrimp w sorel curry. Had it w turmeric rice & mango pickle. Just like my uncle used to make it.";
+              document.getElementById('tim2').innerHTML = "3h";
+              document.getElementById('apar3').innerHTML = "<b>@Anissa</b> : I can’t believe it took me til this big age to eat mango in curry bc whew. Potato can go to HELL";
+              document.getElementById('tim3').innerHTML = "7h"; 
+              document.getElementById('apar4').innerHTML = "<b>@Benny</b> : Some roti, curry goat, saw fish, and some mango sounds so good rn 🥴🥴";
+              document.getElementById('tim4').innerHTML = "1d 4h";
+              document.getElementById('apar5').innerHTML = "<b>@Lex</b> : but we made masala egg curry after that and ate mango it was very nice ☺️";
+              document.getElementById('tim5').innerHTML = "1d 8h";
+              document.getElementById('apar6').innerHTML = "<b>@Solis</b> : had the best mango curry omg";
+              document.getElementById('tim6').innerHTML = "2d 3h"; 
+              document.getElementById('apar7').innerHTML = "";
+              document.getElementById('tim7').innerHTML = "";
+              document.getElementById('apar8').innerHTML = "";
+              document.getElementById('tim8').innerHTML = "";
+              document.getElementById('apar9').innerHTML = "";
+              document.getElementById('tim9').innerHTML = "";
+              document.getElementById('apar10').innerHTML = "";
+              document.getElementById('tim10').innerHTML = "";
+              user = [];
+              user.push("Kim");
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Mango Chicken Curry", "onion", "red bell pepper", "garlic cloves", "curry powder", "ground cumin", "Meat", "mangos", "boneless chicken thighs", "rice");
+              cost.push("240");
+              mail.push('mailto:kim@example.com?subject=shoppinglist&body=mango_chicken_curry');
             }
           </script>
 
@@ -360,6 +557,37 @@
               document.getElementById('par8').innerHTML = "";
               document.getElementById('par9').innerHTML = "";
               document.getElementById('par10').innerHTML = "";
+
+              document.getElementById('apar0').innerHTML = "<b>@Brock</b> : You know liver and onions will be on the menu when your restaurant has an outhouse.";
+              document.getElementById('tim0').innerHTML = "30m";             
+              document.getElementById('apar1').innerHTML = "<b>@Vivian</b> : One of my favorite meals... Liver and Onions";
+              document.getElementById('tim1').innerHTML = "2h";
+              document.getElementById('apar2').innerHTML = "<b>@Sid</b> : I know how to make everything she used to make when I was a kid. All the way down to the liver and onions (my favorite).";
+              document.getElementById('tim2').innerHTML = "4h";
+              document.getElementById('apar3').innerHTML = "<b>@Diesel</b> : Scotty Boy can’t wait to get truck back tomorrow with my little kitchen, on the microwave menu is liver and onions with mash , had it earlier, might get a chinese after the Anchors";
+              document.getElementById('tim3').innerHTML = "9h"; 
+              document.getElementById('apar4').innerHTML = "<b>@Nic</b> : Liver and onions with mash and gravy, please. A diet coke and Woodstock by Crosby, Stills, Nash and Young on the jukey, please. 😁";
+              document.getElementById('tim4').innerHTML = "1d 6h";
+              document.getElementById('apar5').innerHTML = "<b>@Alicia</b> : Mmmmm. Liver and onions fried in bacon grease!";
+              document.getElementById('tim5').innerHTML = "1d 11h";
+              document.getElementById('apar6').innerHTML = "<b>@Allen</b> : Love me some Liver and onions";
+              document.getElementById('tim6').innerHTML = "2d 1h"; 
+              document.getElementById('apar7').innerHTML = "";
+              document.getElementById('tim7').innerHTML = "";
+              document.getElementById('apar8').innerHTML = "";
+              document.getElementById('tim8').innerHTML = "";
+              document.getElementById('apar9').innerHTML = "";
+              document.getElementById('tim9').innerHTML = "";
+              document.getElementById('apar10').innerHTML = "";
+              document.getElementById('tim10').innerHTML = "";
+              user = [];
+              user.push("Justine");
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Liver and Onions", "beef liver", "milk", "butter", "onions", "all-purpose flour", "salt and pepper");
+              cost.push("540");
+              mail.push('mailto:justine@example.com?subject=shoppinglist&body=liver_and_onions');
 
             }
           </script>
@@ -404,6 +632,37 @@
               document.getElementById('par8').innerHTML = "";
               document.getElementById('par9').innerHTML = "";
               document.getElementById('par10').innerHTML = "";
+
+              document.getElementById('apar0').innerHTML = "<b>@Olivia</b> : early wake up, journaling, morning yoga, smoothie, sun is shining, hair in bun, fresh fruit, nature walk, podcast";
+              document.getElementById('tim0').innerHTML = "45m";             
+              document.getElementById('apar1').innerHTML = "<b>@Melody</b> : I was putting frozen fruit in the ninja to make a smoothie and my mom was like “omg that’s a lot of sugar!!” ????? girl please mind your business this is literally fruit…………I was like yeah but it’s natural sugar.. and she was like yeah but still😳 ?? still mind your business";
+              document.getElementById('tim1').innerHTML = "1h";
+              document.getElementById('apar2').innerHTML = "<b>@Josie</b> : fresh fruit, frozen fruit, dried fruit, cooked fruit, fruit juice, fruit smoothie, fruit sweets, fruit cake, fruit bars, fruit anything i will happily devour";
+              document.getElementById('tim2').innerHTML = "5h";
+              document.getElementById('apar3').innerHTML = "<b>@Blair</b> : biscoff, jam yogurt and fruit + a smoothie for today";
+              document.getElementById('tim3').innerHTML = "10h"; 
+              document.getElementById('apar4').innerHTML = "<b>@Kathy</b> : a fruit smoothie would hit the spot rn";
+              document.getElementById('tim4').innerHTML = "1d 8h";
+              document.getElementById('apar5').innerHTML = "<b>@Cenia</b> : Enjoying some fruit smoothies for our Nutrition Unit ! Let’s learn and have fun !";
+              document.getElementById('tim5').innerHTML = "1d 10h";
+              document.getElementById('apar6').innerHTML = "<b>@Nevi</b> : Do people actually follow smoothie recipes or does everyone mix random fruit together and call it a day?";
+              document.getElementById('tim6').innerHTML = "2d 5h"; 
+              document.getElementById('apar7').innerHTML = "";
+              document.getElementById('tim7').innerHTML = "";
+              document.getElementById('apar8').innerHTML = "";
+              document.getElementById('tim8').innerHTML = "";
+              document.getElementById('apar9').innerHTML = "";
+              document.getElementById('tim9').innerHTML = "";
+              document.getElementById('apar10').innerHTML = "";
+              document.getElementById('tim10').innerHTML = "";
+              user = [];
+              user.push("William");
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Fruit Smoothie", "banana", "strawberries", "milk", "vanilla yogurt", "orange juice", "honey");
+              cost.push("300");
+              mail.push('mailto:william@example.com?subject=shoppinglist&body=fruit_smoothie');
             }
           </script>
 
@@ -447,6 +706,37 @@
               document.getElementById('par8').innerHTML = "";
               document.getElementById('par9').innerHTML = "";
               document.getElementById('par10').innerHTML = "";
+
+              document.getElementById('apar0').innerHTML = "<b>@Fiona</b> : Home grown sweet potato means sweet potato chips on the menu tonight.";
+              document.getElementById('tim0').innerHTML = "10m";             
+              document.getElementById('apar1').innerHTML = "<b>@Rob</b> : Instead of making potato chips, have you tried Parsnip chips ?";
+              document.getElementById('tim1').innerHTML = "3h";
+              document.getElementById('apar2').innerHTML = "<b>@Sun</b> : today’s night snack simple potato chips with sauce and lemon";
+              document.getElementById('tim2').innerHTML = "7h";
+              document.getElementById('apar3').innerHTML = "<b>@Belle</b> : Why is it only a violation to commit fraud or theft in the millions & billions, but a punishable crime to steal potato chips?";
+              document.getElementById('tim3').innerHTML = "11h"; 
+              document.getElementById('apar4').innerHTML = "<b>@Bobby</b> : Anybody notice if you buy Lay's brand potato chips the large size bag is no longer as large? You're paying the same price for a smaller package. It's probably like this all the way across your supermarket.";
+              document.getElementById('tim4').innerHTML = "1d 9h";
+              document.getElementById('apar5').innerHTML = "<b>@Trumpet</b> : These pickle flavored potato chips and soyburgers are delectable! Truly an innovation impossible apart from our Jewish overlords. I shudder at the thought of an alternate timeline. Heil Fauci";
+              document.getElementById('tim5').innerHTML = "1d 11h";
+              document.getElementById('apar6').innerHTML = "<b>@Katie</b> : They actually taste like Lays potato chips 🥲🥲🤤🤤🤤🤤🔥🔥🔥 ";
+              document.getElementById('tim6').innerHTML = "2d 2h"; 
+              document.getElementById('apar7').innerHTML = "";
+              document.getElementById('tim7').innerHTML = "";
+              document.getElementById('apar8').innerHTML = "";
+              document.getElementById('tim8').innerHTML = "";
+              document.getElementById('apar9').innerHTML = "";
+              document.getElementById('tim9').innerHTML = "";
+              document.getElementById('apar10').innerHTML = "";
+              document.getElementById('tim10').innerHTML = "";
+              user = [];
+              user.push("Sean");
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Potato Chips", "potatoes", "salt", "oil");
+              cost.push("230");
+              mail.push('mailto:sean@example.com?subject=shoppinglist&body=potato_chips');
 
             }
           </script>
@@ -492,9 +782,99 @@
         </a>
 
       </div>
-      </div>
-      <div class="item4">
-      <div class="list-group">
+    </div>
+    <div class="item4">
+      
+        <div id="comments" class="list-group" style="display: none;">
+          
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" " aria-current="true">        
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <label style="margin-top: 5px;">Comments</label>
+              <textarea rows="3" cols="40" id="comments2" class="form-control me-2" name="comments">@Simon </textarea>
+              <button class="btn btn-outline-dark btn-sm" style="width: fit-content;" type="submit" onclick="addcom()">Post</button>
+              </div>
+              <script>
+                function addcom(){
+                  comments1 = document.getElementById('comments2').value;
+                  console.log(comments1);
+                 
+                  const usecom = document.createElement("p");
+                  usecom.innerHTML = comments1;
+                 
+                  document.getElementById("newc").appendChild(usecom);
+                }
+              </script>
+              <small class="opacity-50 text-nowrap">Now</small>
+            </div>
+          </a>
+         
+          <div id="newc" class=" gap-2 w-100 justify-content-between"></div>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p id="apar0" class="mb-0 opacity-75">  <b>@Mark</b> : Bought some instant coffee for a quid from One Below and I’m shook that it’s not the worst thing I’ve ever tasted in my life, it actually tastes okay wow bargain hunter</p>
+              </div>
+              <small id="tim0" class="opacity-50 text-nowrap">1h</small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p id="apar1" class="mb-0 opacity-75"><b>@Tommy</b> : Some of you have 10 Free cards from the $.50 and Dollar Lots. For all you bargain hunters out there, that's how you do it! Not trying to break me down to a dime for 2 of them!</p>
+              </div>
+              <small id="tim1" class="opacity-50 text-nowrap">3h</small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p id="apar2" class="mb-0 opacity-75"><b>@Janet</b> : the most tiring person to shop with? 
+                  they picked jisung bc he takes a long time to choose. mc then asked if mark takes a while too</p>
+              </div>
+              <small id="tim2" class="opacity-50 text-nowrap">6h</small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p id="apar3" class="mb-0 opacity-75"><b>@June</b> : Is it too much to find a man that is a bargain hunter but appreciates quality and won’t skimp on dinners out or argue I spend too much on personal appearance? Yes someone exactly like myself WHAT</p>
+              </div>
+              <small id="tim3" class="opacity-50 text-nowrap">1d</small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p id="apar4" class="mb-0 opacity-75"><b>@Oliver</b> : Can’t believe I’ve managed to secure flights to Varadero for just over £200 😅😅 I am a certified bargain hunter</p>
+              </div>
+              <small id="tim4" class="opacity-50 text-nowrap">1d 3h</small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p id="apar5" class="mb-0 opacity-75"><b>@Margaret</b> : With the weather getting better it’s time to get the garden sorted ☀️🍺
+  
+                  I love the one with the fire pit and they are all MASSIVELY REDUCED! 
+                  
+                  Check out these great deals here </p>
+              </div>
+              <small id="tim5" class="opacity-50 text-nowrap">1d 7h</small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p id="apar6" class="mb-0 opacity-75"><b>@Abigail</b> : Solution: my wife should be in charge of buying. Absolute deal hunter that woman, like a bargain bloodhound.</p>
+              </div>
+              <small id="tim6" class="opacity-50 text-nowrap">2d</small>
+            </div>
+          </a>
+              </div>
+  
+     
+      <div id="directions" class="list-group">
 
         <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
 
@@ -537,9 +917,9 @@
             <small id="price0" class="opacity-50 text-nowrap"></small>
           </div>
         </a>
-</div>
       </div>
     </div>
+  </div>
   </div>
 
 

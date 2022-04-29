@@ -21,6 +21,14 @@
   <script src="../js/bootstrap.bundle.min.js"></script>
 
   <script src="../js/sidebars.js"></script>
+  <script>
+    var t_list = [];
+    var title_main = [];
+    var description = [];
+    var list_item = [];
+    var recipe = [];
+    var main = [];
+  </script>
   </body>
 </head>
 
@@ -49,7 +57,7 @@
               <a class="nav-link disabled">Disabled</a>
             </li>-->
             </ul>
-           
+
           </div>
         </div>
       </nav>
@@ -108,7 +116,7 @@
     </div>
 
     <div class="item2">
-      <div class="list-group">
+      <div class="list-group" style="overflow: hidden; padding-right: 10px;">
         <div class="d-flex gap-2 w-100 justify-content-between">
           <div>
             <h2>Make a List</h2>
@@ -128,12 +136,14 @@
                 var x = document.getElementById("directions");
                 //alert(selectedValue);
                 if (selectedValue === "recipe") {
-                  console.log("recipe");
+
                   x.style.display = "block";
                 } else {
-                  console.log("no");
+                  recipe = {};
                   x.style.display = "none";
                 }
+                t_list = [];
+                t_list = selectedValue;
 
               }
             </script>
@@ -141,18 +151,28 @@
             <input type="text" id="title" class="form-control me-2" placeholder="List Title">
 
             <label style="margin-top: 5px;">Description</label>
-            <textarea rows="6" cols="40" class="form-control me-2" name="description">
+            <textarea rows="6" cols="40" id="t_desc" class="form-control me-2" name="description"></textarea>
 
-             </textarea>
+            </textarea>
 
-            <span class="btn btn-outline-success" style="float: right; width: fit-content" onclick="saveLi()">Save
-              List</span>
-
+  
+              <button class="btn btn-outline-dark btn-sm" style="width: fit-content;" type="submit" onclick="saveLi()">Save
+                List</button>
             <script>
 
               function saveLi() {
-                console.log("Saved");
-                alert("saved");
+                recipe = [];
+                recipe = document.getElementById('t_directions').value;
+
+
+                //direct = recipe;
+                alert("Your list has been saved!");
+                main.push(t_list, title_main, description, list_item, recipe);
+                //main = title_main.concat(description,list_item,recipe,t_list);
+
+                console.log(main);
+
+
               }
             </script>
 
@@ -175,31 +195,40 @@
             </ul>
             <input type="text" id="txtVal" class="form-control me-2" placeholder="Add List Item"
               style="margin-top: 5px; margin-bottom: 5px;">
-            <span class="btn btn-outline-success" style="float: left; width: fit-content" onclick="addLi()">Add</span>
+           
+            <button class="btn btn-outline-dark btn-sm" style="width: fit-content;float: left;" type="submit" onclick="addLi()">Add</button>
             <script>
               function addLi() {
                 const list2 = [];
                 const title1 = [];
                 var txtVal = document.getElementById('txtVal').value,
-
                   listNode = document.getElementById('list1'),
                   liNode = document.createElement("li"),
                   txtNode = document.createTextNode(txtVal),
                   title = document.getElementById('title').value;
-
-
+                description = document.getElementById('t_desc').value;
                 liNode.appendChild(txtNode);
                 listNode.appendChild(liNode);
                 list2.push(txtVal);
-                console.log(list2);
+                //console.log(list2);
                 document.getElementById('newHeader').innerHTML = title;
+
+                title_main = title;
+                list_item.push(txtVal);
+
               }
             </script>
-            <span class="btn btn-outline-success" style="float: right; width: fit-content" onclick="clearLi()">Clear
-              List</span>
+            <button class="btn btn-outline-dark btn-sm" style="width: fit-content;float: right;" type="submit" onclick="clearLi()">Clear
+                List</button>
             <script>
               function clearLi() {
+                t_list = [];
+                title_main = [];
+                description = [];
+                list_item = [];
+                recipe = [];
                 document.getElementById("list1").innerHTML = "";
+                console.log("List cleared");
               }
             </script>
           </div>
@@ -213,12 +242,12 @@
     <div class="item4">
       <div id="directions" style="display: none;">
         <label style="margin-top: 5px;">
-          <h2>Directions</h2>>
+          <h2>Directions</h2>
         </label>
-        <textarea rows="15" cols="40" class="form-control me-2" name="directions">
-        </div>
+        <textarea rows="15" cols="40" class="form-control me-2" name="directions" id="t_directions"></textarea>
+      </div>
     </div>
-    </div>
+  </div>
 
 </body>
 

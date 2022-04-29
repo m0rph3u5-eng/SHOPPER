@@ -21,6 +21,13 @@
   <script src="../js/bootstrap.bundle.min.js"></script>
 
   <script src="../js/sidebars.js"></script>
+  <script>
+    var order = ["Bargain Hunter"];
+    var cost = [];
+    var mail = [];
+    var user = ["Betty"];
+    mail.push('mailto:betty@example.com?subject=shoppinglist&body=bargain');
+  </script>
 </head>
 
 <body>
@@ -42,15 +49,29 @@
                 <a class="nav-link active" aria-current="page" href="login.html">Login</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.html">Order</a>
+                <a class="nav-link active" href="#" onclick="orderf()">Deliver</a>
               </li>
+              <script>
+                function orderf() {
+                  console.log(order);
+                  console.log(cost);
+                  console.log(mail);
+
+                  if (confirm("Do you want to make a delivery for " + user + " in " + order[0] +"?" )) {
+                    window.open(mail);
+                  } else {
+
+                  }
+
+                }
+              </script>
               <!--     <li class="nav-item">
               <a class="nav-link disabled">Disabled</a>
             </li>-->
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" style="width: fit-content;" type="submit">Search</button>
+              <button class="btn btn-outline-dark btn" style="width: fit-content;" type="submit">Search</button>
             </form>
           </div>
         </div>
@@ -128,6 +149,38 @@
               document.getElementById('item8').innerHTML = "Spices";
               document.getElementById('item9').innerHTML = "";
               document.getElementById('price0').innerHTML = "980";
+
+              document.getElementById('par0').innerHTML = "<b>@Billy</b> : Nime order smokies zangu while the delivery is still free... wameleta hadi hapa Kwa Estate Kileleshwa 🙈";
+              document.getElementById('tim0').innerHTML = "40m";             
+              document.getElementById('par1').innerHTML = "<b>@Shoba</b> : Taking orders for lunch tomorrow.";
+              document.getElementById('tim1').innerHTML = "2h";
+              document.getElementById('par2').innerHTML = "<b>@Dada</b> : What better way to usher in the new month than by treating yourself to an item or two off of our menu?";
+              document.getElementById('tim2').innerHTML = "4h";
+              document.getElementById('par3').innerHTML = "<b>@Denna</b> : Another good evening to remind you that @virginHoffice is the best furniture plug in town";
+              document.getElementById('tim3').innerHTML = "1d 1h"; 
+              document.getElementById('par4').innerHTML = "<b>@Shikoh</b> : How about 24 hours shopping outlet, 7 days a week?";
+              document.getElementById('tim4').innerHTML = "1d 5h";
+              document.getElementById('par5').innerHTML = "<b>@Chris</b> : Late lunch #GatedFood #GatedCommunity @ Kileleshwa Shopping Centre ";
+              document.getElementById('tim5').innerHTML = "1d 9h";
+              document.getElementById('par6').innerHTML = "<b>@Allan</b> : Guys being silly awaiting some cake ...";
+              document.getElementById('tim6').innerHTML = "2d 1h"; 
+              document.getElementById('par7').innerHTML = "";
+              document.getElementById('tim7').innerHTML = "";
+              document.getElementById('par8').innerHTML = "";
+              document.getElementById('tim8').innerHTML = "";
+              document.getElementById('par9').innerHTML = "";
+              document.getElementById('ptim9').innerHTML = "";
+              document.getElementById('par10').innerHTML = "";
+              document.getElementById('tim10').innerHTML = "";
+
+              user =[];
+              user.push("Betty");
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Kileleshwa","Bargain", "Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
+              cost.push("980");
+              mail.push('mailto:betty@example.com?subject=shoppinglist&body=bargain');
             }
           </script>
 
@@ -135,7 +188,7 @@
             <div>
               <h6 class="mb-0">Kileleshwa<p class="mb-0 opacity-75">@Betty</p>
               </h6>
-              <p class="mb-0 opacity-75">Inspired</p>
+              <p class="mb-0 opacity-75">Bargain Hunter</p>
               <p class="mb-0 opacity-75"></p>
               <p class="mb-0 opacity-75"></p>
               <p class="mb-0 opacity-75"></p>
@@ -161,6 +214,37 @@
               document.getElementById('item8').innerHTML = "Spices";
               document.getElementById('item9').innerHTML = "";
               document.getElementById('price0').innerHTML = "780";
+
+              document.getElementById('par0').innerHTML = "<b>@Muthoni</b> : We are making deliveries in the Lavington, Kilimani, Kileleshwa and Junction area.";
+              document.getElementById('tim0').innerHTML = "20m";             
+              document.getElementById('par1').innerHTML = "<b>@Shoba</b> : Mkiwa wengi kwa ofisi the better juu ya easier delivery as I work on streamlining";
+              document.getElementById('tim1').innerHTML = "4h";
+              document.getElementById('par2').innerHTML = "<b>@Wamuyu</b> : I hate when I call to order things & these people act like they know me 😩";
+              document.getElementById('tim2').innerHTML = "4h";
+              document.getElementById('par3').innerHTML = "<b>@Stephen</b> : Hapo ni kweli, umesahau hii. Anyone interested can visit our outlet in Lavington or order and delivery will be made for free within Nairobi.";
+              document.getElementById('tim3').innerHTML = "1d 1h"; 
+              document.getElementById('par4').innerHTML = "<b>@Shikoh</b> : How about 24 hours shopping outlet, 7 days a week?";
+              document.getElementById('tim4').innerHTML = "1d 5h";
+              document.getElementById('par5').innerHTML = "<b>@Charles</b> : Hata forgot about this thing. Been all over. But today's Lavington delivery has me beat proper. Hustle itajipa tu.";
+              document.getElementById('tim5').innerHTML = "1d 11h";
+              document.getElementById('par6').innerHTML = "<b>@Kanyi</b> : Fantastic juicy samosas for your weekend chill🤗 pick up in Lavington (delivery can be arranged for next day tho)";
+              document.getElementById('tim6').innerHTML = "2d 3h"; 
+              document.getElementById('par7').innerHTML = "";
+              document.getElementById('tim7').innerHTML = "";
+              document.getElementById('par8').innerHTML = "";
+              document.getElementById('tim8').innerHTML = "";
+              document.getElementById('par9').innerHTML = "";
+              document.getElementById('ptim9').innerHTML = "";
+              document.getElementById('par10').innerHTML = "";
+              document.getElementById('tim10').innerHTML = "";
+              user =[];
+              user.push("Benson");
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Lavington","Inspired", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
+              cost.push("780");
+              mail.push('mailto:benson@example.com?subject=shoppinglist&body=inspired');
             }
           </script>
 
@@ -194,6 +278,37 @@
               document.getElementById('item8').innerHTML = "Spices";
               document.getElementById('item9').innerHTML = "Cleaners";
               document.getElementById('price0').innerHTML = "1120";
+
+              document.getElementById('par0').innerHTML = "<b>@Leah</b> : As a leader you should not be greedy for powers but greedy of development and delivery of best services to your people";
+              document.getElementById('tim0').innerHTML = "50m";             
+              document.getElementById('par1').innerHTML = "<b>@Pablo</b> : Morning 🌄from your best furniture plug +254, we got quality and affordable furniture.";
+              document.getElementById('tim1').innerHTML = "7h";
+              document.getElementById('par2').innerHTML = "<b>@Wamuyu</b> : I hate when I call to order things & these people act like they know me 😩";
+              document.getElementById('tim2').innerHTML = "8h";
+              document.getElementById('par3').innerHTML = "<b>@Nelson</b> : This is a tough one daktari, Westlands is blessed to have such minds fronting themselves to lead. I agree with you on Havi's eloquence but, Tim has been brilliant in terms of service delivery for the two terms he's been the MP. I am gutted that he easily gave up on Nairobi.";
+              document.getElementById('tim3').innerHTML = "1d 1h"; 
+              document.getElementById('par4').innerHTML = "<b>@Shikoh</b> : How about 24 hours shopping outlet, 7 days a week?";
+              document.getElementById('tim4').innerHTML = "1d 5h";
+              document.getElementById('par5').innerHTML = "<b>@Chance</b> : Hey we are an online delivery app with different restaurants and business in Nairobi. The big fish has branches in thika road and Westlands. We have a free delivery within a 5km radius. Where are you located?";
+              document.getElementById('tim5').innerHTML = "2d";
+              document.getElementById('par6').innerHTML = "<b>@Hardy</b> : Purchase quality and BEST PRICED furniture from @virginHoffice.";
+              document.getElementById('tim6').innerHTML = "2d 4h"; 
+              document.getElementById('par7').innerHTML = "";
+              document.getElementById('tim7').innerHTML = "";
+              document.getElementById('par8').innerHTML = "";
+              document.getElementById('tim8').innerHTML = "";
+              document.getElementById('par9').innerHTML = "";
+              document.getElementById('ptim9').innerHTML = "";
+              document.getElementById('par10').innerHTML = "";
+              document.getElementById('tim10').innerHTML = "";
+              user =[];
+              user.push("Cathy");
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Westlands","Latest Products", "Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
+              cost.push("1120");
+              mail.push('mailto:cathy@example.com?subject=shoppinglist&body=latest_products');
             }
           </script>
           <div class="d-flex gap-2 w-100 justify-content-between">
@@ -241,7 +356,91 @@
 
       </div>
     </div>
+    <div class="item4">
+      <div class="list-group">
+        
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" " aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <label style="margin-top: 5px;">Comments</label>
+            <textarea rows="3" cols="40" id="comments2" class="form-control me-2" name="comments">@Simon </textarea>
+            <button class="btn btn-outline-dark btn-sm" style="width: fit-content;" type="submit" onclick="addcom()">Post</button>
+            </div>
+            <script>
+              function addcom(){
+                comments1 = document.getElementById('comments2').value;
+                console.log(comments1);
+               
+                const usecom = document.createElement("p");
+                usecom.innerHTML = comments1;
+               
+                document.getElementById("newc").appendChild(usecom);
+              }
+            </script>
+            <small class="opacity-50 text-nowrap">Now</small>
+          </div>
+        </a>
+       
+        <div id="newc" class=" gap-2 w-100 justify-content-between"></div>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <p id="par0" class="mb-0 opacity-75"> <b>@Billy</b> : Nime order smokies zangu while the delivery is still free... wameleta hadi hapa Kwa Estate Kileleshwa 🙈</p>
+            </div>
+            <small id="tim0" class="opacity-50 text-nowrap">40m</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <p id="par1" class="mb-0 opacity-75"> <b>@Shoba</b> : Taking orders for lunch tomorrow.</p>
+            </div>
+            <small id="tim1" class="opacity-50 text-nowrap">2h</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <p id="par2" class="mb-0 opacity-75"><b>@Dada</b> : What better way to usher in the new month than by treating yourself to an item or two off of our menu?</p>
+            </div>
+            <small id="tim2" class="opacity-50 text-nowrap">4h</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <p id="par3" class="mb-0 opacity-75"><b>@Denna</b> : Another good evening to remind you that @virginHoffice is the best furniture plug in town</p>
+            </div>
+            <small id="tim3" class="opacity-50 text-nowrap">1d 1h</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <p id="par4" class="mb-0 opacity-75"><b>@Shikoh</b> : How about 24 hours shopping outlet, 7 days a week?</p>
+            </div>
+            <small id="tim4" class="opacity-50 text-nowrap">1d 5h</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <p id="par5" class="mb-0 opacity-75"><b>@Chris</b> : Late lunch #GatedFood #GatedCommunity @ Kileleshwa Shopping Centre </p>
+            </div>
+            <small id="tim5" class="opacity-50 text-nowrap">1d 9h</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <p id="par6" class="mb-0 opacity-75"><b>@Allan</b> : Guys being silly awaiting some cake ...</p>
+            </div>
+            <small id="tim6" class="opacity-50 text-nowrap">2d 1h</small>
+          </div>
+        </a>
+            </div>
 
+    </div>
   </div>
 
 
