@@ -28,29 +28,7 @@
 
     
   </script>
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyB6EPTzr-Ep194qLdz4xplpKvrT6d_qiuc",
-    authDomain: "shopper-5563c.firebaseapp.com",
-    projectId: "shopper-5563c",
-    storageBucket: "shopper-5563c.appspot.com",
-    messagingSenderId: "385268810013",
-    appId: "1:385268810013:web:bae44ea97ba00966abe1f4",
-    measurementId: "G-6F0DLRFD9T"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
 </head>
 
 <body>
@@ -80,7 +58,7 @@
                   console.log(cost);
                   console.log(mail);
 
-                  if (confirm("Do you want to place an order to " + user + " for " + order[0] +"?" )) {
+                  if (confirm("Do you want to place an order to " + user[0] + " for " + order[0] +"?" )) {
                     window.open(mail);
                   } else {
 
@@ -159,6 +137,15 @@
           onclick="bargain()">
           <script>
             function bargain() {
+              user =[];
+              user = ["Nancy"];
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Bargain", "Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
+              cost.push("980");
+              mail.push('mailto:nancy@example.com?subject=shoppinglist&body=bargain');
+
               document.getElementById('heading').innerHTML = "Bargain Hunter";
               document.getElementById('handle').innerHTML = "@Nancy";
               document.getElementById('item0').innerHTML = "Bacon";
@@ -196,14 +183,7 @@
               document.getElementById('par10').innerHTML = "";
               document.getElementById('tim10').innerHTML = "";
 
-              user =[];
-              user.push("Nancy");
-              order = [];
-              cost = [];
-              mail = [];
-              order.push("Bargain", "Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
-              cost.push("980");
-              mail.push('mailto:nancy@example.com?subject=shoppinglist&body=bargain');
+            
             }
           </script>
 
@@ -221,6 +201,15 @@
           onclick="inspired()">
           <script>
             function inspired() {
+              user =[];
+              user = ["Lilly"];
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Inspired", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
+              cost.push("780");
+              mail.push('mailto:lilly@example.com?subject=shoppinglist&body=inspired');
+
               document.getElementById('heading').innerHTML = "Inspired";
               document.getElementById('handle').innerHTML = "@Lilly";
               document.getElementById('item0').innerHTML = "Baking goods";
@@ -258,14 +247,7 @@
               document.getElementById('par10').innerHTML = "";
               document.getElementById('tim10').innerHTML = "";
 
-              user =[];
-              user.push("Lilly");
-              order = [];
-              cost = [];
-              mail = [];
-              order.push("Inspired", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
-              cost.push("780");
-              mail.push('mailto:lilly@example.com?subject=shoppinglist&body=inspired')
+            
             }
           </script>
 
@@ -283,6 +265,15 @@
           onclick="latest()">
           <script>
             function latest() {
+              user =[];
+              user=["Tom"];
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Latest Products", "Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
+              cost.push("1120");
+              mail.push('mailto:tom@example.com?subject=shoppinglist&body=latest');
+
               document.getElementById('heading').innerHTML = "Latest Products";
               document.getElementById('handle').innerHTML = "@Tom";
               document.getElementById('item0').innerHTML = "Bacon";
@@ -320,14 +311,7 @@
               document.getElementById('par10').innerHTML = "";
               document.getElementById('tim10').innerHTML = "";
 
-              user =[];
-              user.push("Tom");
-              order = [];
-              cost = [];
-              mail = [];
-              order.push("Latest Products", "Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
-              cost.push("1120");
-              mail.push('mailto:tom@example.com?subject=shoppinglist&body=latest')
+       
             }
           </script>
           <div class="d-flex gap-2 w-100 justify-content-between">
@@ -344,6 +328,15 @@
           onclick="researched()">
           <script>
             function researched() {
+              user =[];
+              user = ["Mark"];
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Researched", "Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
+              cost.push("540");
+              mail.push('mailto:mark@example.com?subject=shoppinglist&body=researched');
+
               document.getElementById('heading').innerHTML = "Researched";
               document.getElementById('handle').innerHTML = "@Mark";
               document.getElementById('item0').innerHTML = "Bacon";
@@ -380,14 +373,7 @@
               document.getElementById('tim9').innerHTML = "";
               document.getElementById('par10').innerHTML = "";
               document.getElementById('tim10').innerHTML = "";
-              user =[];
-              user.push("Mark");
-              order = [];
-              cost = [];
-              mail = [];
-              order.push("Researched", "Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices");
-              cost.push("540");
-              mail.push('mailto:mark@example.com?subject=shoppinglist&body=researched')
+        
             }
           </script>
 
@@ -439,7 +425,7 @@
           <div class="d-flex gap-2 w-100 justify-content-between">
             <div>
               <label style="margin-top: 5px;">Comments</label>
-            <textarea rows="3" cols="40" id="comments2" class="form-control me-2" name="comments">@Simon </textarea>
+            <textarea rows="3" cols="40" id="comments2" class="form-control me-2" name="comments"></textarea>
             <button class="btn btn-outline-dark btn-sm" style="width: fit-content;" type="submit" onclick="addcom()">Post</button>
             </div>
             <script>
@@ -448,9 +434,30 @@
                 console.log(comments1);
                
                 const usecom = document.createElement("p");
-                usecom.innerHTML = comments1;
+                const usetim = document.createElement("p");
+                const divcom = document.createElement("div");
+                const acom = document.createElement("a");
+                usecom.className = "mb-0 opacity-75";
+                usetim.className = "opacity-50 text-nowrap";
+                divcom.className = "d-flex gap-2 w-100 justify-content-between";
+                acom.className = "list-group-item list-group-item-action d-flex gap-3 py-3";
+                acom.ariaCurrent =true;
+                divcom.id = "newc1";
+                usecom.innerHTML = "<b>@Simon </b>: " + comments1;
+                usetim.innerHTML = "Now";
                
-                document.getElementById("newc").appendChild(usecom);
+                document.getElementById("newc").appendChild(acom);
+                acom.appendChild(divcom);
+                divcom.appendChild(usecom);
+                divcom.appendChild(usetim);
+                
+                localStorage.setItem("list", JSON.stringify(order[0]));
+              localStorage.setItem("comments", JSON.stringify(comments1));
+              //var storedComments = JSON.parse(localStorage.getItem("comments"+"list"));
+              console.log("BREAK");
+              localStorage.comments1 = JSON.stringify(comments1);
+              var storedComments = JSON.parse(localStorage.comments1);
+              console.log(storedComments); 
               }
             </script>
             <small class="opacity-50 text-nowrap">Now</small>
@@ -519,6 +526,38 @@
               <p id="par6" class="mb-0 opacity-75"><b>@Abigail</b> : Solution: my wife should be in charge of buying. Absolute deal hunter that woman, like a bargain bloodhound.</p>
             </div>
             <small id="tim6" class="opacity-50 text-nowrap">2d</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <p id="par7" class="mb-0 opacity-75"></p>
+            </div>
+            <small id="tim7" class="opacity-50 text-nowrap"></small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <p id="par8" class="mb-0 opacity-75"></p>
+            </div>
+            <small id="tim8" class="opacity-50 text-nowrap"></small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <p id="par9" class="mb-0 opacity-75"></p>
+            </div>
+            <small id="tim9" class="opacity-50 text-nowrap"></small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <p id="par10" class="mb-0 opacity-75"></p>
+            </div>
+            <small id="tim10" class="opacity-50 text-nowrap"></small>
           </div>
         </a>
             </div>
