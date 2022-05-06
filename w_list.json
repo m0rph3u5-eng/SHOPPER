@@ -1,0 +1,31 @@
+[
+    {       
+        "type": "Weekly Shopping",
+        "title":"Bargain Hunter",
+        "user":"@Nancy",
+        "description": "Products at a discounted price. Good deals.",
+        "cost": 980
+    },
+    {       
+        "type": "Weekly Shopping",
+        "title":"Inspired",
+        "user":"@Lilly",
+        "description": "Curated items for the household.",
+        "cost": 780
+    },
+    {       
+        "type": "Weekly Shopping",
+        "title":"Latest Products",
+        "user":"@Tom",
+        "description": "The latest products in the market.",
+        "cost": 1120
+    },
+    {       
+        "type": "Weekly Shopping",
+        "title":"Researched",
+        "user":"@Mark",
+        "description": "Shopping list by the experts.",
+        "cost": 540
+    }
+
+]
