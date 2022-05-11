@@ -4,13 +4,31 @@
         "title":"Bargain Hunter",
         "user":"@Nancy",
         "description": "Products at a discounted price. Good deals.",
-        "cost": 980
+        "items": ["Bacon","Baking goods","Beverages","Canned goods","Fish","Grains","Meat","Snacks","Spices"],
+        "cost": 980 ,
+        "comment0" : {
+            "name": "@Mark",
+            "comment": "Bought some instant coffee for a quid from One Below and I’m shook that it’s not the worst thing I’ve ever tasted in my life, it actually tastes okay wow bargain hunter",
+            "time" : "1h"
+        },
+        "comment1":{
+            "name": "@Tommy",
+            "comment": "Some of you have 10 Free cards from the $.50 and Dollar Lots. For all you bargain hunters out there, that's how you do it! Not trying to break me down to a dime for 2 of them!",
+            "time" : "3h"
+        },
+        "comment2":{
+            "name": "@Janet",
+            "comment": "Some of you have 10 Free cards from the $.50 and Dollar Lots. For all you bargain hunters out there, that's how you do it! Not trying to break me down to a dime for 2 of them!",
+            "time" : "3h"
+        }
     },
+
     {       
         "type": "Weekly Shopping",
         "title":"Inspired",
         "user":"@Lilly",
         "description": "Curated items for the household.",
+        "items": ["Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices"],
         "cost": 780
     },
     {       
@@ -18,6 +36,7 @@
         "title":"Latest Products",
         "user":"@Tom",
         "description": "The latest products in the market.",
+        "items": ["Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices"],
         "cost": 1120
     },
     {       
@@ -25,6 +44,7 @@
         "title":"Researched",
         "user":"@Mark",
         "description": "Shopping list by the experts.",
+        "items": ["Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices"],
         "cost": 540
     }
 
