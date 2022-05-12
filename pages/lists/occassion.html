@@ -52,12 +52,12 @@
                 <a class="nav-link active" href="#" onclick="orderf()">Order</a>
               </li>
               <script>
-                function orderf(){
+                function orderf() {
                   console.log(order);
                   console.log(cost);
                   console.log(mail);
 
-                  if (confirm("Do you want to place an order to " + user + " for " + order[0] +"?" )) {
+                  if (confirm("Do you want to place an order to " + user + " for " + order[0] + "?")) {
                     window.open(mail);
                   } else {
 
@@ -68,6 +68,44 @@
               <a class="nav-link disabled">Disabled</a>
             </li>-->
             </ul>
+            <a class="nav-link active centre" aria-current="page" href="#" id="plus" onclick="new_entry()"
+              style="margin-left:25%; margin-right:25%" ;>
+              <h4>+</h4>
+            </a>
+            <script>
+              function new_entry() {
+                var x = document.getElementById("new_entry");
+                var xl = document.getElementById("new_entry_list");
+                var xla = document.getElementById("new_entry_list_a");
+                var xa = document.getElementById("new_entry_a");
+                var xpl = document.getElementById("plus");
+                var ml = document.getElementById("main_list");
+                var price = document.getElementById("price0");
+                var comm = document.getElementById("oldc");
+                if (x.style.display == "none") {
+
+                  x.style.display = "block";
+                  xl.style.display = "block";
+                  ml.style.display = "none";
+                  price.style.display = "none";
+                  comm.style.display = "none";
+                  xa.className = "list-group-item list-group-item-action d-flex gap-3 py-3";
+                  xla.className = "list-group-item list-group-item-action d-flex gap-3 py-3";
+                  document.getElementById('plus').innerHTML = "<h4>-</h4>";
+                } else {
+
+                  x.style.display = "none";
+                  xl.style.display = "none";
+                  xa.className = "list-group-item list-group-item-action gap-3 py-3";
+                  xla.className = "list-group-item list-group-item-action gap-3 py-3";
+                  ml.style.display = "block";
+                  price.style.display = "block";
+                  comm.style.display = "block";
+                  document.getElementById('plus').innerHTML = "<h4>+</h4>";
+                }
+              }
+            </script>
+
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-dark btn" style="width: fit-content;" type="submit">Search</button>
@@ -129,7 +167,39 @@
       </div>
     </div>
     <div class="item2">
-      <div class="list-group">
+      <div class="list-group" id="des_col">
+        <a href="#" class="list-group-item list-group-item-action  " id="new_entry_a" aria-current="true"
+          style="display: none;">
+          <div class="d-flex justify-content-between" style="display: none;">
+            <div id="new_entry" style="display: none;">
+              <label style="margin-top: 5px;">Title</label>
+              <input type="text" id="title" class="form-control me-2" placeholder="List Title">
+              <label style="margin-top: 5px;">Description</label>
+              <textarea rows="6" cols="40" id="t_desc" class="form-control me-2" name="description"></textarea>
+              <button class="btn btn-outline-dark btn-sm" style="width: fit-content;" type="submit"
+                onclick="saveLi()">Save
+                List</button>
+              <script>
+
+                function saveLi() {
+                  recipe = [];
+                  recipe = document.getElementById('t_directions').value;
+
+
+                  //direct = recipe;
+                  alert("Your list has been saved!");
+                  main.push(t_list, title_main, description, list_item, recipe);
+                  //main = title_main.concat(description,list_item,recipe,t_list);
+
+                  console.log(main);
+
+
+                }
+              </script>
+            </div>
+
+          </div>
+        </a>
         <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
           onclick="party()">
           <script>
@@ -149,28 +219,28 @@
               document.getElementById('price0').innerHTML = "980";
 
               document.getElementById('par0').innerHTML = "<b>@Carrie</b> : Irish Gran loved throwing lively parties. She spent the day cleaning the house, sending Grandpa out with a precise shopping list for food and drink. Once ready, she would welcome everyone with a drink and then maintain her high #spirits into the early hours.";
-              document.getElementById('tim0').innerHTML = "1h";             
+              document.getElementById('tim0').innerHTML = "1h";
               document.getElementById('par1').innerHTML = "<b>@Amanda</b> : Family chat reminded me of this Christmas party shopping list written by Heifer many, many moons ago. I still smile every time I read it.";
               document.getElementById('tim1').innerHTML = "3h";
               document.getElementById('par2').innerHTML = "<b>@Margaret</b> : Wonderful weekend with family and friends, chatting, sharing, attempting karaoke and dancing badly. My 60½ party wasn't as originally planned and I never thought hand sanitizers would feature on a party shopping list but so worth it. Now to clean up!";
               document.getElementById('tim2').innerHTML = "6h";
               document.getElementById('par3').innerHTML = "<b>@Smith</b> : We are busy planning a REAL party 🎉 during our maths party day. Sorting our shopping list, what’s the best deal? Where to shop for our leavers party items??";
-              document.getElementById('tim3').innerHTML = "1d"; 
+              document.getElementById('tim3').innerHTML = "1d";
               document.getElementById('par4').innerHTML = "<b>@Amy</b> : The birthday tea party shopping list: 5 year old edition";
               document.getElementById('tim4').innerHTML = "1d 3h";
               document.getElementById('par5').innerHTML = "<b>@Eve</b> : My people, it's just 2 Days to Christmas oh.";
               document.getElementById('tim5').innerHTML = "1d 7h";
               document.getElementById('par6').innerHTML = "<b>@Gwen</b> : Amazing engagement in Year 6 maths today! Party planning + tesco shopping list = decimal addition and subtraction fun!";
-              document.getElementById('tim6').innerHTML = "2d"; 
-   
-              user =[];
+              document.getElementById('tim6').innerHTML = "2d";
+
+              user = [];
               user.push("Anne");
-              order=[];
-              cost=[];
-              mail =[];
-              order.push("Party","Party invitations","Tables (for guests & buffet)","Chairs","Napkins","Place cards","Drinkware","Plates","Balloons","Centerpieces");
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Party", "Party invitations", "Tables (for guests & buffet)", "Chairs", "Napkins", "Place cards", "Drinkware", "Plates", "Balloons", "Centerpieces");
               cost.push("980");
-             mail.push('mailto:anne@example.com?subject=shoppinglist&body=party');
+              mail.push('mailto:anne@example.com?subject=shoppinglist&body=party');
             }
           </script>
 
@@ -205,28 +275,28 @@
               document.getElementById('price0').innerHTML = "780";
 
               document.getElementById('par0').innerHTML = "<b>@Chase</b> : One drink into this vacation and I crossed all 17 items related to chili lime ceviche off my shopping list and scribbled in hot dogs, that says more about me than I care to admit";
-              document.getElementById('tim0').innerHTML = "2m";             
+              document.getElementById('tim0').innerHTML = "2m";
               document.getElementById('par1').innerHTML = "<b>@Jack</b> : Absolutely soaked Tori with this monster as soon as she walked in from work today. Most important item on the vacation shopping list!";
               document.getElementById('tim1').innerHTML = "1h";
               document.getElementById('par2').innerHTML = "<b>@Mama</b> : In case you were wondering how my vacation went, I am going to the grocery store alone and without a shopping list. I am so excited to be alone in a grocery store. That's how my vacation went.";
               document.getElementById('tim2').innerHTML = "3h";
               document.getElementById('par3').innerHTML = "<b>@Wafuru</b> : *Adds to vacation shopping list under “Plan B”* 😭😭😂🤣";
-              document.getElementById('tim3').innerHTML = "1d 2h"; 
+              document.getElementById('tim3').innerHTML = "1d 2h";
               document.getElementById('par4').innerHTML = "<b>@Asia</b> : I find joy in crossing things off my vacation shopping list";
               document.getElementById('tim4').innerHTML = "1d 5h";
               document.getElementById('par5').innerHTML = "<b>@Theresa</b> : We’re going on vacation in 2 weeks and I have made spreadsheets (itinerary, budget, shopping list, packing list, etc). Showed them to Hubs and he said, “That’s nice honey.”";
               document.getElementById('tim5').innerHTML = "1d 9h";
               document.getElementById('par6').innerHTML = "<b>@Meredith</b> : Two months from today is Christmas Eve! With the gift of travel, you don't need to worry about a shortage. Contact me and we can start crossing gifts off your shopping list!";
-              document.getElementById('tim6').innerHTML = "2d 4h"; 
-     
-              user =[];
+              document.getElementById('tim6').innerHTML = "2d 4h";
+
+              user = [];
               user.push("Rose");
-              order=[];
-              cost=[];
-              mail =[];
-              order.push("Vacation","One casual outfit","One dressy outfit","One sweater or jacket","Underwear, delicates","Socks","Pajamas","Swimwear","Belt","Scarf");
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Vacation", "One casual outfit", "One dressy outfit", "One sweater or jacket", "Underwear, delicates", "Socks", "Pajamas", "Swimwear", "Belt", "Scarf");
               cost.push("780");
-             mail.push('mailto:rose@example.com?subject=shoppinglist&body=vacation');
+              mail.push('mailto:rose@example.com?subject=shoppinglist&body=vacation');
             }
           </script>
 
@@ -262,28 +332,28 @@
               document.getElementById('price0').innerHTML = "1120";
 
               document.getElementById('par0').innerHTML = "<b>@Cheesy</b> : Ok but Wardrobe, can we get a shopping list for all of Jenna’s outfits?";
-              document.getElementById('tim0').innerHTML = "54m";             
+              document.getElementById('tim0').innerHTML = "54m";
               document.getElementById('par1').innerHTML = "<b>@Lakyn</b> : At the end of some sessions, I build a PDF document for my client with their shopping list, styling tips for their wardrobe, moodboard and whatever else I think they need to know moving forward to dress their best. The document I’m working on right now is…almost 40 pages. 😭";
               document.getElementById('tim1').innerHTML = "1h";
               document.getElementById('par2').innerHTML = "<b>@Deedee</b> : so what do we think of cranberry pills baton rouge shopping extravaganza aka getting a new wardrobe super soaker fun time all around shopping list!!!!";
               document.getElementById('tim2').innerHTML = "7h";
               document.getElementById('par3').innerHTML = "<b>@Anna</b> : Here's how my spring capsule wardrobe shopping list is shaping up (and the items I've bought already - OOPS!)";
-              document.getElementById('tim3').innerHTML = "1d 4h"; 
+              document.getElementById('tim3').innerHTML = "1d 4h";
               document.getElementById('par4').innerHTML = "<b>@Thaurwen</b> : Realized that every time I retweet one of these I'm basically making a shopping list for future wardrobe additions.";
               document.getElementById('tim4').innerHTML = "1d 9h";
               document.getElementById('par5').innerHTML = "<b>@Vogue</b> : This shopping list covers all of your November wardrobe needs: ";
               document.getElementById('tim5').innerHTML = "1d 11h";
               document.getElementById('par6').innerHTML = "<b>@Lydia</b> : I've got bobble hats, snuggly scarves and chunky jumpers on my shopping list. Love wardrobe updates at this time of year! 🍂🍁";
-              document.getElementById('tim6').innerHTML = "2d 6h"; 
+              document.getElementById('tim6').innerHTML = "2d 6h";
 
-              user =[];
+              user = [];
               user.push("Morris");
-              order=[];
-              cost=[];
-              mail =[];
-              order.push("Wardrobe","sneakers","striped tee","leather jacket","tailored coat","all-black sunglasses","double-breasted blazer","silk scarf","classic knit vest","ankle boots");
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Wardrobe", "sneakers", "striped tee", "leather jacket", "tailored coat", "all-black sunglasses", "double-breasted blazer", "silk scarf", "classic knit vest", "ankle boots");
               cost.push("1120");
-             mail.push('mailto:morris@example.com?subject=shoppinglist&body=wardrobe');
+              mail.push('mailto:morris@example.com?subject=shoppinglist&body=wardrobe');
             }
           </script>
 
@@ -306,23 +376,23 @@
               document.getElementById('item0').innerHTML = "First aid kit";
               document.getElementById('item1').innerHTML = "Batteries";
               document.getElementById('item2').innerHTML = "Extension cord";
- 
+
               document.getElementById('price0').innerHTML = "540";
 
               document.getElementById('par0').innerHTML = "<b>@Lydia</b> : first shopping list since moving out of my parents’ and it’s really filled with the bare essentials, isn’t it";
-              document.getElementById('tim0').innerHTML = "2h";             
+              document.getElementById('tim0').innerHTML = "2h";
               document.getElementById('par1').innerHTML = "<b>@Chris</b> : i’m moving out today and here’s my shopping list so far can u guys tell me what else i should get cause i fr dont know";
               document.getElementById('tim1').innerHTML = "3h";
               document.getElementById('par2').innerHTML = "<b>@Janine</b> : moving out shopping list getting really long";
               document.getElementById('tim2').innerHTML = "5h";
               document.getElementById('par3').innerHTML = "<b>@Genesis</b> : Kid is thinking of moving out. Gave me a shopping list for IKEA. What about your savings, I enquire. Getting a kitten she says. Priorities!🙄🤣";
-              document.getElementById('tim3').innerHTML = "1d"; 
+              document.getElementById('tim3').innerHTML = "1d";
               document.getElementById('par4').innerHTML = "<b>@Lisa</b> : What are some things someone moving out needs? I’m making a shopping list.";
               document.getElementById('tim4').innerHTML = "1d 9h";
               document.getElementById('par5').innerHTML = "<b>@Beenie</b> : making a Moving Out shopping list this is so scary aaaaa ";
               document.getElementById('tim5').innerHTML = "1d 10h";
               document.getElementById('par6').innerHTML = "<b>@Mae</b> : so i might be moving out next week first thing on my shopping list is a pride flag to hang on my wall";
-              document.getElementById('tim6').innerHTML = "2d 2h"; 
+              document.getElementById('tim6').innerHTML = "2d 2h";
               //document.getElementById('par7').innerHTML = "";
               //document.getElementById('tim7').innerHTML = "";
               //document.getElementById('par8').innerHTML = "";
@@ -330,15 +400,15 @@
               //document.getElementById('par9').innerHTML = "";
               //document.getElementById('ptim9').innerHTML = "";
               //document.getElementById('par10').innerHTML = "";
-             // document.getElementById('tim10').innerHTML = "";
-              user =[];
+              // document.getElementById('tim10').innerHTML = "";
+              user = [];
               user.push("Timothy");
-              order=[];
-              cost=[];
-              mail =[];
-              order.push("Moving Out","First aid kit","Batteries","Extension cord");
+              order = [];
+              cost = [];
+              mail = [];
+              order.push("Moving Out", "First aid kit", "Batteries", "Extension cord");
               cost.push("1120");
-             mail.push('mailto:timothy@example.com?subject=shoppinglist&body=moving_out');
+              mail.push('mailto:timothy@example.com?subject=shoppinglist&body=moving_out');
             }
           </script>
 
@@ -356,7 +426,63 @@
       </div>
     </div>
     <div class="item3">
-      <div class="list-group">
+      <div class="list-group" id="it_col">
+        <a href="#" class="list-group-item list-group-item-action  " aria-current="true" style="display: none;"
+          id="new_entry_list_a">
+
+          <div class="d-flex justify-content-between" style="display: none;">
+            <div id="new_entry_list" style="display: none;">
+              <h6 id="newHeader" class="mb-0">New List</h6>
+              <ul id="ul" class="mb-0 opacity-75">
+                <li id="list1" class="mb-0 opacity-75" style="list-style: none;"></li>
+
+              </ul>
+              <input type="text" id="txtVal" class="form-control me-2" placeholder="Add List Item"
+                style="margin-top: 5px; margin-bottom: 5px;">
+
+              <button class="btn btn-outline-dark btn-sm" style="width: fit-content;float: left;" type="submit"
+                onclick="addLi()">Add</button>
+              <script>
+                function addLi() {
+                  const list2 = [];
+                  const title1 = [];
+                  var txtVal = document.getElementById('txtVal').value,
+                    listNode = document.getElementById('list1'),
+                    liNode = document.createElement("li"),
+                    txtNode = document.createTextNode(txtVal),
+                    title = document.getElementById('title').value;
+                  description = document.getElementById('t_desc').value;
+                  liNode.appendChild(txtNode);
+                  listNode.appendChild(liNode);
+                  list2.push(txtVal);
+                  //console.log(list2);
+                  document.getElementById('newHeader').innerHTML = title;
+
+                  title_main = title;
+                  list_item.push(txtVal);
+
+                }
+              </script>
+              <button class="btn btn-outline-dark btn-sm" style="width: fit-content;float: right;" type="submit"
+                onclick="clearLi()">Clear
+                List</button>
+              <script>
+                function clearLi() {
+                  t_list = [];
+                  title_main = [];
+                  description = [];
+                  list_item = [];
+                  recipe = [];
+                  document.getElementById("list1").innerHTML = "";
+                  console.log("List cleared");
+                }
+              </script>
+
+
+            </div>
+
+          </div>
+        </a>
 
         <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
 
@@ -384,143 +510,157 @@
       </div>
     </div>
     <div class="item4">
-    <div class="list-group">
-      
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" " aria-current="true">        
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <label style="margin-top: 5px;">Comments</label>
-          <textarea rows="3" cols="40" id="comments2" class="form-control me-2" name="comments"></textarea>
-          <button class="btn btn-outline-dark btn-sm" style="width: fit-content;" type="submit" onclick="addcom()">Post</button>
-          </div>
-          <script>
-            function addcom(){
-              comments1 = document.getElementById('comments2').value;
-              console.log(comments1);
-             
-              const usecom = document.createElement("p");
-              const usetim = document.createElement("p");
-              const divcom = document.createElement("div");
-              const acom = document.createElement("a");
-              usecom.className = "mb-0 opacity-75";
-              usetim.className = "opacity-50 text-nowrap";
-              divcom.className = "d-flex gap-2 w-100 justify-content-between";
-              acom.className = "list-group-item list-group-item-action d-flex gap-3 py-3";
-              acom.ariaCurrent =true;
-              divcom.id = "newc1";
-              usecom.innerHTML = "<b>@Simon </b>: " + comments1;
-              usetim.innerHTML = "Now";
-             
-              document.getElementById("newc").appendChild(acom);
-              acom.appendChild(divcom);
-              divcom.appendChild(usecom);
-              divcom.appendChild(usetim);
-              
-              localStorage.setItem("list", JSON.stringify(order[0]));
-            localStorage.setItem("comments", JSON.stringify(comments1));
-            //var storedComments = JSON.parse(localStorage.getItem("comments"+"list"));
-            console.log("BREAK");
-            localStorage.comments1 = JSON.stringify(comments1);
-            var storedComments = JSON.parse(localStorage.comments1);
-            console.log(storedComments); 
-            }
-          </script>
-          <small class="opacity-50 text-nowrap">Now</small>
-        </div>
-      </a>
-     
-      <div id="newc" class=" gap-2 w-100 justify-content-between"></div>
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <p id="par0" class="mb-0 opacity-75"><b>@Carrie</b> : Irish Gran loved throwing lively parties. She spent the day cleaning the house, sending Grandpa out with a precise shopping list for food and drink. Once ready, she would welcome everyone with a drink and then maintain her high #spirits into the early hours.</p>
-          </div>
-          <small id="tim0" class="opacity-50 text-nowrap">1h</small>
-        </div>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <p id="par1" class="mb-0 opacity-75"><b>@Amanda</b> : Family chat reminded me of this Christmas party shopping list written by Heifer many, many moons ago. I still smile every time I read it.</p>
-          </div>
-          <small id="tim1" class="opacity-50 text-nowrap">3h</small>
-        </div>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <p id="par2" class="mb-0 opacity-75"><b>@Margaret</b> : Wonderful weekend with family and friends, chatting, sharing, attempting karaoke and dancing badly. My 60½ party wasn't as originally planned and I never thought hand sanitizers would feature on a party shopping list but so worth it. Now to clean up!</p>
-          </div>
-          <small id="tim2" class="opacity-50 text-nowrap">6h</small>
-        </div>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <p id="par3" class="mb-0 opacity-75"><b>@Smith</b> : We are busy planning a REAL party 🎉 during our maths party day. Sorting our shopping list, what’s the best deal? Where to shop for our leavers party items??</p>
-          </div>
-          <small id="tim3" class="opacity-50 text-nowrap">1d</small>
-        </div>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <p id="par4" class="mb-0 opacity-75"><b>@Amy</b> : The birthday tea party shopping list: 5 year old edition</p>
-          </div>
-          <small id="tim4" class="opacity-50 text-nowrap">1d 3h</small>
-        </div>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <p id="par5" class="mb-0 opacity-75"><b>@Eve</b> : My people, it’s just 2 Days to Christmas oh. </p>
-          </div>
-          <small id="tim5" class="opacity-50 text-nowrap">1d 7h</small>
-        </div>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <p id="par6" class="mb-0 opacity-75"><b>@Gwen</b> : Amazing engagement in Year 6 maths today! Party planning + tesco shopping list = decimal addition and subtraction fun!</p>
-          </div>
-          <small id="tim6" class="opacity-50 text-nowrap">2d</small>
-        </div>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <p id="par7" class="mb-0 opacity-75"></p>
-          </div>
-          <small id="tim7" class="opacity-50 text-nowrap"></small>
-        </div>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <p id="par8" class="mb-0 opacity-75"></p>
-          </div>
-          <small id="tim8" class="opacity-50 text-nowrap"></small>
-        </div>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <p id="par9" class="mb-0 opacity-75"></p>
-          </div>
-          <small id="tim9" class="opacity-50 text-nowrap"></small>
-        </div>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <p id="par10" class="mb-0 opacity-75"></p>
-          </div>
-          <small id="tim10" class="opacity-50 text-nowrap"></small>
-        </div>
-      </a>
-          </div>
+      <div class="list-group">
 
-  </div>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <label style="margin-top: 5px;">Comments</label>
+              <textarea rows="3" cols="40" id="comments2" class="form-control me-2" name="comments"></textarea>
+              <button class="btn btn-outline-dark btn-sm" style="width: fit-content;" type="submit"
+                onclick="addcom()">Post</button>
+            </div>
+            <script>
+              function addcom() {
+                comments1 = document.getElementById('comments2').value;
+                console.log(comments1);
+
+                const usecom = document.createElement("p");
+                const usetim = document.createElement("p");
+                const divcom = document.createElement("div");
+                const acom = document.createElement("a");
+                usecom.className = "mb-0 opacity-75";
+                usetim.className = "opacity-50 text-nowrap";
+                divcom.className = "d-flex gap-2 w-100 justify-content-between";
+                acom.className = "list-group-item list-group-item-action d-flex gap-3 py-3";
+                acom.ariaCurrent = true;
+                divcom.id = "newc1";
+                usecom.innerHTML = "<b>@Simon </b>: " + comments1;
+                usetim.innerHTML = "Now";
+
+                document.getElementById("newc").appendChild(acom);
+                acom.appendChild(divcom);
+                divcom.appendChild(usecom);
+                divcom.appendChild(usetim);
+
+                localStorage.setItem("list", JSON.stringify(order[0]));
+                localStorage.setItem("comments", JSON.stringify(comments1));
+                //var storedComments = JSON.parse(localStorage.getItem("comments"+"list"));
+                console.log("BREAK");
+                localStorage.comments1 = JSON.stringify(comments1);
+                var storedComments = JSON.parse(localStorage.comments1);
+                console.log(storedComments);
+              }
+            </script>
+            <small class="opacity-50 text-nowrap">Now</small>
+          </div>
+        </a>
+
+        <div id="newc" class=" gap-2 w-100 justify-content-between"></div>
+        <div id="oldc">
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p id="par0" class="mb-0 opacity-75"><b>@Carrie</b> : Irish Gran loved throwing lively parties. She
+                  spent the day cleaning the house, sending Grandpa out with a precise shopping list for food and drink.
+                  Once ready, she would welcome everyone with a drink and then maintain her high #spirits into the early
+                  hours.</p>
+              </div>
+              <small id="tim0" class="opacity-50 text-nowrap">1h</small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p id="par1" class="mb-0 opacity-75"><b>@Amanda</b> : Family chat reminded me of this Christmas party
+                  shopping list written by Heifer many, many moons ago. I still smile every time I read it.</p>
+              </div>
+              <small id="tim1" class="opacity-50 text-nowrap">3h</small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p id="par2" class="mb-0 opacity-75"><b>@Margaret</b> : Wonderful weekend with family and friends,
+                  chatting, sharing, attempting karaoke and dancing badly. My 60½ party wasn't as originally planned and
+                  I never thought hand sanitizers would feature on a party shopping list but so worth it. Now to clean
+                  up!</p>
+              </div>
+              <small id="tim2" class="opacity-50 text-nowrap">6h</small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p id="par3" class="mb-0 opacity-75"><b>@Smith</b> : We are busy planning a REAL party 🎉 during our
+                  maths party day. Sorting our shopping list, what’s the best deal? Where to shop for our leavers party
+                  items??</p>
+              </div>
+              <small id="tim3" class="opacity-50 text-nowrap">1d</small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p id="par4" class="mb-0 opacity-75"><b>@Amy</b> : The birthday tea party shopping list: 5 year old
+                  edition</p>
+              </div>
+              <small id="tim4" class="opacity-50 text-nowrap">1d 3h</small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p id="par5" class="mb-0 opacity-75"><b>@Eve</b> : My people, it’s just 2 Days to Christmas oh. </p>
+              </div>
+              <small id="tim5" class="opacity-50 text-nowrap">1d 7h</small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p id="par6" class="mb-0 opacity-75"><b>@Gwen</b> : Amazing engagement in Year 6 maths today! Party
+                  planning + tesco shopping list = decimal addition and subtraction fun!</p>
+              </div>
+              <small id="tim6" class="opacity-50 text-nowrap">2d</small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p id="par7" class="mb-0 opacity-75"></p>
+              </div>
+              <small id="tim7" class="opacity-50 text-nowrap"></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p id="par8" class="mb-0 opacity-75"></p>
+              </div>
+              <small id="tim8" class="opacity-50 text-nowrap"></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p id="par9" class="mb-0 opacity-75"></p>
+              </div>
+              <small id="tim9" class="opacity-50 text-nowrap"></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p id="par10" class="mb-0 opacity-75"></p>
+              </div>
+              <small id="tim10" class="opacity-50 text-nowrap"></small>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
   </div>
 
 </body>

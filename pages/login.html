@@ -283,7 +283,7 @@
 
     <div class="item2">
       <div id="form">
-        <form action="../action_page.php" method="post">
+        <form action="../action_page.php" method="post" id="login_info">
 
 
           <div class="container">
@@ -297,7 +297,7 @@
             </label>
             <input type="password" placeholder="Enter Password" name="psw" required />
 
-            <button type="submit">
+            <button type="submit" id="btn">
               <div>Login</div>
             </button>
 
@@ -309,6 +309,38 @@
             <span class="psw"><a href="#">Forgot Password?</a></span>
           </div>
         </form>
+        <script>
+          $(document).ready(function () {
+            $("#btn").click(function (e) {
+              var jsonData = {};
+
+              var formData = $("#login_info").serializeArray();
+              // console.log(formData);
+
+              $.each(formData, function () {
+                if (jsonData[this.name]) {
+                  if (!jsonData[this.name].push) {
+                    jsonData[this.name] = [jsonData[this.name]];
+                  }
+                  jsonData[this.name].push(this.value || '');
+                } else {
+                  jsonData[this.name] = this.value || '';
+                }
+
+
+              });
+              console.log(jsonData);
+              $.ajax(
+                {
+                  url: "action.php",
+                  type: "POST",
+                  data: jsonData,
+
+                });
+              e.preventDefault();
+            });
+          });
+        </script>
       </div>
     </div>
   </div>
