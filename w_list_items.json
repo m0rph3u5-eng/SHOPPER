@@ -1,39 +1,213 @@
 [
     {          
+        "user": "@Nancy",
+        "list": "Bargain Hunter",
         "item": "Bacon",
         "cost": 4
     },
     {          
+        "user": "@Nancy",
+        "list": "Bargain Hunter",
         "item": "Baking goods",
         "cost": 4
     },
-    {          
+    {       
+        "user": "@Nancy",
+        "list": "Bargain Hunter",   
         "item": "Beverages",
         "cost": 4
     },
-    {          
+    {         
+        "user": "@Nancy",
+        "list": "Bargain Hunter", 
         "item": "Canned goods",
         "cost": 4
     },
     {          
+        "user": "@Nancy",
+        "list": "Bargain Hunter",
         "item": "Fish",
         "cost": 4
     },
     {          
+        "user": "@Nancy",
+        "list": "Bargain Hunter",
         "item": "Grains",
         "cost": 4
     },
-    {          
+    {        
+        "user": "@Nancy",
+        "list": "Bargain Hunter",  
         "item": "Meat",
         "cost": 4
     },
-    {          
+    {        
+        "user": "@Nancy",
+        "list": "Bargain Hunter",  
         "item": "Snacks",
         "cost": 4
     },
-    {          
+    {        
+        "user": "@Nancy",
+        "list": "Bargain Hunter",  
         "item": "Spices",
         "cost": 4
+    },
+    
+    {          
+        "user": "@Lilly",
+        "list": "Inspired",
+        "item": "Baking goods",
+        "cost": 4
+    },
+    {       
+        "user": "@Lilly",
+        "list": "Inspired",  
+        "item": "Beverages",
+        "cost": 4
+    },
+    {         
+        "user": "@Lilly",
+        "list": "Inspired",
+        "item": "Canned goods",
+        "cost": 4
+    },
+    {          
+        "user": "@Lilly",
+        "list": "Inspired",
+        "item": "Fish",
+        "cost": 4
+    },
+    {          
+        "user": "@Lilly",
+        "list": "Inspired",
+        "item": "Grains",
+        "cost": 4
+    },
+    {        
+        "user": "@Lilly",
+        "list": "Inspired",
+        "item": "Meat",
+        "cost": 4
+    },
+    {        
+        "user": "@Lilly",
+        "list": "Inspired",
+        "item": "Snacks",
+        "cost": 4
+    },
+    {        
+        "user": "@Lilly",
+        "list": "Inspired",
+        "item": "Spices",
+        "cost": 4
+    },
+
+    {          
+        "user": "@Tom",
+        "list": "Latest Products",
+        "item": "Bacon",
+        "cost": 4
+    },
+    {          
+        "user": "@Tom",
+        "list": "Latest Products",
+        "item": "Baking goods",
+        "cost": 4
+    },
+    {       
+        "user": "@Tom",
+        "list": "Latest Products", 
+        "item": "Beverages",
+        "cost": 4
+    },
+    {         
+        "user": "@Tom",
+        "list": "Latest Products",
+        "item": "Canned goods",
+        "cost": 4
+    },
+    {          
+        "user": "@Tom",
+        "list": "Latest Products",
+        "item": "Fish",
+        "cost": 4
+    },
+    {          
+        "user": "@Tom",
+        "list": "Latest Products",
+        "item": "Grains",
+        "cost": 4
+    },
+    {        
+        "user": "@Tom",
+        "list": "Latest Products",
+        "item": "Meat",
+        "cost": 4
+    },
+    {        
+        "user": "@Tom",
+        "list": "Latest Products",
+        "item": "Snacks",
+        "cost": 4
+    },
+    {        
+        "user": "@Tom",
+        "list": "Latest Products",
+        "item": "Spices",
+        "cost": 4
+    },
+    {        
+        "user": "@Tom",
+        "list": "Latest Products",
+        "item": "Cleaners",
+        "cost": 4
+    },
+
+    
+    {          
+        "user": "@Mark",
+        "list": "Researched",
+        "item": "Bacon",
+        "cost": 4
+    },
+    {          
+        "user": "@Mark",
+        "list": "Researched",
+        "item": "Baking goods",
+        "cost": 4
+    },
+    {       
+        "user": "@Mark",
+        "list": "Researched",
+        "item": "Beverages",
+        "cost": 4
+    },
+    {         
+        "user": "@Mark",
+        "list": "Researched",
+        "item": "Canned goods",
+        "cost": 4
+    },
+    {          
+        "user": "@Mark",
+        "list": "Researched",
+        "item": "Fish",
+        "cost": 4
+    },
+    {          
+        "user": "@Mark",
+        "list": "Researched",
+        "item": "Grains",
+        "cost": 4
+    },
+    {        
+        "user": "@Mark",
+        "list": "Researched",
+        "item": "Meat",
+        "cost": 4
     }
+
 ]
+
    
