@@ -1,0 +1,29 @@
+[
+    {       
+        "type": "Weekly Shopping",
+        "title":"Kileleshwa",
+        "user":"@Betty",
+        "description": "Bargain Hunter",
+        "items": ["Bacon","Baking goods","Beverages","Canned goods","Fish","Grains","Meat","Snacks","Spices"],
+        "cost": 980 
+
+    },
+
+    {       
+        "type": "Weekly Shopping",
+        "title":"Lavington",
+        "user":"@Benson",
+        "description": "Inspired",
+        "items": ["Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices"],
+        "cost": 780
+    },
+    {       
+        "type": "Weekly Shopping",
+        "title":"Westlands",
+        "user":"@Cathy",
+        "description": "Latest Products",
+        "items": ["Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices"],
+        "cost": 1120
+    }
+
+]

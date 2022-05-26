@@ -1,0 +1,169 @@
+[
+    {          
+        "user": "@Betty",
+        "list": "Kileleshwa",
+        "item": "Bacon",
+        "cost": 4
+    },
+    {          
+        "user": "@Betty",
+        "list": "Kileleshwa",
+        "item": "Baking goods",
+        "cost": 4
+    },
+    {       
+        "user": "@Betty",
+        "list": "Kileleshwa", 
+        "item": "Beverages",
+        "cost": 4
+    },
+    {         
+        "user": "@Betty",
+        "list": "Kileleshwa",
+        "item": "Canned goods",
+        "cost": 4
+    },
+    {          
+        "user": "@Betty",
+        "list": "Kileleshwa",
+        "item": "Fish",
+        "cost": 4
+    },
+    {          
+        "user": "@Betty",
+        "list": "Kileleshwa",
+        "item": "Grains",
+        "cost": 4
+    },
+    {        
+        "user": "@Betty",
+        "list": "Kileleshwa",
+        "item": "Meat",
+        "cost": 4
+    },
+    {        
+        "user": "@Betty",
+        "list": "Kileleshwa", 
+        "item": "Snacks",
+        "cost": 4
+    },
+    {        
+        "user": "@Betty",
+        "list": "Kileleshwa", 
+        "item": "Spices",
+        "cost": 4
+    },
+    
+    {          
+        "user": "@Benson",
+        "list": "Lavington",
+        "item": "Baking goods",
+        "cost": 4
+    },
+    {       
+        "user": "@Benson",
+        "list": "Lavington",  
+        "item": "Beverages",
+        "cost": 4
+    },
+    {         
+        "user": "@Benson",
+        "list": "Lavington",
+        "item": "Canned goods",
+        "cost": 4
+    },
+    {          
+        "user": "@Benson",
+        "list": "Lavington",
+        "item": "Fish",
+        "cost": 4
+    },
+    {          
+        "user": "@Benson",
+        "list": "Lavington",
+        "item": "Grains",
+        "cost": 4
+    },
+    {        
+        "user": "@Benson",
+        "list": "Lavington",
+        "item": "Meat",
+        "cost": 4
+    },
+    {        
+        "user": "@Benson",
+        "list": "Lavington",
+        "item": "Snacks",
+        "cost": 4
+    },
+    {        
+        "user": "@Benson",
+        "list": "Lavington",
+        "item": "Spices",
+        "cost": 4
+    },
+
+    {          
+        "user": "@Cathy",
+        "list": "Westlands",
+        "item": "Bacon",
+        "cost": 4
+    },
+    {          
+        "user": "@Cathy",
+        "list": "Westlands",
+        "item": "Baking goods",
+        "cost": 4
+    },
+    {       
+        "user": "@Cathy",
+        "list": "Westlands",
+        "item": "Beverages",
+        "cost": 4
+    },
+    {         
+        "user": "@Cathy",
+        "list": "Westlands",
+        "item": "Canned goods",
+        "cost": 4
+    },
+    {          
+        "user": "@Cathy",
+        "list": "Westlands",
+        "item": "Fish",
+        "cost": 4
+    },
+    {          
+        "user": "@Cathy",
+        "list": "Westlands",
+        "item": "Grains",
+        "cost": 4
+    },
+    {        
+        "user": "@Cathy",
+        "list": "Westlands",
+        "item": "Meat",
+        "cost": 4
+    },
+    {        
+        "user": "@Cathy",
+        "list": "Westlands",
+        "item": "Snacks",
+        "cost": 4
+    },
+    {        
+        "user": "@Cathy",
+        "list": "Westlands",
+        "item": "Spices",
+        "cost": 4
+    },
+    {        
+        "user": "@Cathy",
+        "list": "Westlands",
+        "item": "Cleaners",
+        "cost": 4
+    }
+
+]
+
+   

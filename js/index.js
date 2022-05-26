@@ -6,7 +6,7 @@
   var xpl = document.getElementById("plus");
   var ml = document.getElementById("main_list");
   var price = document.getElementById("price0");
-  var comm = document.getElementById("oldc");
+  var comm = document.getElementById("newc");
   if (x.style.display == "none") {
     x.style.display = "block";
     xl.style.display = "block";
@@ -55,7 +55,7 @@ function saveLi() {
   myLink.className = "list-group-item list-group-item-action d-flex gap-3 py-3";
   myCost.className = "opacity-50 text-nowrap";
   myLink.href = "#";
-  myLink.addEventListener("click", call);
+  //myLink.addEventListener("click", call);
 
   myLink.ariaCurrent = true;
 
@@ -157,3 +157,4 @@ function addcom() {
   var storedComments = JSON.parse(localStorage.comments1);
   console.log(storedComments);
 }
+

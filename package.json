@@ -1,0 +1,24 @@
+{
+  "name": "shopper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dao.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m0rph3u5-eng/ShopperBeta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m0rph3u5-eng/ShopperBeta/issues"
+  },
+  "homepage": "https://github.com/m0rph3u5-eng/ShopperBeta#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "sqlite3": "^5.0.8"
+  }
+}
