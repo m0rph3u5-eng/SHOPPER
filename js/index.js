@@ -158,3 +158,18 @@ function addcom() {
   console.log(storedComments);
 }
 
+function showcomments() {
+                    
+  if (document.getElementById("comments").style.display == "block") {
+    document.getElementById("comments").style.display = "none";
+    document.getElementById("directions").style.display = "block";
+    document.getElementById('top_comm').innerHTML = "Comments";
+  } else {
+    document.getElementById("comments").style.display = "block";
+    document.getElementById("directions").style.display = "none";
+    document.getElementById('top_comm').innerHTML = "Directions";
+  }
+  
+
+ 
+}

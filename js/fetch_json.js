@@ -1,5 +1,6 @@
 let user;
 let order;
+let whatsapp;
 
 fetch("w_list.json")
   .then(function (response) {
@@ -14,6 +15,7 @@ fetch("w_list.json")
 
 function appendData(data) {
   for (i = 0; i < data.length; i++) {
+
     const myHeader = document.createElement("h6");
     const myUser = document.createElement("p");
     const myDesc = document.createElement("p");
@@ -42,7 +44,7 @@ function appendData(data) {
 
       var mail = [];
       user = [myUser.innerHTML];
-      mail.push("mailto:nancy@example.com?subject=shoppinglist&body=bargain");
+     // mail.push(data[i].whatsapp);
 
       fetch("w_list_items.json")
         .then(function (response) {
@@ -150,7 +152,6 @@ function appendData(data) {
         });
 
       function appendData(data) {
-  
         document.getElementById("heading").innerHTML = data[0].list;
         document.getElementById("handle").innerHTML = data[0].user;
         document.getElementById("price0").innerHTML = data[0].cost;
@@ -219,7 +220,7 @@ function appendData(data) {
         }
       }
       comment21();
-    };
+    }
     setDefaultTitle();
     myHeader.appendChild(myUser);
     myDivPrime.appendChild(myHeader);
@@ -230,9 +231,9 @@ function appendData(data) {
     myLink.appendChild(myDiv);
 
     document.getElementById("des_col").appendChild(myLink);
+  
   }
 }
-
 
 function orderf() {
   if (

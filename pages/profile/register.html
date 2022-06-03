@@ -1,0 +1,324 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Register | SHOPPER</title>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+  
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 254, 254);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  /* Bordered form */
+form {
+  margin-top: 5px;
+  margin-left: 10px;
+  position:fixed;
+  width: 400px;
+  background-color: #ffffff;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #000000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: 100%;
+  padding: 14px 20px;
+  background-color: #f44336;
+  position: relative;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 8px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 0px;
+  color:#000000;
+}
+span.psw a{
+	color:#000000;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* Style the input */
+#myInput {
+  margin: 0;
+  border:#000000;
+  border-style:groove;
+  border-radius: 0;
+  width: 70%;
+  height: 40px;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  height: 20px;
+  width: 20%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+
+}
+
+/* Style the "Save List" button */
+.saveBtn {
+  padding: 10px;
+  height: 20px;
+  width: 20%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+ float: right;
+ margin-left:5px;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+.saveBtn:hover {
+  background-color: #bbb;
+}
+    </style>
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <link href="../../css/navbar.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../../css/sidebars.css" rel="stylesheet" type="text/css" media="screen" />
+  
+    <link href="../../css/list-groups.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../../css/grid.css" rel="stylesheet" type="text/css" media="screen" />
+  
+    <script src="../../js/sidebars.js"></script>
+  </head>
+  
+  <body>
+    <div class="cont1">
+      <div class="item0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../../index.html">SHOPPER</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="register.html">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Order</a>
+            </li>
+            <!--     <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>-->
+          </ul>
+     
+        </div>
+      </div>
+    </nav>
+  </div>
+
+    <div class="item1">
+      <div>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="../../../index.html" class="nav-link link-dark" aria-current="page">
+  
+              Weekly Shopping
+            </a>
+          </li>
+          <li>
+            <a href="..\monthly\monthly_shopping.html" class="nav-link link-dark">
+  
+              Monthly Shopping
+            </a>
+          </li>
+          <li>
+            <a href="..\occassion\occassion.html" class="nav-link link-dark">
+  
+              Occassion
+            </a>
+          </li>
+          <li>
+            <a href="..\recipe\recipes.html" class="nav-link link-dark">
+  
+              Recipes
+            </a>
+          </li>
+          <hr>
+          <li>
+            <a href="../list_maker.html" class="nav-link link-dark">
+  
+              Make a List
+            </a>
+          </li>
+          <li>
+            <a href="..\delivery\deliverymaker.html" class="nav-link link-dark">
+  
+              Make a Delivery
+            </a>
+          </li>
+          <hr>
+          <li>
+            <a href="profile.html" class="nav-link link-dark">
+  
+              Profile
+            </a>
+          </li>
+        </ul>
+  
+      </div>
+  </div>
+
+    <div class="item2">
+    <div id="form">
+      <form action="../action_page.php" method="post">
+      
+
+        <div class="container">
+          <label for="uname"><p>Email Address</p></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+
+          <label for="uname"><p>Username</p></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+
+          <label id= "label" for="psw"><p>Password</p></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <label id="label" for="psw"><p>Re-Enter Password</p></label>
+          <input
+            type="password"
+            placeholder="Re-Enter Password"
+            name="psw"
+            required
+          />
+
+          <button type="submit">
+            <div class="auto-style1">Register</div>
+          </button>
+
+          <button type="button" onclick="location.href='../index.html'"class="cancelbtn">Cancel</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+  </body>
+</html>
