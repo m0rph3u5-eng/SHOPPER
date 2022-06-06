@@ -173,3 +173,65 @@ function showcomments() {
 
  
 }
+
+function changeFunc() {
+  var selectBox = document.getElementById("listType");
+  var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+  var x = document.getElementById("directions");
+  //alert(selectedValue);
+  if (selectedValue === "recipe") {
+
+    x.style.display = "block";
+  } else {
+    recipe = {};
+    x.style.display = "none";
+  }
+  t_list = [];
+  t_list = selectedValue;
+
+}
+
+function saveLi1() {
+  recipe = [];
+  recipe = document.getElementById('t_directions').value;
+
+
+  //direct = recipe;
+  alert("Your list has been saved!");
+  main.push(t_list, title_main, description, list_item, recipe);
+  //main = title_main.concat(description,list_item,recipe,t_list);
+
+  console.log(main);
+
+
+}
+
+function addLi1() {
+  const list2 = [];
+  const title1 = [];
+  var txtVal = document.getElementById('txtVal').value,
+    listNode = document.getElementById('list1'),
+    liNode = document.createElement("li"),
+    txtNode = document.createTextNode(txtVal),
+    title = document.getElementById('title').value;
+  description = document.getElementById('t_desc').value;
+  liNode.appendChild(txtNode);
+  listNode.appendChild(liNode);
+  list2.push(txtVal);
+  //console.log(list2);
+  document.getElementById('newHeader').innerHTML = title;
+
+  title_main = title;
+  list_item.push(txtVal);
+
+}
+
+function clearLi1() {
+  t_list = [];
+  title_main = [];
+  description = [];
+  list_item = [];
+  recipe = [];
+  document.getElementById("list1").innerHTML = "";
+  console.log("List cleared");
+}

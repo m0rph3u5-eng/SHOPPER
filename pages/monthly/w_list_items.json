@@ -1,163 +1,190 @@
 [
-    {          
+    {   
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",     
         "user": "@Tracy",
         "list": "Bargain Hunter",
         "item": "Batteries",
         "cost": 4
     },
-    {          
+    {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in", 
         "user": "@Tracy",
         "list": "Bargain Hunter",
         "item": "Cleaning supplies",
         "cost": 4
     },
-    {       
+    {      
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Tracy",
         "list": "Bargain Hunter",   
         "item": "Laundry detergent",
         "cost": 4
     },
     {         
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Tracy",
         "list": "Bargain Hunter", 
         "item": "Lightbulbs",
         "cost": 4
     },
-    {          
+    {       
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",   
         "user": "@Tracy",
         "list": "Bargain Hunter",
         "item": "Office and school supplies",
         "cost": 4
     },
-    {          
+    {    
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",      
         "user": "@Tracy",
         "list": "Bargain Hunter",
         "item": "Paper towels",
         "cost": 4
     },
-    {        
+    {    
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",    
         "user": "@Joan",
         "list": "Inspired",  
         "item": "Bandages",
         "cost": 4
     },
-    {        
+    {    
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",    
         "user": "@Joan",
         "list": "Inspired", 
         "item": "Hairstyling products",
         "cost": 4
     },
-    {        
+    {      
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",  
         "user": "@Joan",
         "list": "Inspired",   
         "item": "Hand sanitizer",
         "cost": 4
     },
     
-    {          
+    {      
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",    
         "user": "@Joan",
         "list": "Inspired",
         "item": "Moisturizers",
         "cost": 4
     },
-    {       
+    {      
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in", 
         "user": "@Joan",
         "list": "Inspired", 
         "item": "Mouthwash",
         "cost": 4
     },
-    {         
+    {       
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",  
         "user": "@Joan",
         "list": "Inspired", 
         "item": "Ointments",
         "cost": 4
     },
-    {          
+    {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",  
         "user": "@Joan",
         "list": "Inspired",
         "item": "Pain relievers",
         "cost": 4
     },
     {          
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Martin",
         "list": "Latest Products",
         "item": "Razors",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Martin",
         "list": "Latest Products",
         "item": "Shampoo and conditioner",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Martin",
         "list": "Latest Products",
         "item": "Shaving cream",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Martin",
         "list": "Latest Products",
         "item": "Shower gel",
         "cost": 4
     },
 
-    {          
+    {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",  
         "user": "@Martin",
         "list": "Latest Products",
         "item": "Soap",
         "cost": 4
     },
     {          
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Martin",
         "list": "Latest Products",
         "item": "Toothbrushes",
         "cost": 4
     },
     {       
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Martin",
         "list": "Latest Products",
         "item": "Toothpaste",
         "cost": 4
     },
     {         
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Job",
         "list": "Researched",
         "item": "Bacon",
         "cost": 4
     },
     {          
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Job",
         "list": "Researched",
         "item": "Baking goods",
         "cost": 4
     },
     {          
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Job",
         "list": "Researched",
         "item": "Beverages",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Job",
         "list": "Researched",
         "item": "Canned goods",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Job",
         "list": "Researched",
         "item": "Dairy",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Tom",
         "list": "Latest Products",
         "item": "Meat",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Tom",
         "list": "Latest Products",
         "item": "Personal Care",
@@ -166,66 +193,77 @@
 
     
     {          
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Tom",
         "list": "Latest Products",
         "item": "Produce, fruits, vegetables",
         "cost": 4
     },
     {          
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Protection Combo",
         "item": "Refined Yunzhi Essence",
         "cost": 4
     },
     {       
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Protection Combo",
         "item": "Probio 3",
         "cost": 4
     },
     {         
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Protection Combo",
         "item": "ZaminoCal Plus Capsules",
         "cost": 4
     },
     {          
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "Diabetes Wellness Pack",
         "item": "Ginkgo Plus",
         "cost": 4
     },
     {          
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "Diabetes Wellness Pack",
         "item": "Immublend",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "Diabetes Wellness Pack",
         "item": "Garania Plus",
         "cost": 4
     },
     {         
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "Diabetes Wellness Pack",
         "item": "Aloe Vera Gel",
         "cost": 4
     },
     {          
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "Diabetes Wellness Pack",
         "item": "Active Pro 8",
         "cost": 4
     },
     {          
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Men's Combo",
         "item": "Pure 8  Broken Ganoderma Spores",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Men's Combo",
         "item": "X Power Coffee",
@@ -233,24 +271,28 @@
     },
 
     {          
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Men's Combo",
         "item": "Postal Relax",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Men's Combo",
         "item": "X Power Man Plus",
         "cost": 4
     },
     {          
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Combination for Kidney Disease",
         "item": "Elements",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Combination for Low Sperm Count",
         "item": "X Powerman Plus Capsules",
@@ -258,43 +300,50 @@
     },
 
     {          
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Combination for Low Sperm Count",
         "item": "Prostat Relax Capsules",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Combination for Low Sperm Count",
         "item": "Zaminocal Plus Capsules",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Combination for Weak Erection",
         "item": "X Powerman Plus Capsules",
         "cost": 4
     },
 
-    {          
+    {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",  
         "user": "@Mike",
         "list": "BF SUMA Combination for Weak Erection",
         "item": "Micro2 Cycle Tablets",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Combination for Low Sperm Count",
         "item": "4 in 1 Ginseng Coffee",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Combination for High Blood Pressure",
         "item": "Zaminocal Plus Capsules",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Combination for High Blood Pressure",
         "item": "Micro2 Cycle Tablets",
@@ -302,24 +351,28 @@
     },
 
     {          
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Combination for High Blood Pressure",
         "item": "Pressure Free Tea",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Combination for High Blood Pressure",
         "item": "Pure and Broken Ganoderma Spores",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Combination for Diabetes",
         "item": "Pure and Broken Ganoderma Spores",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Combination for Diabetes",
         "item": "EzXlim Tablets",
@@ -327,31 +380,36 @@
     },
 
     {          
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Combination for Diabetes",
         "item": "GymEase Tea",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Combination for Diabetes",
         "item": "GlugoGone",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Combination for Arthritis",
         "item": "ArthroXtra Tablets",
         "cost": 4
     },
     {        
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
         "user": "@Mike",
         "list": "BF SUMA Combination for Arthritis",
         "item": "Gluzojoint Capsules",
         "cost": 4
     },
 
-    {          
+    {       
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",   
         "user": "@Mike",
         "list": "BF SUMA Combination for Arthritis",
         "item": "Zaminocal Plus Capsules",
