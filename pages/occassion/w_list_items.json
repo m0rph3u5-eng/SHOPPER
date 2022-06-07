@@ -1,362 +1,189 @@
 [
     {          
-        "user": "@Tracy",
-        "list": "Bargain Hunter",
+        "user": "@Anne",
+        "list": "Party",
+        "item": "Party invitations",
+        "cost": 4
+    },
+    {          
+        "user": "@Anne",
+        "list": "Party",
+        "item": "Tables (for guests & buffet)",
+        "cost": 4
+    },
+    {       
+        "user": "@Anne",
+        "list": "Party",
+        "item": "Chairs",
+        "cost": 4
+    },
+    {         
+        "user": "@Anne",
+        "list": "Party",
+        "item": "Napkins",
+        "cost": 4
+    },
+    {          
+        "user": "@Anne",
+        "list": "Party",
+        "item": "Place cards",
+        "cost": 4
+    },
+    {          
+        "user": "@Anne",
+        "list": "Party",
+        "item": "Drinkware",
+        "cost": 4
+    },
+    {        
+        "user": "@Anne",
+        "list": "Party", 
+        "item": "Plates",
+        "cost": 4
+    },
+    {        
+        "user": "@Anne",
+        "list": "Party",
+        "item": "Balloons",
+        "cost": 4
+    },
+    {        
+        "user": "@Anne",
+        "list": "Party",  
+        "item": "Centerpieces",
+        "cost": 4
+    },
+    
+    {          
+        "user": "@Rose",
+        "list": "Vacation",
+        "item": "One casual outfit",
+        "cost": 4
+    },
+    {       
+        "user": "@Rose",
+        "list": "Vacation",
+        "item": "One dressy outfit",
+        "cost": 4
+    },
+    {         
+        "user": "@Rose",
+        "list": "Vacation", 
+        "item": "One sweater or jacket",
+        "cost": 4
+    },
+    {          
+        "user": "@Rose",
+        "list": "Vacation",
+        "item": "Underwear, delicates",
+        "cost": 4
+    },
+    {          
+        "user": "@Rose",
+        "list": "Vacation",
+        "item": "Socks",
+        "cost": 4
+    },
+    {        
+        "user": "@Rose",
+        "list": "Vacation",
+        "item": "Pajamas",
+        "cost": 4
+    },
+    {        
+        "user": "@Rose",
+        "list": "Vacation",
+        "item": "Swimwear",
+        "cost": 4
+    },
+    {        
+        "user": "@Rose",
+        "list": "Vacation",
+        "item": "Belt",
+        "cost": 4
+    },
+
+    {          
+        "user": "@Rose",
+        "list": "Vacation",
+        "item": "Scarf",
+        "cost": 4
+    },
+    {          
+        "user": "@Morris",
+        "list": "Wardrobe",
+        "item": "sneakers",
+        "cost": 4
+    },
+    {       
+        "user": "@Morris",
+        "list": "Wardrobe",
+        "item": "striped tee",
+        "cost": 4
+    },
+    {         
+        "user": "@Morris",
+        "list": "Wardrobe",
+        "item": "leather jacket",
+        "cost": 4
+    },
+    {          
+        "user": "@Morris",
+        "list": "Wardrobe",
+        "item": "tailored coat",
+        "cost": 4
+    },
+    {          
+        "user": "@Morris",
+        "list": "Wardrobe",
+        "item": "all-black sunglasses",
+        "cost": 4
+    },
+    {        
+        "user": "@Morris",
+        "list": "Wardrobe",
+        "item": "double-breasted blazer",
+        "cost": 4
+    },
+    {        
+        "user": "@Morris",
+        "list": "Wardrobe",
+        "item": "silk scarf",
+        "cost": 4
+    },
+    {        
+        "user": "@Morris",
+        "list": "Wardrobe",
+        "item": "classic knit vest",
+        "cost": 4
+    },
+    {        
+        "user": "@Morris",
+        "list": "Wardrobe",
+        "item": "ankle boots",
+        "cost": 4
+    },
+
+    
+    {          
+        "user": "@Timothy",
+        "list": "Moving Out",
+        "item": "First aid kit",
+        "cost": 4
+    },
+    {          
+        "user": "@Timothy",
+        "list": "Moving Out",
         "item": "Batteries",
         "cost": 4
     },
-    {          
-        "user": "@Tracy",
-        "list": "Bargain Hunter",
-        "item": "Cleaning supplies",
-        "cost": 4
-    },
     {       
-        "user": "@Tracy",
-        "list": "Bargain Hunter",   
-        "item": "Laundry detergent",
-        "cost": 4
-    },
-    {         
-        "user": "@Tracy",
-        "list": "Bargain Hunter", 
-        "item": "Lightbulbs",
-        "cost": 4
-    },
-    {          
-        "user": "@Tracy",
-        "list": "Bargain Hunter",
-        "item": "Office and school supplies",
-        "cost": 4
-    },
-    {          
-        "user": "@Tracy",
-        "list": "Bargain Hunter",
-        "item": "Paper towels",
-        "cost": 4
-    },
-    {        
-        "user": "@Joan",
-        "list": "Inspired",  
-        "item": "Bandages",
-        "cost": 4
-    },
-    {        
-        "user": "@Joan",
-        "list": "Inspired", 
-        "item": "Hairstyling products",
-        "cost": 4
-    },
-    {        
-        "user": "@Joan",
-        "list": "Inspired",   
-        "item": "Hand sanitizer",
-        "cost": 4
-    },
-    
-    {          
-        "user": "@Joan",
-        "list": "Inspired",
-        "item": "Moisturizers",
-        "cost": 4
-    },
-    {       
-        "user": "@Joan",
-        "list": "Inspired", 
-        "item": "Mouthwash",
-        "cost": 4
-    },
-    {         
-        "user": "@Joan",
-        "list": "Inspired", 
-        "item": "Ointments",
-        "cost": 4
-    },
-    {          
-        "user": "@Joan",
-        "list": "Inspired",
-        "item": "Pain relievers",
-        "cost": 4
-    },
-    {          
-        "user": "@Martin",
-        "list": "Latest Products",
-        "item": "Razors",
-        "cost": 4
-    },
-    {        
-        "user": "@Martin",
-        "list": "Latest Products",
-        "item": "Shampoo and conditioner",
-        "cost": 4
-    },
-    {        
-        "user": "@Martin",
-        "list": "Latest Products",
-        "item": "Shaving cream",
-        "cost": 4
-    },
-    {        
-        "user": "@Martin",
-        "list": "Latest Products",
-        "item": "Shower gel",
-        "cost": 4
-    },
-
-    {          
-        "user": "@Martin",
-        "list": "Latest Products",
-        "item": "Soap",
-        "cost": 4
-    },
-    {          
-        "user": "@Martin",
-        "list": "Latest Products",
-        "item": "Toothbrushes",
-        "cost": 4
-    },
-    {       
-        "user": "@Martin",
-        "list": "Latest Products",
-        "item": "Toothpaste",
-        "cost": 4
-    },
-    {         
-        "user": "@Job",
-        "list": "Researched",
-        "item": "Bacon",
-        "cost": 4
-    },
-    {          
-        "user": "@Job",
-        "list": "Researched",
-        "item": "Baking goods",
-        "cost": 4
-    },
-    {          
-        "user": "@Job",
-        "list": "Researched",
-        "item": "Beverages",
-        "cost": 4
-    },
-    {        
-        "user": "@Job",
-        "list": "Researched",
-        "item": "Canned goods",
-        "cost": 4
-    },
-    {        
-        "user": "@Job",
-        "list": "Researched",
-        "item": "Dairy",
-        "cost": 4
-    },
-    {        
-        "user": "@Tom",
-        "list": "Latest Products",
-        "item": "Meat",
-        "cost": 4
-    },
-    {        
-        "user": "@Tom",
-        "list": "Latest Products",
-        "item": "Personal Care",
-        "cost": 4
-    },
-
-    
-    {          
-        "user": "@Tom",
-        "list": "Latest Products",
-        "item": "Produce, fruits, vegetables",
-        "cost": 4
-    },
-    {          
-        "user": "@Mike",
-        "list": "BF SUMA Protection Combo",
-        "item": "Refined Yunzhi Essence",
-        "cost": 4
-    },
-    {       
-        "user": "@Mike",
-        "list": "BF SUMA Protection Combo",
-        "item": "Probio 3",
-        "cost": 4
-    },
-    {         
-        "user": "@Mike",
-        "list": "BF SUMA Protection Combo",
-        "item": "ZaminoCal Plus Capsules",
-        "cost": 4
-    },
-    {          
-        "user": "@Mike",
-        "list": "Diabetes Wellness Pack",
-        "item": "Ginkgo Plus",
-        "cost": 4
-    },
-    {          
-        "user": "@Mike",
-        "list": "Diabetes Wellness Pack",
-        "item": "Immublend",
-        "cost": 4
-    },
-    {        
-        "user": "@Mike",
-        "list": "Diabetes Wellness Pack",
-        "item": "Garania Plus",
-        "cost": 4
-    },
-    {         
-        "user": "@Mike",
-        "list": "Diabetes Wellness Pack",
-        "item": "Aloe Vera Gel",
-        "cost": 4
-    },
-    {          
-        "user": "@Mike",
-        "list": "Diabetes Wellness Pack",
-        "item": "Active Pro 8",
-        "cost": 4
-    },
-    {          
-        "user": "@Mike",
-        "list": "BF SUMA Men's Combo",
-        "item": "Pure 8  Broken Ganoderma Spores",
-        "cost": 4
-    },
-    {        
-        "user": "@Mike",
-        "list": "BF SUMA Men's Combo",
-        "item": "X Power Coffee",
-        "cost": 4
-    },
-
-    {          
-        "user": "@Mike",
-        "list": "BF SUMA Men's Combo",
-        "item": "Postal Relax",
-        "cost": 4
-    },
-    {        
-        "user": "@Mike",
-        "list": "BF SUMA Men's Combo",
-        "item": "X Power Man Plus",
-        "cost": 4
-    },
-    {          
-        "user": "@Mike",
-        "list": "BF SUMA Combination for Kidney Disease",
-        "item": "Elements",
-        "cost": 4
-    },
-    {        
-        "user": "@Mike",
-        "list": "BF SUMA Combination for Low Sperm Count",
-        "item": "X Powerman Plus Capsules",
-        "cost": 4
-    },
-
-    {          
-        "user": "@Mike",
-        "list": "BF SUMA Combination for Low Sperm Count",
-        "item": "Prostat Relax Capsules",
-        "cost": 4
-    },
-    {        
-        "user": "@Mike",
-        "list": "BF SUMA Combination for Low Sperm Count",
-        "item": "Zaminocal Plus Capsules",
-        "cost": 4
-    },
-    {        
-        "user": "@Mike",
-        "list": "BF SUMA Combination for Weak Erection",
-        "item": "X Powerman Plus Capsules",
-        "cost": 4
-    },
-
-    {          
-        "user": "@Mike",
-        "list": "BF SUMA Combination for Weak Erection",
-        "item": "Micro2 Cycle Tablets",
-        "cost": 4
-    },
-    {        
-        "user": "@Mike",
-        "list": "BF SUMA Combination for Low Sperm Count",
-        "item": "4 in 1 Ginseng Coffee",
-        "cost": 4
-    },
-    {        
-        "user": "@Mike",
-        "list": "BF SUMA Combination for High Blood Pressure",
-        "item": "Zaminocal Plus Capsules",
-        "cost": 4
-    },
-    {        
-        "user": "@Mike",
-        "list": "BF SUMA Combination for High Blood Pressure",
-        "item": "Micro2 Cycle Tablets",
-        "cost": 4
-    },
-
-    {          
-        "user": "@Mike",
-        "list": "BF SUMA Combination for High Blood Pressure",
-        "item": "Pressure Free Tea",
-        "cost": 4
-    },
-    {        
-        "user": "@Mike",
-        "list": "BF SUMA Combination for High Blood Pressure",
-        "item": "Pure and Broken Ganoderma Spores",
-        "cost": 4
-    },
-    {        
-        "user": "@Mike",
-        "list": "BF SUMA Combination for Diabetes",
-        "item": "Pure and Broken Ganoderma Spores",
-        "cost": 4
-    },
-    {        
-        "user": "@Mike",
-        "list": "BF SUMA Combination for Diabetes",
-        "item": "EzXlim Tablets",
-        "cost": 4
-    },
-
-    {          
-        "user": "@Mike",
-        "list": "BF SUMA Combination for Diabetes",
-        "item": "GymEase Tea",
-        "cost": 4
-    },
-    {        
-        "user": "@Mike",
-        "list": "BF SUMA Combination for Diabetes",
-        "item": "GlugoGone",
-        "cost": 4
-    },
-    {        
-        "user": "@Mike",
-        "list": "BF SUMA Combination for Arthritis",
-        "item": "ArthroXtra Tablets",
-        "cost": 4
-    },
-    {        
-        "user": "@Mike",
-        "list": "BF SUMA Combination for Arthritis",
-        "item": "Gluzojoint Capsules",
-        "cost": 4
-    },
-
-    {          
-        "user": "@Mike",
-        "list": "BF SUMA Combination for Arthritis",
-        "item": "Zaminocal Plus Capsules",
+        "user": "@Timothy",
+        "list": "Moving Out",
+        "item": "Extension cord",
         "cost": 4
     }
+   
 ]
 
    

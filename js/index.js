@@ -144,7 +144,7 @@ function addcom() {
   usecom.innerHTML = "<b>@Simon </b>: " + comments1;
   usetim.innerHTML = "Now";
 
-  document.getElementById("newc").appendChild(acom);
+  document.getElementById("addc").appendChild(acom);
   acom.appendChild(divcom);
   divcom.appendChild(usecom);
   divcom.appendChild(usetim);
