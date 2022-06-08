@@ -147,7 +147,56 @@ function appendData(data) {
           }
         }
       }
+
       comment21();
+      function reccipe() {
+        fetch("w_recipe.json")
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (datac) {
+            appendData(datac);
+          })
+          .catch(function (err) {
+            console.log(err);
+          });
+
+        function appendData(datac) {
+          //div newnew
+          //var newdiv3 = document.getElementById('newc');
+          var newdivrec = document.getElementById("newr");
+          newdivrec.innerHTML = "";
+          for (i = 0; i < datac.length; i++) {
+            if (datac[i].list == myHeader.innerHTML) {
+              //   console.log(datac[i].comment);
+              //   console.log(datac[i].time);
+              const myNewItem1 = document.createElement("p");
+              //const myNewA = document.createElement("a");
+              //const myNewComDiv = document.createElement("div");
+              const myNewNestComDiv1 = document.createElement("div");
+              //const myNewSmall = document.createElement("small");
+             // myNewA.className =
+                "list-group-item list-group-item-action d-flex gap-3 py-3";
+              //myNewComDiv.className =
+                "d-flex gap-2 w-100 justify-content-between";
+             // myNewSmall.className = "opacity-50 text-nowrap";
+              myNewItem1.className = "mb-0 opacity-75";
+              myNewItem1.innerHTML =datac[i].recipe;
+              
+
+              myNewNestComDiv1.appendChild(myNewItem1);
+
+              //myNewComDiv.appendChild(myNewNestComDiv);
+             /// myNewComDiv.appendChild(myNewSmall);
+              //myNewA.appendChild(myNewComDiv);
+
+              document.getElementById("newr").appendChild(myNewNestComDiv1);
+            } else {
+            }
+          }
+        }
+      }
+      reccipe();
     };
   }
 }
@@ -236,6 +285,55 @@ function setDefaultTitle() {
     }
   }
   comment22();
+
+  function recipe1() {
+    fetch("w_recipe.json")
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (datac) {
+        appendData(datac);
+      })
+      .catch(function (err) {
+        console.log(err);
+      });
+
+    function appendData(datac) {
+      //div newnew
+      //var newdiv3 = document.getElementById('newc');
+      var newdivrec = document.getElementById("newr");
+      newdivrec.innerHTML = "";
+      for (i = 0; i < datac.length; i++) {
+        if (datac[i].list == datac[0].list) {
+          //   console.log(datac[i].comment);
+          //   console.log(datac[i].time);
+          const myNewItem1 = document.createElement("p");
+          //const myNewA = document.createElement("a");
+          //const myNewComDiv = document.createElement("div");
+          const myNewNestComDiv1 = document.createElement("div");
+          //const myNewSmall = document.createElement("small");
+         // myNewA.className =
+            "list-group-item list-group-item-action d-flex gap-3 py-3";
+          //myNewComDiv.className =
+            "d-flex gap-2 w-100 justify-content-between";
+         // myNewSmall.className = "opacity-50 text-nowrap";
+          myNewItem1.className = "mb-0 opacity-75";
+          myNewItem1.innerHTML =datac[i].recipe;
+          
+
+          myNewNestComDiv1.appendChild(myNewItem1);
+
+          //myNewComDiv.appendChild(myNewNestComDiv);
+         /// myNewComDiv.appendChild(myNewSmall);
+          //myNewA.appendChild(myNewComDiv);
+
+          document.getElementById("newr").appendChild(myNewNestComDiv1);
+        } else {
+        }
+      }
+    }
+  }
+  recipe1();
 }
 setDefaultTitle();
 

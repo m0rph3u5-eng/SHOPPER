@@ -17,7 +17,7 @@
   <script src="../../js/arrays.js"></script>
   <script src="../../js/index.js"></script>
 
-
+  <script src="../../js/fetch_json.js"></script>
 </head>
 
 <body>
@@ -41,17 +41,21 @@
               <li class="nav-item">
                 <a class="nav-link active" href="#" onclick="orderf()">Order</a>
               </li>
-      
-                <li class="nav-item">
-                  <a class="nav-link active" id="top_comm" aria-current="page" href="#" onclick="showcomments()">Comments</a>
-                </li>
-  
+
+              <li class="nav-item">
+                <a class="nav-link active" id="top_comm" aria-current="page" href="#"
+                  onclick="showcomments()">Comments</a>
+              </li>
+
               <!--     <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
               </li>-->
             </ul>
-            <a class="nav-link active centre" aria-current="page" href="#" id="plus" onclick="new_entry()" style="margin-left:25%; margin-right:25%";><h4>+</h4></a>
-    
+            <a class="nav-link active centre" aria-current="page" href="#" id="plus" onclick="new_entry()"
+              style="margin-left:25%; margin-right:25%" ;>
+              <h4>+</h4>
+            </a>
+
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-dark btn" style="width: fit-content;" type="submit">Search</button>
@@ -115,693 +119,55 @@
 
     <div class="item2">
       <div class="list-group" id="des_col">
-        <a href="#" class="list-group-item list-group-item-action  " id="new_entry_a" aria-current="true" style="display: none;">
+        <a href="#" class="list-group-item list-group-item-action  " id="new_entry_a" aria-current="true"
+          style="display: none;">
           <div class="d-flex justify-content-between" style="display: none;">
             <div id="new_entry" style="display: none;">
               <label style="margin-top: 5px;">Title</label>
               <input type="text" id="title" class="form-control me-2" placeholder="List Title">
               <label style="margin-top: 5px;">Description</label>
               <textarea rows="6" cols="40" id="t_desc" class="form-control me-2" name="description"></textarea>
-              <button class="btn btn-outline-dark btn-sm" style="width: fit-content;" type="submit" onclick="saveLi()">Save
+              <button class="btn btn-outline-dark btn-sm" style="width: fit-content;" type="submit"
+                onclick="saveLi()">Save
                 List</button>
-            <script>
-
-              function saveLi() {
-                recipe = [];
-                recipe = document.getElementById('t_directions').value;
-
-
-                //direct = recipe;
-                alert("Your list has been saved!");
-                main.push(t_list, title_main, description, list_item, recipe);
-                //main = title_main.concat(description,list_item,recipe,t_list);
-
-                console.log(main);
-
-
-              }
-            </script>
-            </div>
-        
-          </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
-          onclick="chocolate()">
-          <script>
-            function chocolate() {
-
-              document.getElementById('heading').innerHTML = "Chocolate Banana Bread";
-              document.getElementById('handle').innerHTML = "@Fiona";
-              document.getElementById('item0').innerHTML = "ripe bananas";
-              document.getElementById('item1').innerHTML = "butter";
-              document.getElementById('item2').innerHTML = "brown sugar";
-              document.getElementById('item3').innerHTML = "salt";
-              document.getElementById('item4').innerHTML = "eggs";
-              document.getElementById('item5').innerHTML = "vanilla extract";
-              document.getElementById('item6').innerHTML = "all-purpose flour";
-              document.getElementById('item7').innerHTML = "cocoa powder";
-              document.getElementById('item8').innerHTML = "baking soda";
-              document.getElementById('item9').innerHTML = "chocolate chips";
-              document.getElementById('price0').innerHTML = "980";
-
-              //document.getElementById('heading').innerHTML = "Chocolate Banana Bread";
-              document.getElementById('par0').innerHTML = "Step 1:Prepare pan and preheat oven, Butter or spray with cooking spray the inside of a 5x9-inch loaf pan. Preheat oven to 350°F (175°C) with a rack in the middle.";
-              document.getElementById('par1').innerHTML = "Step 2: Purée bananas: Using a blender, food processor, or a fork, purée the peeled ripe bananas until smooth. You should have 1 1/2 to 1 3/4 cups of banana purée.";
-              document.getElementById('par2').innerHTML = "Step 3: Mix wet ingredients and sugar: Place the banana purée into a large mixing bowl. Stir the melted butter. Stir in the brown sugar and salt. Whisk to break up any clumps of brown sugar. Stir in the beaten egg and vanilla extract.";
-              document.getElementById('par3').innerHTML = "Step 4: Mix dry ingredients: In a separate bowl, vigorously whisk together the flour, cocoa, baking soda, and allspice.";
-              document.getElementById('par4').innerHTML = "Step 5: Add the flour mixture to the banana mixture: Stir until just incorporated, then stir in the chocolate chips.";
-              document.getElementById('par5').innerHTML = "Step 6: Bake: Pour batter into a buttered loaf pan. Place in a 350°F (175°C) oven and bake for 1 hour. Note that because of the chocolate chips that melt in the bread as it cooks, it's hard to check for doneness using a tester that you insert. One way to test is to gently push the center top of the chocolate banana bread down with your finger. If it feels relatively firm and bounces back when you release your finger, that's a good sign that it's done.";
-              document.getElementById('par6').innerHTML = "Step 7: Let cool completely: Remove from oven and let cool for 10 minutes in the pan. Gently remove the loaf from the pan and place on a rack to cool completely. Slice with a serrated bread knife to serve.";
-              document.getElementById('par7').innerHTML = "";
-              document.getElementById('par8').innerHTML = "";
-              document.getElementById('par9').innerHTML = "";
-              document.getElementById('par10').innerHTML = "";
-
-              document.getElementById('apar0').innerHTML = "<b>@Diana</b> : How does coconut, chocolate chip banana bread sound?";
-              document.getElementById('tim0').innerHTML = "2h";             
-              document.getElementById('apar1').innerHTML = "<b>@Kaye</b> : Sunday mornings are for chocolate banana bread 🍌🍫 😋";
-              document.getElementById('tim1').innerHTML = "2h";
-              document.getElementById('apar2').innerHTML = "<b>@Demi</b> : Today at 11am you can watch the recipe on our youtube channel.";
-              document.getElementById('tim2').innerHTML = "3h";
-              document.getElementById('apar3').innerHTML = "<b>@Matilda</b> : The banana bread, chocolate cake and lavender and lemon macaroons and scones with the rainbow sandwiches are to die for When are you lot coming in";
-              document.getElementById('tim3').innerHTML = "7h"; 
-              document.getElementById('apar4').innerHTML = "<b>@Naomi</b> : my first ever attempt at banana bread with chocolate chips..not the prettiest but the taste is divine 🤤💛 no 🧢";
-              document.getElementById('tim4').innerHTML = "1d 1h";
-              document.getElementById('apar5').innerHTML = "<b>@Lei</b> : When life gives you an abundance of overripe bananas you make banana bread. So I decided I'd make chocolate peanut butter banana bread today. And I still have a ton of bananas. 🍌🍌🍌🍌";
-              document.getElementById('tim5').innerHTML = "1d 3h";
-              document.getElementById('apar6').innerHTML = "<b>@Betty</b> : I cant stop baking chocolate chip banana bread";
-              document.getElementById('tim6').innerHTML = "2d 3h"; 
-              document.getElementById('apar7').innerHTML = "";
-              document.getElementById('tim7').innerHTML = "";
-              document.getElementById('apar8').innerHTML = "";
-              document.getElementById('tim8').innerHTML = "";
-              document.getElementById('apar9').innerHTML = "";
-              document.getElementById('tim9').innerHTML = "";
-              document.getElementById('apar10').innerHTML = "";
-              document.getElementById('tim10').innerHTML = "";
-              user = [];
-              user.push("Fiona");
-              order = [];
-              cost = [];
-              mail = [];
-              order.push("Chocolate Banana Bread", "ripe bananas", "butter", "brown sugar", "salt", "eggs", "vanilla extract", "all-purpose flour", "cocoa powder", "baking soda", "chocolate chips");
-              cost.push("980");
-              mail.push('mailto:fiona@example.com?subject=shoppinglist&body=chocolate_banana_bread');
-            }
-          </script>
-
-          <div class="d-flex gap-2 w-100 justify-content-between">
-            <div>
-              <h6 class="mb-0">Chocolate Banana Bread<p class="mb-0 opacity-75">@Fiona</p>
-              </h6>
-              <p class="mb-0 opacity-75">Tender, chocolatey chocolate banana bread! Double chocolate with cocoa and
-                chocolate chips.</p>
 
             </div>
-            <small class="opacity-50 text-nowrap">980</small>
+
           </div>
         </a>
-        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
-          onclick="apple()">
-          <script>
-            function apple() {
-              document.getElementById('heading').innerHTML = "Apple Coffee Cake";
-              document.getElementById('handle').innerHTML = "@Emma";
-              document.getElementById('item0').innerHTML = "butter";
-              document.getElementById('item1').innerHTML = "brown sugar";
-              document.getElementById('item2').innerHTML = "salt";
-              document.getElementById('item3').innerHTML = "eggs";
-              document.getElementById('item4').innerHTML = "vanilla extract";
-              document.getElementById('item5').innerHTML = "all-purpose flour";
-              document.getElementById('item6').innerHTML = "ground cinnamon";
-              document.getElementById('item7').innerHTML = "baking soda";
-              document.getElementById('item8').innerHTML = "allspice";
-              document.getElementById('item9').innerHTML = "sour cream";
-              document.getElementById('price0').innerHTML = "580";
 
-              document.getElementById('par0').innerHTML = "Step 1: Preheat oven to 350 degrees F (175 degrees C). Spray an 8-inch square baking dish with cooking spray; dust with 1 tablespoon flour.";
-              document.getElementById('par1').innerHTML = "Step 2: Beat 1/4 cup butter and 3/4 cup brown sugar together with an electric mixer in a large bowl until light and fluffy. The mixture should be noticeably lighter in color. Beat egg into butter mixture. Add sour cream, vanilla yogurt, and vanilla extract to the mixture; beat to integrate.";
-              document.getElementById('par2').innerHTML = "Step 3: Stir 1 cup flour, 3/4 teaspoon cinnamon, baking soda, and salt together in a bowl; add to the butter mixture and beat to combine into a batter. Fold apples into the batter. Pour batter into prepared baking dish.";
-              document.getElementById('par3').innerHTML = "Step 4: Mix 1/4 cup brown sugar, 1/4 cup flour, 2 tablespoons butter, and 1/2 teaspoon cinnamon together in a bowl using a fork to achieve a crumbly consistency; sprinkle over the top of the batter.";
-              document.getElementById('par4').innerHTML = "Step 5: Bake in the preheated oven until a toothpick inserted into the center comes out clean, 35 to 40 minutes. Cool in the pan for 10 minutes before removing to cool completely on a wire rack.";
-              document.getElementById('par5').innerHTML = "";
-              document.getElementById('par6').innerHTML = "";
-              document.getElementById('par7').innerHTML = "";
-              document.getElementById('par8').innerHTML = "";
-              document.getElementById('par9').innerHTML = "";
-              document.getElementById('par10').innerHTML = "";
+        <div id="new_list1"></div>
 
-              document.getElementById('apar0').innerHTML = "<b>@Cindy</b> : I made a cinnamon apple coffee cake 🎂 🥮 please clap";
-              document.getElementById('tim0').innerHTML = "1h";             
-              document.getElementById('apar1').innerHTML = "<b>@Brandon</b> : I think imma make an apple crumb coffee cake no infusion just reg and send it to my faithfuls";
-              document.getElementById('tim1').innerHTML = "2h";
-              document.getElementById('apar2').innerHTML = "<b>@Hoyt</b> : Is there a better pairing for your morning coffee than this Apple Cinnamon Coffee Cake? I don't think so.";
-              document.getElementById('tim2').innerHTML = "6h";
-              document.getElementById('apar3').innerHTML = "<b>@Earnie</b> : Dad is having coffee & cake in Brum. WITHOUT ME! 😡😡😡";
-              document.getElementById('tim3').innerHTML = "8h"; 
-              document.getElementById('apar4').innerHTML = "<b>@Anne</b> : Friday = treat day😍  Coffee & cake are waiting for you at Country Bake☕";
-              document.getElementById('tim4').innerHTML = "1d 4h";
-              document.getElementById('apar5').innerHTML = "<b>@Lemon</b> : I made this for the final lesson of my breakfast breads class & for #mapleweek2022!  Really happy with how the twisted shape turned out and feel great about my improved baking skills 👩‍🍳";
-              document.getElementById('tim5').innerHTML = "1d 7h";
-              document.getElementById('apar6').innerHTML = "<b>@Monica</b> : super random: in the mid 90s there was an amazing coffee cake in portland. in the 2000’s starbucks carried it for awhile. does anyone know the bakery and if they’re still around?";
-              document.getElementById('tim6').innerHTML = "2d 5h"; 
-              document.getElementById('apar7').innerHTML = "";
-              document.getElementById('tim7').innerHTML = "";
-              document.getElementById('apar8').innerHTML = "";
-              document.getElementById('tim8').innerHTML = "";
-              document.getElementById('apar9').innerHTML = "";
-              document.getElementById('tim9').innerHTML = "";
-              document.getElementById('apar10').innerHTML = "";
-              document.getElementById('tim10').innerHTML = "";
-              user = [];
-              user.push("Emma");
-              order = [];
-              cost = [];
-              mail = [];
-              order.push("Apple Coffee Cake", "butter", "brown sugar", "salt", "eggs", "vanilla extract", "all-purpose flour", "ground cinnamon", "baking soda", "allspice", "sour cream");
-              cost.push("580");
-              mail.push('mailto:emma@example.com?subject=shoppinglist&body=apple_coffee_cake');
-
-            }
-          </script>
-
-          <div class="d-flex gap-2 w-100 justify-content-between">
-            <div>
-              <h6 class="mb-0">Apple Coffee Cake<p class="mb-0 opacity-75">@Emma</p>
-              </h6>
-              <p class="mb-0 opacity-75">This is really easy and so very, very good. I like to add a dollop of vanilla
-                yogurt on top of my piece of coffee cake. Yummy!</p>
-
-            </div>
-            <small class="opacity-50 text-nowrap">580</small>
-          </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
-          onclick="chicken()">
-          <script>
-            function chicken() {
-              document.getElementById('heading').innerHTML = "Chicken Salad Sandwich";
-              document.getElementById('handle').innerHTML = "@Brian";
-              document.getElementById('item0').innerHTML = "chicken";
-              document.getElementById('item1').innerHTML = "Celery";
-              document.getElementById('item2').innerHTML = "green onions";
-              document.getElementById('item3').innerHTML = "avocado";
-              document.getElementById('item4').innerHTML = "Mayonnaise";
-              document.getElementById('item5').innerHTML = "bread";
-              document.getElementById('item6').innerHTML = "";
-              document.getElementById('item7').innerHTML = "";
-              document.getElementById('item8').innerHTML = "";
-              document.getElementById('item9').innerHTML = "";
-              document.getElementById('price0').innerHTML = "300";
-
-              document.getElementById('par0').innerHTML = "Step 1: Chop cooked and cooled chicken and place into a large bowl with celery and onions.";
-              document.getElementById('par1').innerHTML = "Step 2: Mix dressing ingredients (per recipe below) in a bowl. Toss with chicken.";
-              document.getElementById('par2').innerHTML = "Step 3: Serve on rolls, bread or over a bead of lettuce.";
-              document.getElementById('par3').innerHTML = "";
-              document.getElementById('par4').innerHTML = "";
-              document.getElementById('par5').innerHTML = "";
-              document.getElementById('par6').innerHTML = "";
-              document.getElementById('par7').innerHTML = "";
-              document.getElementById('par8').innerHTML = "";
-              document.getElementById('par9').innerHTML = "";
-              document.getElementById('par10').innerHTML = "";
-
-              document.getElementById('apar0').innerHTML = "<b>@Rose</b> : Best chicken sandwich Ive eaten😂 not really but haven’t eaten since yesterday so I was starving.";
-              document.getElementById('tim0').innerHTML = "30m";             
-              document.getElementById('apar1').innerHTML = "<b>@Abby</b> : who has the best spicy chicken sandwich in the bay??";
-              document.getElementById('tim1').innerHTML = "4h";
-              document.getElementById('apar2').innerHTML = "<b>@Radley</b> : This isn’t hypocritical because opposition to gay marriage is the secret ingredient for a perfect fried chicken sandwich.";
-              document.getElementById('tim2').innerHTML = "5h";
-              document.getElementById('apar3').innerHTML = "<b>@Frankie</b> : One coronation chicken sandwich later and I feel human once again.";
-              document.getElementById('tim3').innerHTML = "9h"; 
-              document.getElementById('apar4').innerHTML = "<b>@Darren</b> : This chicken sandwich I made makes me wanna cry ngl";
-              document.getElementById('tim4').innerHTML = "1d";
-              document.getElementById('apar5').innerHTML = "<b>@John</b> : Just bought a chicken sandwich from a gas station. Now we wait.";
-              document.getElementById('tim5').innerHTML = "1d 2h";
-              document.getElementById('apar6').innerHTML = "<b>@Harris</b> : THERES NO NEED FOR CHEESE ON A CHICKEN SANDWICH Thank you for coming to my Ted Talk!";
-              document.getElementById('tim6').innerHTML = "2d 2h"; 
-              document.getElementById('apar7').innerHTML = "";
-              document.getElementById('tim7').innerHTML = "";
-              document.getElementById('apar8').innerHTML = "";
-              document.getElementById('tim8').innerHTML = "";
-              document.getElementById('apar9').innerHTML = "";
-              document.getElementById('tim9').innerHTML = "";
-              document.getElementById('apar10').innerHTML = "";
-              document.getElementById('tim10').innerHTML = "";
-              user = [];
-              user.push("Brian");
-              order = [];
-              cost = [];
-              mail = [];
-              order.push("Chicken Salad Sandwich", "chicken", "Celery", "green onions", "avocado", "Mayonnaise", "bread");
-              cost.push("300");
-              mail.push('mailto:brian@example.com?subject=shoppinglist&body=chicken_salad_sandwich');
-
-            }
-          </script>
-
-          <div class="d-flex gap-2 w-100 justify-content-between">
-            <div>
-              <h6 class="mb-0">Chicken Salad Sandwich<p class="mb-0 opacity-75">@Brian</p>
-              </h6>
-              <p class="mb-0 opacity-75">Of all the summer salads, a classic chicken salad recipe is always a favorite
-                at a picnic, a barbecue, or an office potluck! Just a few ingredients can be transformed into a cold,
-                creamy salad or filling for a homemade chicken salad sandwich or wrap!</p>
-
-            </div>
-            <small class="opacity-50 text-nowrap">300</small>
-          </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
-          onclick="ham()">
-          <script>
-            function ham() {
-              document.getElementById('heading').innerHTML = "Ham Sandwich";
-              document.getElementById('handle').innerHTML = "@Allan";
-              document.getElementById('item0').innerHTML = "mayonnaise";
-              document.getElementById('item1').innerHTML = "parsley";
-              document.getElementById('item2').innerHTML = "thyme";
-              document.getElementById('item3').innerHTML = "extra-virgin olive oil";
-              document.getElementById('item4').innerHTML = "garlic";
-              document.getElementById('item5').innerHTML = "crusty bread";
-              document.getElementById('item6').innerHTML = "mustard";
-              document.getElementById('item7').innerHTML = "ham";
-              document.getElementById('item8').innerHTML = "tomato";
-              document.getElementById('item9').innerHTML = "onion";
-              document.getElementById('price0').innerHTML = "540";
-
-              document.getElementById('par0').innerHTML = "Step 1: In a medium bowl whisk together mayonnaise, parsley, thyme, oil, and garlic. ";
-              document.getElementById('par1').innerHTML = "Step 2: Spread 2 tablespoons herb mayo on 4 slices of bread. Spread 1 tablespoon mustard on the other 4 slices of bread. Top each mayo slice of bread with 3 slices of ham, 2 slices of provolone, arugula, a couple slices of tomato, and red onion. Top with remaining bread slices, mustard side down.";
-              document.getElementById('par2').innerHTML = "";
-              document.getElementById('par3').innerHTML = "";
-              document.getElementById('par4').innerHTML = "";
-              document.getElementById('par5').innerHTML = "";
-              document.getElementById('par6').innerHTML = "";
-              document.getElementById('par7').innerHTML = "";
-              document.getElementById('par8').innerHTML = "";
-              document.getElementById('par9').innerHTML = "";
-              document.getElementById('par10').innerHTML = "";
-
-              document.getElementById('apar0').innerHTML = "<b>@Princess</b> : A ham sandwich walks into a bar. The bartender says hey we dont serve food here";
-              document.getElementById('tim0').innerHTML = "45m";             
-              document.getElementById('apar1').innerHTML = "<b>@Alex</b> : I HAD THE CHIPS!!! They were so good  + a ham sandwich";
-              document.getElementById('tim1').innerHTML = "2h";
-              document.getElementById('apar2').innerHTML = "<b>@Molly</b> : everyone can have a little fried ham sandwich";
-              document.getElementById('tim2').innerHTML = "3h";
-              document.getElementById('apar3').innerHTML = "<b>@Jon</b> : a ham sandwich but it's 2 slices of ham and inside that (you guessed it)  another piece of ham";
-              document.getElementById('tim3').innerHTML = "5h"; 
-              document.getElementById('apar4').innerHTML = "<b>@Seanice</b> : eating a ham sandwich on my air mattress in an empty room singing its overrrrrr its overrrr its sooooo fucking overrrr  the echos are mocking me";
-              document.getElementById('tim4').innerHTML = "1d 2h";
-              document.getElementById('apar5').innerHTML = "<b>@Pearl</b> : The Grilled French Ham Sandwich at @rubysoysterbar never disappoints!";
-              document.getElementById('tim5').innerHTML = "1d 2h";
-              document.getElementById('apar6').innerHTML = "<b>@Ed</b> : A bacon sandwich is essentially a warm ham sandwich. Change my mind.";
-              document.getElementById('tim6').innerHTML = "2d 5h"; 
-              document.getElementById('apar7').innerHTML = "";
-              document.getElementById('tim7').innerHTML = "";
-              document.getElementById('apar8').innerHTML = "";
-              document.getElementById('tim8').innerHTML = "";
-              document.getElementById('apar9').innerHTML = "";
-              document.getElementById('tim9').innerHTML = "";
-              document.getElementById('apar10').innerHTML = "";
-              document.getElementById('tim10').innerHTML = "";
-              user = [];
-              user.push("Allan");
-              order = [];
-              cost = [];
-              mail = [];
-              order.push("Ham Sandwich", "mayonnaise", "parsley", "thyme", "extra-virgin olive oil", "garlic", "crusty bread", "mustard", "ham", "tomato", "onion");
-              cost.push("540");
-              mail.push('mailto:allan@example.com?subject=shoppinglist&body=ham_sandwich');
-            }
-          </script>
-
-          <div class="d-flex gap-2 w-100 justify-content-between">
-            <div>
-              <h6 class="mb-0">Ham Sandwich<p class="mb-0 opacity-75">@Allan</p>
-              </h6>
-              <p class="mb-0 opacity-75">This sandwich is worth following a recipe for. It will be the sandwich you
-                crave for every lunch and every midnight snack. Making your own herb mayo—by mixing in a few fresh herbs
-                and some olive oil—will make this sandwich stand above the rest. Even the one your mom used to make for
-                you.</p>
-            </div>
-            <small class="opacity-50 text-nowrap">540</small>
-          </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
-          onclick="mango()">
-          <script>
-            function mango() {
-              document.getElementById('heading').innerHTML = "Mango Chicken Curry";
-              document.getElementById('handle').innerHTML = "@Kim";
-              document.getElementById('item0').innerHTML = "vegetable oil";
-              document.getElementById('item1').innerHTML = "onion";
-              document.getElementById('item2').innerHTML = "red bell pepper";
-              document.getElementById('item3').innerHTML = "garlic cloves";
-              document.getElementById('item4').innerHTML = "curry powder";
-              document.getElementById('item5').innerHTML = "ground cumin";
-              document.getElementById('item6').innerHTML = "Meat";
-              document.getElementById('item7').innerHTML = "mangos";
-              document.getElementById('item8').innerHTML = "boneless chicken thighs";
-              document.getElementById('item9').innerHTML = "rice";
-              document.getElementById('price0').innerHTML = "240";
-
-              document.getElementById('par0').innerHTML = "Step 1: Cook onions, bell pepper, garlic, ginger, spices.";
-              document.getElementById('par1').innerHTML = "Step 2: Add the vinegar, coconut milk, and one of the two mangoes.";
-              document.getElementById('par2').innerHTML = "Step 3: Purée sauce.";
-              document.getElementById('par3').innerHTML = "Step 4: Add chicken pieces and raisins";
-              document.getElementById('par4').innerHTML = "Step 5: Add remaining chopped mango to the pan";
-              document.getElementById('par5').innerHTML = "Step 6: Adjust seasonings. If a little too sweet, add a little more vinegar. If not sweet enough, you can add a dash of sugar. Add salt and pepper to taste.";
-              document.getElementById('par6').innerHTML = "";
-              document.getElementById('par7').innerHTML = "";
-              document.getElementById('par8').innerHTML = "";
-              document.getElementById('par9').innerHTML = "";
-              document.getElementById('par10').innerHTML = "";
-
-              document.getElementById('apar0').innerHTML = "<b>@Ash</b> : Sweet Mango Curry😋";
-              document.getElementById('tim0').innerHTML = "1h";             
-              document.getElementById('apar1').innerHTML = "<b>@Sayon</b> : Lunch time! Curry chicken roti with pumpkin, curry mango and peanut punch  abd a doubles to snack on pre-gym 🤩😋";
-              document.getElementById('tim1').innerHTML = "3h";
-              document.getElementById('apar2').innerHTML = "<b>@Gardner</b> : A day of cooking down San Marzano to sauce and sneaking some into the shrimp w sorel curry. Had it w turmeric rice & mango pickle. Just like my uncle used to make it.";
-              document.getElementById('tim2').innerHTML = "3h";
-              document.getElementById('apar3').innerHTML = "<b>@Anissa</b> : I can’t believe it took me til this big age to eat mango in curry bc whew. Potato can go to HELL";
-              document.getElementById('tim3').innerHTML = "7h"; 
-              document.getElementById('apar4').innerHTML = "<b>@Benny</b> : Some roti, curry goat, saw fish, and some mango sounds so good rn 🥴🥴";
-              document.getElementById('tim4').innerHTML = "1d 4h";
-              document.getElementById('apar5').innerHTML = "<b>@Lex</b> : but we made masala egg curry after that and ate mango it was very nice ☺️";
-              document.getElementById('tim5').innerHTML = "1d 8h";
-              document.getElementById('apar6').innerHTML = "<b>@Solis</b> : had the best mango curry omg";
-              document.getElementById('tim6').innerHTML = "2d 3h"; 
-              document.getElementById('apar7').innerHTML = "";
-              document.getElementById('tim7').innerHTML = "";
-              document.getElementById('apar8').innerHTML = "";
-              document.getElementById('tim8').innerHTML = "";
-              document.getElementById('apar9').innerHTML = "";
-              document.getElementById('tim9').innerHTML = "";
-              document.getElementById('apar10').innerHTML = "";
-              document.getElementById('tim10').innerHTML = "";
-              user = [];
-              user.push("Kim");
-              order = [];
-              cost = [];
-              mail = [];
-              order.push("Mango Chicken Curry", "onion", "red bell pepper", "garlic cloves", "curry powder", "ground cumin", "Meat", "mangos", "boneless chicken thighs", "rice");
-              cost.push("240");
-              mail.push('mailto:kim@example.com?subject=shoppinglist&body=mango_chicken_curry');
-            }
-          </script>
-
-          <div class="d-flex gap-2 w-100 justify-content-between">
-            <div>
-              <h6 class="mb-0">Mango Chicken Curry<p class="mb-0 opacity-75">@Kim</p>
-              </h6>
-              <p class="mb-0 opacity-75">Mango and chicken are a power combo! This Mango Chicken Curry uses fresh mango
-                as its base and adds full-fat coconut milk for creamy richness. Try it tonight!</p>
-            </div>
-            <small class="opacity-50 text-nowrap">240</small>
-          </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
-          onclick="liver()">
-          <script>
-            function liver() {
-              document.getElementById('heading').innerHTML = "Liver and Onions";
-              document.getElementById('handle').innerHTML = "@Justine";
-              document.getElementById('item0').innerHTML = "beef liver";
-              document.getElementById('item1').innerHTML = "milk";
-              document.getElementById('item2').innerHTML = "butter";
-              document.getElementById('item3').innerHTML = "onions";
-              document.getElementById('item4').innerHTML = "all-purpose flour";
-              document.getElementById('item5').innerHTML = "salt and pepper";
-              document.getElementById('item6').innerHTML = "";
-              document.getElementById('item7').innerHTML = "";
-              document.getElementById('item8').innerHTML = "";
-              document.getElementById('item9').innerHTML = "";
-              document.getElementById('price0').innerHTML = "540";
-
-              document.getElementById('par0').innerHTML = "Step 1: Gently rinse liver slices under cold water, and place in a medium bowl. Pour in enough milk to cover. Let stand while preparing onions. (I like to soak up to an hour or two - whatever you have time for.) This step is SO important in taking the bitter taste of the liver out.";
-              document.getElementById('par1').innerHTML = "Step 2: Melt 2 tablespoons of butter in a large skillet over medium heat. Separate onion rings, and saute them in butter until soft. Remove onions, and melt remaining butter in the skillet. Season the flour with salt and pepper, and put it in a shallow dish or on a plate. Drain milk from liver, and coat slices in the flour mixture.";
-              document.getElementById('par2').innerHTML = "Step 3: When the butter has melted, turn the heat up to medium-high, and place the coated liver slices in the pan. Cook until nice and brown on the bottom. Turn, and cook on the other side until browned. Add onions, and reduce heat to medium. Cook a bit longer to taste. Our family prefers the liver to just barely retain a pinkness on the inside when you cut to check. Enjoy!";
-              document.getElementById('par3').innerHTML = "";
-              document.getElementById('par4').innerHTML = "";
-              document.getElementById('par5').innerHTML = "";
-              document.getElementById('par6').innerHTML = "";
-              document.getElementById('par7').innerHTML = "";
-              document.getElementById('par8').innerHTML = "";
-              document.getElementById('par9').innerHTML = "";
-              document.getElementById('par10').innerHTML = "";
-
-              document.getElementById('apar0').innerHTML = "<b>@Brock</b> : You know liver and onions will be on the menu when your restaurant has an outhouse.";
-              document.getElementById('tim0').innerHTML = "30m";             
-              document.getElementById('apar1').innerHTML = "<b>@Vivian</b> : One of my favorite meals... Liver and Onions";
-              document.getElementById('tim1').innerHTML = "2h";
-              document.getElementById('apar2').innerHTML = "<b>@Sid</b> : I know how to make everything she used to make when I was a kid. All the way down to the liver and onions (my favorite).";
-              document.getElementById('tim2').innerHTML = "4h";
-              document.getElementById('apar3').innerHTML = "<b>@Diesel</b> : Scotty Boy can’t wait to get truck back tomorrow with my little kitchen, on the microwave menu is liver and onions with mash , had it earlier, might get a chinese after the Anchors";
-              document.getElementById('tim3').innerHTML = "9h"; 
-              document.getElementById('apar4').innerHTML = "<b>@Nic</b> : Liver and onions with mash and gravy, please. A diet coke and Woodstock by Crosby, Stills, Nash and Young on the jukey, please. 😁";
-              document.getElementById('tim4').innerHTML = "1d 6h";
-              document.getElementById('apar5').innerHTML = "<b>@Alicia</b> : Mmmmm. Liver and onions fried in bacon grease!";
-              document.getElementById('tim5').innerHTML = "1d 11h";
-              document.getElementById('apar6').innerHTML = "<b>@Allen</b> : Love me some Liver and onions";
-              document.getElementById('tim6').innerHTML = "2d 1h"; 
-              document.getElementById('apar7').innerHTML = "";
-              document.getElementById('tim7').innerHTML = "";
-              document.getElementById('apar8').innerHTML = "";
-              document.getElementById('tim8').innerHTML = "";
-              document.getElementById('apar9').innerHTML = "";
-              document.getElementById('tim9').innerHTML = "";
-              document.getElementById('apar10').innerHTML = "";
-              document.getElementById('tim10').innerHTML = "";
-              user = [];
-              user.push("Justine");
-              order = [];
-              cost = [];
-              mail = [];
-              order.push("Liver and Onions", "beef liver", "milk", "butter", "onions", "all-purpose flour", "salt and pepper");
-              cost.push("540");
-              mail.push('mailto:justine@example.com?subject=shoppinglist&body=liver_and_onions');
-
-            }
-          </script>
-
-          <div class="d-flex gap-2 w-100 justify-content-between">
-            <div>
-              <h6 class="mb-0">Liver and Onions<p class="mb-0 opacity-75">@Justine</p>
-              </h6>
-              <p class="mb-0 opacity-75">This recipe will turn liver haters into converts. Very simple! The three things
-                that will set your liver above all others are: 1) soak in milk, 2)turn liver as little as possible and
-                3) don't overcook!</p>
-            </div>
-            <small class="opacity-50 text-nowrap">540</small>
-          </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
-          onclick="fruit()">
-          <script>
-            function fruit() {
-              document.getElementById('heading').innerHTML = "Fruit Smoothie";
-              document.getElementById('handle').innerHTML = "@William";
-              document.getElementById('item0').innerHTML = "banana";
-              document.getElementById('item1').innerHTML = "strawberries";
-              document.getElementById('item2').innerHTML = "milk";
-              document.getElementById('item3').innerHTML = "vanilla yogurt";
-              document.getElementById('item4').innerHTML = "orange juice";
-              document.getElementById('item5').innerHTML = "honey";
-              document.getElementById('item6').innerHTML = "";
-              document.getElementById('item7').innerHTML = "";
-              document.getElementById('item8').innerHTML = "";
-              document.getElementById('item9').innerHTML = "";
-              document.getElementById('price0').innerHTML = "300";
-
-              document.getElementById('par0').innerHTML = "Step 1: Put all the ingredients in a blender and process until smooth. Pour into glasses and serve.";
-              document.getElementById('par1').innerHTML = "Step 2: Cooks note: For non-dairy smoothies, substitute 1 cup rice milk for the milk and yogurt. Or, use soy yogurt or milk instead of dairy.";
-              document.getElementById('par2').innerHTML = "";
-              document.getElementById('par3').innerHTML = "";
-              document.getElementById('par4').innerHTML = "";
-              document.getElementById('par5').innerHTML = "";
-              document.getElementById('par6').innerHTML = "";
-              document.getElementById('par7').innerHTML = "";
-              document.getElementById('par8').innerHTML = "";
-              document.getElementById('par9').innerHTML = "";
-              document.getElementById('par10').innerHTML = "";
-
-              document.getElementById('apar0').innerHTML = "<b>@Olivia</b> : early wake up, journaling, morning yoga, smoothie, sun is shining, hair in bun, fresh fruit, nature walk, podcast";
-              document.getElementById('tim0').innerHTML = "45m";             
-              document.getElementById('apar1').innerHTML = "<b>@Melody</b> : I was putting frozen fruit in the ninja to make a smoothie and my mom was like “omg that’s a lot of sugar!!” ????? girl please mind your business this is literally fruit…………I was like yeah but it’s natural sugar.. and she was like yeah but still😳 ?? still mind your business";
-              document.getElementById('tim1').innerHTML = "1h";
-              document.getElementById('apar2').innerHTML = "<b>@Josie</b> : fresh fruit, frozen fruit, dried fruit, cooked fruit, fruit juice, fruit smoothie, fruit sweets, fruit cake, fruit bars, fruit anything i will happily devour";
-              document.getElementById('tim2').innerHTML = "5h";
-              document.getElementById('apar3').innerHTML = "<b>@Blair</b> : biscoff, jam yogurt and fruit + a smoothie for today";
-              document.getElementById('tim3').innerHTML = "10h"; 
-              document.getElementById('apar4').innerHTML = "<b>@Kathy</b> : a fruit smoothie would hit the spot rn";
-              document.getElementById('tim4').innerHTML = "1d 8h";
-              document.getElementById('apar5').innerHTML = "<b>@Cenia</b> : Enjoying some fruit smoothies for our Nutrition Unit ! Let’s learn and have fun !";
-              document.getElementById('tim5').innerHTML = "1d 10h";
-              document.getElementById('apar6').innerHTML = "<b>@Nevi</b> : Do people actually follow smoothie recipes or does everyone mix random fruit together and call it a day?";
-              document.getElementById('tim6').innerHTML = "2d 5h"; 
-              document.getElementById('apar7').innerHTML = "";
-              document.getElementById('tim7').innerHTML = "";
-              document.getElementById('apar8').innerHTML = "";
-              document.getElementById('tim8').innerHTML = "";
-              document.getElementById('apar9').innerHTML = "";
-              document.getElementById('tim9').innerHTML = "";
-              document.getElementById('apar10').innerHTML = "";
-              document.getElementById('tim10').innerHTML = "";
-              user = [];
-              user.push("William");
-              order = [];
-              cost = [];
-              mail = [];
-              order.push("Fruit Smoothie", "banana", "strawberries", "milk", "vanilla yogurt", "orange juice", "honey");
-              cost.push("300");
-              mail.push('mailto:william@example.com?subject=shoppinglist&body=fruit_smoothie');
-            }
-          </script>
-
-          <div class="d-flex gap-2 w-100 justify-content-between">
-            <div>
-              <h6 class="mb-0">Fruit Smoothie<p class="mb-0 opacity-75">@William</p>
-              </h6>
-              <p class="mb-0 opacity-75">This is a great smoothie consisting of fruit, fruit juice and ice. I like to
-                use whatever fresh fruits I crave that day. Any kind of berry, mangos, papayas, kiwi fruit, et cetera
-                make a great smoothie. Experiment with your favorites!</p>
-            </div>
-            <small class="opacity-50 text-nowrap">300</small>
-          </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
-          onclick="chips()">
-          <script>
-            function chips() {
-              document.getElementById('heading').innerHTML = "Potato Chips";
-              document.getElementById('handle').innerHTML = "@Sean";
-              document.getElementById('item0').innerHTML = "potatoes";
-              document.getElementById('item1').innerHTML = "salt";
-              document.getElementById('item2').innerHTML = "oil";
-              document.getElementById('item3').innerHTML = "";
-              document.getElementById('item4').innerHTML = "";
-              document.getElementById('item5').innerHTML = "";
-              document.getElementById('item6').innerHTML = "";
-              document.getElementById('item7').innerHTML = "";
-              document.getElementById('item8').innerHTML = "";
-              document.getElementById('item9').innerHTML = "";
-              document.getElementById('price0').innerHTML = "230";
-
-              document.getElementById('par0').innerHTML = "Step 1: Place potato slices into a large bowl of cold water as you slice. Drain, and rinse, then refill the bowl with water, and add the salt. Let the potatoes soak in the salty water for at least 30 minutes. Drain, then rinse and drain again.";
-              document.getElementById('par1').innerHTML = "Step 2: Heat oil in a deep-fryer to 365 degrees F (185 degrees C). Fry potato slices in small batches. Once they start turning golden, remove and drain on paper towels. Continue until all of the slices are fried. Season with additional salt if desired.";
-              document.getElementById('par2').innerHTML = "";
-              document.getElementById('par3').innerHTML = "";
-              document.getElementById('par4').innerHTML = "";
-              document.getElementById('par5').innerHTML = "";
-              document.getElementById('par6').innerHTML = "";
-              document.getElementById('par7').innerHTML = "";
-              document.getElementById('par8').innerHTML = "";
-              document.getElementById('par9').innerHTML = "";
-              document.getElementById('par10').innerHTML = "";
-
-              document.getElementById('apar0').innerHTML = "<b>@Fiona</b> : Home grown sweet potato means sweet potato chips on the menu tonight.";
-              document.getElementById('tim0').innerHTML = "10m";             
-              document.getElementById('apar1').innerHTML = "<b>@Rob</b> : Instead of making potato chips, have you tried Parsnip chips ?";
-              document.getElementById('tim1').innerHTML = "3h";
-              document.getElementById('apar2').innerHTML = "<b>@Sun</b> : today’s night snack simple potato chips with sauce and lemon";
-              document.getElementById('tim2').innerHTML = "7h";
-              document.getElementById('apar3').innerHTML = "<b>@Belle</b> : Why is it only a violation to commit fraud or theft in the millions & billions, but a punishable crime to steal potato chips?";
-              document.getElementById('tim3').innerHTML = "11h"; 
-              document.getElementById('apar4').innerHTML = "<b>@Bobby</b> : Anybody notice if you buy Lay's brand potato chips the large size bag is no longer as large? You're paying the same price for a smaller package. It's probably like this all the way across your supermarket.";
-              document.getElementById('tim4').innerHTML = "1d 9h";
-              document.getElementById('apar5').innerHTML = "<b>@Trumpet</b> : These pickle flavored potato chips and soyburgers are delectable! Truly an innovation impossible apart from our Jewish overlords. I shudder at the thought of an alternate timeline. Heil Fauci";
-              document.getElementById('tim5').innerHTML = "1d 11h";
-              document.getElementById('apar6').innerHTML = "<b>@Katie</b> : They actually taste like Lays potato chips 🥲🥲🤤🤤🤤🤤🔥🔥🔥 ";
-              document.getElementById('tim6').innerHTML = "2d 2h"; 
-              document.getElementById('apar7').innerHTML = "";
-              document.getElementById('tim7').innerHTML = "";
-              document.getElementById('apar8').innerHTML = "";
-              document.getElementById('tim8').innerHTML = "";
-              document.getElementById('apar9').innerHTML = "";
-              document.getElementById('tim9').innerHTML = "";
-              document.getElementById('apar10').innerHTML = "";
-              document.getElementById('tim10').innerHTML = "";
-              user = [];
-              user.push("Sean");
-              order = [];
-              cost = [];
-              mail = [];
-              order.push("Potato Chips", "potatoes", "salt", "oil");
-              cost.push("230");
-              mail.push('mailto:sean@example.com?subject=shoppinglist&body=potato_chips');
-
-            }
-          </script>
-
-          <div class="d-flex gap-2 w-100 justify-content-between">
-            <div>
-              <h6 class="mb-0">Potato Chips<p class="mb-0 opacity-75">@Sean</p>
-              </h6>
-              <p class="mb-0 opacity-75">Making homestyle potato chips is fun and easy. Guaranteed they won't last long!
-                A food processor with a slicing attachment is very helpful. Experiment with the thickness; you may like
-                them thicker or thinner. I like to use olive oil because it has less trans fats, but you can use
-                safflower, corn, or peanut oil as well as vegetable oil.</p>
-            </div>
-            <small class="opacity-50 text-nowrap">230</small>
-          </div>
-        </a>
 
       </div>
     </div>
 
     <div class="item3">
-      <div class="list-group"id="it_col">
-        <a href="#" class="list-group-item list-group-item-action  " aria-current="true" style="display: none;" id="new_entry_list_a">
+      <div class="list-group" id="it_col">
+        <a href="#" class="list-group-item list-group-item-action  " aria-current="true" style="display: none;"
+          id="new_entry_list_a">
 
           <div class="d-flex justify-content-between" style="display: none;">
             <div id="new_entry_list" style="display: none;">
               <h6 id="newHeader" class="mb-0">New List</h6>
               <ul id="ul" class="mb-0 opacity-75">
                 <li id="list1" class="mb-0 opacity-75" style="list-style: none;"></li>
-  
+
               </ul>
               <input type="text" id="txtVal" class="form-control me-2" placeholder="Add List Item"
                 style="margin-top: 5px; margin-bottom: 5px;">
-             
-              <button class="btn btn-outline-dark btn-sm" style="width: fit-content;float: left;" type="submit" onclick="addLi()">Add</button>
-              <script>
-                function addLi() {
-                  const list2 = [];
-                  const title1 = [];
-                  var txtVal = document.getElementById('txtVal').value,
-                    listNode = document.getElementById('list1'),
-                    liNode = document.createElement("li"),
-                    txtNode = document.createTextNode(txtVal),
-                    title = document.getElementById('title').value;
-                  description = document.getElementById('t_desc').value;
-                  liNode.appendChild(txtNode);
-                  listNode.appendChild(liNode);
-                  list2.push(txtVal);
-                  //console.log(list2);
-                  document.getElementById('newHeader').innerHTML = title;
-  
-                  title_main = title;
-                  list_item.push(txtVal);
-  
-                }
-              </script>
-              <button class="btn btn-outline-dark btn-sm" style="width: fit-content;float: right;" type="submit" onclick="clearLi()">Clear
-                  List</button>
-              <script>
-                function clearLi() {
-                  t_list = [];
-                  title_main = [];
-                  description = [];
-                  list_item = [];
-                  recipe = [];
-                  document.getElementById("list1").innerHTML = "";
-                  console.log("List cleared");
-                }
-              </script>
+
+              <button class="btn btn-outline-dark btn-sm" style="width: fit-content;float: left;" type="submit"
+                onclick="addLi()">Add</button>
+
+              <button class="btn btn-outline-dark btn-sm" style="width: fit-content;float: right;" type="submit"
+                onclick="clearLi()">Clear
+                List</button>
+
 
 
             </div>
-            
+
           </div>
         </a>
 
@@ -809,177 +175,46 @@
 
           <div class="d-flex gap-2 w-100 justify-content-between">
             <div id="main_list" style="height: 100%;">
-              <h6 id="heading" class="mb-0">Chocolate Banana Bread</h6>
-              <p id="handle" class="mb-0 opacity-75">@Fiona</p>
-              <p id="item0" class="mb-0 opacity-75">ripe bananas</p>
-              <p id="item1" class="mb-0 opacity-75">butter</p>
-              <p id="item2" class="mb-0 opacity-75">brown sugar</p>
-              <p id="item3" class="mb-0 opacity-75">salt</p>
-              <p id="item4" class="mb-0 opacity-75">eggs</p>
-              <p id="item5" class="mb-0 opacity-75">vanilla extract</p>
-              <p id="item6" class="mb-0 opacity-75">all-purpose flour</p>
-              <p id="item7" class="mb-0 opacity-75">cocoa powder</p>
-              <p id="item8" class="mb-0 opacity-75">baking soda</p>
-              <p id="item9" class="mb-0 opacity-75">chocolate chips</p>
+              <h6 id="heading" class="mb-0"></h6>
+              <p id="handle" class="mb-0 opacity-75"></p>
+              <div id="newnew"></div>
+
+
             </div>
-            <small id="price0" class="opacity-50 text-nowrap">980</small>
+            <small id="price0" class="opacity-50 text-nowrap"></small>
           </div>
         </a>
 
       </div>
     </div>
     <div class="item4">
-      
-        <div id="comments" class="list-group" style="display: none;">
-          
-          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" " aria-current="true">        
-            <div class="d-flex gap-2 w-100 justify-content-between">
-              <div>
-                <label style="margin-top: 5px;">Comments</label>
-              <textarea rows="3" cols="40" id="comments2" class="form-control me-2" name="comments"></textarea>
-              <button class="btn btn-outline-dark btn-sm" style="width: fit-content;" type="submit" onclick="addcom()">Post</button>
-              </div>
-              <script>
-                function addcom(){
-                  comments1 = document.getElementById('comments2').value;
-                  console.log(comments1);
-                 
-                  const usecom = document.createElement("p");
-                  const usetim = document.createElement("p");
-                  const divcom = document.createElement("div");
-                  const acom = document.createElement("a");
-                  usecom.className = "mb-0 opacity-75";
-                  usetim.className = "opacity-50 text-nowrap";
-                  divcom.className = "d-flex gap-2 w-100 justify-content-between";
-                  acom.className = "list-group-item list-group-item-action d-flex gap-3 py-3";
-                  acom.ariaCurrent =true;
-                  divcom.id = "newc1";
-                  usecom.innerHTML = "<b>@Simon </b>: " + comments1;
-                  usetim.innerHTML = "Now";
-                 
-                  document.getElementById("newc").appendChild(acom);
-                  acom.appendChild(divcom);
-                  divcom.appendChild(usecom);
-                  divcom.appendChild(usetim);
-                  
-                  localStorage.setItem("list", JSON.stringify(order[0]));
-                localStorage.setItem("comments", JSON.stringify(comments1));
-                //var storedComments = JSON.parse(localStorage.getItem("comments"+"list"));
-                console.log("BREAK");
-                localStorage.comments1 = JSON.stringify(comments1);
-                var storedComments = JSON.parse(localStorage.comments1);
-                console.log(storedComments); 
-                }
-              </script>
-              <small class="opacity-50 text-nowrap">Now</small>
-            </div>
-          </a>
-         
-          <div id="newc" class=" gap-2 w-100 justify-content-between"></div>
 
-          <div id="oldc" >
-          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-            <div class="d-flex gap-2 w-100 justify-content-between">
-              <div>
-                <p id="apar0" class="mb-0 opacity-75">  <b>@Mark</b> : Bought some instant coffee for a quid from One Below and I’m shook that it’s not the worst thing I’ve ever tasted in my life, it actually tastes okay wow bargain hunter</p>
-              </div>
-              <small id="tim0" class="opacity-50 text-nowrap">1h</small>
+      <div id="comments" class="list-group" style="display: none;">
+
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <label style="margin-top: 5px;">Comments</label>
+              <textarea rows="3" cols="40" id="comments2" class="form-control me-2" name="comments"></textarea>
+              <button class="btn btn-outline-dark btn-sm" style="width: fit-content;" type="submit"
+                onclick="addcom()">Post</button>
             </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-            <div class="d-flex gap-2 w-100 justify-content-between">
-              <div>
-                <p id="apar1" class="mb-0 opacity-75"><b>@Tommy</b> : Some of you have 10 Free cards from the $.50 and Dollar Lots. For all you bargain hunters out there, that's how you do it! Not trying to break me down to a dime for 2 of them!</p>
-              </div>
-              <small id="tim1" class="opacity-50 text-nowrap">3h</small>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-            <div class="d-flex gap-2 w-100 justify-content-between">
-              <div>
-                <p id="apar2" class="mb-0 opacity-75"><b>@Janet</b> : the most tiring person to shop with? 
-                  they picked jisung bc he takes a long time to choose. mc then asked if mark takes a while too</p>
-              </div>
-              <small id="tim2" class="opacity-50 text-nowrap">6h</small>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-            <div class="d-flex gap-2 w-100 justify-content-between">
-              <div>
-                <p id="apar3" class="mb-0 opacity-75"><b>@June</b> : Is it too much to find a man that is a bargain hunter but appreciates quality and won’t skimp on dinners out or argue I spend too much on personal appearance? Yes someone exactly like myself WHAT</p>
-              </div>
-              <small id="tim3" class="opacity-50 text-nowrap">1d</small>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-            <div class="d-flex gap-2 w-100 justify-content-between">
-              <div>
-                <p id="apar4" class="mb-0 opacity-75"><b>@Oliver</b> : Can’t believe I’ve managed to secure flights to Varadero for just over £200 😅😅 I am a certified bargain hunter</p>
-              </div>
-              <small id="tim4" class="opacity-50 text-nowrap">1d 3h</small>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-            <div class="d-flex gap-2 w-100 justify-content-between">
-              <div>
-                <p id="apar5" class="mb-0 opacity-75"><b>@Margaret</b> : With the weather getting better it’s time to get the garden sorted ☀️🍺
-  
-                  I love the one with the fire pit and they are all MASSIVELY REDUCED! 
-                  
-                  Check out these great deals here </p>
-              </div>
-              <small id="tim5" class="opacity-50 text-nowrap">1d 7h</small>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-            <div class="d-flex gap-2 w-100 justify-content-between">
-              <div>
-                <p id="apar6" class="mb-0 opacity-75"><b>@Abigail</b> : Solution: my wife should be in charge of buying. Absolute deal hunter that woman, like a bargain bloodhound.</p>
-              </div>
-              <small id="tim6" class="opacity-50 text-nowrap">2d</small>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-            <div class="d-flex gap-2 w-100 justify-content-between">
-              <div>
-                <p id="apar7" class="mb-0 opacity-75"></p>
-              </div>
-              <small id="tim7" class="opacity-50 text-nowrap"></small>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-            <div class="d-flex gap-2 w-100 justify-content-between">
-              <div>
-                <p id="apar8" class="mb-0 opacity-75"></p>
-              </div>
-              <small id="tim8" class="opacity-50 text-nowrap"></small>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-            <div class="d-flex gap-2 w-100 justify-content-between">
-              <div>
-                <p id="apar9" class="mb-0 opacity-75"></p>
-              </div>
-              <small id="tim9" class="opacity-50 text-nowrap"></small>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">        
-            <div class="d-flex gap-2 w-100 justify-content-between">
-              <div>
-                <p id="apar10" class="mb-0 opacity-75"></p>
-              </div>
-              <small id="tim10" class="opacity-50 text-nowrap"></small>
-            </div>
-          </a>
-        </div>
-              </div>
-  
-              <div id="directions_entry" style="display: none;">
-                <label style="margin-top: 5px;">
-                  <h2>Directions</h2>
-                </label>
-                <textarea rows="15" cols="40" class="form-control me-2" name="directions" id="t_directions"></textarea>
-              </div>
+
+            <small class="opacity-50 text-nowrap">Now</small>
+          </div>
+        </a>
+        <div id="addc" class=" gap-2 w-100 justify-content-between"></div>
+        <div id="newc" class=" gap-2 w-100 justify-content-between"></div>
+
+     
+      </div>
+
+      <div id="directions_entry" style="display: none;">
+        <label style="margin-top: 5px;">
+          <h2>Directions</h2>
+        </label>
+        <textarea rows="15" cols="40" class="form-control me-2" name="directions" id="t_directions"></textarea>
+      </div>
       <div id="directions" class="list-group">
 
         <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
@@ -987,41 +222,9 @@
           <div class="d-flex gap-2 w-100 justify-content-between">
             <div id="main_list1" style="height: 100%;">
               <h6 id="directions" class="mb-0">Directions</h6>
-              <p id="par0" class="mb-0 opacity-75">Step 1: Prepare pan and preheat oven:
-                Butter or spray with cooking spray the inside of a 5x9-inch loaf pan. Preheat oven to 350°F (175°C) with
-                a rack in the middle.</p>
-              <p id="par1" class="mb-0 opacity-75">Step 2: Purée bananas:
-                Using a blender, food processor, or a fork, purée the peeled ripe bananas until smooth. You should have
-                1 1/2 to 1 3/4 cups of banana purée.</p>
-              <p id="par2" class="mb-0 opacity-75">Step 3: Mix wet ingredients and sugar:
-                Place the banana purée into a large mixing bowl. Stir the melted butter. Stir in the brown sugar and
-                salt. Whisk to break up any clumps of brown sugar. Stir in the beaten egg and vanilla extract.</p>
-              <p id="par3" class="mb-0 opacity-75">Step 4: Mix dry ingredients:
-                In a separate bowl, vigorously whisk together the flour, cocoa, baking soda, and allspice.</p>
-              <p id="par4" class="mb-0 opacity-75">Step 5: Add the flour mixture to the banana mixture:
-                Stir until just incorporated, then stir in the chocolate chips.</p>
-              <p id="par5" class="mb-0 opacity-75">Step 6: Bake:
-                Pour batter into a buttered loaf pan. Place in a 350°F (175°C) oven and bake for 1 hour.
+              <div id="newr" class=" gap-2 w-100 justify-content-between"></div>
 
-                Note that because of the chocolate chips that melt in the bread as it cooks, it's hard to check for
-                doneness using a tester that you insert.
-
-                One way to test is to gently push the center top of the chocolate banana bread down with your finger. If
-                it feels relatively firm and bounces back when you release your finger, that's a good sign that it's
-                done.</p>
-              <p id="par6" class="mb-0 opacity-75">Step 7: Let cool completely:
-                Remove from oven and let cool for 10 minutes in the pan.
-
-                Gently remove the loaf from the pan and place on a rack to cool completely.
-
-                Slice with a serrated bread knife to serve.</p>
-              <p id="par7" class="mb-0 opacity-75"></p>
-              <p id="par8" class="mb-0 opacity-75"></p>
-              <p id="par9" class="mb-0 opacity-75"></p>
-              <p id="par10" class="mb-0 opacity-75"></p>
             </div>
-            <small id="price0" class="opacity-50 text-nowrap"></small>
-          </div>
         </a>
       </div>
     </div>
