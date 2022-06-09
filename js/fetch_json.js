@@ -42,6 +42,8 @@ function appendData(data) {
     myDesc.innerHTML = data[i].description;
     myCost.innerHTML = data[i].cost;
 
+    mail = [data[0].whatsapp];
+
     myHeader.appendChild(myUser);
     myDivPrime.appendChild(myHeader);
     myDivPrime.appendChild(myUser);
@@ -57,6 +59,8 @@ function appendData(data) {
       order = [myHeader.innerHTML];
 
       user = [myUser.innerHTML];
+
+      
 
       //fetch for second column data from json file
       fetch("w_list_items.json")
@@ -79,9 +83,9 @@ function appendData(data) {
         console.log(data[i].whatsapp);
         var newdiv2 = document.getElementById("newnew");
         newdiv2.innerHTML = "";
-        newdiv2.className = "d-flex gap-2 w-100 justify-content-between";
+        newdiv2.className = "d-flex gap-2 w-100 justify-content-between ";
         const myOl = document.createElement("ol");
-        myOl.className = "list-group list-group-numbered d-flex p-2";
+        myOl.className = "list-group list-group-numbered d-flex p-2 overflow-auto";
 
         for (i = 0; i < data.length; i++) {
           if (data[i].list === myHeader.innerHTML) {
@@ -149,7 +153,7 @@ function appendData(data) {
       }
 
       comment21();
-      function reccipe() {
+      function recipe() {
         fetch("w_recipe.json")
           .then(function (response) {
             return response.json();
@@ -196,7 +200,7 @@ function appendData(data) {
           }
         }
       }
-      reccipe();
+      recipe();
     };
   }
 }
@@ -214,7 +218,7 @@ function setDefaultTitle() {
     });
 
   function appendData(data) {
-    order = [data[0].title];
+    order = [data[0].list];
 
     user = [data[0].user];
 
@@ -223,7 +227,7 @@ function setDefaultTitle() {
     document.getElementById("price0").innerHTML = data[0].cost;
 
     const myOl = document.createElement("ol");
-    myOl.className = "list-group list-group-numbered d-flex p-2";
+    myOl.className = "list-group list-group-numbered d-flex p-2 overflow-auto";
     let myNewItem;
 
     for (i = 0; i < data.length; i++) {
@@ -236,6 +240,8 @@ function setDefaultTitle() {
     }
 
     document.getElementById("newnew").appendChild(myOl);
+
+    
   }
   function comment22() {
     fetch("w_comments.json")
