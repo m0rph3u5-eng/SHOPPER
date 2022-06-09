@@ -3,7 +3,8 @@ A social media web app for making and sharing shopping lists.
 <br>
 It also allows users to request deliveries.
 
-![ssws_5_12_2022](https://user-images.githubusercontent.com/63499020/168072443-81e52f78-a749-4bc1-bad7-37f8f36a1ac8.png)
+![shopperss6_9_2022](https://user-images.githubusercontent.com/63499020/172799357-efd3ce5e-100a-4e7c-84e1-5e52a3ed653f.png)
+
 
 <br>
 
