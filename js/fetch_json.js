@@ -344,13 +344,18 @@ function setDefaultTitle() {
 setDefaultTitle();
 
 function orderf() {
-  if (
-    confirm("Do you want to place an order to " + user + " for " + order + "?")
-  ) {
-    window.open(mail);
+  let person = prompt("You have selected " + order+ "."+" Please enter a Whatsapp contact to send the list", "254 704 186334");
+
+  if (person != null) {
+    let wNumber =  "https://wa.me/"+person+"?text=I'm%20interested%20in%20"+ order
+    
+    //remove spaces from string (url)
+    wNumber = wNumber.replace(/\s/g, '');
+   // console.log("https://wa.me/"+person+"?text=I'm%20interested%20in%20your%20car%20for%20sale"+ order);
+    window.open(wNumber);
+    //console.log(wNumber);
   }
 }
-
 function deliverf() {
   if (
     confirm("Do you want to make a delivery to " + user + " in " + order + "?")

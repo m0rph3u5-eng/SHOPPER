@@ -1,6 +1,7 @@
 [
+   
     {       
-        "whatsapp": "https://wa.me/254704186334?text=I'm%20interested%20in",
+        
         "title":"Bargain Hunter",
         "user":"@Nancy",
         "description": "Products at a discounted price. Good deals.",
@@ -10,7 +11,7 @@
     },
 
     {       
-        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
+       
         "title":"Inspired",
         "user":"@Lilly",
         "description": "Curated items for the household.",
@@ -18,7 +19,7 @@
         "cost": 780
     },
     {       
-        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
+        
         "title":"Latest Products",
         "user":"@Tom",
         "description": "The latest products in the market.",
@@ -26,7 +27,7 @@
         "cost": 1120
     },
     {       
-        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in",
+        
         "title":"Researched",
         "user":"@Mark",
         "description": "Shopping list by the experts.",
