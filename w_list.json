@@ -1,5 +1,13 @@
 [
-   
+    {       
+        
+        "title":"Grocery List",
+        "user":"@Joan",
+        "description": "Food to last a week.",
+        "items": ["Oranges","Apples","Bananas","Lettuce","Tomatoes","Squash","Celery","Cucumber","Mushrooms","Milk","Cheese","Eggs","Cottage cheese","Sour cream","Yogurt","Beef","Wild Salmon","Alaskan King Crab Legs"],
+        "cost": 2710
+
+    },
     {       
         
         "title":"Bargain Hunter",

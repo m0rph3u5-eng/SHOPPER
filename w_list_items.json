@@ -1,5 +1,113 @@
 [
     {          
+        "user": "@Joan",
+        "list": "Grocery List",
+        "item": "Oranges",
+        "cost": 980
+    },
+    {          
+        "user": "@Joan",
+        "list": "Grocery List",
+        "item": "Apples",
+        "cost": 980
+    },
+    {          
+        "user": "@Joan",
+        "list": "Grocery List",
+        "item": "Bananas",
+        "cost": 980
+    },
+    {          
+        "user": "@Joan",
+        "list": "Grocery List",
+        "item": "Lettuce",
+        "cost": 980
+    },
+    {          
+        "user": "@Joan",
+        "list": "Grocery List",
+        "item": "Tomatoes",
+        "cost": 980
+    },
+    {          
+        "user": "@Joan",
+        "list": "Grocery List",
+        "item": "Squash",
+        "cost": 980
+    },
+    {          
+        "user": "@Joan",
+        "list": "Grocery List",
+        "item": "Celery",
+        "cost": 980
+    },
+    {          
+        "user": "@Joan",
+        "list": "Grocery List",
+        "item": "Cucumber",
+        "cost": 980
+    },
+    {          
+        "user": "@Joan",
+        "list": "Grocery List",
+        "item": "Mushrooms",
+        "cost": 980
+    },
+    {          
+        "user": "@Joan",
+        "list": "Grocery List",
+        "item": "Milk",
+        "cost": 980
+    },
+    {          
+        "user": "@Joan",
+        "list": "Grocery List",
+        "item": "Cheese",
+        "cost": 980
+    },
+    {          
+        "user": "@Joan",
+        "list": "Grocery List",
+        "item": "Eggs",
+        "cost": 980
+    },
+    {          
+        "user": "@Joan",
+        "list": "Grocery List",
+        "item": "Cottage cheese",
+        "cost": 980
+    },
+    {          
+        "user": "@Joan",
+        "list": "Grocery List",
+        "item": "Sour cream",
+        "cost": 980
+    },
+    {          
+        "user": "@Joan",
+        "list": "Grocery List",
+        "item": "Yogurt",
+        "cost": 980
+    },
+    {          
+        "user": "@Joan",
+        "list": "Grocery List",
+        "item": "Beef",
+        "cost": 980
+    },
+    {          
+        "user": "@Joan",
+        "list": "Grocery List",
+        "item": "Wild Salmon",
+        "cost": 980
+    },
+    {          
+        "user": "@Joan",
+        "list": "Grocery List",
+        "item": "Alaskan King Crab Legs",
+        "cost": 980
+    },
+    {          
         "user": "@Nancy",
         "list": "Bargain Hunter",
         "item": "Bacon",

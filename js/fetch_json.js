@@ -360,6 +360,6 @@ function deliverf() {
   if (
     confirm("Do you want to make a delivery to " + user + " in " + order + "?")
   ) {
-    window.open(mail);
+    window.open("https://wa.me/254704186334?text=I'm%20interested%20in%20making%20a%20delivery.");
   }
 }
