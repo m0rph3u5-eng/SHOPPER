@@ -85,8 +85,9 @@ function appendData(data) {
         newdiv2.innerHTML = "";
         newdiv2.className = "d-flex gap-2 w-100 justify-content-between ";
         const myOl = document.createElement("ol");
-        myOl.className = "list-group list-group-numbered d-flex p-2 overflow-auto";
-
+        myOl.className = "list-group list-group-numbered d-flex p-2 ";
+myOl.style.width ="inherit"
+myOl.style.height ="inherit"
         for (i = 0; i < data.length; i++) {
           if (data[i].list === myHeader.innerHTML) {
             // const myNewItem = document.createElement("p");
@@ -95,13 +96,19 @@ function appendData(data) {
             // document.getElementById("newnew").appendChild(myNewItem);
 
             const myNewItem = document.createElement("li");
-            myNewItem.className = "list-group-item";
+            myNewItem.className = "list-group-item";            
             myNewItem.innerHTML = data[i].item;
-            myOl.appendChild(myNewItem);
+            
+            myNewItem.onclick = function colorChange() {         
+              myNewItem.className="list-group-item active" 
+          }
+            myOl.appendChild(myNewItem);     
           } else {
           }
         }
         document.getElementById("newnew").appendChild(myOl);
+     
+        
       }
       function comment21() {
         fetch("w_comments.json")
@@ -228,13 +235,16 @@ function setDefaultTitle() {
 
     const myOl = document.createElement("ol");
     myOl.className = "list-group list-group-numbered d-flex p-2 overflow-auto";
-    let myNewItem;
+    //let myNewItem;
 
     for (i = 0; i < data.length; i++) {
       if (data[i].list == data[0].list) {
-        myNewItem = document.createElement("li");
+       const myNewItem = document.createElement("li");
         myNewItem.className = "list-group-item";
         myNewItem.innerHTML = data[i].item;
+        myNewItem.onclick = function colorChange() {         
+          myNewItem.className="list-group-item active" 
+      }
         myOl.appendChild(myNewItem);
       }
     }
@@ -363,3 +373,4 @@ function deliverf() {
     window.open("https://wa.me/254704186334?text=I'm%20interested%20in%20making%20a%20delivery.");
   }
 }
+

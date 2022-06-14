@@ -1,9 +1,36 @@
 [
     {       
         "type": "Weekly Shopping",
+        "title":"Kilimani",
+        "user":"@Ruby",
+        "description": "Latest Products",
+        "items": ["Bacon","Baking goods","Beverages","Canned goods","Fish","Grains","Meat","Snacks","Spices"],
+        "cost": 980 
+
+    },
+    {       
+        "type": "Weekly Shopping",
+        "title":"Langata",
+        "user":"@Allan",
+        "description": "Monthly Shopping List",
+        "items": ["Bacon","Baking goods","Beverages","Canned goods","Fish","Grains","Meat","Snacks","Spices"],
+        "cost": 980 
+
+    },
+    {       
+        "type": "Weekly Shopping",
+        "title":"Hurlingham",
+        "user":"@Bobby",
+        "description": "Bargain Hunter",
+        "items": ["Bacon","Baking goods","Beverages","Canned goods","Fish","Grains","Meat","Snacks","Spices"],
+        "cost": 980 
+
+    },
+    {       
+        "type": "Weekly Shopping",
         "title":"Kileleshwa",
         "user":"@Betty",
-        "description": "Bargain Hunter",
+        "description": "Researched",
         "items": ["Bacon","Baking goods","Beverages","Canned goods","Fish","Grains","Meat","Snacks","Spices"],
         "cost": 980 
 
@@ -14,6 +41,14 @@
         "title":"Lavington",
         "user":"@Benson",
         "description": "Inspired",
+        "items": ["Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices"],
+        "cost": 780
+    },
+    {       
+        "type": "Weekly Shopping",
+        "title":"Runda",
+        "user":"@Maggie",
+        "description": "Party",
         "items": ["Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices"],
         "cost": 780
     },
