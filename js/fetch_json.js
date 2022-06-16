@@ -99,6 +99,7 @@ myOl.style.height ="inherit"
             myNewItem.className = "list-group-item";            
             myNewItem.innerHTML = data[i].item;
             
+           //change bachground colour when item is clicked
             myNewItem.onclick = function colorChange() {         
               myNewItem.className="list-group-item active" 
           }
@@ -242,6 +243,8 @@ function setDefaultTitle() {
        const myNewItem = document.createElement("li");
         myNewItem.className = "list-group-item";
         myNewItem.innerHTML = data[i].item;
+        
+        //change bachground colour when item is clicked
         myNewItem.onclick = function colorChange() {         
           myNewItem.className="list-group-item active" 
       }
@@ -357,7 +360,7 @@ function orderf() {
   let person = prompt("You have selected " + order+ "."+" Please enter a Whatsapp contact to send the list", "254 704 186334");
 
   if (person != null) {
-    let wNumber =  "https://wa.me/"+person+"?text=I'm%20interested%20in%20"+ order
+    let wNumber =  "https://wa.me/"+person+"?text=Hello%20I'm%20interested%20in%20"+order+"%20from%20https://shopper.ke/"
     
     //remove spaces from string (url)
     wNumber = wNumber.replace(/\s/g, '');

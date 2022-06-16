@@ -10,6 +10,15 @@
     },
     {       
         
+        "title":"THE SHOPPING LIST FOR HEALTHY LIVING",
+        "user":"@outofmilk",
+        "description": "Some healthy foods to eat when you’re always on the move",
+        "items": ["Oranges","Apples","Bananas","Lettuce","Tomatoes","Squash","Celery","Cucumber","Mushrooms","Milk","Cheese","Eggs","Cottage cheese","Sour cream","Yogurt","Beef","Wild Salmon","Alaskan King Crab Legs"],
+        "cost": 2710
+
+    },
+    {       
+        
         "title":"Bargain Hunter",
         "user":"@Nancy",
         "description": "Products at a discounted price. Good deals.",
@@ -31,6 +40,14 @@
         "title":"Latest Products",
         "user":"@Tom",
         "description": "The latest products in the market.",
+        "items": ["Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices"],
+        "cost": 1120
+    },
+    {       
+        
+        "title":"Tastes Better From Scratch",
+        "user":"@LAUREN ALLEN",
+        "description": "We’ve been sharing 5 day weekly meal plans for many years now and we love the feedback we get from those of you who found our meal plans and who are using them regularly.",
         "items": ["Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices"],
         "cost": 1120
     },

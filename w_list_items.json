@@ -314,8 +314,391 @@
         "list": "Researched",
         "item": "Meat",
         "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Garlic (8 cloves)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Roma Tomatoes (2Lbs.)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Fresh Basil (1 cup chopped)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Lemon Juice (3 Tbs.)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Onion (1)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Green Bell Pepper (1)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Red Bell Pepper (2)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Baby Spinach",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Zucchini (1/2)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Purple Onion",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Cherry Tomatoes (handful)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Cornstarch (2 Tbs.)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Butter (1/4 cup)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Olive Oil",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Oil",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Flour Tortillas (10-12)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Think White Sandwich Bread (8 slices)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Spaghetti (12 oz.)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Penne (8 oz.)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Pizza Dough (1 or homemade)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Beef Broth (2 cups)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Chicken Broth (2 cups)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Diced Tomatoes (14.5 oz. can)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Salsa (1 cup)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Dijon Mustard (1/4 tsp)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Optional: Salsa and Sour Cream (Fajita Pasta) ",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Optional: Additional toppings for pizza",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Chuck Roast (2 1/2 lb.)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Ham (5 oz. sliced)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Chicken Breasts (1 Lb.) ",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Cheddar (1 cup shredded) ",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Monterey Jack (1 cup)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Gruyere Cheese (6 oz.)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Parmesan Cheese (3/4 cup)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Milk (1/2 cup)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Pest (1/2 cup)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Mozarella (1 cup)",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Salt and Pepper",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Cumin",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Onion Powder",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Garlic Powder",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Oregano",
+        "cost": 4
+    },
+    {        
+        "user": "@LAUREN ALLEN",
+        "list": "Tastes Better From Scratch",
+        "item": "Nutmeg",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Gallon of milk",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Carton of eggs",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Cheese block",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Yogurt",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Apples",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Bananas",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Carrots",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Tomatoes",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Potatoes",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Broccoli",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Chicken breast",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Fresh or frozen fish",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Loaf of bread",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Dry pasta",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Brown rice",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Couscous",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Tomato sauce",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Peanut butter",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Granola bars",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Nuts",
+        "cost": 4
+    },
+    {        
+        "user": "@outofmilk",
+        "list": "THE SHOPPING LIST FOR HEALTHY LIVING",
+        "item": "Dried or canned beans",
+        "cost": 4
     }
-
 ]
 
    
