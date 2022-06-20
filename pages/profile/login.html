@@ -6,181 +6,7 @@
   <meta content="en-us" http-equiv="Content-Language" />
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
   <title>Login | SHOPPER</title>
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-
-    /* width */
-    ::-webkit-scrollbar {
-      width: 5px;
-    }
-
-    /* Track */
-    ::-webkit-scrollbar-track {
-      background: #f1f1f1;
-    }
-
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-      background: rgb(255, 254, 254);
-    }
-
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-      background: #555;
-    }
-
-    /* Bordered form */
-    form {
-      margin-top: 5px;
-      margin-left: 10px;
-      position: fixed;
-      width: 400px;
-      background-color: #ffffff;
-    }
-
-    /* Full-width inputs */
-    input[type=text],
-    input[type=password] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-      text-align: center;
-    }
-
-    /* Set a style for all buttons */
-    button {
-      background-color: #000000;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0px;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-      position: relative;
-    }
-
-    /* Add a hover effect for buttons */
-    button:hover {
-      opacity: 0.8;
-    }
-
-    /* Extra style for the cancel button (red) */
-    .cancelbtn {
-      width: 100%;
-      padding: 14px 20px;
-      background-color: #f44336;
-      position: relative;
-    }
-
-    /* Center the avatar image inside this container */
-    .imgcontainer {
-      text-align: center;
-      margin: 8px 0 12px 0;
-    }
-
-    /* Avatar image */
-    img.avatar {
-      width: 20%;
-      border-radius: 50%;
-    }
-
-    /* Add padding to containers */
-    .container {
-      padding: 16px;
-    }
-
-    /* The "Forgot password" text */
-    span.psw {
-      float: right;
-      padding-top: 0px;
-      color: #000000;
-    }
-
-    span.psw a {
-      color: #000000;
-    }
-
-    /* Change styles for span and cancel button on extra small screens */
-    @media screen and (max-width: 300px) {
-      span.psw {
-        display: block;
-        float: none;
-      }
-
-      .cancelbtn {
-        width: 100%;
-      }
-    }
-
-    /* Style the input */
-    #myInput {
-      margin: 0;
-      border: #000000;
-      border-style: groove;
-      border-radius: 0;
-      width: 70%;
-      height: 40px;
-      padding: 10px;
-      float: left;
-      font-size: 16px;
-    }
-
-    /* Style the "Add" button */
-    .addBtn {
-      padding: 10px;
-      height: 20px;
-      width: 20%;
-      background: #d9d9d9;
-      color: #555;
-      float: left;
-      text-align: center;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-      border-radius: 0;
-
-    }
-
-    /* Style the "Save List" button */
-    .saveBtn {
-      padding: 10px;
-      height: 20px;
-      width: 20%;
-      background: #d9d9d9;
-      color: #555;
-      float: left;
-      text-align: center;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-      border-radius: 0;
-      float: right;
-      margin-left: 5px;
-    }
-
-    .addBtn:hover {
-      background-color: #bbb;
-    }
-
-    .saveBtn:hover {
-      background-color: #bbb;
-    }
-  </style>
+ 
   <meta content="en-us" http-equiv="Content-Language" />
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
   <link href="../../css/navbar.css" rel="stylesheet" type="text/css" media="screen" />
@@ -189,8 +15,10 @@
   <link href="../../css/list-groups.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="../../css/grid.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="../../css/profile.css" rel="stylesheet" type="text/css" media="screen" />
 
-  <script src="../../js/sidebars.js"></script>
+ 
+  <link rel="icon" type="image/x-icon" href="../../images/icons8.png">
 </head>
 
 <body>
@@ -304,38 +132,7 @@
             <span class="psw"><a href="#">Forgot Password?</a></span>
           </div>
         </form>
-        <script>
-          $(document).ready(function () {
-            $("#btn").click(function (e) {
-              var jsonData = {};
-
-              var formData = $("#login_info").serializeArray();
-              // console.log(formData);
-
-              $.each(formData, function () {
-                if (jsonData[this.name]) {
-                  if (!jsonData[this.name].push) {
-                    jsonData[this.name] = [jsonData[this.name]];
-                  }
-                  jsonData[this.name].push(this.value || '');
-                } else {
-                  jsonData[this.name] = this.value || '';
-                }
-
-
-              });
-              console.log(jsonData);
-              $.ajax(
-                {
-                  url: "action.php",
-                  type: "POST",
-                  data: jsonData,
-
-                });
-              e.preventDefault();
-            });
-          });
-        </script>
+   
       </div>
     </div>
   </div>

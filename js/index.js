@@ -100,6 +100,14 @@ function saveLi() {
 }
 
 function addLi() {
+
+  var t_list = [];
+  var title_main = [];
+  var description = [];
+  var list_item = [];
+  var recipe = [];
+  var main = [];
+
   var title1 = [];
   var txtVal = document.getElementById("txtVal").value,
     listNode = document.getElementById("list1"),
@@ -149,13 +157,15 @@ function addcom() {
   divcom.appendChild(usecom);
   divcom.appendChild(usetim);
 
-  localStorage.setItem("list", JSON.stringify(order[0]));
-  localStorage.setItem("comments", JSON.stringify(comments1));
-  //var storedComments = JSON.parse(localStorage.getItem("comments"+"list"));
-  console.log("BREAK");
-  localStorage.comments1 = JSON.stringify(comments1);
-  var storedComments = JSON.parse(localStorage.comments1);
-  console.log(storedComments);
+  // localStorage.setItem("list", JSON.stringify(order[0]));
+  // localStorage.setItem("comments", JSON.stringify(comments1));
+  // //var storedComments = JSON.parse(localStorage.getItem("comments"+"list"));
+  // console.log("BREAK");
+  // localStorage.comments1 = JSON.stringify(comments1);
+  // var storedComments = JSON.parse(localStorage.comments1);
+  // console.log(storedComments);
+
+
 }
 
 function showcomments() {
