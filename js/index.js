@@ -149,7 +149,7 @@ function addcom() {
   acom.className = "list-group-item list-group-item-action d-flex gap-3 py-3";
   acom.ariaCurrent = true;
   divcom.id = "newc1";
-  usecom.innerHTML = "<b>@Simon </b>: " + comments1;
+  usecom.innerHTML = "<b>@Simon </b> " +"<br>"+ comments1;
   usetim.innerHTML = "Now";
 
   document.getElementById("addc").appendChild(acom);

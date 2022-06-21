@@ -83,11 +83,11 @@ function appendData(data) {
         console.log(data[i].whatsapp);
         var newdiv2 = document.getElementById("newnew");
         newdiv2.innerHTML = "";
-        newdiv2.className = "d-flex gap-2 w-100 justify-content-between ";
+        newdiv2.className = "d-flex gap-2 w-100 justify-content-between w-100";
         const myOl = document.createElement("ol");
-        myOl.className = "list-group list-group-numbered d-flex p-2 ";
-myOl.style.width ="inherit"
-myOl.style.height ="inherit"
+        myOl.className = "list-group list-group-numbered d-flex p-2 w-100";
+// myOl.style.width ="inherit"
+// myOl.style.height ="inherit"
         for (i = 0; i < data.length; i++) {
           if (data[i].list === myHeader.innerHTML) {
             // const myNewItem = document.createElement("p");
@@ -144,7 +144,7 @@ myOl.style.height ="inherit"
               myNewSmall.className = "opacity-50 text-nowrap";
               myNewItem.className = "mb-0 opacity-75";
               myNewItem.innerHTML =
-                "<b>" + datac[i].name + "</b>" + " " + datac[i].comment;
+                "<b>" + datac[i].name + "</b>" + "<br>" + datac[i].comment;
               myNewSmall.innerHTML = datac[i].time;
 
               myNewNestComDiv.appendChild(myNewItem);
@@ -234,8 +234,12 @@ function setDefaultTitle() {
     document.getElementById("handle").innerHTML = data[0].user;
     document.getElementById("price0").innerHTML = data[0].cost;
 
+    // newdiv2.className = "d-flex gap-2 w-100 justify-content-between w-100";
     const myOl = document.createElement("ol");
-    myOl.className = "list-group list-group-numbered d-flex p-2 overflow-auto";
+    myOl.className = "list-group list-group-numbered w-100 d-flex p-0 ";
+
+    // const myOl = document.createElement("ol");
+    // myOl.className = "list-group list-group-numbered d-flex p-2 overflow-auto";
     //let myNewItem;
 
     for (i = 0; i < data.length; i++) {
@@ -288,7 +292,7 @@ function setDefaultTitle() {
           myNewSmall.className = "opacity-50 text-nowrap";
           myNewItem.className = "mb-0 opacity-75";
           myNewItem.innerHTML =
-            "<b>" + datac[i].name + "</b>" + " " + datac[i].comment;
+            "<b>" + datac[i].name + "</b>" + "<br>" + datac[i].comment;
           myNewSmall.innerHTML = datac[i].time;
 
           myNewNestComDiv.appendChild(myNewItem);
