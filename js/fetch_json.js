@@ -42,7 +42,7 @@ function appendData(data) {
     myDesc.innerHTML = data[i].description;
     myCost.innerHTML = data[i].cost;
 
-    mail = [data[0].whatsapp];
+    //mail = [data[0].whatsapp];
 
     myHeader.appendChild(myUser);
     myDivPrime.appendChild(myHeader);
@@ -54,8 +54,10 @@ function appendData(data) {
 
     document.getElementById("des_col").appendChild(myLink);
 
-    //show list when list type is selected
+    //show list items when list type is selected
     myLink.onclick = function setTitle() {
+      
+      //save  values in variables
       order = [myHeader.innerHTML];
 
       user = [myUser.innerHTML];
@@ -83,9 +85,9 @@ function appendData(data) {
         console.log(data[i].whatsapp);
         var newdiv2 = document.getElementById("newnew");
         newdiv2.innerHTML = "";
-        newdiv2.className = "d-flex gap-2 w-100 justify-content-between w-100";
+        newdiv2.className = "d-flex gap-2 w-100 justify-content-between w-100 overflow-auto flex-column mb-auto";
         const myOl = document.createElement("ol");
-        myOl.className = "list-group list-group-numbered d-flex p-2 w-100";
+        myOl.className = "list-group list-group-numbered w-100 d-flex p-0 scrollbar scrollbar-black bordered-black square thin border border-light rounded-lg overflow-auto flex-column mb-auto";
 // myOl.style.width ="inherit"
 // myOl.style.height ="inherit"
         for (i = 0; i < data.length; i++) {
@@ -236,7 +238,7 @@ function setDefaultTitle() {
 
     // newdiv2.className = "d-flex gap-2 w-100 justify-content-between w-100";
     const myOl = document.createElement("ol");
-    myOl.className = "list-group list-group-numbered w-100 d-flex p-0 ";
+    myOl.className = "list-group list-group-numbered w-100 d-flex p-0 scrollbar scrollbar-black bordered-black square thin border border-light rounded-lg overflow-auto";
 
     // const myOl = document.createElement("ol");
     // myOl.className = "list-group list-group-numbered d-flex p-2 overflow-auto";

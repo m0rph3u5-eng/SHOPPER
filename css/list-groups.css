@@ -184,7 +184,7 @@
 
 .bordered-black::-webkit-scrollbar-track {
   -webkit-box-shadow: none;
-  border: 1px solid #000;
+  border: 1px solid #F5F5F5;
 }
 
 .bordered-black::-webkit-scrollbar-thumb {
@@ -204,5 +204,5 @@
 }
 
 body{
-  overflow: hidden;
+  overflow:auto;
 }
