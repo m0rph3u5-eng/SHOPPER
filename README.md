@@ -1,20 +1,15 @@
 # SHOPPER
-A social media web app for making and sharing shopping lists.
+A social media web app for sharing shopping lists made with vanilla JavaScript and Bootstrap CSS framework.
+<br>
+
+
+![shopper_ss_6_23_2022](https://user-images.githubusercontent.com/63499020/175251098-a5b8e012-5132-45d1-b657-7f5ec9de43fb.png)
+
+
+
 <br>
 It also allows users to request deliveries.
 
-![shopperss6_9_2022](https://user-images.githubusercontent.com/63499020/172799357-efd3ce5e-100a-4e7c-84e1-5e52a3ed653f.png)
 
 
-<br>
-
-
-
-Weekly shooping for all the items a household would require in a week. 
-<br>
-!![ssr_5_12_2022](https://user-images.githubusercontent.com/63499020/168071469-aee425a8-a5cd-4f84-aa05-0ccc2fa5616d.png)
-
-
-<br>
-Register to open an account.
 
