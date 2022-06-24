@@ -1,4 +1,13 @@
 [
+    {       
+        
+        "title":"Cleaning Supplies Checklist",
+        "user":"@Chart Jungle",
+        "description": "Guaranteed to ease your House keeping",
+
+        "cost": 580
+       
+    },
    
     {       
         
@@ -6,7 +15,7 @@
         "user":"@Anne",
         "description": "Let us host a shopping party for your friends or clients. Play dress up, nibble & sip, and find bargains to take home!",
 
-        "cost": 980
+        "cost": 480
        
     },
     {       
@@ -15,7 +24,7 @@
         
         "description": "To help you navigate the world of sewing tools and understand what these items do, we’ve put together this beginner’s guide to check out before you head to your local craft store.",
        
-        "cost": 980
+        "cost": 850
        
     },
     {       

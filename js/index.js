@@ -8,6 +8,8 @@
   var ml = document.getElementById("main_list");
   var price = document.getElementById("price0");
   var comm = document.getElementById("newc");
+  var newnew = document.getElementById("newnew");
+
   if (x.style.display == "none") {
     x.style.display = "block";
     xl.style.display = "block";
@@ -18,6 +20,7 @@
     xla.className = "list-group-item list-group-item-action d-flex gap-3 py-3";
    // xlb.style.display = "block";
     document.getElementById("plus").innerHTML = "<h4>-</h4>";
+    newnew.style.display = "none";
   } else {
     x.style.display = "none";
     xl.style.display = "none";
@@ -27,6 +30,7 @@
     ml.style.display = "block";
     price.style.display = "block";
     comm.style.display = "block";
+    newnew.style.display = "block";
     document.getElementById("plus").innerHTML = "<h4>+</h4>";
   }
 }

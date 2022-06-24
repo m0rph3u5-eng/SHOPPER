@@ -2,6 +2,152 @@ let user;
 let order;
 let mail;
 
+function setDefaultTitle() {
+  fetch("w_list_items.json")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      appendData(data);
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
+
+  function appendData(data) {
+    order = [data[0].list];
+
+    user = [data[0].user];
+
+    document.getElementById("heading").innerHTML = data[0].list;
+    document.getElementById("handle").innerHTML = data[0].user;
+    document.getElementById("price0").innerHTML = data[0].cost;
+
+    // newdiv2.className = "d-flex gap-2 w-100 justify-content-between w-100";
+    const myOl = document.createElement("ol");
+    myOl.className = "list-group list-group-numbered w-100 d-flex p-0 scrollbar scrollbar-black bordered-black square thin border border-light rounded-lg overflow-auto";
+
+    // const myOl = document.createElement("ol");
+    // myOl.className = "list-group list-group-numbered d-flex p-2 overflow-auto";
+    //let myNewItem;
+
+    for (i = 0; i < data.length; i++) {
+      if (data[i].list == data[0].list) {
+       const myNewItem = document.createElement("li");
+        myNewItem.className = "list-group-item list-group-item-action";
+        myNewItem.innerHTML = data[i].item;
+        
+        //change bachground colour when item is clicked
+        myNewItem.onclick = function colorChange() {         
+          myNewItem.className="list-group-item active" 
+      }
+        myOl.appendChild(myNewItem);
+      }
+    }
+
+    document.getElementById("newnew").appendChild(myOl);
+
+    
+  }
+  function comment22() {
+    fetch("w_comments.json")
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (datac) {
+        appendData(datac);
+      })
+      .catch(function (err) {
+        console.log(err);
+      });
+
+    function appendData(datac) {
+      //div newnew
+      //var newdiv3 = document.getElementById('newc');
+      var newdivcom = document.getElementById("newc");
+      newdivcom.innerHTML = "";
+      for (i = 0; i < datac.length; i++) {
+        if (datac[i].list == datac[0].list) {
+          //   console.log(datac[i].comment);
+          //   console.log(datac[i].time);
+          const myNewItem = document.createElement("p");
+          const myNewA = document.createElement("a");
+          const myNewComDiv = document.createElement("div");
+          const myNewNestComDiv = document.createElement("div");
+          const myNewSmall = document.createElement("small");
+          myNewA.className =
+            "list-group-item list-group-item-action d-flex gap-3 py-3";
+          myNewComDiv.className = "d-flex gap-2 w-100 justify-content-between";
+          myNewSmall.className = "opacity-50 text-nowrap";
+          myNewItem.className = "mb-0 opacity-75";
+          myNewItem.innerHTML =
+            "<b>" + datac[i].name + "</b>" + "<br>" + datac[i].comment;
+          myNewSmall.innerHTML = datac[i].time;
+
+          myNewNestComDiv.appendChild(myNewItem);
+
+          myNewComDiv.appendChild(myNewNestComDiv);
+          myNewComDiv.appendChild(myNewSmall);
+          myNewA.appendChild(myNewComDiv);
+
+          document.getElementById("newc").appendChild(myNewA);
+        } else {
+        }
+      }
+    }
+  }
+  comment22();
+
+  function recipe1() {
+    fetch("w_recipe.json")
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (datac) {
+        appendData(datac);
+      })
+      .catch(function (err) {
+        console.log(err);
+      });
+
+    function appendData(datac) {
+      //div newnew
+      //var newdiv3 = document.getElementById('newc');
+      var newdivrec = document.getElementById("newr");
+      newdivrec.innerHTML = "";
+      for (i = 0; i < datac.length; i++) {
+        if (datac[i].list == datac[0].list) {
+          //   console.log(datac[i].comment);
+          //   console.log(datac[i].time);
+          const myNewItem1 = document.createElement("p");
+          //const myNewA = document.createElement("a");
+          //const myNewComDiv = document.createElement("div");
+          const myNewNestComDiv1 = document.createElement("div");
+          //const myNewSmall = document.createElement("small");
+         // myNewA.className =
+            "list-group-item list-group-item-action d-flex gap-3 py-3";
+          //myNewComDiv.className =
+            "d-flex gap-2 w-100 justify-content-between";
+         // myNewSmall.className = "opacity-50 text-nowrap";
+          myNewItem1.className = "mb-0 opacity-75";
+          myNewItem1.innerHTML =datac[i].recipe;
+          
+
+          myNewNestComDiv1.appendChild(myNewItem1);
+
+          //myNewComDiv.appendChild(myNewNestComDiv);
+         /// myNewComDiv.appendChild(myNewSmall);
+          //myNewA.appendChild(myNewComDiv);
+
+          document.getElementById("newr").appendChild(myNewNestComDiv1);
+        } else {
+        }
+      }
+    }
+  }
+  recipe1();
+}
+setDefaultTitle();
 //fetch for first column data from json file
 fetch("w_list.json")
   .then(function (response) {
@@ -54,6 +200,8 @@ function appendData(data) {
 
     document.getElementById("des_col").appendChild(myLink);
 
+
+    
     //show list items when list type is selected
     myLink.onclick = function setTitle() {
       
@@ -98,7 +246,7 @@ function appendData(data) {
             // document.getElementById("newnew").appendChild(myNewItem);
 
             const myNewItem = document.createElement("li");
-            myNewItem.className = "list-group-item";            
+            myNewItem.className = "list-group-item list-group-item-action";            
             myNewItem.innerHTML = data[i].item;
             
            //change bachground colour when item is clicked
@@ -215,152 +363,7 @@ function appendData(data) {
   }
 }
 
-function setDefaultTitle() {
-  fetch("w_list_items.json")
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      appendData(data);
-    })
-    .catch(function (err) {
-      console.log(err);
-    });
 
-  function appendData(data) {
-    order = [data[0].list];
-
-    user = [data[0].user];
-
-    document.getElementById("heading").innerHTML = data[0].list;
-    document.getElementById("handle").innerHTML = data[0].user;
-    document.getElementById("price0").innerHTML = data[0].cost;
-
-    // newdiv2.className = "d-flex gap-2 w-100 justify-content-between w-100";
-    const myOl = document.createElement("ol");
-    myOl.className = "list-group list-group-numbered w-100 d-flex p-0 scrollbar scrollbar-black bordered-black square thin border border-light rounded-lg overflow-auto";
-
-    // const myOl = document.createElement("ol");
-    // myOl.className = "list-group list-group-numbered d-flex p-2 overflow-auto";
-    //let myNewItem;
-
-    for (i = 0; i < data.length; i++) {
-      if (data[i].list == data[0].list) {
-       const myNewItem = document.createElement("li");
-        myNewItem.className = "list-group-item";
-        myNewItem.innerHTML = data[i].item;
-        
-        //change bachground colour when item is clicked
-        myNewItem.onclick = function colorChange() {         
-          myNewItem.className="list-group-item active" 
-      }
-        myOl.appendChild(myNewItem);
-      }
-    }
-
-    document.getElementById("newnew").appendChild(myOl);
-
-    
-  }
-  function comment22() {
-    fetch("w_comments.json")
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (datac) {
-        appendData(datac);
-      })
-      .catch(function (err) {
-        console.log(err);
-      });
-
-    function appendData(datac) {
-      //div newnew
-      //var newdiv3 = document.getElementById('newc');
-      var newdivcom = document.getElementById("newc");
-      newdivcom.innerHTML = "";
-      for (i = 0; i < datac.length; i++) {
-        if (datac[i].list == datac[0].list) {
-          //   console.log(datac[i].comment);
-          //   console.log(datac[i].time);
-          const myNewItem = document.createElement("p");
-          const myNewA = document.createElement("a");
-          const myNewComDiv = document.createElement("div");
-          const myNewNestComDiv = document.createElement("div");
-          const myNewSmall = document.createElement("small");
-          myNewA.className =
-            "list-group-item list-group-item-action d-flex gap-3 py-3";
-          myNewComDiv.className = "d-flex gap-2 w-100 justify-content-between";
-          myNewSmall.className = "opacity-50 text-nowrap";
-          myNewItem.className = "mb-0 opacity-75";
-          myNewItem.innerHTML =
-            "<b>" + datac[i].name + "</b>" + "<br>" + datac[i].comment;
-          myNewSmall.innerHTML = datac[i].time;
-
-          myNewNestComDiv.appendChild(myNewItem);
-
-          myNewComDiv.appendChild(myNewNestComDiv);
-          myNewComDiv.appendChild(myNewSmall);
-          myNewA.appendChild(myNewComDiv);
-
-          document.getElementById("newc").appendChild(myNewA);
-        } else {
-        }
-      }
-    }
-  }
-  comment22();
-
-  function recipe1() {
-    fetch("w_recipe.json")
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (datac) {
-        appendData(datac);
-      })
-      .catch(function (err) {
-        console.log(err);
-      });
-
-    function appendData(datac) {
-      //div newnew
-      //var newdiv3 = document.getElementById('newc');
-      var newdivrec = document.getElementById("newr");
-      newdivrec.innerHTML = "";
-      for (i = 0; i < datac.length; i++) {
-        if (datac[i].list == datac[0].list) {
-          //   console.log(datac[i].comment);
-          //   console.log(datac[i].time);
-          const myNewItem1 = document.createElement("p");
-          //const myNewA = document.createElement("a");
-          //const myNewComDiv = document.createElement("div");
-          const myNewNestComDiv1 = document.createElement("div");
-          //const myNewSmall = document.createElement("small");
-         // myNewA.className =
-            "list-group-item list-group-item-action d-flex gap-3 py-3";
-          //myNewComDiv.className =
-            "d-flex gap-2 w-100 justify-content-between";
-         // myNewSmall.className = "opacity-50 text-nowrap";
-          myNewItem1.className = "mb-0 opacity-75";
-          myNewItem1.innerHTML =datac[i].recipe;
-          
-
-          myNewNestComDiv1.appendChild(myNewItem1);
-
-          //myNewComDiv.appendChild(myNewNestComDiv);
-         /// myNewComDiv.appendChild(myNewSmall);
-          //myNewA.appendChild(myNewComDiv);
-
-          document.getElementById("newr").appendChild(myNewNestComDiv1);
-        } else {
-        }
-      }
-    }
-  }
-  recipe1();
-}
-setDefaultTitle();
 
 function orderf() {
   let person = prompt("You have selected " + order+ "."+" Please enter a Whatsapp contact to send the list", "254 704 186334");

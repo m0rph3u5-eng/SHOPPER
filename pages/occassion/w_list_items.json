@@ -1,5 +1,221 @@
 [
     {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Broom",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Dustpan",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Vacuum Cleaner",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Sponge/ Cotton Mop",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Extendable Duster",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Bucket",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Supply Caddy",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Toilet Brush",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Scrub Brush",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Hand Duster",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Microfiber Duster",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Sponges",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Scour Pads",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Rubber Gloves",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Spray Bottle",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Squeegee",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Air Fresher",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "All Purpose Cleaner",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Antibacterial Cleaner",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Baking Soda",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Bleach",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Dishwashing Liquid",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Disinfecting Wipes",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Fabric Cleaner/ Spray",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Fabric Softener Sheets",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Floor Cleaner",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Furniture Polish",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Glass Cleaner",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Laundry Detergent",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Mild Abrasive Cleaner",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Oven Cleaner",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "White Vinegar",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Rags",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Toothbrush",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Garbage Bags",
+        "cost": 580
+    },
+    {          
+        "user": "@Chart Jungle",
+        "list": "Cleaning Supplies Checklist",
+        "item": "Paper Towels",
+        "cost": 580
+    },
+    {          
         "user": "@Anne",
         "list": "Party",
         "item": "Party invitations",
