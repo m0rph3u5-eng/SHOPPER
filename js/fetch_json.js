@@ -34,12 +34,12 @@ function setDefaultTitle() {
     for (i = 0; i < data.length; i++) {
       if (data[i].list == data[0].list) {
        const myNewItem = document.createElement("li");
-        myNewItem.className = "list-group-item list-group-item-action";
+        myNewItem.className = "list-group-item list-group-item-action ";
         myNewItem.innerHTML = data[i].item;
         
         //change bachground colour when item is clicked
         myNewItem.onclick = function colorChange() {         
-          myNewItem.className="list-group-item active" 
+          myNewItem.className="list-group-item active border border-secondary" 
       }
         myOl.appendChild(myNewItem);
       }
@@ -251,7 +251,7 @@ function appendData(data) {
             
            //change bachground colour when item is clicked
             myNewItem.onclick = function colorChange() {         
-              myNewItem.className="list-group-item active" 
+              myNewItem.className="list-group-item active border border-secondary" 
           }
             myOl.appendChild(myNewItem);     
           } else {

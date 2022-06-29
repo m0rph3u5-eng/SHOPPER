@@ -1,0 +1,133 @@
+[
+    {     
+
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in%20your%20car%20for%20sale",
+        "title":"Monthly Shopping List",
+        "user":"@James Waygood",
+        "description": "Monthly Grocery List to Save You Time and Money",
+        "items": ["Batteries", "Cleaning supplies", "Laundry detergent", "Lightbulbs", "Office and school supplies", "Paper towels"],
+        "cost": 780 
+       
+
+    },
+    {     
+
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in%20your%20car%20for%20sale",
+        "title":"NON-PERISHABLE GROCERY LIST",
+        "user":"@outofmilk",
+        "description": "Here's a shopping list of non-perishable grocery sssentials to always have at home",
+        "items": ["Batteries", "Cleaning supplies", "Laundry detergent", "Lightbulbs", "Office and school supplies", "Paper towels"],
+        "cost": 780 
+       
+
+    },
+    {     
+
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in%20your%20car%20for%20sale",
+        "title":"Bargain Hunter",
+        "user":"@Tracy",
+        "description": "Products at a discounted price. Good deals.",
+        "items": ["Batteries", "Cleaning supplies", "Laundry detergent", "Lightbulbs", "Office and school supplies", "Paper towels"],
+        "cost": 780 
+       
+
+    },
+
+    {       
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in%20your%20car%20for%20sale",
+        "title":"Inspired",
+        "user":"@Joan",
+        "description": "Curated items for the household.",
+        "items": ["Bandages", "Hairstyling products", "Hand sanitizer", "Moisturizers", "Mouthwash", "Ointments", "Pain relievers"],
+        "cost": 970
+    },
+    {       
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in%20your%20car%20for%20sale",
+        "title":"Latest Products",
+        "user":"@Martin",
+        "description": "The latest products in the market.",
+        "items": ["Razors", "Shampoo and conditioner", "Shaving cream", "Shower gel", "Soap", "Toothbrushes", "Toothpaste"],
+        "cost": 2200
+    },
+    {       
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in%20your%20car%20for%20sale",
+        "title":"Researched",
+        "user":"@Job",
+        "description": "Shopping list by the experts.",
+        "items": ["Bacon", "Baking goods", "Beverages", "Canned goods", "Dairy", "Meat", "Personal Care", "Produce, fruits, vegetables"],
+        "cost": 540
+    },
+    {       
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in%20your%20car%20for%20sale",
+        "title":"BF SUMA Protection Combo",
+        "user":"@Mike",
+        "description": "BF SUMA product offering protection from tissue breakage.",
+        "items": ["Refined Yunzhi Essence", "Probio 3", "ZaminoCal Plus Capsules"],
+        "cost": 970
+    },
+    {       
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in%20your%20car%20for%20sale",
+        "title":"Diabetes Wellness Pack",
+        "user":"@Mike",
+        "description": "A pack of natural supplements that help to lower the effects of diabetes and also help in resucing blood sugar level.",
+        "items": ["Ginkgo Plus", "Immublend", "Garania Plus", "Aloe Vera Gel", "Active Pro 8"],
+        "cost": 970
+    },
+    {       
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in%20your%20car%20for%20sale",
+        "title":"BF SUMA Men's Combo",
+        "user":"@Mike",
+        "description": "All purpose supplementts for men.",
+        "items": ["Pure 8  Broken Ganoderma Spores", "X Power Coffee", "Postal Relax", "X Power Man Plus"],
+        "cost": 970
+    },
+    {       
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in%20your%20car%20for%20sale",
+        "title":"BF SUMA Combination for Kidney Disease",
+        "user":"@Mike",
+        "description": "Products to help alleviate the symptoms of kidney disease.",
+        "items": ["Elements", "4 in 1 Cordyceps"],
+        "cost": 970
+    },
+    {       
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in%20your%20car%20for%20sale",
+        "title":"BF SUMA Combination for Low Sperm Count",
+        "user":"@Mike",
+        "description": "Products to help with low sperm count.",
+        "items": ["X Powerman Plus Capsules", "Prostat Relax Capsules", "Zaminocal Plus Capsules"],
+        "cost": 970
+    },
+    {       
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in%20your%20car%20for%20sale",
+        "title":"BF SUMA Combination for Weak Erection",
+        "user":"@Mike",
+        "description": "Products to help with weak erection.",
+        "items": ["X Powerman Plus Capsules", "Micro2 Cycle Tablets", "4 in 1 Ginseng Coffee"],
+        "cost": 970
+    },
+    {       
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in%20your%20car%20for%20sale",
+        "title":"BF SUMA Combination for High Blood Pressure",
+        "user":"@Mike",
+        "description": "Products to help with high blood pressure.",
+        "items": ["Micro2 Cycle Tablets", "Pressure Free Tea", "Pure and Broken Ganoderma Spores"],
+        "cost": 970
+    },
+    {       
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in%20your%20car%20for%20sale",
+        "title":"BF SUMA Combination for Diabetes",
+        "user":"@Mike",
+        "description": "Products to help with diabetes related symptoms.",
+        "items": ["Pure and Broken Ganoderma Spores", "EzXlim Tablets", "GymEase Tea", "GlugoGone"],
+        "cost": 970
+    },
+    {       
+        "whatsapp": "https://wa.me/2547243585?text=I'm%20interested%20in%20your%20car%20for%20sale",
+        "title":"BF SUMA Combination for Arthritis",
+        "user":"@Mike",
+        "description": "Products to help with arthritis.",
+        "items": ["ArthroXtra Tablets", "Gluzojoint Capsules", "Zaminocal Plus Capsules"],
+        "cost": 970
+    }
+
+]
