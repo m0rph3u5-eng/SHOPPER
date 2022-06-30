@@ -34,7 +34,7 @@ function setDefaultTitle() {
     for (i = 0; i < data.length; i++) {
       if (data[i].list == data[0].list) {
        const myNewItem = document.createElement("li");
-        myNewItem.className = "list-group-item list-group-item-action ";
+        myNewItem.className = "list-group-item list-group-item-action mb-0 opacity-75";
         myNewItem.innerHTML = data[i].item;
         
         //change bachground colour when item is clicked
@@ -246,7 +246,7 @@ function appendData(data) {
             // document.getElementById("newnew").appendChild(myNewItem);
 
             const myNewItem = document.createElement("li");
-            myNewItem.className = "list-group-item list-group-item-action";            
+            myNewItem.className = "list-group-item list-group-item-action mb-0 opacity-75";            
             myNewItem.innerHTML = data[i].item;
             
            //change bachground colour when item is clicked
