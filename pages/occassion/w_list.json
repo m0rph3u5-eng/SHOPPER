@@ -1,5 +1,23 @@
 [
     {       
+      
+        "title":"Vacation",
+        "user":"@Rose",
+        "description": "Set aside time to explore · Make new friends · Leave space in your suitcase· Don't buy for the thrill of it · Stay local · Give yourself permission.",
+       
+        "cost": 780
+        
+    },
+    {       
+      
+        "title":"Newborn Shopping List",
+        "user":"@Nursery Design Studio",
+        "description": "NEWBORN BABY SHOPPING LIST FOR FIRST TIME MOMS",
+       
+        "cost": 780
+        
+    },
+    {       
         
         "title":"Cleaning Supplies Checklist",
         "user":"@Chart Jungle",
@@ -18,63 +36,14 @@
         "cost": 480
        
     },
-    {       
-        "user":"@Marie B",
-        "title":"The Ultimate Beginner’s Guide to Sewing Tools",
-        
-        "description": "To help you navigate the world of sewing tools and understand what these items do, we’ve put together this beginner’s guide to check out before you head to your local craft store.",
-       
-        "cost": 850
-       
-    },
-    {       
-   
-        "title":"34 of the Best Home Office Essentials",
-        "user":"@Indeed",
-        "description": "34 of the best home office essentials for your designated workspace",
-        
-        "cost": 980
-        
-    },
+  
+    
 
+  
+    
 
-    {       
-        
-        "title":"23 Must-Haves for Any Home Garage Workshop",
-        "user":"@FLOW WALL",
-        "description": "Maybe you’ve just bought your first home or you think it’s high time to take adulting to the next level. Either way, you’re ready to get serious about building your own tool kit and home garage workshop. Where do you begin? Don’t stress—check out our ultimate list of what every home workshop needs.",
-       
-        "cost": 980
-       
-    },
-    {       
-      
-        "title":"Vacation",
-        "user":"@Rose",
-        "description": "Set aside time to explore · Make new friends · Leave space in your suitcase· Don't buy for the thrill of it · Stay local · Give yourself permission.",
-       
-        "cost": 780
-        
-    },
+ 
 
-    {       
-       
-        "title":"10 Things Every Gaming Room Needs",
-        "user":"@BRI THOMAS",
-        "description": "If you're a true gamer there's several needs to a gaming room. Whether it's an awesome chair, the perfect tech gear or decorations, check these things",
-        
-        "cost": 1120
-        
-    },
-    {       
-       
-        "title":"Wardrobe",
-        "user":"@Morris",
-        "description": "Shop 10 wardrobe essentials that'll make your closet sing.",
-        
-        "cost": 1120
-        
-    },
 
     {       
       
@@ -91,16 +60,6 @@
         "title":"Moving Out",
         "user":"@Timothy",
         "description": "We have created a “moving out for the first time shopping list” to make it easier for you to plan and save ahead before you move.",
-       
-        "cost": 1120 
-        
-    },
-
-    {       
-        
-        "title":"13 Home Studio Essentials for Beginners",
-        "user":"@MAX MCALLISTER",
-        "description": "The following guide is a basic roadmap for beginners navigating the world of home recording. You’ll probably find that less is definitely more, and a simple set-up can yield amazing results!",
        
         "cost": 1120 
         
