@@ -1,0 +1,64 @@
+[
+    {       
+        "type": "Weekly Shopping",
+        "title":"Newborn Shopping List <i>to</i> Kilimani",
+        "user":"@Nursery Design Studio",
+        "description": "NEWBORN BABY SHOPPING LIST FOR FIRST TIME MOMS",
+        "items": ["Bacon","Baking goods","Beverages","Canned goods","Fish","Grains","Meat","Snacks","Spices"],
+        "cost": 980 
+
+    },
+    {       
+        "type": "Weekly Shopping",
+        "title":"Back To School <i>to</i> Langata",
+        "user":"@The Simple Parent",
+        "description": "Getting them ready for school.",
+        "items": ["Bacon","Baking goods","Beverages","Canned goods","Fish","Grains","Meat","Snacks","Spices"],
+        "cost": 1120
+
+    },
+    {       
+        "type": "Weekly Shopping",
+        "title":"Ham Sandwich <i>to</i> Hurlingham",
+        "user":"@Allan",
+        "description": "This sandwich is worth following a recipe for. It will be the sandwich you crave for every lunch and every midnight snack. Making your own herb mayo—by mixing in a few fresh herbs and some olive oil—will make this sandwich stand above the rest. Even the one your mom used to make for you.",
+        "items": ["Bacon","Baking goods","Beverages","Canned goods","Fish","Grains","Meat","Snacks","Spices"],
+        "cost": 540 
+
+    },
+    {       
+        "type": "Weekly Shopping",
+        "title":"Potato Chips <i>to</i> Kileleshwa",
+        "user":"@Sean",
+        "description": "Making homestyle potato chips is fun and easy. Guaranteed they won't last long! A food processor with a slicing attachment is very helpful. Experiment with the thickness; you may like them thicker or thinner. I like to use olive oil because it has less trans fats, but you can uses a flower, corn, or peanut oil as well as vegetable oil.",
+        "items": ["Bacon","Baking goods","Beverages","Canned goods","Fish","Grains","Meat","Snacks","Spices"],
+        "cost": 980 
+
+    },
+
+    {       
+        "type": "Weekly Shopping",
+        "title":"NON-PERISHABLE GROCERY LIST <i>to</i> Lavington",
+        "user":"@outofmilk",
+        "description": "Here's a shopping list of non-perishable grocery essentials to always have at home",
+        "items": ["Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices"],
+        "cost": 780
+    },
+    {       
+        "type": "Weekly Shopping",
+        "title":"Party <i>to</i> Runda",
+        "user":"@Anne",
+        "description": "Let us host a shopping party for your friends or clients. Play dress up, nibble & sip, and find bargains to take home!",
+        "items": ["Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices"],
+        "cost": 480
+    },
+    {       
+        "type": "Weekly Shopping",
+        "title":"The Ultimate Beginner’s Guide to Sewing Tools <i>to</i> Westlands",
+        "user":"@Marie B",
+        "description": "To help you navigate the world of sewing tools and understand what these items do, we’ve put together this beginner’s guide to check out before you head to your local craft store.",
+        "items": ["Bacon", "Baking goods", "Beverages", "Canned goods", "Fish", "Grains", "Meat", "Snacks", "Spices"],
+        "cost": 1120
+    }
+
+]
