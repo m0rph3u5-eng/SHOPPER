@@ -1,15 +1,6 @@
 [
     {       
       
-        "title":"Vacation",
-        "user":"@Rose",
-        "description": "Set aside time to explore · Make new friends · Leave space in your suitcase· Don't buy for the thrill of it · Stay local · Give yourself permission.",
-       
-        "cost": 780
-        
-    },
-    {       
-      
         "title":"Newborn Shopping List",
         "user":"@Nursery Design Studio",
         "description": "NEWBORN BABY SHOPPING LIST FOR FIRST TIME MOMS",
@@ -17,6 +8,16 @@
         "cost": 780
         
     },
+    {       
+      
+        "title":"Vacation",
+        "user":"@Rose",
+        "description": "Set aside time to explore · Make new friends · Leave space in your suitcase· Don't buy for the thrill of it · Stay local · Give yourself permission.",
+       
+        "cost": 780
+        
+    },
+  
     {       
         
         "title":"Cleaning Supplies Checklist",
