@@ -2,7 +2,8 @@
 A social media web app for sharing shopping lists made with vanilla JavaScript and Bootstrap CSS framework.
 <br>
 
-![shopper_ss_7_18_2022](https://user-images.githubusercontent.com/63499020/179487603-76fb2b93-d99b-4d53-ab6c-ed9f2a410287.png)
+
+![shopper_ss_7_26_2022](https://user-images.githubusercontent.com/63499020/181158327-35ba6673-df2f-4f84-b9c1-2478313554ee.png)
 
 
 
