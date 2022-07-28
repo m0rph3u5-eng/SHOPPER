@@ -1,6 +1,8 @@
 let user;
 let order;
 let mail;
+let recipeCheck = document.title;
+console.log(recipeCheck);
 
 function setDefaultTitle() {
   fetch("w_list_items.json")
@@ -145,7 +147,10 @@ function setDefaultTitle() {
       }
     }
   }
-  recipe1();
+  if (recipeCheck=="Recipes | SHOPPER") {
+    recipe1();
+  }
+  
 }
 setDefaultTitle();
 //fetch for first column data from json file
@@ -358,7 +363,10 @@ function appendData(data) {
           }
         }
       }
-      recipe();
+      if (recipeCheck=="Recipes | SHOPPER") {
+        recipe();
+      }
+      
     };
   }
 }
@@ -380,7 +388,7 @@ function orderf() {
 }
 function deliverf() {
   if (
-    confirm("Do you want to make a delivery to " + user + " in " + order + "?")
+    confirm("Do you want to make a delivery of " + order + "?")
   ) {
     window.open("https://wa.me/254704186334?text=I'm%20interested%20in%20making%20a%20delivery.");
   }
