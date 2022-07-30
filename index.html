@@ -226,22 +226,7 @@
   <script src="js/fetch_json.js"></script>
  
   <script src="js/index.js"></script>
- <?php
- //connect to the database server
- mysql connect ("localhost","web_user","password") or die(mysql_error());
-
- //open the database
- mysql_select_db("mysql") or die(mysql_error());
-
- //select all records from the "db" table
- $result = mysql_query("SELECT * FROM db") or die(mysql_error());
-
- //Loop through each record (using the PHP $row variable), then display the host and Db of each record.
- while ($row = mysql_fetch_array($result)){
-  echo $row['host']."-".$row['Db'];
-  echo"<br>";
- }
- ?>
+ 
 </body>
 
 </html>
