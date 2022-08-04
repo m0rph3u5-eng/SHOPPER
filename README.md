@@ -1,4 +1,7 @@
 # SHOPPER
+
+http://shopper.ke/
+
 A social media web app for sharing shopping lists made with vanilla JavaScript and Bootstrap CSS framework.
 <br>
 
