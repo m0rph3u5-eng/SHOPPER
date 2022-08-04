@@ -2,88 +2,88 @@
     {
         "user": "@Fiona",
         "list": "Chocolate Banana Bread",
-        "recipe": "Prepare pan and preheat oven, Butter or spray with cooking spray the inside of a 5x9-inch loaf pan. Preheat oven to 350°F (175°C) with a rack in the middle."
+        "recipe": "Step 1:Prepare pan and preheat oven, Butter or spray with cooking spray the inside of a 5x9-inch loaf pan. Preheat oven to 350°F (175°C) with a rack in the middle."
     },
 
     {
         "user": "@Fiona",
         "list": "Chocolate Banana Bread",
-        "recipe": "Purée bananas: Using a blender, food processor, or a fork, purée the peeled ripe bananas until smooth. You should have 1 1/2 to 1 3/4 cups of banana purée."
+        "recipe": "Step 2: Purée bananas: Using a blender, food processor, or a fork, purée the peeled ripe bananas until smooth. You should have 1 1/2 to 1 3/4 cups of banana purée."
     },
     {
         "user": "@Fiona",
         "list": "Chocolate Banana Bread",
-        "recipe": "Mix wet ingredients and sugar: Place the banana purée into a large mixing bowl. Stir the melted butter. Stir in the brown sugar and salt. Whisk to break up any clumps of brown sugar. Stir in the beaten egg and vanilla extract."
+        "recipe": "Step 3: Mix wet ingredients and sugar: Place the banana purée into a large mixing bowl. Stir the melted butter. Stir in the brown sugar and salt. Whisk to break up any clumps of brown sugar. Stir in the beaten egg and vanilla extract."
     },
     {
         "user": "@Fiona",
         "list": "Chocolate Banana Bread",
-        "recipe": "Mix dry ingredients: In a separate bowl, vigorously whisk together the flour, cocoa, baking soda, and allspice."
+        "recipe": "Step 4: Mix dry ingredients: In a separate bowl, vigorously whisk together the flour, cocoa, baking soda, and allspice."
     },
     {
         "user": "@Fiona",
         "list": "Chocolate Banana Bread",
-        "recipe": "Add the flour mixture to the banana mixture: Stir until just incorporated, then stir in the chocolate chips."
-    },
-
-    {
-        "user": "@Fiona",
-        "list": "Chocolate Banana Bread",
-        "recipe": "Bake: Pour batter into a buttered loaf pan. Place in a 350°F (175°C) oven and bake for 1 hour. Note that because of the chocolate chips that melt in the bread as it cooks, it's hard to check for doneness using a tester that you insert. One way to test is to gently push the center top of the chocolate banana bread down with your finger. If it feels relatively firm and bounces back when you release your finger, that's a good sign that it's done."
+        "recipe": "Step 5: Add the flour mixture to the banana mixture: Stir until just incorporated, then stir in the chocolate chips."
     },
 
     {
         "user": "@Fiona",
         "list": "Chocolate Banana Bread",
-        "recipe": "Let cool completely: Remove from oven and let cool for 10 minutes in the pan. Gently remove the loaf from the pan and place on a rack to cool completely. Slice with a serrated bread knife to serve."
+        "recipe": "Step 6: Bake: Pour batter into a buttered loaf pan. Place in a 350°F (175°C) oven and bake for 1 hour. Note that because of the chocolate chips that melt in the bread as it cooks, it's hard to check for doneness using a tester that you insert. One way to test is to gently push the center top of the chocolate banana bread down with your finger. If it feels relatively firm and bounces back when you release your finger, that's a good sign that it's done."
+    },
+
+    {
+        "user": "@Fiona",
+        "list": "Chocolate Banana Bread",
+        "recipe": "Step 7: Let cool completely: Remove from oven and let cool for 10 minutes in the pan. Gently remove the loaf from the pan and place on a rack to cool completely. Slice with a serrated bread knife to serve."
     },
 
 
     {
         "user": "@Emma",
         "list": "Apple Coffee Cake", 
-        "recipe": "Preheat oven to 350 degrees F (175 degrees C). Spray an 8-inch square baking dish with cooking spray; dust with 1 tablespoon flour."
+        "recipe": "Step 1: Preheat oven to 350 degrees F (175 degrees C). Spray an 8-inch square baking dish with cooking spray; dust with 1 tablespoon flour."
     },
     {
         "user": "@Emma",
         "list": "Apple Coffee Cake", 
-        "recipe": "Beat 1/4 cup butter and 3/4 cup brown sugar together with an electric mixer in a large bowl until light and fluffy. The mixture should be noticeably lighter in color. Beat egg into butter mixture. Add sour cream, vanilla yogurt, and vanilla extract to the mixture; beat to integrate."
+        "recipe": "Step 2: Beat 1/4 cup butter and 3/4 cup brown sugar together with an electric mixer in a large bowl until light and fluffy. The mixture should be noticeably lighter in color. Beat egg into butter mixture. Add sour cream, vanilla yogurt, and vanilla extract to the mixture; beat to integrate."
     },
     {
         "user": "@Emma",
         "list": "Apple Coffee Cake", 
-        "recipe": "Stir 1 cup flour, 3/4 teaspoon cinnamon, baking soda, and salt together in a bowl; add to the butter mixture and beat to combine into a batter. Fold apples into the batter. Pour batter into prepared baking dish."
+        "recipe": "Step 3: Stir 1 cup flour, 3/4 teaspoon cinnamon, baking soda, and salt together in a bowl; add to the butter mixture and beat to combine into a batter. Fold apples into the batter. Pour batter into prepared baking dish."
     },
 
-
-    {
-        "user": "@Emma",
-        "list": "Apple Coffee Cake", 
-        "recipe": "Mix 1/4 cup brown sugar, 1/4 cup flour, 2 tablespoons butter, and 1/2 teaspoon cinnamon together in a bowl using a fork to achieve a crumbly consistency; sprinkle over the top of the batter."
-    },
 
     {
         "user": "@Emma",
         "list": "Apple Coffee Cake", 
-        "recipe": "Bake in the preheated oven until a toothpick inserted into the center comes out clean, 35 to 40 minutes. Cool in the pan for 10 minutes before removing to cool completely on a wire rack."
+        "recipe": "Step 4: Mix 1/4 cup brown sugar, 1/4 cup flour, 2 tablespoons butter, and 1/2 teaspoon cinnamon together in a bowl using a fork to achieve a crumbly consistency; sprinkle over the top of the batter."
+    },
+
+    {
+        "user": "@Emma",
+        "list": "Apple Coffee Cake", 
+        "recipe": "Step 5: Bake in the preheated oven until a toothpick inserted into the center comes out clean, 35 to 40 minutes. Cool in the pan for 10 minutes before removing to cool completely on a wire rack."
     },
 
     {
         "user": "@Brian",
         "list": "Chicken Salad Sandwich",
-        "recipe": "Chop cooked and cooled chicken and place into a large bowl with celery and onions."
+        "recipe": "Step 1: Chop cooked and cooled chicken and place into a large bowl with celery and onions."
     },
 
 
     {
         "user": "@Brian",
         "list": "Chicken Salad Sandwich",
-        "recipe": "Mix dressing ingredients (per recipe below) in a bowl. Toss with chicken."
+        "recipe": "Step 2: Mix dressing ingredients (per recipe below) in a bowl. Toss with chicken."
     },
     {
         "user": "@Brian",
         "list": "Chicken Salad Sandwich",
-        "recipe": "Serve on rolls, bread or over a bead of lettuce."
+        "recipe": "Step 3: Serve on rolls, bread or over a bead of lettuce."
     },
 
 
@@ -91,7 +91,7 @@
     {
         "user": "@Allan",
         "list": "Ham Sandwich",
-        "recipe": "In a medium bowl whisk together mayonnaise, parsley, thyme, oil, and garlic."
+        "recipe": "Step 1: In a medium bowl whisk together mayonnaise, parsley, thyme, oil, and garlic."
     },
     
     
@@ -100,82 +100,82 @@
     {
         "user": "@Allan",
         "list": "Ham Sandwich",
-        "recipe": "Spread 2 tablespoons herb mayo on 4 slices of bread. Spread 1 tablespoon mustard on the other 4 slices of bread. Top each mayo slice of bread with 3 slices of ham, 2 slices of provolone, arugula, a couple slices of tomato, and red onion. Top with remaining bread slices, mustard side down."
+        "recipe": "Step 2: Spread 2 tablespoons herb mayo on 4 slices of bread. Spread 1 tablespoon mustard on the other 4 slices of bread. Top each mayo slice of bread with 3 slices of ham, 2 slices of provolone, arugula, a couple slices of tomato, and red onion. Top with remaining bread slices, mustard side down."
     },
     {
         "user": "@Kim",
         "list": "Mango Chicken Curry",
-        "recipe": "Cook onions, bell pepper, garlic, ginger, spices."
+        "recipe": "Step 1: Cook onions, bell pepper, garlic, ginger, spices."
     },
     {
         "user": "@Kim",
         "list": "Mango Chicken Curry",
-        "recipe": "Add the vinegar, coconut milk, and one of the two mangoes."
+        "recipe": "Step 2: Add the vinegar, coconut milk, and one of the two mangoes."
     },
 
 
     {
         "user": "@Kim",
         "list": "Mango Chicken Curry",
-        "recipe": "Purée sauce."
+        "recipe": "Step 3: Purée sauce."
     },
 
     {
         "user": "@Kim",
         "list": "Mango Chicken Curry", 
-        "recipe": "Add chicken pieces and raisins."
+        "recipe": "Step 4: Add chicken pieces and raisins."
     },
 
     {
         "user": "@Kim",
         "list": "Mango Chicken Curry",
-        "recipe": "Add remaining chopped mango to the pan."
+        "recipe": "Step 5: Add remaining chopped mango to the pan."
     },
 
 
     {
         "user": "@Kim",
         "list": "Mango Chicken Curry",
-        "recipe": "Adjust seasonings. If a little too sweet, add a little more vinegar. If not sweet enough, you can add a dash of sugar. Add salt and pepper to taste."
+        "recipe": "Step 6: Adjust seasonings. If a little too sweet, add a little more vinegar. If not sweet enough, you can add a dash of sugar. Add salt and pepper to taste."
     },
     {
         "user": "@Justine",
         "list": "Liver and Onions",
-        "recipe": "Gently rinse liver slices under cold water, and place in a medium bowl. Pour in enough milk to cover. Let stand while preparing onions. (I like to soak up to an hour or two - whatever you have time for.) This step is SO important in taking the bitter taste of the liver out."
+        "recipe": "Step 1: Gently rinse liver slices under cold water, and place in a medium bowl. Pour in enough milk to cover. Let stand while preparing onions. (I like to soak up to an hour or two - whatever you have time for.) This step is SO important in taking the bitter taste of the liver out."
     },
     {
         "user": "@Justine",
         "list": "Liver and Onions",
-        "recipe": "Melt 2 tablespoons of butter in a large skillet over medium heat. Separate onion rings, and saute them in butter until soft. Remove onions, and melt remaining butter in the skillet. Season the flour with salt and pepper, and put it in a shallow dish or on a plate. Drain milk from liver, and coat slices in the flour mixture."
+        "recipe": "Step 2: Melt 2 tablespoons of butter in a large skillet over medium heat. Separate onion rings, and saute them in butter until soft. Remove onions, and melt remaining butter in the skillet. Season the flour with salt and pepper, and put it in a shallow dish or on a plate. Drain milk from liver, and coat slices in the flour mixture."
     },
     
     
     {
         "user": "@Justine",
         "list": "Liver and Onions",
-        "recipe": "When the butter has melted, turn the heat up to medium-high, and place the coated liver slices in the pan. Cook until nice and brown on the bottom. Turn, and cook on the other side until browned. Add onions, and reduce heat to medium. Cook a bit longer to taste. Our family prefers the liver to just barely retain a pinkness on the inside when you cut to check. Enjoy!"
+        "recipe": "Step 3: When the butter has melted, turn the heat up to medium-high, and place the coated liver slices in the pan. Cook until nice and brown on the bottom. Turn, and cook on the other side until browned. Add onions, and reduce heat to medium. Cook a bit longer to taste. Our family prefers the liver to just barely retain a pinkness on the inside when you cut to check. Enjoy!"
     },
     {
         "user": "@William",
         "list": "Fruit Smoothie",
-        "recipe": "Put all the ingredients in a blender and process until smooth. Pour into glasses and serve."
+        "recipe": "Step 1: Put all the ingredients in a blender and process until smooth. Pour into glasses and serve."
     } ,
 
     {
         "user": "@William",
         "list": "Fruit Smoothie",
-        "recipe": "Cooks note: For non-dairy smoothies, substitute 1 cup rice milk for the milk and yogurt. Or, use soy yogurt or milk instead of dairy."
+        "recipe": "Step 2: Cooks note: For non-dairy smoothies, substitute 1 cup rice milk for the milk and yogurt. Or, use soy yogurt or milk instead of dairy."
     } ,
 
     {
         "user": "@Sean",
         "list": "Potato Chips",
-        "recipe": "Place potato slices into a large bowl of cold water as you slice. Drain, and rinse, then refill the bowl with water, and add the salt. Let the potatoes soak in the salty water for at least 30 minutes. Drain, then rinse and drain again."
+        "recipe": "Step 1: Place potato slices into a large bowl of cold water as you slice. Drain, and rinse, then refill the bowl with water, and add the salt. Let the potatoes soak in the salty water for at least 30 minutes. Drain, then rinse and drain again."
     } ,
 
     {
         "user": "@Sean",
         "list": "Potato Chips",
-        "recipe": "Heat oil in a deep-fryer to 365 degrees F (185 degrees C). Fry potato slices in small batches. Once they start turning golden, remove and drain on paper towels. Continue until all of the slices are fried. Season with additional salt if desired."
+        "recipe": "Step 2: Heat oil in a deep-fryer to 365 degrees F (185 degrees C). Fry potato slices in small batches. Once they start turning golden, remove and drain on paper towels. Continue until all of the slices are fried. Season with additional salt if desired."
     }
 ]
