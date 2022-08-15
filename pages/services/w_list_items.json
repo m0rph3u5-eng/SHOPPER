@@ -4,7 +4,38 @@
         "list": "Friday Night in Nairobi",
         "item": "Bowling at the Mall",
         "cost": 4
+    },
+    {        
+        "user": "@Loiterer",
+        "list": "Friday Night in Nairobi",
+        "item": "Watching animals at the zoo",
+        "cost": 4
+    },
+    {        
+        "user": "@Loiterer",
+        "list": "Friday Night in Nairobi",
+        "item": "Boat ride at the park",
+        "cost": 4
+    },
+    {        
+        "user": "@Citizen1",
+        "list": "Government Services in Kenya",
+        "item": "Get ID at County offices",
+        "cost": 4
+    },
+     {        
+        "user": "@Citizen1",
+        "list": "Government Services in Kenya",
+        "item": "Get Passport at County offices",
+        "cost": 4
+    },
+    {        
+        "user": "@Citizen1",
+        "list": "Government Services in Kenya",
+        "item": "Get business licence at County offices",
+        "cost": 4
     }
+
     
 ]
 

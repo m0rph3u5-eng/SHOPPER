@@ -1,0 +1,142 @@
+[
+    {        
+        "user": "@Spielberg",
+        "list": "Film Crew",
+        "item": "Director",
+        "cost": 4
+    },
+    {        
+        "user": "@Spielberg",
+        "list": "Film Crew",
+        "item": "Producer",
+        "cost": 4
+    },
+    {        
+        "user": "@Spielberg",
+        "list": "Film Crew",
+        "item": "Casting Director",
+        "cost": 4
+    },
+    {        
+        "user": "@Spielberg",
+        "list": "Film Crew",
+        "item": "Production Designer",
+        "cost": 4
+    },
+    {        
+        "user": "@Spielberg",
+        "list": "Film Crew",
+        "item": "Art Director",
+        "cost": 4
+    },
+    {        
+        "user": "@Spielberg",
+        "list": "Film Crew",
+        "item": "Director of Photography",
+        "cost": 4
+    },
+    {        
+        "user": "@Spielberg",
+        "list": "Film Crew",
+        "item": "Camera Operator",
+        "cost": 4
+    },
+    {        
+        "user": "@Spielberg",
+        "list": "Film Crew",
+        "item": "Gaffer",
+        "cost": 4
+    },
+    {        
+        "user": "@Spielberg",
+        "list": "Film Crew",
+        "item": "Key Grip",
+        "cost": 4
+    },
+    {        
+        "user": "@Spielberg",
+        "list": "Film Crew",
+        "item": "Make-Up Artist",
+        "cost": 4
+    },
+    {        
+        "user": "@Spielberg",
+        "list": "Film Crew",
+        "item": "Hair Stylist",
+        "cost": 4
+    },
+    {        
+        "user": "@Spielberg",
+        "list": "Film Crew",
+        "item": "Costume Designer",
+        "cost": 4
+    },
+    {        
+        "user": "@Jenga",
+        "list": "Construction Crew",
+        "item": "Landscaper",
+        "cost": 4
+    },
+    {        
+        "user": "@Jenga",
+        "list": "Construction Crew",
+        "item": "Excavator",
+        "cost": 4
+    },
+    {        
+        "user": "@Jenga",
+        "list": "Construction Crew",
+        "item": "Concrete Worker",
+        "cost": 4
+    },
+    {        
+        "user": "@Jenga",
+        "list": "Construction Crew",
+        "item": "Framer",
+        "cost": 4
+    },
+    {        
+        "user": "@Jenga",
+        "list": "Construction Crew",
+        "item": "Brick Mason",
+        "cost": 4
+    },
+    {        
+        "user": "@Jenga",
+        "list": "Construction Crew",
+        "item": "Electrician",
+        "cost": 4
+    },
+    {        
+        "user": "@Jenga",
+        "list": "Construction Crew",
+        "item": "Plumber",
+        "cost": 4
+    },
+    {        
+        "user": "@Jenga",
+        "list": "Construction Crew",
+        "item": "Drywall Installers",
+        "cost": 4
+    },
+    {        
+        "user": "@Jenga",
+        "list": "Construction Crew",
+        "item": "Painter/ Cleaner",
+        "cost": 4
+    },
+    {        
+        "user": "@Jenga",
+        "list": "Construction Crew",
+        "item": "Rough Carpenter",
+        "cost": 4
+    },
+    {        
+        "user": "@Jenga",
+        "list": "Construction Crew",
+        "item": "Appliance/ Floor Installers",
+        "cost": 4
+    }
+]
+
+   

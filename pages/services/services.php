@@ -36,8 +36,8 @@ print '
                 <a class="nav-link active" aria-current="page" href="..\profile\login.php">Login</a>
               </li>
               <li class="nav-item list-group-item-action">
-                <a class="nav-link active" href="#" onclick="deliverf()">Deliver</a>
-              </li>
+              <a class="nav-link active" href="#" onclick="orderf()">Order</a>
+            </li>
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -107,6 +107,12 @@ print '
             </a>
           </li>
           <hr>
+          <li class="nav-item list-group-item-action">
+            
+          <a href="..\people\people.php" class="nav-link link-dark">
+          People
+        </a>
+      </li>
           <li class="nav-item list-group-item-action">
             
               <a href="#" class="nav-link active">

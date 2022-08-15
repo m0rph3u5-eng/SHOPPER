@@ -1,4 +1,7 @@
 <?php
+
+
+
 print '<!DOCTYPE html
 PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -119,6 +122,12 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
         </li>
         <hr style="color:black ;">
         <li class="list-group-item-action">
+        <a href="pages\people\people.php" class="nav-link link-dark">
+
+          People
+        </a>
+      </li>
+        <li class="list-group-item-action">
           <a href="pages\services\services.php" class="nav-link link-dark">
 
             Services
@@ -233,5 +242,33 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
 </html>
 
 ';
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "fresh";
+
+// // Create connection
+// $conn = new mysqli($servername, $username, $password, $dbname);
+
+// // Check connection
+// if ($conn->connect_error) {
+//   die("Connection failed: " . $conn->connect_error);
+// }
+// // sql to create table
+// $sql = "CREATE TABLE MyGuests (
+//   id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+//   firstname VARCHAR(30) NOT NULL,
+//   lastname VARCHAR(30) NOT NULL,
+//   email VARCHAR(50),
+//   reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+//   )";
+  
+//   if ($conn->query($sql) === TRUE) {
+//     echo "Table MyGuests created successfully";
+//   } else {
+//     echo "Error creating table: " . $conn->error;
+//   }
+
+// $conn->close();
 
  ?>

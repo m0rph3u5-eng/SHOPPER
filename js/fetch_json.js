@@ -117,6 +117,7 @@ function setDefaultTitle() {
       //var newdiv3 = document.getElementById('newc');
       var newdivrec = document.getElementById("newr");
       newdivrec.innerHTML = "";
+      let rnum = 1;
       for (i = 0; i < datac.length; i++) {
         if (datac[i].list == datac[0].list) {
           //   console.log(datac[i].comment);
@@ -132,7 +133,7 @@ function setDefaultTitle() {
             "d-flex gap-2 w-100 justify-content-between";
          // myNewSmall.className = "opacity-50 text-nowrap";
           myNewItem1.className = "mb-0 opacity-75";
-          myNewItem1.innerHTML =datac[i].recipe;
+          myNewItem1.innerHTML ="<b>Step "+ rnum++ +"</b>"+"<br>"+datac[i].recipe;
           
 
           myNewNestComDiv1.appendChild(myNewItem1);
@@ -333,31 +334,33 @@ function appendData(data) {
           //var newdiv3 = document.getElementById('newc');
           var newdivrec = document.getElementById("newr");
           newdivrec.innerHTML = "";
+          let rnum = 1;
           for (i = 0; i < datac.length; i++) {
             if (datac[i].list == myHeader.innerHTML) {
               //   console.log(datac[i].comment);
               //   console.log(datac[i].time);
               const myNewItem1 = document.createElement("p");
-              //const myNewA = document.createElement("a");
-              //const myNewComDiv = document.createElement("div");
+              const myNewA1 = document.createElement("a");
+              const myNewComDiv1 = document.createElement("div");
               const myNewNestComDiv1 = document.createElement("div");
-              //const myNewSmall = document.createElement("small");
-             // myNewA.className =
+             // const myNewSmall1 = document.createElement("small");
+              myNewA1.className =
                 "list-group-item list-group-item-action d-flex gap-3 py-3";
-              //myNewComDiv.className =
+              myNewComDiv1.className =
                 "d-flex gap-2 w-100 justify-content-between";
-             // myNewSmall.className = "opacity-50 text-nowrap";
+              //myNewSmall1.className = "opacity-50 text-nowrap";
               myNewItem1.className = "mb-0 opacity-75";
-              myNewItem1.innerHTML =datac[i].recipe;
+              
+              myNewItem1.innerHTML ="<b>Step "+ rnum++ +"</b>"+"<br>"+datac[i].recipe;
               
 
-              myNewNestComDiv1.appendChild(myNewItem1);
+             // myNewNestComDiv1.appendChild(myNewItem1);
 
-              //myNewComDiv.appendChild(myNewNestComDiv);
-             /// myNewComDiv.appendChild(myNewSmall);
-              //myNewA.appendChild(myNewComDiv);
+              myNewComDiv1.appendChild(myNewItem1);
+             // myNewComDiv1.appendChild(myNewSmall1);
+              myNewA1.appendChild(myNewComDiv1);
 
-              document.getElementById("newr").appendChild(myNewNestComDiv1);
+              document.getElementById("newr").appendChild(myNewA1);
             } else {
             }
           }

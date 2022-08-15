@@ -123,6 +123,12 @@ print '
           </li>
           <hr>
           <li class="nav-item list-group-item-action">
+            
+          <a href="..\people\people.php" class="nav-link link-dark">
+          People
+        </a>
+      </li>
+          <li class="nav-item list-group-item-action">
             <a href="..\services\services.php" class="nav-link link-dark">
 
               Services

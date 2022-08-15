@@ -1,18 +1,18 @@
 [
     {       
         "type": "Weekly Shopping",
-        "title":"Friday Night in Nairobi",
-        "user":"@Loiterer",
-        "description": "Where it's all happenning",
+        "title":"Film Crew",
+        "user":"@Spielberg",
+        "description": "Full staff for feature film",
         "items": ["Bacon","Baking goods","Beverages","Canned goods","Fish","Grains","Meat","Snacks","Spices"],
         "cost": 980 
 
     },
     {       
         "type": "Weekly Shopping",
-        "title":"Government Services in Kenya",
-        "user":"@Citizen1",
-        "description": "Getting all you affairs in order.",
+        "title":"Construction Crew",
+        "user":"@Jenga",
+        "description": "Who you'll need to finish a bungalow.",
         "items": ["Bacon","Baking goods","Beverages","Canned goods","Fish","Grains","Meat","Snacks","Spices"],
         "cost": 980 
 
