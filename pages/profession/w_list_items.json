@@ -1,5 +1,60 @@
 [
     {        
+        "user": "@holt",
+        "list": "Modern farmers",
+        "item": "TRACTORS",
+        "cost": 4
+    },
+    {        
+        "user": "@holt",
+        "list": "Modern farmers",
+        "item": "HARVESTER",
+        "cost": 4
+    },
+    {        
+        "user": "@holt",
+        "list": "Modern farmers",
+        "item": "ATV",
+        "cost": 4
+    },
+    {        
+        "user": "@holt",
+        "list": "Modern farmers",
+        "item": "PLOWS",
+        "cost": 4
+    },
+    {        
+        "user": "@holt",
+        "list": "Modern farmers",
+        "item": "HARROWS",
+        "cost": 4
+    },
+    {        
+        "user": "@holt",
+        "list": "Modern farmers",
+        "item": "FERTILIZER SPREADERS",
+        "cost": 4
+    },
+    {        
+        "user": "@holt",
+        "list": "Modern farmers",
+        "item": "SEEDERS",
+        "cost": 4
+    },
+    {        
+        "user": "@holt",
+        "list": "Modern farmers",
+        "item": "BALERS",
+        "cost": 4
+    },
+    {        
+        "user": "@holt",
+        "list": "Modern farmers",
+        "item": "TRAILERS",
+        "cost": 4
+    },
+
+    {        
         "user": "@FLOW WALL",
         "list": "23 Must-Haves for Any Home Garage Workshop",
         "item": "Ladders",

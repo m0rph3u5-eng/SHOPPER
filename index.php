@@ -214,10 +214,12 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
       <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current=" true">
         <div class="d-flex gap-2 w-100 justify-content-between">
           <div>
+          <form action="action.php" method="post">
             <label style="margin-top: 5px;"><h6>Comments</h6></label>
             <textarea rows="3" cols="40" id="comments2" class="form-control me-2" name="comments"></textarea>
             <button class="btn btn-outline-dark btn-sm" style="width: fit-content;" type="submit"
               onclick="addcom()">Post</button>
+              </form>
           </div>
        
           <small class="opacity-50 text-nowrap">Now</small>
@@ -242,33 +244,25 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
 </html>
 
 ';
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
-// $dbname = "fresh";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "shopper";
 
-// // Create connection
-// $conn = new mysqli($servername, $username, $password, $dbname);
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-// // Check connection
-// if ($conn->connect_error) {
-//   die("Connection failed: " . $conn->connect_error);
-// }
-// // sql to create table
-// $sql = "CREATE TABLE MyGuests (
-//   id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-//   firstname VARCHAR(30) NOT NULL,
-//   lastname VARCHAR(30) NOT NULL,
-//   email VARCHAR(50),
-//   reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-//   )";
-  
-//   if ($conn->query($sql) === TRUE) {
-//     echo "Table MyGuests created successfully";
-//   } else {
-//     echo "Error creating table: " . $conn->error;
-//   }
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
 
-// $conn->close();
+  if ($conn->query($sql) === TRUE) {
+    echo "Table MyGuests created successfully";
+  } else {
+    echo "Error creating table: " . $conn->error;
+  }
+
+$conn->close();
 
  ?>

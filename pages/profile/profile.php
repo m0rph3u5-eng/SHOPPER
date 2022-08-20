@@ -219,7 +219,7 @@ print '
     <div class="comments" style="background-color: white; padding: 20px;">
       <div>
         <p><a href="#" class="link-dark">History</a></p>
-        <p><a href="/pages/contact/contactus.php" class="link-dark">Contact Us</a></p>
+        <p><a href="../contact/contactus.php" class="link-dark">Contact Us</a></p>
       </div>
     </div>
     </div>

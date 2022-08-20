@@ -1,0 +1,1 @@
+Hi. You said<?php echo htmlspecialchars($_POST['comments']); ?>.
