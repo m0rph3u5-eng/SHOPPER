@@ -146,7 +146,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
 <main>
   <div class="list1">
     <div class="list-group scrollbar scrollbar-black bordered-black square thin border border-light rounded-lg overflow-auto" id="des_col" >
-
+    <img src="images/hero_grocery_shelf.jpg" class="img-fluid" alt="Responsive image"> 
       <a href="#" class="list-group-item list-group-item-action" id="new_entry_a" aria-current="true"
         style="display: none;">
         <div class="d-flex justify-content-between" style="display: none;">
@@ -171,7 +171,8 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
 
   <div class="list2" >
     <div class="list-group scrollbar scrollbar-black bordered-black square thin border border-light rounded-lg overflow-auto" id="it_col" >
-      <a href="#" class="list-group-item list-group-item-action  " aria-current="true" style="display: none;"
+     
+    <a href="#" class="list-group-item list-group-item-action  " aria-current="true" style="display: none;"
         id="new_entry_list_a">
 
         <div class="d-flex justify-content-between" style="display: none;">
@@ -194,9 +195,11 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
 
         </div>
       </a>
+      <img src="images/hero_grocery_shelf.jpg" class="img-fluid" alt="Responsive image"> 
       <a href="#" class="list-group-item list-group-item-action d-flex gap-0 py-3 w-100" aria-current="true" id="new_entry_list_b">
-
+      
         <div class="d-flex gap-0 w-100 justify-content-between">
+        
           <div id="main_list" style="height: 100%;">
             <h6 id="heading" class="mb-0"></h6>
             <p id="handle" class="mb-0 opacity-75"></p>
@@ -244,25 +247,5 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
 </html>
 
 ';
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "shopper";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-  if ($conn->query($sql) === TRUE) {
-    echo "Table MyGuests created successfully";
-  } else {
-    echo "Error creating table: " . $conn->error;
-  }
-
-$conn->close();
 
  ?>

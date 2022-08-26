@@ -2,7 +2,7 @@ let user;
 let order;
 let mail;
 let recipeCheck = document.title;
-console.log(recipeCheck);
+//console.log(recipeCheck);
 
 function setDefaultTitle() {
   fetch("w_list_items.json")
@@ -169,6 +169,7 @@ fetch("w_list.json")
 function appendData(data) {
   for (i = 0; i < data.length; i++) {
     //create elements
+  
     const myHeader = document.createElement("h6");
     const myUser = document.createElement("p");
     const myDesc = document.createElement("p");
@@ -176,8 +177,10 @@ function appendData(data) {
     const myDivPrime = document.createElement("div");
     const myLink = document.createElement("a");
     const myCost = document.createElement("small");
+    const myImg = document.createElement("img");
 
     //apply styling to the elements
+    myImg.className = "img-fluid";
     myHeader.className = "mb-0";
     myUser.className = "mb-0 opacity-75";
     myDesc.className = "mb-0 opacity-75";
@@ -188,13 +191,13 @@ function appendData(data) {
     myLink.ariaCurrent = true;
 
     //apply values to the created elements
+    myImg.src = 
+    "images/header.png";
     myLink.href = "#";
     myHeader.innerHTML = data[i].title;
     myUser.innerHTML = data[i].user;
     myDesc.innerHTML = data[i].description;
     myCost.innerHTML = data[i].cost;
-
-    //mail = [data[0].whatsapp];
 
     myHeader.appendChild(myUser);
     myDivPrime.appendChild(myHeader);
@@ -202,9 +205,12 @@ function appendData(data) {
     myDivPrime.appendChild(myDesc);
     myDiv.appendChild(myDivPrime);
     myDiv.appendChild(myCost);
+   // myLink.appendChild(myImg);
     myLink.appendChild(myDiv);
+   console.log("myImg");
 
     document.getElementById("des_col").appendChild(myLink);
+    document.getElementById("des_col").appendChild(myImg);
 
 
     
@@ -235,8 +241,8 @@ function appendData(data) {
         document.getElementById("handle").innerHTML = myUser.innerHTML;
         document.getElementById("price0").innerHTML = myCost.innerHTML;
 
-        mail = [data[i].whatsapp];
-        console.log(data[i].whatsapp);
+        // mail = [data[i].whatsapp];
+        // console.log(data[i].whatsapp);
         var newdiv2 = document.getElementById("newnew");
         newdiv2.innerHTML = "";
         newdiv2.className = "d-flex gap-2 w-100 justify-content-between w-100 overflow-auto flex-column mb-auto";
