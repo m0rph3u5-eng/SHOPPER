@@ -20,7 +20,9 @@ function setDefaultTitle() {
     order = [data[0].list];
 
     user = [data[0].user];
-
+    // let img1 = document.createElement("img");
+    // img1.src="images/"+0+".jpg";
+    // document.getElementById("img1").appendChild(img1);
     document.getElementById("heading").innerHTML = data[0].list;
     document.getElementById("handle").innerHTML = data[0].user;
     document.getElementById("price0").innerHTML = data[0].cost;
@@ -29,21 +31,23 @@ function setDefaultTitle() {
     const myOl = document.createElement("ol");
     myOl.className = "list-group list-group-numbered w-100 d-flex p-0 scrollbar scrollbar-black bordered-black square thin border border-light rounded-lg overflow-auto";
 
-    // const myOl = document.createElement("ol");
-    // myOl.className = "list-group list-group-numbered d-flex p-2 overflow-auto";
-    //let myNewItem;
-
+  
     for (i = 0; i < data.length; i++) {
       if (data[i].list == data[0].list) {
        const myNewItem = document.createElement("li");
+       const myItImg = document.createElement("img");
         myNewItem.className = "list-group-item list-group-item-action mb-0 opacity-75";
+        myItImg.src = "images/items/"+[i]+".jpg";
+        myItImg.className = "img-fluid";
+        myItImg.style = "width:40px; float:left;padding-right:5px;"
         myNewItem.innerHTML = data[i].item;
         
         //change bachground colour when item is clicked
         myNewItem.onclick = function colorChange() {         
           myNewItem.className="list-group-item active border border-secondary" 
       }
-        myOl.appendChild(myNewItem);
+      myNewItem.appendChild(myItImg);  
+      myOl.appendChild(myNewItem);
       }
     }
 
@@ -178,21 +182,25 @@ function appendData(data) {
     const myLink = document.createElement("a");
     const myCost = document.createElement("small");
     const myImg = document.createElement("img");
+    const myAvi = document.createElement("img");
 
     //apply styling to the elements
     myImg.className = "img-fluid";
+    myAvi.className = "img-fluid";
+    myAvi.style= "width:50px; float:left; padding-right:10px; border: 0px solid red; border-radius: 100px;"
     myHeader.className = "mb-0";
     myUser.className = "mb-0 opacity-75";
     myDesc.className = "mb-0 opacity-75";
     myDiv.className = "d-flex gap-2 w-100 justify-content-between";
     myLink.className =
-      "list-group-item list-group-item-action d-flex gap-3 py-3";
+      "list-group-item list-group-item-action d-flex gap-3 py-3 ";
     myCost.className = "opacity-50 text-nowrap";
     myLink.ariaCurrent = true;
 
     //apply values to the created elements
-    myImg.src = 
-    "images/header.png";
+    
+    myAvi.src = "images/avatars/"+[i]+".jpg";
+    myImg.src = "images/"+[i]+".jpg";
     myLink.href = "#";
     myHeader.innerHTML = data[i].title;
     myUser.innerHTML = data[i].user;
@@ -200,29 +208,32 @@ function appendData(data) {
     myCost.innerHTML = data[i].cost;
 
     myHeader.appendChild(myUser);
+    myDivPrime.appendChild(myAvi);
     myDivPrime.appendChild(myHeader);
     myDivPrime.appendChild(myUser);
     myDivPrime.appendChild(myDesc);
     myDiv.appendChild(myDivPrime);
     myDiv.appendChild(myCost);
-   // myLink.appendChild(myImg);
+  // myLink.appendChild(myImg);
+   //  myDivPrime.appendChild(myImg);
     myLink.appendChild(myDiv);
-   console.log("myImg");
+ 
 
+  document.getElementById("des_col").appendChild(myImg);
     document.getElementById("des_col").appendChild(myLink);
-    document.getElementById("des_col").appendChild(myImg);
+    
 
-
+    
     
     //show list items when list type is selected
     myLink.onclick = function setTitle() {
-      
+     
       //save  values in variables
       order = [myHeader.innerHTML];
 
       user = [myUser.innerHTML];
-
-      
+     
+    
 
       //fetch for second column data from json file
       fetch("w_list_items.json")
@@ -241,11 +252,22 @@ function appendData(data) {
         document.getElementById("handle").innerHTML = myUser.innerHTML;
         document.getElementById("price0").innerHTML = myCost.innerHTML;
 
-        // mail = [data[i].whatsapp];
+         //change image source
+     var imgSelect = data[i].id;
+     let img2 = document.getElementById("img1");
+    
+     img2.src="images/"+imgSelect+".jpg";
+     const myAvi = document.createElement("img");
+     myAvi.className = "img-fluid";
+     myAvi.style= "width:50px; float:left; padding-right:10px; border: 0px solid red; border-radius: 100px;"  
+     myAvi.src = "images/avatars/"+[i]+".jpg";
+     // mail = [data[i].whatsapp];
         // console.log(data[i].whatsapp);
         var newdiv2 = document.getElementById("newnew");
         newdiv2.innerHTML = "";
         newdiv2.className = "d-flex gap-2 w-100 justify-content-between w-100 overflow-auto flex-column mb-auto";
+        //newdiv2.appendChild(myAvi);
+        document.getElementById("heading").appendChild(myAvi);
         const myOl = document.createElement("ol");
         myOl.className = "list-group list-group-numbered w-100 d-flex p-0 scrollbar scrollbar-black bordered-black square thin border border-light rounded-lg overflow-auto flex-column mb-auto";
 // myOl.style.width ="inherit"
@@ -256,7 +278,11 @@ function appendData(data) {
             // myNewItem.className = "mb-0 opacity-75";
             //  myNewItem.innerHTML = data[i].item;
             // document.getElementById("newnew").appendChild(myNewItem);
-
+            const myItImg = document.createElement("img");
+            //myNewItem.className = "list-group-item list-group-item-action mb-0 opacity-75";
+            myItImg.src = "images/items/"+[i]+".jpg";
+            myItImg.className = "img-fluid";
+            myItImg.style = "width:40px; float:left;padding-right:5px;"
             const myNewItem = document.createElement("li");
             myNewItem.className = "list-group-item list-group-item-action mb-0 opacity-75";            
             myNewItem.innerHTML = data[i].item;
@@ -265,6 +291,7 @@ function appendData(data) {
             myNewItem.onclick = function colorChange() {         
               myNewItem.className="list-group-item active border border-secondary" 
           }
+          myNewItem.appendChild(myItImg); 
             myOl.appendChild(myNewItem);     
           } else {
           }
