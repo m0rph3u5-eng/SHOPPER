@@ -5,7 +5,7 @@ let recipeCheck = document.title;
 let allUsers = [];
 let selectedUser =[];
 let allCommenters = [];
-//console.log(recipeCheck);
+let thisCommenter = [];
 
 function setDefaultTitle() {
   fetch("w_list_items.json")
@@ -23,9 +23,6 @@ function setDefaultTitle() {
     order = [data[0].list];
 
     user = [data[0].user];
-    // let img1 = document.createElement("img");
-    // img1.src="images/"+0+".jpg";
-    // document.getElementById("img1").appendChild(img1);
     let myAvi1 = document.createElement("img");
     myAvi1.className = "img-fluid";
     myAvi1.style = "width:50px; height:50px; float:left; margin-right:10px; border: 0px solid red; border-radius: 50%;";
@@ -37,7 +34,6 @@ function setDefaultTitle() {
     document.getElementById("price0").innerHTML = data[0].cost;
 
     selectedUser = data[0].user;
-    // newdiv2.className = "d-flex gap-2 w-100 justify-content-between w-100";
     const myOl = document.createElement("ol");
     myOl.className =
       "list-group list-group-numbered w-100 d-flex p-0 scrollbar scrollbar-black bordered-black square thin border border-light rounded-lg overflow-auto";
@@ -47,7 +43,7 @@ function setDefaultTitle() {
         const myNewItem = document.createElement("li");
         const myItImg = document.createElement("img");
         myNewItem.className =
-          "list-group-item list-group-item-action mb-0 opacity-75";
+          "list-group-item list-group-item-action mb-0 opacity-100";
         myItImg.src = "images/items/" + [i] + ".jpg";
         myItImg.className = "img-fluid";
         myItImg.style = "width:40px; float:left;padding-right:5px;";
@@ -78,15 +74,10 @@ function setDefaultTitle() {
       });
 
     function appendData(datac) {
-      //div newnew
-      //var newdiv3 = document.getElementById('newc');
       var newdivcom = document.getElementById("newc");
       newdivcom.innerHTML = "";
       for (i = 0; i < datac.length; i++) {
         if (datac[i].list == datac[0].list) {
-          //   console.log(datac[i].comment);
-          //   console.log(datac[i].time);
-
           const myNewItem = document.createElement("p");
           const myNewA = document.createElement("a");
           const myNewComDiv = document.createElement("div");
@@ -97,7 +88,7 @@ function setDefaultTitle() {
           myAvi1.className = "img-fluid";
           myAvi1.style =
             "width:50px; height:50px; float:left; margin-right:10px; border: 0px solid red; border-radius: 50%;";
-          myAvi1.src = "images/avatars/1" + [i] + ".jpg";
+         
 
           myNewA.className =
             "list-group-item list-group-item-action d-flex gap-3 py-3";
@@ -109,6 +100,8 @@ function setDefaultTitle() {
           myNewSmall.innerHTML = datac[i].time;
 
           allCommenters.push(datac[i].name);
+          thisCommenter=datac[i].name;
+          myAvi1.src = "images/avatars/" + allCommenters.indexOf(thisCommenter) + ".jpg";
           myNewNestComDiv.appendChild(myNewItem);
           myNewComDiv.appendChild(myAvi1);
           myNewComDiv.appendChild(myNewNestComDiv);
@@ -136,35 +129,23 @@ function setDefaultTitle() {
       });
 
     function appendData(datac) {
-      //div newnew
-      //var newdiv3 = document.getElementById('newc');
       var newdivrec = document.getElementById("newr");
       newdivrec.innerHTML = "";
       let rnum = 1;
       for (i = 0; i < datac.length; i++) {
         if (datac[i].list == datac[0].list) {
-          //   console.log(datac[i].comment);
-          //   console.log(datac[i].time);
+   
           const myNewItem1 = document.createElement("p");
-          //const myNewA = document.createElement("a");
-          //const myNewComDiv = document.createElement("div");
           const myNewNestComDiv1 = document.createElement("div");
-          //const myNewSmall = document.createElement("small");
-          // myNewA.className =
           ("list-group-item list-group-item-action d-flex gap-3 py-3");
-          //myNewComDiv.className =
+       
           ("d-flex gap-2 w-100 justify-content-between");
-          // myNewSmall.className = "opacity-50 text-nowrap";
+         
           myNewItem1.className = "mb-0 opacity-75";
           myNewItem1.innerHTML =
             "<b>Step " + rnum++ + "</b>" + "<br>" + datac[i].recipe;
 
           myNewNestComDiv1.appendChild(myNewItem1);
-
-          //myNewComDiv.appendChild(myNewNestComDiv);
-          /// myNewComDiv.appendChild(myNewSmall);
-          //myNewA.appendChild(myNewComDiv);
-
           document.getElementById("newr").appendChild(myNewNestComDiv1);
         } else {
         }
@@ -176,6 +157,7 @@ function setDefaultTitle() {
   }
 }
 setDefaultTitle();
+
 //fetch for first column data from json file
 fetch("w_list.json")
   .then(function (response) {
@@ -220,7 +202,7 @@ function appendData(data) {
     //apply values to the created elements
 
     allUsers.push(data[i].user);
-    myAvi.src = "images/avatars/" + [i] + ".jpg";
+    myAvi.src = "images/avatars/" + allUsers.indexOf(selectedUser)+ ".jpg";
     myImg.src = "images/" + [i] + ".jpg";
     myLink.href = "#";
     myHeader.innerHTML = data[i].title;
@@ -229,16 +211,12 @@ function appendData(data) {
     myCost.innerHTML = data[i].cost;
 
     myHeader.appendChild(myUser);
-    //myDivPrime.appendChild(myAvi);
     myDivPrime.appendChild(myHeader);
     myDivPrime.appendChild(myAvi);
     myDivPrime.appendChild(myUser);
     myDivPrime.appendChild(myDesc);
     myDiv.appendChild(myDivPrime);
     myDiv.appendChild(myCost);
-    //myDiv.appendChild(myAvi);
-    // myLink.appendChild(myImg);
-    //  myDivPrime.appendChild(myImg);
     myLink.appendChild(myDiv);
 
     document.getElementById("des_col").appendChild(myImg);
@@ -306,7 +284,7 @@ function appendData(data) {
             myItImg.style = "width:40px; float:left;padding-right:5px;";
             const myNewItem = document.createElement("li");
             myNewItem.className =
-              "list-group-item list-group-item-action mb-0 opacity-75";
+              "list-group-item list-group-item-action mb-0 opacity-100";
             myNewItem.innerHTML = data[i].item;
 
             //change bachground colour when item is clicked
@@ -352,7 +330,7 @@ function appendData(data) {
               myAvi1.className = "img-fluid";
               myAvi1.style =
                 "width:50px; height:50px; float:left; margin-right:10px; border: 0px solid red; border-radius: 50%;";
-              myAvi1.src = "images/avatars/1" + [i] + ".jpg";
+             // myAvi1.src = "images/avatars/1" + [i] + ".jpg";
               myNewA.className =
                 "list-group-item list-group-item-action d-flex gap-3 py-3";
               myNewComDiv.className =
@@ -362,6 +340,17 @@ function appendData(data) {
               myNewItem.innerHTML =
                 "<b>" + datac[i].name + "</b>" + "<br>" + datac[i].comment;
               myNewSmall.innerHTML = datac[i].time;
+
+              allCommenters.push(datac[i].name);
+              thisCommenter=datac[i].name;
+              let random = [];
+              if (allCommenters.indexOf(thisCommenter)>20) {
+                random=Math.floor(Math.random() * 21);
+                myAvi1.src = "images/avatars/" + random + ".jpg";
+              } else {
+                myAvi1.src = "images/avatars/" + allCommenters.indexOf(thisCommenter) + ".jpg";
+              }
+             
 
               myNewNestComDiv.appendChild(myNewItem);
               myNewComDiv.appendChild(myAvi1);
@@ -469,3 +458,4 @@ console.log("All Users;");
 console.log(allUsers);
 console.log("Currently selected user;");
 console.log(selectedUser);
+console.log(allCommenters);
