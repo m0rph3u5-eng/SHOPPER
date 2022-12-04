@@ -7,6 +7,21 @@ let selectedUser =[];
 let allCommenters = [];
 let thisCommenter = [];
 
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'dec7baaf3bmshe3059dc1b7a5e44p1a15e5jsncf5ea3786ea1',
+		'X-RapidAPI-Host': 'themealdb.p.rapidapi.com'
+	}
+};
+
+fetch('https://themealdb.p.rapidapi.com/filter.php?i=chicken_breast', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
+
+  //console.log();
+
 function setDefaultTitle() {
   fetch("w_list_items.json")
     .then(function (response) {
@@ -36,7 +51,7 @@ function setDefaultTitle() {
     selectedUser = data[0].user;
     const myOl = document.createElement("ol");
     myOl.className =
-      "list-group list-group-numbered w-100 d-flex p-0 scrollbar scrollbar-black bordered-black square thin border border-light rounded-lg overflow-auto";
+      "list-group list-group-numbered w-100 d-flex p-0 mt-0 scrollbar scrollbar-black bordered-black square thin border border-light rounded-lg overflow-auto";
 
     for (i = 0; i < data.length; i++) {
       if (data[i].list == data[0].list) {
@@ -98,10 +113,15 @@ function setDefaultTitle() {
           myNewItem.innerHTML =
             "<b>" + datac[i].name + "</b>" + "<br>" + datac[i].comment;
           myNewSmall.innerHTML = datac[i].time;
-
+         
           allCommenters.push(datac[i].name);
           thisCommenter=datac[i].name;
-          myAvi1.src = "images/avatars/" + allCommenters.indexOf(thisCommenter) + ".jpg";
+          if (datac[i].name == "@Elmo") {
+            console.log (" This "+ datac[i].name);
+            myAvi1.src = "images/avatars/13.jpg";
+          }else{
+            myAvi1.src = "images/avatars/"+ allCommenters.indexOf(thisCommenter) + ".jpg";
+          }
           myNewNestComDiv.appendChild(myNewItem);
           myNewComDiv.appendChild(myAvi1);
           myNewComDiv.appendChild(myNewNestComDiv);
@@ -109,6 +129,7 @@ function setDefaultTitle() {
           myNewA.appendChild(myNewComDiv);
 
           document.getElementById("newc").appendChild(myNewA);
+        
         } else {
         }
       }
@@ -202,7 +223,8 @@ function appendData(data) {
     //apply values to the created elements
 
     allUsers.push(data[i].user);
-    myAvi.src = "images/avatars/" + allUsers.indexOf(selectedUser)+ ".jpg";
+    selectedUser = data[i].user;
+    myAvi.src = "images/avatars/"+allUsers.indexOf(selectedUser)+".jpg";
     myImg.src = "images/" + [i] + ".jpg";
     myLink.href = "#";
     myHeader.innerHTML = data[i].title;
@@ -331,7 +353,13 @@ function appendData(data) {
               myAvi1.style =
                 "width:50px; height:50px; float:left; margin-right:10px; border: 0px solid red; border-radius: 50%;";
              // myAvi1.src = "images/avatars/1" + [i] + ".jpg";
-              myNewA.className =
+             if (datac[i].name == "@Elmo") {
+              console.log (" This "+ datac[i].name);
+              myAvi1.src = "images/avatars/13.jpg";
+            }else{
+              myAvi1.src = "images/avatars/" + 1+allCommenters.indexOf(thisCommenter) + ".jpg";
+            }
+             myNewA.className =
                 "list-group-item list-group-item-action d-flex gap-3 py-3";
               myNewComDiv.className =
                 "d-flex gap-2 w-100 justify-content-between";
@@ -434,6 +462,30 @@ function orderf() {
   if (person != null) {
     let wNumber =
       "https://wa.me/" +
+      person +
+      "?text=Hello%20I'm%20interested%20in%20" +
+      order +
+      "%20from%20https://shopper.ke/";
+
+    //remove spaces from string (url)
+    wNumber = wNumber.replace(/\s/g, "");
+    // console.log("https://wa.me/"+person+"?text=I'm%20interested%20in%20your%20car%20for%20sale"+ order);
+    window.open(wNumber);
+    //console.log(wNumber);
+  }
+}
+function ordersms() {
+  let person = prompt(
+    "You have selected " +
+      order +
+      "." +
+      " Please enter a phone number to send the list",
+    "254 704 186334"
+  );
+
+  if (person != null) {
+    let wNumber =
+      "sms:" +
       person +
       "?text=Hello%20I'm%20interested%20in%20" +
       order +
