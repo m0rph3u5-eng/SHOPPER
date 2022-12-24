@@ -7,20 +7,24 @@ let selectedUser =[];
 let allCommenters = [];
 let thisCommenter = [];
 
+const encodedParams = new URLSearchParams();
+encodedParams.append("apiKey", "<REQUIRED>");
+
 const options = {
-	method: 'GET',
+	method: 'POST',
 	headers: {
+		'content-type': 'application/x-www-form-urlencoded',
 		'X-RapidAPI-Key': 'dec7baaf3bmshe3059dc1b7a5e44p1a15e5jsncf5ea3786ea1',
-		'X-RapidAPI-Host': 'themealdb.p.rapidapi.com'
-	}
+		'X-RapidAPI-Host': 'BestBuyraygorodskijV1.p.rapidapi.com'
+	},
+	body: encodedParams
 };
 
-fetch('https://themealdb.p.rapidapi.com/filter.php?i=chicken_breast', options)
+fetch('https://shoppingcontent.googleapis.com/content/v2.1/{merchantId}/products;', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
 
-  //console.log();
 
 function setDefaultTitle() {
   fetch("w_list_items.json")
@@ -47,6 +51,8 @@ function setDefaultTitle() {
     document.getElementById("heading").appendChild(myAvi1);
     document.getElementById("handle").innerHTML = data[0].user;
     document.getElementById("price0").innerHTML = data[0].cost;
+
+    
 
     selectedUser = data[0].user;
     const myOl = document.createElement("ol");
@@ -75,6 +81,8 @@ function setDefaultTitle() {
     }
 
     document.getElementById("newnew").appendChild(myOl);
+
+   
   }
   function comment22() {
     fetch("w_comments.json")
@@ -285,7 +293,7 @@ function appendData(data) {
         var newdiv2 = document.getElementById("newnew");
         newdiv2.innerHTML = "";
         newdiv2.className =
-          "d-flex gap-2 w-100 justify-content-between w-100 overflow-auto flex-column mb-auto";
+          "d-flex gap-2 w-100 justify-content-between w-100 overflow-hidden flex-column mb-auto";
         //newdiv2.appendChild(myAvi);
         document.getElementById("heading").appendChild(myAvi);
         const myOl = document.createElement("ol");
